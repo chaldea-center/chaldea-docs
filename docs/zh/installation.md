@@ -4,9 +4,9 @@
 
 | 平台     | 最低要求                       |
 | :------ | :---------------------------- |
-| Android | Android 6.0 \(API level 23\)  |
+| Android | Android 6.0 (API level 23)  |
 | iOS     | iOS 10.0                      |
-| Windows | Windows 7 SP1 \(64-bit\), x86-64 based |
+| Windows | Windows 7 SP1 (64-bit), x86-64 based |
 | macOS   | macOS 10.11 (macOS 10.14 in future)    |
 
 ## 下载
@@ -67,4 +67,4 @@ macOS安装包与应用商店的版本具有不同的签名，可能存在细微
 :::
 
 ## 自动更新
-详见[APP自动更新](./app_setting.md#APP自动更新)
+详见[APP自动更新](./app_setting.md#app自动更新)

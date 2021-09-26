@@ -10,6 +10,37 @@ export default defineUserConfig<DefaultThemeOptions>({
   head: [
     ['link', { rel: 'icon', href: '/logo.png' }],
     ['meta', { name: 'keywords', content: 'Chaldea,迦勒底,素材规划,Material Planning,FGO,fate,Fate/Grand Order,命运-冠位指定,型月,typemoon,周回,free' }],
+    [
+      'script',
+      {
+        src:"https://www.googletagmanager.com/gtag/js?id=G-Z56XH1BDG8",
+        async: true,
+      }
+    ],
+    [
+      'script',
+      {},
+      `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-Z56XH1BDG8');
+      `
+    ],
+    [
+      'script',
+      {},
+      `
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?c00bd5fdc5a0fe682a8680e6eb73f45c";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+    `
+    ]
   ],
   locales: {
     '/': {
@@ -118,7 +149,21 @@ export default defineUserConfig<DefaultThemeOptions>({
     }
   },
   plugins: [
-    ['@vuepress/plugin-search'],
+    [
+      '@vuepress/plugin-search',
+      {
+        locales: {
+          '/': { placeholder: 'Search' },
+          '/zh/': { placeholder: '搜索' }
+        }
+      }
+    ],
+    // [  // no effect
+    //   '@vuepress/plugin-google-analytics',
+    //   {
+    //     id: 'G-Z56XH1BDG8',
+    //   },
+    // ],
     // [
     //   "vuepress-plugin-seo2",
     //   <SeoOptions>{

@@ -16,6 +16,6 @@ all data are fetched from those websites in references, please check the data th
 
 - For UI text
 
-personal translation, please tell me if any mistake or join the collaboration to improve transtlation.
+personal translation, please tell me if any mistake or join the collaboration to improve translation.
 
 ## [Feedback](./feedback.md)
