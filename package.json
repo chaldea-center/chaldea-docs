@@ -1,0 +1,24 @@
+{
+  "name": "chaldea-doc",
+  "version": "0.0.1",
+  "description": "Documentation of Chaldea - A cross platform material planning tools for Fate/GO.",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaldea-center/chaldea-doc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chaldea-center/chaldea-doc/issues"
+  },
+  "author": "narumi",
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/plugin-search": "^2.0.0-beta.26",
+    "vuepress": "^2.0.0-beta.26",
+    "vuepress-plugin-seo2": "^2.0.0-alpha.0"
+  }
+}
