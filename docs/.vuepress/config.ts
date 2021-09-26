@@ -15,7 +15,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     '/': {
       lang: 'en-US',
       title: 'Chaldea',
-      description: 'Chaldea - A cross-platform material planning tool for Fate/Grand Order',    
+      description: 'Chaldea - A cross-platform material planning tool for Fate/Grand Order',
     },
     '/zh/': {
       lang: 'zh-CN',
@@ -27,7 +27,9 @@ export default defineUserConfig<DefaultThemeOptions>({
     logo: '/logo.png',
     repo: 'chaldea-center/chaldea',
     docsRepo: 'chaldea-center/chaldea-doc',
+    docsDir: 'docs',
     editLink: true,
+    lastUpdated: false,
     locales: {
       '/': {
         sidebar: {

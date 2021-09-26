@@ -121,7 +121,7 @@ Click the right info button :information_source: to check the item cost details 
 
 
 ### Others
-- Display order of tabs can be costumed in [Display Settings-Tabs Sorting](./app_settin.md#display-settings)
+- Display order of tabs can be costumed in [Display Settings-Tabs Sorting](./app_setting.md#display-settings)
 - Click ATK/HP besides avatar to show the ATK/HP growth curve
 - Skill: list active/class passive/append skills effects
 - Noble Phantasm: list NP effects

@@ -2,9 +2,11 @@
 
 2021 April Fool's mini game.
 
+Thanks icyalala@NGA for providing the FFO resources and synthesis pattern.
+
 ## FFO Intro
 
-All servants from Mash to No.306-Galatea, Udon servants(by riyo) and Boss Elizabeth. Beasts not included.
+All servants from Mash to No.306-Galatea, Udon servants and Boss Elizabeth. Beasts not included.
 
 The illustration of all servants(except boss) are divided into 3 parts: Background, Head and Body.
 

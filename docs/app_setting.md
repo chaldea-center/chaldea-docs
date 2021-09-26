@@ -96,7 +96,7 @@ e.g. 20210922-1.6.0 means the 20210922 version dataset requires your app version
   * Priority Tagging: servant priority P1~P5, just label them with text to help you remember
 
 ## APP Auto Upgrade
-Inside `About Chaldea`, you can turn on app auto upgrade. The download source is the same as datset source.
+Inside `About Chaldea`, you can turn on app auto upgrade. The download source is the same as dataset source.
 - Auto upgrade is only for Android and Windows.
 - For windows, auto upgrade may failed if the path contains non English chars.
 - For Github downloaded macOS version, you need to extract zip manually.
