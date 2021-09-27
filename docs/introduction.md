@@ -2,7 +2,8 @@
 
 Chaldea is a cross-platform material planning tool for [Fate/Grand Order](https://www.fate-go.jp), supporting Android, iOS, Windows and macOS. Chaldea will help masters plan their servants, events and materials.
 
-<figcaption style=""></figcaption>
+![Chaldea Preview](/images/en/home_svt_preview.webp)
+<figcaption style="text-align:center">Chaldea Preview</figcaption>
 
 ## Features
 
@@ -12,9 +13,9 @@ Chaldea is a cross-platform material planning tool for [Fate/Grand Order](https:
 - **Material Planning**
   * Servant rank up: ascension, active skill, append skill, costume, palingenesis, fou-kun and servant coin
   * Event plan: limited event, main story and exchange ticket
-  * Material/Item management
+  * Material/Item management, find the quests with best drop rate
 - **Free Quest Solver**
-  * Get the best free quest solution for item demands
+  * Get the best quest farming solution on item demands
   * Compare the efficiency of each quest with custom item weight
   * **Support Master Mission/Weekly Mission**: custom mission target
 - **Summon details** and **Summon Simulator**

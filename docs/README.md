@@ -17,7 +17,7 @@ features:
   - title: Rich Planning
     details: Servant ascension, active/append skills and palingenesis. Limit events, main story, exchange tickets and more to explore.
   - title: Free Quest Planner
-    details: Give the best free quest farming plan and efficiency comparison according to your material demands and master mission targets.
+    details: Give the best free quest farming solution and efficiency comparison according to your material demands and master mission targets.
   - title: Multi-language Support
     details: English, Simplified Chinese and Japanese. Still W.I.P.
   - title: Quick Start

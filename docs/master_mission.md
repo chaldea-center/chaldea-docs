@@ -14,6 +14,8 @@ e.g.
 - 15 demon enemy(include servant): select **Servant Trait-Demon** and **Enemy Trait-Demon**
 - .....
 
+**For JP/CN weekly missions**: easily add this week's missions by selecting in the popup menu.
+
 ## About **AND** Mode
 It won't be used in most most most most situations.
 

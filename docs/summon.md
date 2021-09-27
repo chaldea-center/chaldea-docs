@@ -25,3 +25,11 @@ Simulate 10/11x roll or single roll. The statistic probability for current simul
 - app bar button - clear result and reset
 - click arrows of summon result to show history rolls
 - some early summons don't have summon prob data, so cannot simulate
+
+
+## GSSR Expectation
+
+For guarantee summons(GSSR), you can get each expectation by setting each servant's **score**.
+By default, owned servant has score 1, and not-owned servant has score 5. The larger score is more acceptable.
+
+You can sort each GSSR choice by expectation, best prob, worst prob or custom. Let it give you reference about how to choose.
