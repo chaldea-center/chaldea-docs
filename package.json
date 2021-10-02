@@ -1,5 +1,5 @@
 {
-  "name": "chaldea-doc",
+  "name": "chaldea-docs",
   "version": "0.0.1",
   "description": "Documentation of Chaldea - A cross platform material planning tools for Fate/GO.",
   "main": "index.js",
@@ -9,10 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chaldea-center/chaldea-doc.git"
+    "url": "git+https://github.com/chaldea-center/chaldea-docs.git"
   },
   "bugs": {
-    "url": "https://github.com/chaldea-center/chaldea-doc/issues"
+    "url": "https://github.com/chaldea-center/chaldea-docs/issues"
   },
   "author": "narumi",
   "license": "MIT",

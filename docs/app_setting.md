@@ -1,8 +1,14 @@
 # APP Settings
 
 ## Chaldea User
-A very simple user system, for user data backup and multi-device synchronization.
-> NO security guarantee! DON'T use frequently used passwords!!!
+A very simple user system, only for user data backup and multi-device synchronization.
+
+It's not a necessary step if you just use it on one device. Everything is available in app whenever registered or not.
+
+::: warning
+NO security guarantee! DON'T use frequently used passwords!!!
+:::
+
 
 ## Game Account
 * Switch among multiple game accounts

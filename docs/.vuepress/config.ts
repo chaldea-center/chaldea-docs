@@ -57,7 +57,7 @@ export default defineUserConfig<DefaultThemeOptions>({
   themeConfig: {
     logo: '/logo.png',
     repo: 'chaldea-center/chaldea',
-    docsRepo: 'chaldea-center/chaldea-doc',
+    docsRepo: 'chaldea-center/chaldea-docs',
     docsDir: 'docs',
     editLink: true,
     lastUpdated: false,
