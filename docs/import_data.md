@@ -22,8 +22,10 @@ Different app version may use the different user data structure, in another word
 
 
 ## HTTPS Sniffing
-CN server only, current banned.
-For JP/NA server, SSL pinning makes it impossible to sniff data.
+Capture the game data on login(not password or login credential). For NA/JP, you need the modified apk on Android, iOS not supported. For CN/TW, you can capture it on both iOS and Android. 
+
+See [Import HTTPS Response](./import_https.md) for details.
+
 
 ## Item Screenshots
 1. Goto **My Room-Item List** then take screenshots

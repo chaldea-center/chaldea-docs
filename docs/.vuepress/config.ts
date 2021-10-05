@@ -20,26 +20,30 @@ export default defineUserConfig<DefaultThemeOptions>({
     [
       'script',
       {},
-      `
-      window.dataLayer = window.dataLayer || [];
+      `window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
     
-      gtag('config', 'G-Z56XH1BDG8');
-      `
+      gtag('config', 'G-Z56XH1BDG8');`
     ],
     [
       'script',
       {},
-      `
-      var _hmt = _hmt || [];
+      `var _hmt = _hmt || [];
       (function() {
         var hm = document.createElement("script");
         hm.src = "https://hm.baidu.com/hm.js?c00bd5fdc5a0fe682a8680e6eb73f45c";
         var s = document.getElementsByTagName("script")[0]; 
         s.parentNode.insertBefore(hm, s);
-      })();
-    `
+
+        _hmt.push(['_requirePlugin', 'UrlChangeTracker', {
+          shouldTrackUrlChange: function (newPath, oldPath) {
+            newPath = newPath.split(/[?#]/i)[0];
+            oldPath = oldPath.split(/[?#]/i)[0];
+            return newPath != oldPath;
+          }}
+        ]);
+      })();`
     ]
   ],
   locales: {
@@ -63,6 +67,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     lastUpdated: false,
     locales: {
       '/': {
+        selectLanguageText: 'Language/语言',
         sidebar: {
           '/': [
             {
@@ -78,6 +83,7 @@ export default defineUserConfig<DefaultThemeOptions>({
                 '/sq_plan.md',
                 '/master_mission.md',
                 '/import_data.md',
+                '/import_https.md',
                 '/summon.md',
                 '/game_statistics.md',
                 '/buff_filter.md',
@@ -85,7 +91,7 @@ export default defineUserConfig<DefaultThemeOptions>({
                 '/app_setting.md',
                 '/freedom_order.md',
                 '/lostroom.md',
-                '/donate.md',
+                '/donation.md',
                 '/faq.md',
                 '/references.md',
                 '/privacy.md',
@@ -96,7 +102,7 @@ export default defineUserConfig<DefaultThemeOptions>({
       },
       '/zh/': {
         selectLanguageName: '简体中文',
-        selectLanguageText: '选择语言',
+        selectLanguageText: 'Language/语言',
         selectLanguageAriaLabel: '选择语言',
         // custom containers
         tip: '提示',
@@ -112,7 +118,7 @@ export default defineUserConfig<DefaultThemeOptions>({
 
         // a11y
         openInNewWindow: '在新窗口打开',
-        toggleDarkMode: '切换夜间模式',
+        toggleDarkMode: '切换深色模式',
         toggleSidebar: '切换侧边栏',
 
         sidebar: {
@@ -130,6 +136,7 @@ export default defineUserConfig<DefaultThemeOptions>({
                 '/zh/sq_plan.md',
                 '/zh/master_mission.md',
                 '/zh/import_data.md',
+                '/zh/import_https.md',
                 '/zh/summon.md',
                 '/zh/game_statistics.md',
                 '/zh/buff_filter.md',
@@ -137,7 +144,7 @@ export default defineUserConfig<DefaultThemeOptions>({
                 '/zh/app_setting.md',
                 '/zh/freedom_order.md',
                 '/zh/lostroom.md',
-                '/zh/donate.md',
+                '/zh/donation.md',
                 '/zh/faq.md',
                 '/zh/references.md',
                 '/zh/privacy.md',
