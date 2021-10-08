@@ -1,6 +1,6 @@
 ---
 home: true
-title: Home
+title: Chaldea - Material Planning for Fate/GO
 heroImage: /images/chaldea.png
 heroText: Chaldea
 tagline: Cross-platform Material Planning Tool for Fate/GO
@@ -13,7 +13,7 @@ actions:
     type: secondary
 features:
   - title: Cross Platform
-    details: Flutter driven, support iOS, Android, Windows and macOS, with multi-device synchronization. Plan your chaldea everywhere.
+    details: Support iOS, Android, Windows, macOS and Linux, with multi-device synchronization. Plan your chaldea everywhere.
   - title: Rich Planning
     details: Servant ascension, active/append skills and palingenesis. Limit events, main story, exchange tickets and more to explore.
   - title: Free Quest Planner
@@ -21,7 +21,7 @@ features:
   - title: Multi-language Support
     details: English, Simplified Chinese and Japanese. Still W.I.P.
   - title: Quick Start
-    details: Easily import your data from other platforms or skill/item screenshots.
+    details: No need of manual data input, easily import from other platforms, screenshots and game directly.
   - title: SQ Planner
     details: Check you SQ amount on every day in future. Save SQs for your love.
   - title: Buff Filter

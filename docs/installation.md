@@ -2,12 +2,13 @@
 
 ### System Requirement
 
-| Platform | Minimum Version              |
+| Platform | Minimum Version               |
 | :------- | :---------------------------- |
-| Android  | Android 6.0 \(API level 23\)  |
+| Android  | Android 6.0 (API level 23)    |
 | iOS      | iOS 10.0                      |
-| Windows  | Windows 7 SP1 \(64-bit\), x86-64 based |
-| macOS    | macOS 10.11 (macOS 10.14 in future)    |
+| Windows  | Windows 7 SP1 (64-bit), x86-64 based |
+| macOS    | macOS 10.12.2 (macOS 10.14 in future)  |
+| Linux    | Debian 10 & above             |
 
 ## Download
 
@@ -26,7 +27,7 @@ Including iOS App Store and Mac App Store
 
 ### GitHub Release
 
-Contains Android, Windows and macOS installer.
+Contains Android, Windows, macOS and Linux installer.
 
 [Releases](https://github.com/chaldea-center/chaldea/releases)
 

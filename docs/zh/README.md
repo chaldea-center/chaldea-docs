@@ -1,6 +1,6 @@
 ---
 home: true
-title: Home
+title: Chaldea - FGO跨平台素材规划软件
 heroImage: /images/chaldea.png
 heroText: Chaldea
 tagline: 用于FGO的跨平台素材规划软件
@@ -13,7 +13,7 @@ actions:
     type: secondary
 features:
   - title: 多平台支持
-    details: 基于Flutter，支持iOS、Android、Windows、macOS主流操作系统。多设备同步，手机电脑两不误。
+    details: 支持iOS、Android、Windows、macOS和Linux主流操作系统。多设备同步，手机电脑两不误。
   - title: 丰富的素材规划
     details: 从者再临、主动/附加技能、灵衣、圣杯转临，限时活动、主线剧情、交换券应有尽有。
   - title: Free本规划
@@ -21,7 +21,7 @@ features:
   - title: 多语言支持
     details: 简体中文、English、日本語，还在不断完善ing
   - title: 快速导入
-    details: 支持多个平台数据快速导入、技能与素材截图的识别导入
+    details: 告别繁琐录入，支持多个平台数据快速导入、截图的识别导入，抓包一键导入！
   - title: 攒石规划
     details: 攒石党的小助手，固定登陆奖励、活动报酬与特殊御主任务报酬。
   - title: Buff检索
