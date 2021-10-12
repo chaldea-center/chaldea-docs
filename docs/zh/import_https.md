@@ -2,6 +2,8 @@
 
 通过抓包的方法可以将用户所有的数据导入到Chaldea应用中，包括从者信息(灵基再临、圣杯、羁绊、主动技能、附加技能、灵衣、从者硬币)、素材数量以及概念礼装图鉴的情况。第一次使用需要配置抓包软件、代理软件等步骤多一些，成功后第二次就比较简洁。
 
+本文的教程只是一个示例，该方法核心即为HTTPS抓包，因此任何能够获取https的响应体(Response body)的方法或软件均可，如**Surge**或**抓包精灵**等。注意最终导出的数据务必仅包括响应体(body)，不包括响应头(headers)等信息，且与文末的格式相同，即ey开头的base64编码或json格式。
+
 视频教程：>_<
 
 ::: danger 免责声明
@@ -28,12 +30,12 @@ Fiddler/Charles~~以及更底层的wireshark等~~为目前主流的网络调试/
 ## 所需软件或工具
 - Charles: 提供Windows、macOS以及Linux版，官方正版试用版存在单次使用30分钟的限制且时不时跳出来一个提示，与本例中足矣
    - 下载地址: [https://www.charlesproxy.com/download/](https://www.charlesproxy.com/download/)
-- BetterFGO客户端: 获取方式见下方，仅用于日服和美服
 - 全局http代理软件:
   - iOS: `Potatso Lite`, 免费应用; `shadowrocket`付费应用。需非国区账号下载，其他可用软件欢迎补充。
-  - Android: `Drony v1.3.136`, 免费应用, [下载地址](https://download.apkshub.com/down.do/org.sandroproxy.drony-1.3.123-free?dv=982361af2b09a110692090171daa0e60&st=1633253694)
-- Android版本需小于7(不包括7)，手机基本见不到7以下的，模拟器使用Android 6较多，可在`设置-关于`中查看Android版本
-
+  - Android: `Drony v1.3.136`, 免费应用, [下载地址](https://download.apkshub.com/down.do/org.sandroproxy.drony-1.3.123-free?dv=982361af2b09a110692090171daa0e60&st=1633253694), 其他
+- Android only:
+  - Android版本需小于等于6，现在手机基本见不到旧版本的安卓了，模拟器使用Android 6较多，可在`设置-关于`中查看Android版本
+  - BetterFGO客户端: 获取方式见下方，仅用于日服和美服
 
 ## 获取日服美服安装包
 对于日服和美服，需要使用修改过的apk安装包，仅适用于Android。对于rayshift的BetterFGO，尽管我们认为不会被封，但总归是修改客户端的行为，我们无法提供任何保证也无法承担任何责任。如果不信任，请勿使用，如需使用，请合理使用，不要传播、不要官方跳脸、不要恶意搞人。
@@ -95,8 +97,8 @@ bfgo客户端(包名`io.rayshift.betterfgo(.en)`)和原客户端(包名`com.anip
 
 ### iOS设置全局http代理
 1. 外区账号下载安装`Potatso Lite`
-2. 点击右上角新建-手动输入: 类型-HTTP, 服务器和端口填写同上一步
-3. 选中刚新建的代理，点击按钮连接，，第一次使用会申请创建VPN的权限
+2. 点击右上角新建-手动输入: 类型-`HTTP`(注意不是https), 服务器和端口填写同上一步。
+3. 选中刚新建的代理，点击按钮连接，第一次使用会申请创建VPN的权限。在Charles中会弹出提示，并允许接收来自此设备的请求。
 
 
 ## 配置Android
@@ -111,7 +113,7 @@ bfgo客户端(包名`io.rayshift.betterfgo(.en)`)和原客户端(包名`com.anip
 
 0. 使用Android 6及以下的手机或模拟器
 1. 如使用手机则确保和电脑处于同一局域网(如同一路由器或连接电脑的热点等)
-2. 打开`设置-WiFi-长按或其他方式查看已连接WiFi详情-修改网络`，代理选择手动，填入配置Charles中第3步显示的代理主机host`192.168.0.5`和端口port`8888`(举例)，储存
+2. 打开`设置-WiFi-长按或其他方式查看已连接WiFi详情-修改网络`，代理选择`手动`，填入配置Charles中第3步显示的代理主机host`192.168.0.5`和端口port`8888`(举例)，储存
 3. 浏览器打开`chls.pro/ssl`,下载pem/crt证书文件，安装证书有两种方法
     - 直接打开文件安装，有时可能会失败
     - 在`设置-安全-从SD卡安装证书`，选择刚下载的证书文件，取个名，默认凭据用途为VPN和应用
@@ -130,7 +132,7 @@ bfgo客户端(包名`io.rayshift.betterfgo(.en)`)和原客户端(包名`com.anip
     - WiFi名-过滤器/Filter: 过滤默认值选择`本地代理链全部/Local Proxy Chain All`
     - 返回
 4. 过滤器-默认值: 选择`引导全部/Direct All`
-5. 左滑回到日志页，点击底部开关，开启后在通知栏可以看到VPN连接提示，第一次使用会申请创建VPN的权限
+5. 左滑回到日志页，点击底部开关，开启后在通知栏可以看到VPN连接提示，第一次使用会申请创建VPN的权限。在Charles中会弹出提示，并允许接收来自此设备的请求。
 
 
 ## 抓包与导入
@@ -141,9 +143,15 @@ bfgo客户端(包名`io.rayshift.betterfgo(.en)`)和原客户端(包名`com.anip
 ### FGO抓包
 1. 重新启动并登陆FGO国服、台服、BetterFGO日服/美服，直到看到地球仪或公告栏为止
 2. 找到Charles的列表中以下url，**如果找不到就关闭FGO重新打开多试几次**
-    - 国服: `https://line1-s2-ios-fate.bilibiligame.net/rongame_beta//rgfate/60_1001/ac.php?_userId=xxxx&_key=toplogin`, 其中`line1-s2-ios-fate`随账号所在服务器(iOS/b服/渠道服)以及所在地理位置等有所不同，最重要的是`_key=toplogin`
+    - 国服: 其中`line1-s2-ios-fate`随账号所在服务器(iOS/b服/渠道服)以及所在地理位置等有所不同，最重要的是`_key=toplogin`
+    ```:no-line-numbers
+    https://line1-s2-ios-fate.bilibiligame.net/rongame_beta//rgfate/60_1001/ac.php?_userId=xxxx&_key=toplogin
+    ``` 
     - 台服: 与国服类似，域名格式`https://line3-s1-all.fate-go.com.tw`，由于无台服账号，待确认
-    - 日服: `https://game.fate-go.jp/login/top?_userId=xxxx`
+    - 日服:
+    ```:no-line-numbers
+    https://game.fate-go.jp/login/top?_userId=xxxx
+    ``` 
     - 美服: 与日服类似，域名为`https://game.fate-go.us`，由于无美服账号，待确认
 3. 选中上述url右键`Save Response`，(注意是`Response`，不要和Request搞混了)，另存为fgo.txt(名字随意)
 4. 检查: 任意文本编辑器打开保存的txt文件，对于国服和台服，内容为`ey`开头的一大串字母数字符号组成的base64编码；对于日服和美服，为`{`开头的可读性极高的json格式。默认应为utf8编码，打开后仅查看，请勿编辑保存导致编码格式改变。
@@ -158,9 +166,7 @@ bfgo客户端(包名`io.rayshift.betterfgo(.en)`)和原客户端(包名`com.anip
 4. 点击导入可更新当前账号信息
 5. 点击**羁绊详情**可查看并排序每个从者的羁绊等级、羁绊累计值、下一级所需羁绊值，方便挖矿
 
-几点说明:
-- 对于从者硬币, 将设置默认为0
-- 导入的信息属于抓包那一时刻的数据，并非登陆凭据自动更新，因此下次需要更新数据需要重新抓包
+注意: 导入的信息属于抓包那一时刻的数据，并非登陆凭据自动更新，因此下次需要更新数据需要重新抓包
 
 ## 结束及下一次抓包
 清理工作:
@@ -178,8 +184,6 @@ bfgo客户端(包名`io.rayshift.betterfgo(.en)`)和原客户端(包名`com.anip
 - VitualXposed框架+JustTrustMe 绕过证书验证: (第一次接触xposed)个人测试失败了，有经验的欢迎尝试讨论。如果可行的话无需使用修改版客户端。
 
 ## FAQ
-- Charles端口实则不建议默认的8888端口，建议改成其他8123等不常用的端口，~~否则你可能挂一天会收到n多来自远程的连接请求~~
-- 其实没几步，但为什么感觉我说的那么啰嗦呢
 - 在抓包时FGO可能经常提示连接失败之类的提示，多点几次重试，仍然不行请确保运行WiFi代理与全局代理软件均打开
 - 韩服目前没法子
 - 测试ing,有任何问题(包括文档)及时反馈
