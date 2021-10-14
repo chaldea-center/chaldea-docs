@@ -5,6 +5,10 @@ The **Servant** and **Plan** page are all for servants. **Plan** page is designe
 :::
 
 
+![Servant List Page](/images/en/servant-list.webp)
+<figcaption style="text-align:center">Servant List Page<br><small>1-Favorite/Other/All, 2-Filter, 3-Search, 4-Popup Menu, 5-Class Filter, 6-Hide One, 7-Batch Setting</small></figcaption>
+
+
 ## Servant List Page
 Similar to CE and Command Code list, it shows servants' name, number, class and current skill levels if favorite. 
 
@@ -13,17 +17,22 @@ Switch list among **SHOW ALL**, **FAVORITE** and **NOT FAVORITE**.
 
 The default behavior can be set in [Display Settings](./app_setting.md#display_settings)
 
-### Top Class Filter Style
-Go to [Display Settings](./app_setting.md#display-settings) to choose the class filter style
+### Filter
+Provide the detailed servant basic info, traits, plan status and skill/NP effect filter. Effect filter doesn't include append skill since all append skills are almost the same.
+See [Buff Filter](./buff_filter.md) for details.
 
 ### Search
 - custom search scope: basic, skill, NP...
 - some key fields support Chinese Pinyin and Japanese Romaji search
 - multiple keyword support, see [Search](./search_filter.md) for details.
 
-### Filter
-Provide the detailed servant basic info, traits, plan status, and skill/NP effect filter. 
-See [Buff Filter](./buff_filter.md) for details.
+### Popup Menu
+Not all options are shown in different pages.
+- **Select Plan**: support at most 5 plans
+- **Copy Plan from...**: Copy another plan to current plan
+
+### Top Class Filter Style
+Go to [Display Settings](./app_setting.md#display-settings) to choose the class filter style
 
 ## Plan List Page
 Different from **Servant List Page**, it shows the servant detail level info for ascension, palingenesis, skills and costume,
@@ -37,20 +46,25 @@ You can custom shown servants by filter dialog. What's more, click the trailing 
 
 Make sure the correct plan is selected. Every account supports multiple plans, you can switch or copy plan in the popup menu.
 
-There are the functions for every bottom button:
+### Batch Settings
+There are the functions for every button:
 - Set all for `Current` status or `Target` plan
 - Jump to Item List Page
 - Dropdown button to batch change value
   - ascension
   - all 3 active skills
-  - append skills: you can set **only 2nd** or **all 3** in [Display Settings](./app_setting.md#display-settings)
+  - append skill(s): you can set changing **only 2nd** or **all 3** append skill(s) in [Display Settings](./app_setting.md#display-settings)
   - all costumes
 
 When you click `Lv.x`, all shown servants' current/target level will change to `Lv.x`.
 
 If you select `x+1` for skills, it means change from `Lv.x` to `Lv.x+1`. For me, mostly used for check which item is lacking at the moment.
 
+
 ## Detail Page - Plan Tab
+
+![Servant Detail Page](/images/en/servant-detail.webp)
+<figcaption style="text-align:center">Servant Detail Page<br><small>1-Favorite, 2-Popup Menu, 3-Growth Curve, 4-Priority, 5-Custom Tab Sorting, 6-Plan Settings, 7-Toolbar(Enhancement and Shortcuts)</small></figcaption>
 
 ::: tip
 Switch **Slider Mode** and **Dropdown Mode** in the popup menu.
@@ -62,6 +76,25 @@ Switch **Slider Mode** and **Dropdown Mode** in the popup menu.
 Add servant into plan or remove from plan. Changing current or plan value will automatically set favorite:heart:.
 
 The item detail page only shows favorite servants' demands by default.
+
+### Popup Menu
+- **Select Plan**: same as above
+- **Reset**: Reset this servant's all status and plan
+- **Reset Plan**: Only reset plan to current status
+- **Jump to**: Jump to wiki pages
+- **Switch Slider/Dropdown**: switch display mode as you like
+- **Create Duplicated Servant**: see following section
+
+### Duplicated Servant
+By default, we use servant collection number as key. So every servant can have only one instance. Here we call it **Primary** one.
+
+If your true love is Ishtar, and want to plan 2 Ishtar for same servant collection number. You can create **duplicated** servant. in popup menu.
+
+e.g. the number of primary Ishtar is No.142, the duplicated Ishtar has a new number of No.142001. ~~which means you can create at most 999 duplicated servants.~~
+
+::: warning
+Duplicated servants may cause some potential bugs, if encountered, please tell me.
+:::
 
 ### Priority :one:~:five:
 Apply different priority for servants, as an extra filter property. Default to P1, ranges from P1 to P5.
@@ -75,38 +108,29 @@ The priority filter in servant list page, item list page and statistic page, sha
 Unchecked priority won't be added into plan. What's more, all unselected=all selected.
 :::
 
-### Duplicated Servant
-By default, we use servant collection number as key. So every servant can have only one instance. Here we call it **Primary** one.
-
-If your true love is Ishtar, and want to plan 2 Ishtar for same servant collection number. You can create **duplicated** servant. in popup menu.
-
-e.g. the number of primary Ishtar is No.142, the duplicated Ishtar has a new number of No.142001. ~~which means you can create at most 999 duplicated servants.~~
-
-::: warning
-Duplicated servants may cause some potential bugs, if encountered, please tell me.
-:::
-
 ### Leveling Plan
 
-For every attribute with range values, the left value is **current level**, and the right value is **target/plan value**.
+In **Plan** tab, For every attribute with range values, the left value is **current level**, and the right value is **target/plan value**.
 If it's not a range, just a single value, it won't be included in plan, just recording such a info, like NP level.
 
 Click the right info button :information_source: to check the item cost details or tips.
 
 1. Ascension - 0~4
 2. Active Skill - 1~10
-3. Append Skill - 0~10, `0/-` means unlocked, 0-1 will cost 120 coins
-4. Servant coin - coin amount of servant specific coin
-5. Palingenesis - max level(0 grail)~Lv.120(n grails), differ from servant rarity
-6. NP level - just recording, not used
-7. HP/ATK Fou-kun - 0~2000, 1000 by default. The internal value and shown value has such relations:
-  - `0` Fou-kun = `-20`(calculated by silver(3) Fou-kun)
-  - `1000` Fou-kun = `0`
-  - `2000` Fou-kun = `50`(calculated by gold(4) Fou-kun)
-8. Bond Limit - mainly designed for Chaldea Lantern cost
-9. Command Codes - it's easy to find out code pinned on which servants in code detail page
+3. Costume Unlock - 0 means locked, 1 means unlocked
+4. Append Skill - 0~10, `0/-` means unlocked, 0-1 will cost 120 coins
+5. Servant coin - coin amount of servant specific coin
+6. Palingenesis - max level(0 grail)~Lv.120(n grails), differ from servant rarity
+7. NP level - just recording, not used
+8. HP/ATK Fou-kun - 0~2000, 1000 by default. The internal value and shown value has such relations:
+    - `0` Fou-kun = `-20`(calculated by silver(3) Fou-kun)
+    - `1000` Fou-kun = `0`
+    - `2000` Fou-kun = `50`(calculated by gold(4) Fou-kun)
+9. Bond Limit - mainly designed for Chaldea Lantern cost
+10. Command Codes - it's easy to find out code pinned on which servants in code detail page
 
 ### Toolbar
+From left to right.
 - :information_source:: show item cost for current plan
 - `Enhance` button: enter **Enhance Mode**, and now:
   - current value cannot be changed
@@ -115,13 +139,13 @@ Click the right info button :information_source: to check the item cost details 
 - `Lv.x` dropdown
   - quickly setting all 3 **active skills** to the same value. Meanwhile, ascension will be set to 4. Append skills are not changed.
   - in **normal mode**, it changes current value. In **Enhance Mode**, it changes target value.
-- :arrow_up: Change all current value to 4-10/10/10 (ascension 4+active skill 10/10/10)
-- :arrow_upper_right: Change target value to 4-9/9/9
-- :arrow_upper_right: Change target value to 4-10/10/10
+- **CURRENT 310:arrow_up:**: Change all current value to 4-10/10/10 (ascension 4+active skill 10/10/10)
+- **TARGET 999:arrow_upper_right:**: Change target value to 4-9/9/9
+- **TARGET 310:arrow_upper_right:**: Change target value to 4-10/10/10
 
 
 ### Others
-- Display order of tabs can be costumed in [Display Settings-Tabs Sorting](./app_setting.md#display-settings)
+- Display order of tabs can be customized in [Display Settings-Tabs Sorting](./app_setting.md#display-settings)
 - Click ATK/HP besides avatar to show the ATK/HP growth curve
 - Skill: list active/class passive/append skills effects
 - Noble Phantasm: list NP effects
@@ -131,7 +155,7 @@ Click the right info button :information_source: to check the item cost details 
   - bond CE
   - valentine CE
   - related cards: shown in CE/Command code
-    > click `中|日|EN` to switch the display language for card profile text
+  > click `中|日|EN` to switch the display language for card profile text
 - Illustrations
 - Sprites: ascension icons and battle models
 - Summons: those with current servant picked up, class pickup or guarantee summon

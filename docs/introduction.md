@@ -7,8 +7,8 @@ Chaldea is a cross-platform material planning tool for [Fate/Grand Order](https:
 
 ## Features
 
-- **Cross platform:** Android, iOS, Windows and macOS
-- **Multi-language:** Chinese, English and Japanese
+- **Cross platform:** Android, iOS, Windows, macOS and Linux
+- **Multi-language:** Chinese, English and Japanese, W.I.P
 - **Detailed Game Data:** Servant, CE, Command Code, Mystic Code and so on
 - **Material Planning**
   * Servant rank up: ascension, active skill, append skill, costume, palingenesis, fou-kun and servant coin
@@ -22,9 +22,9 @@ Chaldea is a cross-platform material planning tool for [Fate/Grand Order](https:
 - **SQ Planning**: Currently support predictable parts of SQs/tickets/fruits
 - **Import Data**
   * Recognition for item/active skill/append skill screenshots
-  * ~~Parsing all user data by sniffing the client's login data (invalid currently)~~
+  * Parsing all game data by sniffing the client's login https traffic, don't need manual input. Support **NA/JP/CN/TW**.
   * From Guda app exported data
-  * From FGO Simulator-Material: http://fgosimulator.webcrow.jp/Material
+  * From [FGO Simulator-Material](http://fgosimulator.webcrow.jp/Material)
 - **Others**
   * **EXP card cost calculator**
   * **Statistics on item demands, consumed items and servant collection**
@@ -37,6 +37,7 @@ Chaldea is a cross-platform material planning tool for [Fate/Grand Order](https:
 - [Fate/Grand Order Wiki | Fandom](https://fategrandorder.fandom.com/wiki/Fate/Grand_Order_Wikia)
 - [Atlas Academy](https://atlasacademy.io/)
 - [FGOアイテム効率劇場](https://sites.google.com/view/fgo-domus-aurea)
+- icyalala@NGA - FFO data
 
 The UI and functions of the app is inspired from
 - WeChat mini Program - [Material Programe](https://github.com/lacus87/fgo)

@@ -14,9 +14,13 @@
 
 ### Google Play
 
+[<img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' width="137.5"/>](https://play.google.com/store/apps/details?id=cc.narumi.chaldea)
+
 [Get it on Google Play](https://play.google.com/store/apps/details?id=cc.narumi.chaldea)
 
 ### App Store
+
+[<img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&amp;releaseDate=1610841600&h=cb0adac232fdd6b88894f78b2f349b6e" alt="Download on the App Store" width="120">](https://apps.apple.com/us/app/chaldea/id1548713491?itsct=apps_box&itscg=30200)
 
 [Download on the App Store](https://apps.apple.com/us/app/chaldea/id1548713491?itsct=apps_box&itscg=30200)
 
@@ -54,7 +58,7 @@ Make sure you are installing the bigger build number than the installed one. Oth
 ### Windows
 
 ::: tip
-Please run the app after decompression. Save to non-system folder, e.g. inside `Program File`, you may need admin permission, and some functions may not work properly.
+Please run the app after decompression. And save to non-system folder, e.g. `Program File` is not recommended, you may need admin permission, and some functions may not work properly.
 :::
 
 #### Error: `VCRUNTIME140_1.dll was not found`

@@ -1,4 +1,4 @@
-import { defineUserConfig, WebpackChainConfig } from 'vuepress'
+import { defineUserConfig } from 'vuepress'
 import type { DefaultThemeOptions } from 'vuepress'
 // import type { SeoOptions } from 'vuepress-plugin-seo2'
 

@@ -7,8 +7,8 @@ Chaldea是一款用于[Fate/Grand Order](https://www.fate-go.jp)的规划软件�
 
 ## 主要功能/特性
 
-- **多平台支持：** Android、iOS、Windows、macOS
-- **多语种支持：** 中文、英文、日文
+- **多平台支持：** Android、iOS、Windows、macOS、Linux
+- **多语种支持：** 中文、英文、日文，完善中
 - **资料查询：** 从者、概念礼装、指令纹章、魔术礼装等。
 - **素材规划**
   * 从者练度规划：灵基再临、主动技能、附加技能、灵衣、圣杯、芙芙、从者硬币等
@@ -21,14 +21,14 @@ Chaldea是一款用于[Fate/Grand Order](https://www.fate-go.jp)的规划软件�
 - **卡池详情**与**抽卡模拟器**
 - **攒石规划：** 初版仅支持登陆奖励等可预测部分
 - **数据导入**
+  * 借助抓包工具一键导入素材从者所有数据，无需手动输入，支持**国服、台服、日服和美服**
   * 素材数量、主动/附加技能等级的截图识别
-  * 借助抓包工具一键导入素材从者所有数据（仅限国服，目前失效）
   * 导入Guda APP导出的数据
-  * FGO Simulator-Material数据（http://fgosimulator.webcrow.jp/Material）
-- **杂七杂八：**
+  * [FGO Simulator-Material](http://fgosimulator.webcrow.jp/Material)数据
+- **杂七杂八**
   * **狗粮需求计算**
   * **从者统计、已消耗素材统计**
-  * **Fate/Freedom Order：**2021愚人节小游戏，接头霸王
+  * **Fate/Freedom Order**: 2021愚人节小游戏，接头霸王
   * 画师、声优一览
 
 ## 数据源
@@ -37,6 +37,7 @@ Chaldea是一款用于[Fate/Grand Order](https://www.fate-go.jp)的规划软件�
 - [Fate/Grand Order Wiki | Fandom](https://fategrandorder.fandom.com/wiki/Fate/Grand_Order_Wikia)
 - [Atlas Academy](https://atlasacademy.io/)
 - [FGOアイテム効率劇場](https://sites.google.com/view/fgo-domus-aurea)
+- icyalala@NGA - FFO data
 
 程序界面与功能设计参考：
 - 微信小程序[素材规划](https://github.com/lacus87/fgo)

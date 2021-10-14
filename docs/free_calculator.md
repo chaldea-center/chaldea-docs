@@ -2,6 +2,7 @@
 
 Feature: get the best free quest farming solution and compare their efficiencies.
 
+You can directly set item demands here. Also, you can click **Planning Quests** button in [Item List Page](./items.md) to calculate the lacked items.
 
 ## Item Demands
 

@@ -74,7 +74,8 @@ Take iOS14 as an example. The settings on different iOS version may be displayed
 ### iOS Global HTTP Proxy
 1. Download and install `Potatso Lite`
 2. Create a new proxy and select `manual input` mode: Type-`HTTP`(not https), fill in the host and port as in the previous step
-3. Select and connect the newly created proxy. The first time you use it, it will apply for the permission to create VPN. Then in Charles you need to `Allow` the connection from this device.
+3. Make sure `Smart Routing` is disabled in Potatso settings. In other apps, you may need choose Proxy(for shadowrocket) or Global mode, PAC mode will take no effect.
+4. Select and connect the newly created proxy. The first time you use it, it will apply for the permission to create VPN. Then in Charles you need to `Allow` the connection from this device.
 
 
 ## Configure Android
