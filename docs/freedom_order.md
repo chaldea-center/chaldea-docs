@@ -1,5 +1,7 @@
 # Fate/Freedom Order
 
+![Fate/Freedom Order](https://news.fate-go.jp/wp-content/uploads/2021/ffo_cp_xikad/top_banner.png)
+
 2021 April Fool's mini game.
 
 Thanks icyalala@NGA for providing the FFO resources and synthesis pattern.

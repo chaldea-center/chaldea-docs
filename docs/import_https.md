@@ -2,7 +2,9 @@
 
 Capture the network traffic when FGO client login to terminal which contains the data of all servants(ascension/palingenesis/bond/active skill/append skill/costume/coins), materials and CEs. Then easily import it to Chaldea app, no need to manually input servant data anymore.
 
-The tutorial is just an example. The core of the method is HTTPS traffic capture, so any method or software that can obtain the https response body can be used, such as **Surge** or **NetCapture**. Note that the final exported data must only include the response body, excluding response headers and other information, and the format is the same as described at the end of this tutorial, which is base64 encoded or json format. 
+The tutorial is just an example. The core of the method is HTTPS traffic capture, so any method or software that can obtain the https response body can be used, such as **Surge** or **NetCapture**. You can search the following keywords `Charles/https sniffing/mobile/emulator/global proxy` to find more online tutorials.
+
+Note that the final exported data must only include the response body, excluding response headers and other information, and the format is the same as described at the end of this tutorial, which is base64 encoded or json format. 
 
 ::: danger Disclaimer
 Make sure you are aware of the risk of capturing HTTPS traffic. Chaldea app doesn't handle any sensitive data like password and https decryption is done by third-party software or client.
@@ -26,7 +28,7 @@ For CN/TW version, you don't this step, and both Android and iOS version of orig
 - Charles: support Windows, macOS and Linux, you can download from official website: [https://www.charlesproxy.com/download/](https://www.charlesproxy.com/download/)
 - Global http proxy app
   - iOS: `Potatso Lite`(free), `shadowrocket`(paid) or others you know
-  - Android: `Drony v1.3.136`(free) or other you know
+  - Android: `Drony v1.3.x`(free) or other you know
 - Android only:
   - Android device: android version <=6. For most Android emulators, system version may be Android 6, you can check it in Setting-About
   - BetterFGO apk, for JP and NA: please join the rayshift's discord channel([https://discord.gg/8JeHHvh](https://discord.gg/8JeHHvh)) and apply the `BetterFGO` role to get the download link. Tips: BetterFGO can be installed together with official FGO client. And you can copy data without transfer code, goto rayshift for more details.
@@ -41,7 +43,7 @@ For CN/TW version, you don't this step, and both Android and iOS version of orig
 ![Charles Configuration](/images/import_https/charles-2.webp)
 <figcaption style="text-align:center">Charles Configurations</figcaption>
 
-:::details
+::: details
 [https://zhile.io/2017/07/07/charles-proxy-usage-and-license.html](https://zhile.io/2017/07/07/charles-proxy-usage-and-license.html)
 :::
 

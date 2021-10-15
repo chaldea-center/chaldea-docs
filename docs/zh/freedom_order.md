@@ -1,5 +1,7 @@
 # Fate/Freedom Order
 
+![Fate/Freedom Order](https://news.fate-go.jp/wp-content/uploads/2021/ffo_cp_xikad/top_banner.png)
+
 2021年FGO官方愚人节小游戏Fate/Freedom Order, 俗称接头霸王。
 
 感谢icyalala@NGA提供FFO资源并提供合成方案。

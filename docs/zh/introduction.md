@@ -31,6 +31,9 @@ Chaldea是一款用于[Fate/Grand Order](https://www.fate-go.jp)的规划软件�
   * **Fate/Freedom Order**: 2021愚人节小游戏，接头霸王
   * 画师、声优一览
 
+> 需要的注意的是，本应用是个规划软件，而非wiki客户端或攻略站。除规划功能以外，虽然会尽可能提供一些便利的资料查询，但不会提供(也做不到)wiki/攻略站等如此完备的资料。
+
+
 ## 数据源
 
 - [Mooncell - 玩家自由构筑的FGO中文wiki](https://fgo.wiki)

@@ -12,7 +12,7 @@ The **Servant** and **Plan** page are all for servants. **Plan** page is designe
 ## Servant List Page
 Similar to CE and Command Code list, it shows servants' name, number, class and current skill levels if favorite. 
 
-### Favorite :heart:
+### Favorite
 Switch list among **SHOW ALL**, **FAVORITE** and **NOT FAVORITE**.
 
 The default behavior can be set in [Display Settings](./app_setting.md#display_settings)
@@ -70,7 +70,7 @@ If you select `x+1` for skills, it means change from `Lv.x` to `Lv.x+1`. For me,
 Switch **Slider Mode** and **Dropdown Mode** in the popup menu.
 :::
 
-### Favorite :heart:
+### Favorite
 :heart: :white_heart:
 
 Add servant into plan or remove from plan. Changing current or plan value will automatically set favorite:heart:.

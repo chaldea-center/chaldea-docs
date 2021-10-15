@@ -2,7 +2,10 @@
 
 通过抓包的方法可以将用户所有的数据导入到Chaldea应用中，包括从者信息(灵基再临、圣杯、羁绊、主动技能、附加技能、灵衣、从者硬币)、素材数量以及概念礼装图鉴的情况。第一次使用需要配置抓包软件、代理软件等步骤多一些，成功后第二次就比较简洁。
 
-本文的教程只是一个示例，该方法核心即为HTTPS抓包，因此任何能够获取https的响应体(Response body)的方法或软件均可，如**Surge**或**抓包精灵**等。注意最终导出的数据务必仅包括响应体(body)，不包括响应头(headers)等信息，且与文末的格式相同，即ey开头的base64编码或json格式。
+本文的教程只是一个示例，该方法核心即为HTTPS抓包，因此任何能够获取https的响应体(Response body)的方法或软件均可，如**Surge**或**抓包精灵**等。你可以打开搜索引擎搜索以下几个关键词以获取其他相关教程: `Charles https 抓包 手机/模拟器 全局代理`。
+
+注意最终导出的数据务必仅包括响应体(body)，不包括响应头(headers)等信息，且与文末的格式相同，即ey开头的base64编码或json格式。
+
 
 视频教程：>_<
 
@@ -32,7 +35,7 @@ Fiddler/Charles~~以及更底层的wireshark等~~为目前主流的网络调试/
    - 下载地址: [https://www.charlesproxy.com/download/](https://www.charlesproxy.com/download/)
 - 全局http代理软件:
   - iOS: `Potatso Lite`, 免费应用; `shadowrocket`付费应用。需非国区账号下载，其他可用软件欢迎补充。
-  - Android: `Drony v1.3.136`, 免费应用, [下载地址](https://download.apkshub.com/down.do/org.sandroproxy.drony-1.3.123-free?dv=982361af2b09a110692090171daa0e60&st=1633253694), 其他
+  - Android: `Drony v1.3.x`, 免费应用, [下载地址(密码:chaldea)](https://wws.lanzoui.com/b01uoc3qh)
 - Android only:
   - Android版本需小于等于6，现在手机基本见不到旧版本的安卓了，模拟器使用Android 6较多，可在`设置-关于`中查看Android版本
   - BetterFGO客户端: 获取方式见下方，仅用于日服和美服
@@ -188,3 +191,18 @@ bfgo客户端(包名`io.rayshift.betterfgo(.en)`)和原客户端(包名`com.anip
 - 在抓包时FGO可能经常提示连接失败之类的提示，多点几次重试，仍然不行请确保运行WiFi代理与全局代理软件均打开
 - 韩服目前没法子
 - 测试ing,有任何问题(包括文档)及时反馈
+
+
+## 解码小工具
+对于国服与台服，原始数据经Base64编码+url编码，不可读，若希望查看原始数据，可自行解码或使用本工具解码得到可读性较高的json格式。
+
+操作流程：点击`Load File`选择上述保存的fgo.txt，此时`input`里为原文本，`output`里为解码后json文本，点击保存(`Save`)另存为fgo.json。可自行检查文件内容，其中只包含游戏相关信息，而无账号密码等隐私，可以放心使用。
+
+此外，也可在输入框里自行输入内容测试解码(decode)和编码(encode)
+
+> Decode: input -> url decode -> base64 decode -> output<br />
+> 
+> Encode: input -> base64encode -> output
+    
+
+<decoder></decoder>

@@ -1,5 +1,6 @@
 import { defineUserConfig } from 'vuepress'
 import type { DefaultThemeOptions } from 'vuepress'
+import { path } from '@vuepress/utils'
 // import type { SeoOptions } from 'vuepress-plugin-seo2'
 
 export default defineUserConfig<DefaultThemeOptions>({
@@ -9,11 +10,11 @@ export default defineUserConfig<DefaultThemeOptions>({
   // dest: 'dist',
   head: [
     ['link', { rel: 'icon', href: '/logo.png' }],
-    ['meta', { name: 'keywords', content: 'Chaldea,迦勒底,素材规划,Material Planning,FGO,fate,Fate/Grand Order,命运-冠位指定,型月,typemoon,周回,free' }],
+    ['meta', { name: 'keywords', content: 'Chaldea,迦勒底,素材规划,Material Planning,Planner,FGO,fate,Fate/Grand Order,命运-冠位指定,型月,typemoon,周回,free' }],
     [
       'script',
       {
-        src:"https://www.googletagmanager.com/gtag/js?id=G-Z56XH1BDG8",
+        src: "https://www.googletagmanager.com/gtag/js?id=G-Z56XH1BDG8",
         async: true,
       }
     ],
@@ -165,6 +166,12 @@ export default defineUserConfig<DefaultThemeOptions>({
         }
       }
     ],
+    [
+      '@vuepress/plugin-register-components',
+      {
+        componentsDir: path.resolve(__dirname, './components')
+      },
+    ]
     // [  // no effect
     //   '@vuepress/plugin-google-analytics',
     //   {
