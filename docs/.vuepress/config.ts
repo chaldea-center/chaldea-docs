@@ -1,7 +1,8 @@
 import { defineUserConfig } from 'vuepress'
 import type { DefaultThemeOptions } from 'vuepress'
 import { path } from '@vuepress/utils'
-// import type { SeoOptions } from 'vuepress-plugin-seo2'
+import { DocsearchOptions } from '@vuepress/plugin-docsearch'
+import { SitemapOptions } from 'vuepress-plugin-sitemap2'
 
 export default defineUserConfig<DefaultThemeOptions>({
   lang: 'en-US',
@@ -11,6 +12,15 @@ export default defineUserConfig<DefaultThemeOptions>({
   head: [
     ['link', { rel: 'icon', href: '/logo.png' }],
     ['meta', { name: 'keywords', content: 'Chaldea,迦勒底,素材规划,Material Planning,Planner,FGO,fate,Fate/Grand Order,命运-冠位指定,型月,typemoon,周回,free' }],
+    [
+      'script',
+      {},
+      `
+      if (window.location.href.startsWith("https://chaldea-center.github.io")) {
+        window.location.href = window.location.href.replace("https://chaldea-center.github.io", "https://chaldea.center");
+      }
+      `
+    ],
     [
       'script',
       {
@@ -157,9 +167,20 @@ export default defineUserConfig<DefaultThemeOptions>({
     }
   },
   plugins: [
+    // [
+    //   '@vuepress/plugin-search',
+    //   {
+    //     locales: {
+    //       '/': { placeholder: 'Search' },
+    //       '/zh/': { placeholder: '搜索' }
+    //     }
+    //   }
+    // ],
     [
-      '@vuepress/plugin-search',
-      {
+      '@vuepress/plugin-docsearch',
+      <DocsearchOptions>{
+        apiKey: null,
+        indexName: null,
         locales: {
           '/': { placeholder: 'Search' },
           '/zh/': { placeholder: '搜索' }
@@ -167,11 +188,17 @@ export default defineUserConfig<DefaultThemeOptions>({
       }
     ],
     [
+      'vuepress-plugin-sitemap2',
+      <SitemapOptions>{
+        hostname: 'https://chaldea.center'
+      }
+    ],
+    [
       '@vuepress/plugin-register-components',
       {
         componentsDir: path.resolve(__dirname, './components')
       },
-    ]
+    ],
     // [  // no effect
     //   '@vuepress/plugin-google-analytics',
     //   {
@@ -184,6 +211,6 @@ export default defineUserConfig<DefaultThemeOptions>({
     //     author: 'narumi',
     //     twitterID: 'narumi147',
     //   }
-    // ]
+    // ],
   ],
 })

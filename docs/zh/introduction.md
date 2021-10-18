@@ -1,5 +1,7 @@
 # 关于 Chaldea
 
+> 启用新域名: [chaldea.center](https://chaldea.center)
+
 Chaldea是一款用于[Fate/Grand Order](https://www.fate-go.jp)的规划软件，支持Android、iOS、Windows和macOS平台。Chaldea可以帮助Master规划从者练度、素材和活动等。
 
 ![Chaldea Preview](/images/zh/home_svt_preview.webp)
