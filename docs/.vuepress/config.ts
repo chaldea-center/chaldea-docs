@@ -24,7 +24,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     [
       'script',
       {
-        src: "https://www.googletagmanager.com/gtag/js?id=G-Z56XH1BDG8",
+        src: "https://www.googletagmanager.com/gtag/js?id=G-XS2D05TGKG",
         async: true,
       }
     ],
@@ -35,7 +35,7 @@ export default defineUserConfig<DefaultThemeOptions>({
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
     
-      gtag('config', 'G-Z56XH1BDG8');`
+      gtag('config', 'G-XS2D05TGKG');`
     ],
     [
       'script',
@@ -43,7 +43,7 @@ export default defineUserConfig<DefaultThemeOptions>({
       `var _hmt = _hmt || [];
       (function() {
         var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?c00bd5fdc5a0fe682a8680e6eb73f45c";
+        hm.src = "https://hm.baidu.com/hm.js?144d128ecf683f91875ad2842d2d14ba";
         var s = document.getElementsByTagName("script")[0]; 
         s.parentNode.insertBefore(hm, s);
 
@@ -202,7 +202,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     // [  // no effect
     //   '@vuepress/plugin-google-analytics',
     //   {
-    //     id: 'G-Z56XH1BDG8',
+    //     id: 'G-XS2D05TGKG',
     //   },
     // ],
     // [
