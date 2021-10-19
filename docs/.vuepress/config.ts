@@ -17,14 +17,14 @@ export default defineUserConfig<DefaultThemeOptions>({
       {},
       `
       if (window.location.href.startsWith("https://chaldea-center.github.io")) {
-        window.location.href = window.location.href.replace("https://chaldea-center.github.io", "https://chaldea.center");
+        window.location.href = window.location.href.replace("https://chaldea-center.github.io", "https://docs.chaldea.center");
       }
       `
     ],
     [
       'script',
       {
-        src: "https://www.googletagmanager.com/gtag/js?id=G-XS2D05TGKG",
+        src: "https://www.googletagmanager.com/gtag/js?id=G-PPD5M5TR2R",
         async: true,
       }
     ],
@@ -35,7 +35,7 @@ export default defineUserConfig<DefaultThemeOptions>({
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
     
-      gtag('config', 'G-XS2D05TGKG');`
+      gtag('config', 'G-PPD5M5TR2R');`
     ],
     [
       'script',
@@ -43,7 +43,7 @@ export default defineUserConfig<DefaultThemeOptions>({
       `var _hmt = _hmt || [];
       (function() {
         var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?144d128ecf683f91875ad2842d2d14ba";
+        hm.src = "https://hm.baidu.com/hm.js?bb56c04bd266194546d3e8b96ba9d6c2";
         var s = document.getElementsByTagName("script")[0]; 
         s.parentNode.insertBefore(hm, s);
 
@@ -167,9 +167,20 @@ export default defineUserConfig<DefaultThemeOptions>({
     }
   },
   plugins: [
+    [
+      '@vuepress/plugin-search',
+      {
+        locales: {
+          '/': { placeholder: 'Search' },
+          '/zh/': { placeholder: '搜索' }
+        }
+      }
+    ],
     // [
-    //   '@vuepress/plugin-search',
-    //   {
+    //   '@vuepress/plugin-docsearch',
+    //   <DocsearchOptions>{
+    //     apiKey: null,
+    //     indexName: null,
     //     locales: {
     //       '/': { placeholder: 'Search' },
     //       '/zh/': { placeholder: '搜索' }
@@ -177,20 +188,9 @@ export default defineUserConfig<DefaultThemeOptions>({
     //   }
     // ],
     [
-      '@vuepress/plugin-docsearch',
-      <DocsearchOptions>{
-        apiKey: null,
-        indexName: null,
-        locales: {
-          '/': { placeholder: 'Search' },
-          '/zh/': { placeholder: '搜索' }
-        }
-      }
-    ],
-    [
       'vuepress-plugin-sitemap2',
       <SitemapOptions>{
-        hostname: 'https://chaldea.center'
+        hostname: 'https://docs.chaldea.center'
       }
     ],
     [
@@ -202,7 +202,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     // [  // no effect
     //   '@vuepress/plugin-google-analytics',
     //   {
-    //     id: 'G-XS2D05TGKG',
+    //     id: 'G-PPD5M5TR2R',
     //   },
     // ],
     // [
