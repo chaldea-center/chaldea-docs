@@ -19,6 +19,7 @@ Chaldea is a cross-platform material planning tool for [Fate/Grand Order](https:
 - **Free Quest Solver**
   * Get the best quest farming solution on item demands
   * Compare the efficiency of each quest with custom item weight
+  * Support **Item+Bond+EXP** planning
   * **Support Master Mission/Weekly Mission**: custom mission target
 - **Summon details** and **Summon Simulator**
 - **SQ Planning**: Currently support predictable parts of SQs/tickets/fruits

@@ -27,7 +27,7 @@ For lottery event or raid event, a star :star: is shown to inform you there are 
 
 **Associated Summons**
 
-**Floating Button-Collect Items**: Collect all items from this event to owned items, and remove the event from plan.
+**Floating Button-Collect Items**: Archive items for each part and reset lottery and extra parts after archived. If all parts are selected, this event will be removed from plan after archived.
 
 
 ## Main Record

@@ -1,12 +1,12 @@
 # Free Quest Solver
 
-Feature: get the best free quest farming solution and compare their efficiencies.
+Feature: get the best free quest farming solution and compare their efficiencies. **Bond** and **Master EXP** as a special item can also be added to plan.
 
 You can directly set item demands here. Also, you can click **Planning Quests** button in [Item List Page](./items.md) to calculate the lacked items.
 
 ## Item Demands
 
-Click :heavy_plus_sign: button to add item to list.
+Click :heavy_plus_sign: button to add item to list. **Bond** and **Master EXP** are classified into the first **Special Items** category.
 
 Click item icon to show the detail, click item name to switch item.
 
