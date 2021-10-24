@@ -6,7 +6,7 @@
 * Github issue/pull request: [https://github.com/chaldea-center/chaldea](https://github.com/chaldea-center/chaldea/releases)
 * NGA-FGO版块: [https://bbs.nga.cn/read.php?tid=24926789](https://bbs.nga.cn/read.php?tid=24926789)
 * Discord: [https://discord.gg/5M6w5faqjP](https://discord.gg/5M6w5faqjP)
-* QQ群-反馈与测试: 863998768
+* NokNok: [118835](https://www.noknok.cn/act/share_group_20210625/index.html?uid=100164675&gid=118835)
 * 应用内反馈（bug反馈优先此项！）
 
 

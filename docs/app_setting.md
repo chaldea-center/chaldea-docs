@@ -3,7 +3,7 @@
 ## Chaldea User
 A very simple user system, only for user data backup and multi-device synchronization.
 
-It's not a necessary step if you just use it on one device. Everything is available in app whenever registered or not.
+It's not a necessary step if you just use it on one device. Everything in app is available regardless of registered or not.
 
 ::: warning
 NO security guarantee! DON'T use frequently used passwords!!!
@@ -57,6 +57,17 @@ Provide user data backup and restore(import). The app will create a backup every
 
 And Chaldea server also provides a simple backup feature, you need to manually upload to or download from server among multiple devices.
 
+**Android External Storage**
+
+Android users can select whether to use external storage if SD card exists.
+When toggle the setting, you can choose to auto migrate app data to target directory.
+Take attention, auto migration will **override** files if already exist in target directory.
+Otherwise, you can choose to manually copy your data.
+
+> Do manual BACKUP for your data to avoid accident, mainly in `userdata`, `config` and `backup`.
+
+You need to restart app to let it take effect.
+
 ### App Dataset Management
 The dataset version is just the created date. A full version contains the minimal compatible app version.
 e.g. 20210922-1.6.0 means the 20210922 version dataset requires your app version at least 1.6.0, or may be incompatible.
@@ -66,13 +77,15 @@ e.g. 20210922-1.6.0 means the 20210922 version dataset requires your app version
   * Github: Recommended if you can access Github
   * Gitee: blocked currently, but you can still manually download assets.
 * Dataset update methods
-  * Auto update: fetch patch from Chaldea server at every app startup
+  * Auto update: fetch patch from Chaldea server at every app startup, if failed, download full data.
   * Patch Gamedata: fetch patch from Chaldea server
-  * Download Full Dataset: download `dataset-text.zip` or `dataset-icon.zip` directly from the source selected above.
-    > For new user, you can download `dataset-icon.zip` once to import most card icons.
+  * Download Full Dataset: download `dataset-text.zip` directly from the source selected above.
+  * Download Icons: cache all icons to `app_path/data/icons/`, about 3000+ icons. Thus, download requests are limited to 5 requests per second at most.
+  * Import dataset.zip: manually download `dataset-text.zip` from github release, and import it here.Pay attention to the compatibility of data version and app version.
+  * Reload Default: app build-in data
 * Cached resources：
   * Icons: Card thumbs and skill icons, they will be permanently saved in `app_path/data/icons/`
-  * Illustrations and voices: once cleared cache, you need to download again
+  * Illustrations and voices: once cleared cache, you need to download again. Only cached when used.
 
 ### General Settings
 * Multi-language support: Chinese, English and Japanese(part)
