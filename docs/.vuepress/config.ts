@@ -104,6 +104,7 @@ export default defineUserConfig<DefaultThemeOptions>({
                 '/lostroom.md',
                 '/donation.md',
                 '/faq.md',
+                '/changelog.md',
                 '/references.md',
                 '/privacy.md',
               ]
@@ -157,6 +158,7 @@ export default defineUserConfig<DefaultThemeOptions>({
                 '/zh/lostroom.md',
                 '/zh/donation.md',
                 '/zh/faq.md',
+                '/zh/changelog.md',
                 '/zh/references.md',
                 '/zh/privacy.md',
               ]

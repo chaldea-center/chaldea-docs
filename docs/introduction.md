@@ -2,7 +2,7 @@
 
 > New domain: [docs.chaldea.center](https://docs.chaldea.center)
 
-Chaldea is a cross-platform material planning tool for [Fate/Grand Order](https://www.fate-go.jp), supporting Android, iOS, Windows and macOS. Chaldea will help masters plan their servants, events and materials.
+Chaldea is a cross-platform material planning tool for [Fate/Grand Order](https://www.fate-go.jp), supporting Android, iOS, Windows, macOS and Linux. Chaldea will help masters plan their servants, events and materials.
 
 ![Chaldea Preview](/images/en/home_svt_preview.webp)
 <figcaption style="text-align:center">Chaldea Preview</figcaption>
