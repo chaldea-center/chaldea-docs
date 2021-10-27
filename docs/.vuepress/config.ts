@@ -169,26 +169,27 @@ export default defineUserConfig<DefaultThemeOptions>({
     }
   },
   plugins: [
-    [
-      '@vuepress/plugin-search',
-      {
-        locales: {
-          '/': { placeholder: 'Search' },
-          '/zh/': { placeholder: '搜索' }
-        }
-      }
-    ],
     // [
-    //   '@vuepress/plugin-docsearch',
-    //   <DocsearchOptions>{
-    //     apiKey: null,
-    //     indexName: null,
+    //   '@vuepress/plugin-search',
+    //   {
     //     locales: {
     //       '/': { placeholder: 'Search' },
     //       '/zh/': { placeholder: '搜索' }
     //     }
     //   }
     // ],
+    [
+      '@vuepress/plugin-docsearch',
+      <DocsearchOptions>{
+        apiKey: '8cb8481c0034b89290985b41f425004d',
+        indexName: 'chaldea-center',
+        appId: 'BH4D9OD16A',
+        locales: {
+          '/': { placeholder: 'Search' },
+          '/zh/': { placeholder: '搜索' }
+        }
+      }
+    ],
     [
       'vuepress-plugin-sitemap2',
       <SitemapOptions>{

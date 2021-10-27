@@ -2,7 +2,7 @@
 
 If this project is helpful to you and want to support it, you can:
 - [Starring](https://github.com/chaldea-center/chaldea/stargazers) the repo
-- Rate on [Google Play](https://play.google.com/store/apps/details?id=cc.narumi.chaldea) 或or [App Store](https://apps.apple.com/us/app/chaldea/id1548713491?itsct=apps_box&itscg=30200)
+- Rate on [Google Play](https://play.google.com/store/apps/details?id=cc.narumi.chaldea) or [App Store](https://apps.apple.com/us/app/chaldea/id1548713491?itsct=apps_box&itscg=30200)
 - Pray for FGO will never turn off service
 - Donation
 

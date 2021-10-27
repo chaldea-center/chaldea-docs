@@ -35,6 +35,8 @@
 
 [Releases](https://github.com/chaldea-center/chaldea/releases)
 
+[fastgit镜像](https://hub.fastgit.org/chaldea-center/chaldea/releases)
+
 [cnpmjs镜像](https://github.com.cnpmjs.org/chaldea-center/chaldea/releases)
 
 ## 安装注意事项

@@ -120,5 +120,5 @@ root_path
 在`关于Chaldea`中可开启自动更新，下载源与上述数据包下载源相同。
 - 自动更新适用于Android、Windows。
   - Windows版程序所在路径有中文等字符可能会导致自动更新失败。
-- 非商店版的macOS版会检测并下载新版，需自行解压替换。
+- 非商店版的macOS版及Linux版会检测更新并下载新版，但需自行解压替换。
 - iOS和macOS商店版请前往App Store更新。
