@@ -55,4 +55,4 @@ This policy is effective as of 2021-01-16
 
 **Contact Us**
 
-If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at chaldea-support@narumi.cc.
+If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at chaldea@narumi.cc.

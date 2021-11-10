@@ -77,7 +77,7 @@ Take iOS14 as an example. The settings on different iOS version may be displayed
 1. Download and install `Potatso Lite`
 2. Create a new proxy and select `manual input` mode: Type-`HTTP`(not https), fill in the host and port as in the previous step
 3. Make sure `Smart Routing` is disabled in Potatso settings. In other apps, you may need choose Proxy(for shadowrocket) or Global mode, PAC mode will take no effect.
-4. Select and connect the newly created proxy. The first time you use it, it will apply for the permission to create VPN. Then in Charles you need to `Allow` the connection from this device.
+4. Select and connect the newly created proxy. The first time you use it, it will apply for the permission to create ⅤΡΝ. Then in Charles you need to `Allow` the connection from this device.
 
 
 ## Configure Android
@@ -95,7 +95,7 @@ Take the MuMu emulator (Android 6.0.1) as an example, there may be differences o
 2. Open `Settings-WiFi-long press or other ways to view WiFi details-modify network`, select the proxy `manual`, and fill in the proxy host `192.168.0.5` and port`8888` displayed in step 3 of the configuration Charles, save
 3. Open `chls.pro/ssl` in the browser, download the pem/crt certificate file, there are two ways to install the certificate
     -Open the file directly to install, sometimes it may fail
-    -In `Settings-Security-Install Certificate from SD Card`, select the certificate file you just downloaded and give it a name. The default credential usage is VPN and application
+    -In `Settings-Security-Install Certificate from SD Card`, select the certificate file you just downloaded and give it a name. The default credential usage is ⅤΡΝ and application
 4. You can find `Charles Proxy CA ****` in `Settings-Security-Trusted Credentials-User`
 5. Open `https://www.bing.com/` in browser, check that most of the URLs starting with `https` in the Charles list are prefixed by a blue icon or lightning icon. If all of them are prefixed with a white lock icon, it means that it has not been decrypted. Please delete the above Profile and try again.
 6. It stands to reason that after the certificate is successfully installed, you only need to use the subsequent global proxy, and the WiFi proxy setting can be turned off
@@ -111,7 +111,7 @@ Take the MuMu emulator (Android 6.0.1) as an example, there may be differences o
     - WiFi name-Filter: default value - select `Local Proxy Chain All`
     - return
 4. Filter-Default: select `Direct All`
-5. Swipe left to return to the log page, click the ON/OFF switch at the bottom, you can see the VPN connection prompt in the notification bar after opening. The first time you use it, it will apply for the permission to create VPN. Then in Charles you need to `Allow` the connection from this device.
+5. Swipe left to return to the log page, click the ON/OFF switch at the bottom, you can see the ⅤΡΝ connection prompt in the notification bar after opening. The first time you use it, it will apply for the permission to create ⅤΡΝ. Then in Charles you need to `Allow` the connection from this device.
 
 
 ## Capture and Import

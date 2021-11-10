@@ -72,7 +72,7 @@ bfgo客户端(包名`io.rayshift.betterfgo(.en)`)和原客户端(包名`com.anip
 :::details
 [https://zhile.io/2017/07/07/charles-proxy-usage-and-license.html](https://zhile.io/2017/07/07/charles-proxy-usage-and-license.html)
 :::
-0. 确保手机与电脑处于同一局域网，或模拟器与Charles在同一电脑
+0. 确保手机与电脑处于同一局域网，或模拟器与Charles在同一电脑，关闭电脑上其他一切ⅤΡΝ等代理软件
 1. `Help-Local IP Address`, 记录显示的本机IPv4地址，例如`192.168.0.5`
 2. `Proxy-Proxy Settings`, 记录或修改端口，默认`8888`
 3. `Help-SSL Proxying-Install Charles Root Certificate on a Mobile device or Remote Browser`, 无操作，提示设置手机代理(`192.168.0.5:8888`)以及证书下载地址`chls.pro/ssl`，详见下一步
@@ -102,7 +102,7 @@ bfgo客户端(包名`io.rayshift.betterfgo(.en)`)和原客户端(包名`com.anip
 1. 外区账号下载安装`Potatso Lite`
 2. 点击右上角新建-手动输入: 类型-`HTTP`(注意不是https), 服务器和端口填写同上一步。
 3. 确保设置中的智能路由/Smart Routing为关闭状态。其他代理软件可能需要设置为**代理**模式(shadowrocket)或**全局**模式。不能是**PAC**，否则国内流量都将不走代理。
-4. 选中刚新建的代理，点击按钮连接，第一次使用会申请创建VPN的权限。在Charles中会弹出提示，并允许接收来自此设备的请求。
+4. 选中刚新建的代理，点击按钮连接，第一次使用会申请创建ⅤΡΝ的权限。在Charles中会弹出提示，并允许接收来自此设备的请求。
 
 
 ## 配置Android
@@ -120,7 +120,7 @@ bfgo客户端(包名`io.rayshift.betterfgo(.en)`)和原客户端(包名`com.anip
 2. 打开`设置-WiFi-长按或其他方式查看已连接WiFi详情-修改网络`，代理选择`手动`，填入配置Charles中第3步显示的代理主机host`192.168.0.5`和端口port`8888`(举例)，储存
 3. 浏览器打开`chls.pro/ssl`,下载pem/crt证书文件，安装证书有两种方法
     - 直接打开文件安装，有时可能会失败
-    - 在`设置-安全-从SD卡安装证书`，选择刚下载的证书文件，取个名，默认凭据用途为VPN和应用
+    - 在`设置-安全-从SD卡安装证书`，选择刚下载的证书文件，取个名，默认凭据用途为ⅤΡΝ和应用
 4. 你可以在`设置-安全-信任的凭据-用户`中找到`Charles Proxy CA ****`
 5. 打开浏览器，进入`https://baidu.com`，检查Charles列表大部分(并非所有)https开头网址前面是蓝色的图标或闪电图标，如均为白色的锁图标，说明未解密，请删除上述证书再重试
 6. 按理说证书安装成功后只需使用后续全局代理即可，可关闭WiFi代理设置
@@ -136,7 +136,7 @@ bfgo客户端(包名`io.rayshift.betterfgo(.en)`)和原客户端(包名`com.anip
     - WiFi名-过滤器/Filter: 过滤默认值选择`本地代理链全部/Local Proxy Chain All`
     - 返回
 4. 过滤器-默认值: 选择`引导全部/Direct All`
-5. 左滑回到日志页，点击底部开关，开启后在通知栏可以看到VPN连接提示，第一次使用会申请创建VPN的权限。在Charles中会弹出提示，并允许接收来自此设备的请求。
+5. 左滑回到日志页，点击底部开关，开启后在通知栏可以看到ⅤΡΝ连接提示，第一次使用会申请创建ⅤΡΝ的权限。在Charles中会弹出提示，并允许接收来自此设备的请求。
 
 
 ## 抓包与导入
@@ -194,7 +194,7 @@ bfgo客户端(包名`io.rayshift.betterfgo(.en)`)和原客户端(包名`com.anip
 
 
 ## 解码小工具
-对于国服与台服，原始数据经Base64编码+url编码，不可读，若希望查看原始数据，可自行解码或使用本工具解码得到可读性较高的json格式。
+对于国服与台服，原始数据经Base64编码+url编码，不可读，APP内可自动转化。若希望查看原始数据，可自行解码或使用本工具解码得到可读性较高的json格式。
 
 操作流程：点击`Load File`选择上述保存的fgo.txt，此时`input`里为原文本，`output`里为解码后json文本，点击保存(`Save`)另存为fgo.json。可自行检查文件内容，其中只包含游戏相关信息，而无账号密码等隐私，可以放心使用。
 
