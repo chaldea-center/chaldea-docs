@@ -148,8 +148,14 @@ export default defineUserConfig<DefaultThemeOptions>({
                 '/zh/free_calculator.md',
                 '/zh/sq_plan.md',
                 '/zh/master_mission.md',
-                '/zh/import_data.md',
-                '/zh/import_https.md',
+                {
+                  text: "导入抓包",
+                  children: [
+                    '/zh/import_https/README.md',
+                    '/zh/import_https/charles.md',
+                    '/zh/import_https/mitmproxy.md'
+                  ]
+                },
                 '/zh/summon.md',
                 '/zh/game_statistics.md',
                 '/zh/buff_filter.md',
@@ -212,7 +218,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     // ],
     // [
     //   "vuepress-plugin-seo2",
-    //   <SeoOptions>{
+    //   {
     //     author: 'narumi',
     //     twitterID: 'narumi147',
     //   }

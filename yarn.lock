@@ -3272,6 +3272,10 @@ send@0.17.1:
     range-parser "~1.2.1"
     statuses "~1.5.0"
 
+"seo2@link:~/Downloads/vuepress-theme-hope-main/packages/seo2":
+  version "0.0.0"
+  uid ""
+
 serialize-javascript@^6.0.0:
   version "6.0.0"
   resolved "https://registry.npmjs.org/serialize-javascript/-/serialize-javascript-6.0.0.tgz"

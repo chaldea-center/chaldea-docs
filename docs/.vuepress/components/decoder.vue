@@ -1,28 +1,30 @@
 <template>
   <div>
-    <label>
-      Input
-      <textarea v-model="vin" rows="10" placeholder="Input text or load file" />
-    </label>
-    <p>
+     <span>
       <label id="loadBtn">
-        Or Load File
+        加载文件
         <input type="file" @change="decodeFile" />
       </label>
-    </p>
+      <br/>
+    </span>
     <label>
-      Output
+      或输入/粘贴文本
+      <textarea v-model="vin" rows="10" placeholder="请输入文本或加载文件" />
+    </label>
+  
+    <label>
+      输出结果
       <textarea
         v-model="vout"
         rows="5"
-        placeholder="Copy or save to file"
+        placeholder="复制结果或保存至文件"
         readonly
       />
     </label>
     <p>
-      <button @click="decode">Decode</button>
-      <button @click="encode">Encode</button>
-      <button @click="downloadOutput">Save</button>
+      <button @click="decode">解码</button>
+      <button @click="encode">编码</button>
+      <button @click="downloadOutput">结果另存为</button>
     </p>
   </div>
 </template>

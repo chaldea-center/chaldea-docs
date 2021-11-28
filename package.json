@@ -21,6 +21,7 @@
     "@vuepress/plugin-google-analytics": "^2.0.0-beta.26",
     "@vuepress/plugin-register-components": "^2.0.0-beta.26",
     "@vuepress/plugin-search": "^2.0.0-beta.26",
+    "seo2": "link:~/Downloads/vuepress-theme-hope-main/packages/seo2",
     "vuepress": "^2.0.0-beta.26",
     "vuepress-plugin-seo2": "^2.0.0-alpha.0",
     "vuepress-plugin-sitemap2": "^2.0.0-alpha.0"
