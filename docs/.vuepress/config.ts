@@ -148,6 +148,7 @@ export default defineUserConfig<DefaultThemeOptions>({
                 '/zh/free_calculator.md',
                 '/zh/sq_plan.md',
                 '/zh/master_mission.md',
+                '/zh/import_data.md',
                 {
                   text: "导入抓包",
                   children: [

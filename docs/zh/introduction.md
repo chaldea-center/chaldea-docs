@@ -44,5 +44,5 @@ Chaldea是一款用于[Fate/Grand Order](https://www.fate-go.jp)/[命运-冠位�
 - icyalala@NGA - FFO data
 
 程序界面与功能设计参考：
-- 微信小程序[素材规划](https://github.com/lacus87/fgo)
-- iOS程序[Guda](https://apps.apple.com/sg/app/guda/id1229055088)
+- 微信小程序 - [素材规划](https://github.com/lacus87/fgo)
+- iOS应用 - [Guda](https://apps.apple.com/sg/app/guda/id1229055088)

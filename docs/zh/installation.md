@@ -31,13 +31,12 @@
 
 ### GitHub Release
 
-包含Android、Windows、macOS和Linux安装包
+包含Android、Windows、macOS和Linux安装包。若最新版不包含所需平台，请检查更早的发布版本。
 
-[Releases](https://github.com/chaldea-center/chaldea/releases)
-
-[fastgit镜像](https://hub.fastgit.org/chaldea-center/chaldea/releases)
-
-[cnpmjs镜像](https://github.com.cnpmjs.org/chaldea-center/chaldea/releases)
+Github访问存在障碍的情况下，请选择镜像网站访问：
+- [Github Releases](https://github.com/chaldea-center/chaldea/releases)
+- [fastgit镜像](https://hub.fastgit.org/chaldea-center/chaldea/releases)
+- [cnpmjs镜像](https://github.com.cnpmjs.org/chaldea-center/chaldea/releases)
 
 ## 安装注意事项
 

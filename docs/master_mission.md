@@ -5,9 +5,11 @@ Solution for master mission/weekly mission.
 Similar to free quest solver, using linear programming, but here we use **Integer** constraints.
 
 ## Add Mission Target
-Generally, mission targets are described as **OR**: defeat 15 enemy type A or enemy type B.
 
-Click the top trait tabs, after select all traits for one mission, then click **ADD** to add to mission list.
+- Click the top trait tabs, after select all traits for one mission, then click **ADD** to add to mission list.
+- Click search button to filter traits in current tab.
+
+Generally, mission targets are described as **OR**: defeat 15 enemy type A or enemy type B.
 
 e.g.
 - 15 Saber or Rider enemy(not servant): select **Enemy Class-Saber** and **Enemy Class-Rider**

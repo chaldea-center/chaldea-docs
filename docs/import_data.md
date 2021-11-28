@@ -40,7 +40,9 @@ Don't crop, don't use split screen mode, make sure the game fills the entire scr
 ![Item Screenshot Example](/images/item_recognition_example.webp)
 <figcaption style="text-align:center">Item Screenshot Example</figcaption>
 
-If there are many wrong recognition results, please tell me.
+::: tip
+The accuracy is not so good, please check again after recognized.
+:::
 
 ## Active/Append Skill Recognition
 1. Goto **Enhance-Skill/Append Skill**, on the screen of selecting servant, take screenshots
@@ -57,6 +59,10 @@ Currently only support skill levels, ascension level and grails is not included
 
 ![Skill Screenshot Example](/images/skill_recognition_example.webp)
 <figcaption style="text-align:center">Skill Screenshot Example</figcaption>
+
+::: tip
+Okay, it's very slow and the accuracy is also not so good. I'm dreaming someone can help me.
+:::
 
 ## Guda Data
 The iOS app **Guda** exported item data or servant data in txt file. Just import them and the app will parse it.

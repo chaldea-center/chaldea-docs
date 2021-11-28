@@ -22,7 +22,7 @@
 
 ## HTTPS抓包
 通过抓取登陆时的数据导入账户所有信息。国服与台服均可使用(iOS&Android)，日服于美服需要使用修改过的apk安装包(仅Android)。
-详见[导入抓包](./import_https.md)。
+详见[导入抓包](./import_https/README.md)。
 
 v1.6.0仅支持国服与台服导入，日服与美服需后续更新。
 
@@ -39,8 +39,9 @@ v1.6.0仅支持国服与台服导入，日服与美服需后续更新。
 ![素材截图范例](/images/item_recognition_example.webp)
 <figcaption style="text-align:center">素材截图范例</figcaption>
 
-
-若出现大量识别错误，请反馈。
+::: tip
+我坦白，准确度有限，可能会识别出不存在的0
+:::
 
 ## 主动/被动技能截图解析
 1. 前往 **强化-从者技能强化/附加技能强化**，在选择从者页面截图！！！不要在选择狗粮处截图！不要在选中某个从者后截图！不要还在战斗中就截图！不要自拍！~~无奇不有~~
@@ -57,6 +58,10 @@ v1.6.0仅支持国服与台服导入，日服与美服需后续更新。
 ![技能截图范例](/images/skill_recognition_example.webp)
 
 <figcaption style="text-align:center">技能截图范例</figcaption>
+
+::: tip
+我再次坦白，速度很慢，准确度也有限，有没有大佬救我。
+:::
 
 ## Guda数据
 iOS应用Guda可导出素材数据和从者数据的txt文件，在此处导入txt即可解析对应的信息并导入到账户中。

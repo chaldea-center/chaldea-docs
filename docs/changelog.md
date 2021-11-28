@@ -1,5 +1,17 @@
 # Change Log
 
+## 1.6.4
+
+- improve performance when loading and updating game data
+- master mission: support search, sort traits by alphabetical
+- SQ plan: add missing monthly tickets from mana prism store
+- enable iOS 120Hz ProMotion (no guarantee)
+
+## 1.6.3
+
+- fix Android 12 compatibility
+- revert incompatible flutter version
+
 ## 1.6.2
 
 - support Bond and EXP as item in free quest calculator

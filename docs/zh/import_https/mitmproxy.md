@@ -19,7 +19,9 @@
 
 编辑`fgoproxy.ini`：
 1. 将`server=***`的地址替换为对应服务器地址
-   - 国服: `https://line1-s2-bili-fate.bilibiligame.net`
+   - 国服b服:   `https://line1-s2-bili-fate.bilibiligame.net`
+   - 国服iOS服: `https://line1-s2-ios-fate.bilibiligame.net`
+   - 国服渠道服: 未测试
    - 台服: `https://line3-s1-all.fate-go.com.tw`
    - 日服: `https://game.fate-go.jp`
    - 美服: `https://game.fate-go.us`

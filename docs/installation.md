@@ -31,10 +31,11 @@ Including iOS App Store and Mac App Store
 
 ### GitHub Release
 
-Contains Android, Windows, macOS and Linux installer.
+Contains Android, Windows, macOS and Linux binary assets.
 
 [Releases](https://github.com/chaldea-center/chaldea/releases)
 
+If the latest version doesn't contain the platform you want, please check the previous versions.
 
 ## Attentions
 
