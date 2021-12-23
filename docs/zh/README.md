@@ -19,7 +19,7 @@ features:
   - title: Free本规划
     details: 根据素材需求求解最优刷本组合、关卡效率对比，咕朗台1AP也要压榨，同时也支持周常任务规划！
   - title: 多语言支持
-    details: 简体中文、English、日本語，还在不断完善ing
+    details: 简体中文、English、日本語、韩语，还在不断完善ing
   - title: 快速导入
     details: 告别繁琐录入，支持多个平台数据快速导入、截图的识别导入，抓包一键导入！
   - title: 攒石规划

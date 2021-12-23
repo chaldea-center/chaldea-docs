@@ -68,6 +68,8 @@ If there is such an error message on startup, please install [Microsoft Visual C
 
 ### macOS
 
+Don't run multiple Chaldea instances, because the data is shared. Otherwise, data may be overridden unexpectedly. 
+
 ::: tip
 The macOS installer on Github release and on Mac App Store have different app signature and may have slight difference in app.
 :::

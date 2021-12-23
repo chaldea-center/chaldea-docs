@@ -16,7 +16,8 @@ export default defineUserConfig<DefaultThemeOptions>({
       'script',
       {},
       `
-      if (window.location.href.startsWith("https://chaldea-center.github.io")) {
+      var is_github_io = window.location.href.startsWith("https://chaldea-center.github.io");
+      if (is_github_io) {
         window.location.href = window.location.href.replace("https://chaldea-center.github.io", "https://docs.chaldea.center");
       }
       `
@@ -31,17 +32,21 @@ export default defineUserConfig<DefaultThemeOptions>({
     [
       'script',
       {},
-      `window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-PPD5M5TR2R');`
+      `
+      if(!is_github_io){
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-PPD5M5TR2R');
+      }`
     ],
     [
       'script',
       {},
       `var _hmt = _hmt || [];
       (function() {
+        if(is_github_io) return;
         var hm = document.createElement("script");
         hm.src = "https://hm.baidu.com/hm.js?bb56c04bd266194546d3e8b96ba9d6c2";
         var s = document.getElementsByTagName("script")[0]; 

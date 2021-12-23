@@ -19,7 +19,7 @@ features:
   - title: Free Quest Planner
     details: Give the best free quest farming solution and efficiency comparison according to your material demands and master mission targets.
   - title: Multi-language Support
-    details: English, Simplified Chinese and Japanese. Still W.I.P.
+    details: English, Simplified Chinese, Japanese and Korean. Still W.I.P.
   - title: Quick Start
     details: No need of manual data input, easily import from other platforms, screenshots and game directly.
   - title: SQ Planner
