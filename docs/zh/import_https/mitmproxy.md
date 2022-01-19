@@ -17,10 +17,13 @@
 
 ## 设置服务器地址与本机地址
 
+> 2022.01.04国服更新2.36.0支持iOS/Android互登，目标域名更改为`line3-s2-xxx-fate.bilibiligame.net`，但仍有可能依旧为`line1`。
+> 若没有抓到可尝试更改`line3`/`line1`。
+
 编辑`fgoproxy.ini`：
 1. 将`server=***`的地址替换为对应服务器地址
-   - 国服b服:   `https://line1-s2-bili-fate.bilibiligame.net`
-   - 国服iOS服: `https://line1-s2-ios-fate.bilibiligame.net`
+   - 国服b服:   `https://line3-s2-bili-fate.bilibiligame.net`
+   - 国服iOS服: `https://line3-s2-ios-fate.bilibiligame.net`
    - 国服渠道服: 未测试
    - 台服: `https://line3-s1-all.fate-go.com.tw`
    - 日服: `https://game.fate-go.jp`
@@ -54,6 +57,7 @@
 | Google    | 10.0.2.15     | 10.0.2.2     |
 | 夜神       | 172.17.100.15 | 172.17.100.2 | 
 | 逍遥       | 10.0.3.15     | 10.0.3.2     |
+> 除MuMu外的模拟器未验证，若抓包失败，不确保可用性。
 
 ### 安装证书
 

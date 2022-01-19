@@ -54,6 +54,7 @@ The accuracy is not so good, please check again after recognized.
    - if duplicated servants found, please uncheck them with only one left. Or the last one will override others.
 
 Maybe the recognition speed is too slow and cost too much time. If you are expert on image tech, improvement is welcomed.
+If too many parallel tasks will decrease the speed furthermore. Please understand that. 
 
 Currently only support skill levels, ascension level and grails is not included
 

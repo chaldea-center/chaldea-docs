@@ -48,10 +48,17 @@ bfgo客户端(包名`io.rayshift.betterfgo(.en)`)和原客户端(包名`com.anip
 
 ### 获取方式
 
-0. 科xue上网，注意使用英文交流
-1. 加入rayshift的Discord频道(游戏聊天应用与社区): [https://discord.gg/8JeHHvh](https://discord.gg/8JeHHvh)
-2. 联系版主(Admin或Moderator)申请BetterFGO角色: e.g. "Can I get the BetterFGO role?"
-3. 在betterfgo-cli中查看并下载日服或美服的安装包
+1. 科xue上网
+2. 加入rayshift的Discord频道(游戏聊天应用与社区): [https://discord.gg/8JeHHvh](https://discord.gg/8JeHHvh)
+3. 在`ANNOUNCEMENT-roles`频道，点击`BetterFGO`的~~yls~~ emoji认领权限
+   ```:no-line-numbers
+    > YAGPDB.xyz
+    Role Menu: Public Beta Testing
+    React to give yourself a role.
+
+    :kanou: : BetterFGO 
+   ```
+4. 在`betterfgo-cli`频道中查看并下载日服或美服的安装包
 
 ### 迁移数据
 无需引继，仅需第一次迁移即可实现类似BGO的多设备登陆。

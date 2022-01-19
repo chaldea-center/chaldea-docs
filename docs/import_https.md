@@ -31,7 +31,7 @@ For CN/TW version, you don't this step, and both Android and iOS version of orig
   - Android: `Drony v1.3.x`(free) or other you know
 - Android only:
   - Android device: android version <=6. For most Android emulators, system version may be Android 6, you can check it in Setting-About
-  - BetterFGO apk, for JP and NA: please join the rayshift's discord channel([https://discord.gg/8JeHHvh](https://discord.gg/8JeHHvh)) and apply the `BetterFGO` role to get the download link. Tips: BetterFGO can be installed together with official FGO client. And you can copy data without transfer code, goto rayshift for more details.
+  - BetterFGO apk, for JP and NA: please join the rayshift's discord channel([https://discord.gg/8JeHHvh](https://discord.gg/8JeHHvh)), apply the `BetterFGO` role in `ANNOUNCEMENT/roles` channel, then you can get the download link in `betterfgo-cli` channel. Tips: BetterFGO can be installed together with official FGO client. And you can copy data without transfer code, goto rayshift for more details.
 
 
 ## Configure Charles
@@ -127,9 +127,9 @@ Take the MuMu emulator (Android 6.0.1) as an example, there may be differences o
     https://game.fate-go.jp/login/top?_userId=xxxx
     ```
     - **NA**: Similar to the JP server, the domain name is `https://game.fate-go.us`, to be confirmed.
-    - **CN**: where `line1-s2-ios-fate` follows the account server (iOS/android/other) and geographic location are different, the most important thing is `_key=toplogin`
+    - **CN**: where `line3-s2-ios-fate` follows different game server channel (iOS/android/other) and geographic location are different, the most important thing is `_key=toplogin`
     ```:no-line-numbers
-    https://line1-s2-ios-fate.bilibiligame.net/rongame_beta//rgfate/60_1001/ac.php?_userId=xxxx&_key=toplogin
+    https://line3-s2-ios-fate.bilibiligame.net/rongame_beta//rgfate/60_1001/ac.php?_userId=xxxx&_key=toplogin
     ```
     - **TW**: similar to the CN server, the domain name format is `https://line3-s1-all.fate-go.com.tw`, to be confirmed.
 3. Select the above url and right click `Save Response`, (note that it is `Response`, do not confuse it with Request), and save it as fgo.txt (any name)

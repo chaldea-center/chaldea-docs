@@ -98,11 +98,14 @@
 <figcaption style="text-align:center">目标网址与保存内容</figcaption>
 
 ### FGO抓包
+
+> 2022.01.04国服更新2.36.0支持iOS/Android互登，目标域名更改为`line3-s2-xxx-fate.bilibiligame.net`，但仍有可能依旧为`line1`。
+
 1. 重新启动并登陆FGO国服、台服、BetterFGO日服/美服，直到看到地球仪或公告栏为止
 2. 找到Charles的列表中以下url，**如果找不到就关闭FGO重新打开多试几次**
-    - 国服: 其中`line1-s2-ios-fate`随账号所在服务器(iOS/b服/渠道服)以及所在地理位置等有所不同，最重要的是`_key=toplogin`
+    - 国服: 其中`line3-s2-ios-fate`随账号所在服务器(iOS/b服/渠道服)以及所在地理位置等有所不同，最重要的是`_key=toplogin`
     ```:no-line-numbers
-    https://line1-s2-ios-fate.bilibiligame.net/rongame_beta//rgfate/60_1001/ac.php?_userId=xxxx&_key=toplogin
+    https://line3-s2-ios-fate.bilibiligame.net/rongame_beta//rgfate/60_1001/ac.php?_userId=xxxx&_key=toplogin
     ``` 
     - 台服: 与国服类似，域名格式`https://line3-s1-all.fate-go.com.tw`，由于无台服账号，待确认
     - 日服:
