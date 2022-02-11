@@ -16,7 +16,7 @@ Main Expenditures
 | ----------------------- | ----------- | -------------------------- |
 | Apple Developer Account | $100/year   | Upload app to App Store    |
 | Google Developer Account| $25         | Upload app to Google Play  |
-| AWS Cloud Server        | $150/year   | Server backup, screenshot recognition. Unfixed expenditure.|
+| AWS Cloud Server        | $100/year   | Server backup, screenshot recognition. Unfixed expenditure.|
 
 Check the detailed report and donator list on the following online sheet:
 

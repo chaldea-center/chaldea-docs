@@ -160,6 +160,7 @@ export default defineUserConfig<DefaultThemeOptions>({
                   text: "导入抓包",
                   children: [
                     '/zh/import_https/README.md',
+                    '/zh/import_https/transfer_data.md',
                     '/zh/import_https/charles.md',
                     '/zh/import_https/mitmproxy.md'
                   ]
