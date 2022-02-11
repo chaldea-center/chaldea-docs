@@ -35,8 +35,8 @@
 
 Github访问存在障碍的情况下，请选择镜像网站访问：
 - [Github Releases](https://github.com/chaldea-center/chaldea/releases)
-- [fastgit镜像](https://hub.fastgit.org/chaldea-center/chaldea/releases)
-- [cnpmjs镜像](https://github.com.cnpmjs.org/chaldea-center/chaldea/releases)
+- [fastgit镜像](https://hub.fastgit.org/chaldea-center/chaldea/releases) ~~被qiang了~~
+- [cnpmjs镜像](https://github.com.cnpmjs.org/chaldea-center/chaldea/releases) ~~被Github限制了~~
 
 ## 安装注意事项
 

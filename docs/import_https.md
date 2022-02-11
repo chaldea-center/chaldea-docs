@@ -30,8 +30,8 @@ For CN/TW version, you don't this step, and both Android and iOS version of orig
   - iOS: `Potatso Lite`(free), `shadowrocket`(paid) or others you know
   - Android: `Drony v1.3.x`(free) or other you know
 - Android only:
-  - Android device: android version <=6. For most Android emulators, system version may be Android 6, you can check it in Setting-About
-  - BetterFGO apk, for JP and NA: please join the rayshift's discord channel([https://discord.gg/8JeHHvh](https://discord.gg/8JeHHvh)), apply the `BetterFGO` role in `ANNOUNCEMENT/roles` channel, then you can get the download link in `betterfgo-cli` channel. Tips: BetterFGO can be installed together with official FGO client. And you can copy data without transfer code, goto rayshift for more details.
+  - Android device: android version ≤ 6. You can check the version in Setting-About.
+  - BetterFGO apk, for JP and NA: please join the rayshift's discord channel([https://discord.gg/8JeHHvh](https://discord.gg/8JeHHvh)), apply the `BetterFGO` role in `ANNOUNCEMENT/roles` channel, then you can get the download link in `betterfgo-cli` channel. Tips: BetterFGO can be installed together with official FGO client. And you can copy data without generating new transfer code, goto rayshift for more details.
 
 
 ## Configure Charles
