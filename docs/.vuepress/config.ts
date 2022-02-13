@@ -1,19 +1,27 @@
-import { defineUserConfig } from 'vuepress'
-import type { DefaultThemeOptions } from 'vuepress'
-import { path } from '@vuepress/utils'
-import { DocsearchOptions } from '@vuepress/plugin-docsearch'
-import { SitemapOptions } from 'vuepress-plugin-sitemap2'
+import { defineUserConfig } from "vuepress";
+import type { DefaultThemeOptions } from "vuepress";
+import { path } from "@vuepress/utils";
+import { DocsearchOptions } from "@vuepress/plugin-docsearch";
+import { SitemapOptions } from "vuepress-plugin-sitemap2";
 
 export default defineUserConfig<DefaultThemeOptions>({
-  lang: 'en-US',
-  title: 'Chaldea',
-  description: 'Chaldea - A cross-platform material planning tool for Fate/Grand Order',
+  lang: "en-US",
+  title: "Chaldea",
+  description:
+    "Chaldea - A cross-platform material planning tool for Fate/Grand Order",
   // dest: 'dist',
   head: [
-    ['link', { rel: 'icon', href: '/logo.png' }],
-    ['meta', { name: 'keywords', content: 'Chaldea,迦勒底,素材规划,Material Planning,Planner,FGO,fate,Fate/Grand Order,命运-冠位指定,型月,typemoon,周回,free' }],
+    ["link", { rel: "icon", href: "/logo.png" }],
     [
-      'script',
+      "meta",
+      {
+        name: "keywords",
+        content:
+          "Chaldea,迦勒底,素材规划,Material Planning,Planner,FGO,fate,Fate/Grand Order,命运-冠位指定,型月,typemoon,周回,free",
+      },
+    ],
+    [
+      "script",
       {},
       `
       var _url = new URL(window.location.href);
@@ -22,17 +30,17 @@ export default defineUserConfig<DefaultThemeOptions>({
         _url.hostname = "docs.chaldea.center";
         window.location.href = _url.toString();
       }
-      `
+      `,
     ],
     [
-      'script',
+      "script",
       {
         src: "https://www.googletagmanager.com/gtag/js?id=G-PPD5M5TR2R",
         async: true,
-      }
+      },
     ],
     [
-      'script',
+      "script",
       {},
       `
       if(!_need_redirect){
@@ -41,10 +49,10 @@ export default defineUserConfig<DefaultThemeOptions>({
         gtag('js', new Date());
       
         gtag('config', 'G-PPD5M5TR2R');
-      }`
+      }`,
     ],
     [
-      'script',
+      "script",
       {},
       `var _hmt = _hmt || [];
       (function() {
@@ -61,138 +69,142 @@ export default defineUserConfig<DefaultThemeOptions>({
             return newPath != oldPath;
           }}
         ]);
-      })();`
-    ]
+      })();`,
+    ],
   ],
   locales: {
-    '/': {
-      lang: 'en-US',
-      title: 'Chaldea',
-      description: 'Chaldea - A cross-platform material planning tool for Fate/Grand Order',
+    "/": {
+      lang: "en-US",
+      title: "Chaldea",
+      description:
+        "Chaldea - A cross-platform material planning tool for Fate/Grand Order",
     },
-    '/zh/': {
-      lang: 'zh-CN',
-      title: 'Chaldea',
-      description: 'Chaldea - 一款跨平台的FGO素材规划软件',
+    "/zh/": {
+      lang: "zh-CN",
+      title: "Chaldea",
+      description: "Chaldea - 一款跨平台的FGO素材规划软件",
     },
   },
   themeConfig: {
-    logo: '/logo.png',
-    repo: 'chaldea-center/chaldea',
-    docsRepo: 'chaldea-center/chaldea-docs',
-    docsDir: 'docs',
+    logo: "/logo.png",
+    repo: "chaldea-center/chaldea",
+    docsRepo: "chaldea-center/chaldea-docs",
+    docsDir: "docs",
     editLink: true,
     lastUpdated: false,
     locales: {
-      '/': {
-        selectLanguageText: 'Language/语言',
+      "/": {
+        selectLanguageText: "Language/语言",
         sidebar: {
-          '/': [
+          "/": [
             {
-              text: 'Chaldea',
+              text: "Chaldea",
               children: [
-                '/introduction.md',
-                '/installation.md',
-                '/feedback.md',
-                '/servant_plan.md',
-                '/events.md',
-                '/items.md',
-                '/free_calculator.md',
-                '/sq_plan.md',
-                '/master_mission.md',
-                '/import_data.md',   
-                 {
+                "/introduction.md",
+                "/installation.md",
+                "/feedback.md",
+                "/servant_plan.md",
+                "/events.md",
+                "/items.md",
+                "/free_calculator.md",
+                "/sq_plan.md",
+                "/master_mission.md",
+                "/import_data.md",
+                {
                   text: "Import HTTPS Response",
+                  collapsible: true,
                   children: [
-                    '/import_https/README.md',
-                    '/import_https/transfer_data.md',
-                    '/import_https/charles.md',
-                    '/import_https/mitmproxy.md',
-                  ]
+                    "/import_https/README.md",
+                    "/import_https/transfer_data.md",
+                    "/import_https/charles.md",
+                    "/import_https/mitmproxy.md",
+                  ],
                 },
-                '/summon.md',
-                '/game_statistics.md',
-                '/buff_filter.md',
-                '/search_filter.md',
-                '/app_setting.md',
-                '/freedom_order.md',
-                '/lostroom.md',
-                '/donation.md',
-                '/faq.md',
-                '/references.md',
-                '/privacy2.md',
-                '/privacy.md',
-                '/changelog.md',
-              ]
-            }
-          ]
-        }
+                "/summon.md",
+                "/game_statistics.md",
+                "/buff_filter.md",
+                "/search_filter.md",
+                "/app_setting.md",
+                "/freedom_order.md",
+                "/lostroom.md",
+                "/donation.md",
+                "/faq.md",
+                "/references.md",
+                "/privacy2.md",
+                "/privacy.md",
+                "/changelog.md",
+              ],
+            },
+          ],
+        },
       },
-      '/zh/': {
-        selectLanguageName: '简体中文',
-        selectLanguageText: 'Language/语言',
-        selectLanguageAriaLabel: '选择语言',
+      "/zh/": {
+        selectLanguageName: "简体中文",
+        selectLanguageText: "Language/语言",
+        selectLanguageAriaLabel: "选择语言",
         // custom containers
-        tip: '提示',
-        warning: '注意',
-        danger: '警告',
+        tip: "提示",
+        warning: "注意",
+        danger: "警告",
         notFound: [
-          '这里什么都没有',
-          '我们怎么到这来了？',
-          '这是一个 404 页面',
-          '看起来我们进入了错误的链接',
+          "这里什么都没有",
+          "我们怎么到这来了？",
+          "这是一个 404 页面",
+          "看起来我们进入了错误的链接",
         ],
-        backToHome: '返回首页',
+        backToHome: "返回首页",
 
         // a11y
-        openInNewWindow: '在新窗口打开',
-        toggleDarkMode: '切换深色模式',
-        toggleSidebar: '切换侧边栏',
+        openInNewWindow: "在新窗口打开",
+        toggleDarkMode: "切换深色模式",
+        toggleSidebar: "切换侧边栏",
 
         sidebar: {
-          '/zh/': [
+          "/zh/": [
             {
-              text: 'Chaldea',
+              text: "Chaldea",
+              collapsible: true,
               children: [
-                '/zh/introduction.md',
-                '/zh/installation.md',
-                '/zh/feedback.md',
-                '/zh/servant_plan.md',
-                '/zh/events.md',
-                '/zh/items.md',
-                '/zh/free_calculator.md',
-                '/zh/sq_plan.md',
-                '/zh/master_mission.md',
-                '/zh/import_data.md',
+                "/zh/introduction.md",
+                "/zh/installation.md",
+                "/zh/feedback.md",
+                "/zh/servant_plan.md",
+                "/zh/events.md",
+                "/zh/items.md",
+                "/zh/free_calculator.md",
+                "/zh/sq_plan.md",
+                "/zh/master_mission.md",
+                "/zh/import_data.md",
                 {
                   text: "导入抓包",
+                  collapsible: true,
                   children: [
-                    '/zh/import_https/README.md',
-                    '/zh/import_https/transfer_data.md',
-                    '/zh/import_https/charles.md',
-                    '/zh/import_https/mitmproxy.md',
-                    '/zh/import_https/decoder.md',
-                  ]
+                    "/zh/import_https/README.md",
+                    "/zh/import_https/transfer_data.md",
+                    "/zh/import_https/charles.md",
+                    "/zh/import_https/mitmproxy.md",
+                    "/zh/import_https/decoder.md",
+                  ],
                 },
-                '/zh/summon.md',
-                '/zh/game_statistics.md',
-                '/zh/buff_filter.md',
-                '/zh/search_filter.md',
-                '/zh/app_setting.md',
-                '/zh/freedom_order.md',
-                '/zh/lostroom.md',
-                '/zh/donation.md',
-                '/zh/faq.md',
-                '/zh/references.md',
-                '/zh/privacy2.md',
-                '/zh/privacy.md',
-                '/zh/changelog.md',
-              ]
-            }
-          ]
-        }
-      }
-    }
+                "/zh/summon.md",
+                "/zh/game_statistics.md",
+                "/zh/buff_filter.md",
+                "/zh/search_filter.md",
+                "/zh/app_setting.md",
+                "/zh/freedom_order.md",
+                "/zh/lostroom.md",
+                "/zh/donation.md",
+                "/zh/faq.md",
+                "/zh/references.md",
+                "/zh/privacy2.md",
+                "/zh/privacy.md",
+                "/zh/changelog.md",
+              ],
+            },
+          ],
+        },
+      },
+    },
   },
   plugins: [
     // [
@@ -205,27 +217,27 @@ export default defineUserConfig<DefaultThemeOptions>({
     //   }
     // ],
     [
-      '@vuepress/plugin-docsearch',
+      "@vuepress/plugin-docsearch",
       <DocsearchOptions>{
-        apiKey: '8cb8481c0034b89290985b41f425004d',
-        indexName: 'chaldea-center',
-        appId: 'BH4D9OD16A',
+        apiKey: "8cb8481c0034b89290985b41f425004d",
+        indexName: "chaldea-center",
+        appId: "BH4D9OD16A",
         locales: {
-          '/': { placeholder: 'Search' },
-          '/zh/': { placeholder: '搜索' }
-        }
-      }
+          "/": { placeholder: "Search" },
+          "/zh/": { placeholder: "搜索" },
+        },
+      },
     ],
     [
-      'vuepress-plugin-sitemap2',
+      "vuepress-plugin-sitemap2",
       <SitemapOptions>{
-        hostname: 'https://docs.chaldea.center'
-      }
+        hostname: "https://docs.chaldea.center",
+      },
     ],
     [
-      '@vuepress/plugin-register-components',
+      "@vuepress/plugin-register-components",
       {
-        componentsDir: path.resolve(__dirname, './components')
+        componentsDir: path.resolve(__dirname, "./components"),
       },
     ],
     // [  // no effect
@@ -242,4 +254,4 @@ export default defineUserConfig<DefaultThemeOptions>({
     //   }
     // ],
   ],
-})
+});

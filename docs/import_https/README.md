@@ -1,4 +1,4 @@
-# Import HTTPS Response
+# About HTTPS Sniffing
 
 Capture the network traffic when FGO client login to terminal which contains the data of all servants(ascension/palingenesis/bond/active skill/append skill/costume/coins), materials and CEs. Then easily import it to Chaldea app, no need to manually input servant data anymore.
 
@@ -12,7 +12,7 @@ Make sure you are aware of the risk of capturing HTTPS traffic. Chaldea app does
 
 - [Charles Tutorial](./charles.md)
 - [mitmproxy Tutorial](./mitmproxy.md)
-- 
+
 ## Principle
 
 Here, a simple principle about https sniffing gives a brief introduction of the potential risks. You can search more about MITM and cert-pinning on internet.
@@ -41,4 +41,4 @@ You can get it from their discord channel:
 1. Join [https://discord.gg/8JeHHvh](https://discord.gg/8JeHHvh)
 2. In `ANNOUNCEMENT-roles`, click the `BetterFGO` role emoji to get the role and permission.
 3. Goto `betterfgo-cli` channel, there are JP/NA apk mod links.
-4. [transfer](./transfer_data.md) iOS/Android FGO data to BetterFGO.
+4. [Transfer](./transfer_data.md) iOS/Android FGO data to BetterFGO.
