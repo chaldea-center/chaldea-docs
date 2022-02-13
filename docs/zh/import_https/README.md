@@ -39,7 +39,9 @@ Fiddler/Charles~~以及更底层的wireshark等~~为目前主流的网络调试/
 
 
 ## 获取日服美服安装包
-对于日服和美服，需要使用修改过的apk安装包，仅适用于Android。对于rayshift的BetterFGO，尽管我们认为不会被封，但总归是修改客户端的行为，我们无法提供任何保证也无法承担任何责任。如果不信任，请勿使用，如需使用，请合理使用，不要传播、不要官方跳脸、不要恶意搞人。
+对于日服和美服，需要使用修改过的apk安装包，仅适用于Android，原先iOS或Android上FGO存档可通过[迁移数据](./transfer_data.md)的方法在不使用引继码下实现多设备/多客户端登陆。
+
+对于rayshift的BetterFGO，尽管我们认为不会被封，但总归是修改客户端的行为，我们无法提供任何保证也无法承担任何责任。如果不信任，请勿使用，如需使用，请合理使用，不要传播、不要官方跳脸、不要恶意搞人。
 
 bfgo客户端(包名`io.rayshift.betterfgo(.en)`)和原客户端(包名`com.aniplex.fategrandorder(.en)`)可以同时存在，通过[迁移数据](./transfer_data.md)无需引继即可在两个客户端之间切换。bfgo无法使用Google Play，建议仅抓包时使用bfgo客户端，也切勿在战斗中切换客户端。
 
@@ -58,4 +60,4 @@ Disclaimer: While I believe this app will not get you banned, I take no responsi
     :kanou: : BetterFGO 
    ```
 4. 在`betterfgo-cli`频道中查看并下载日服或美服的安装包
-5. 为了防止引继丢号的风险，建议通过[迁移数据](./transfer_data.md)将iOS或Android原存档迁移至BFGO存档。
+5. 通过[迁移数据](./transfer_data.md)将iOS或Android原存档迁移至BFGO存档。

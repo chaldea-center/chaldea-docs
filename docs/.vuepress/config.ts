@@ -100,8 +100,16 @@ export default defineUserConfig<DefaultThemeOptions>({
                 '/free_calculator.md',
                 '/sq_plan.md',
                 '/master_mission.md',
-                '/import_data.md',
-                '/import_https.md',
+                '/import_data.md',   
+                 {
+                  text: "Import HTTPS Response",
+                  children: [
+                    '/import_https/README.md',
+                    '/import_https/transfer_data.md',
+                    '/import_https/charles.md',
+                    '/import_https/mitmproxy.md',
+                  ]
+                },
                 '/summon.md',
                 '/game_statistics.md',
                 '/buff_filter.md',
@@ -162,7 +170,8 @@ export default defineUserConfig<DefaultThemeOptions>({
                     '/zh/import_https/README.md',
                     '/zh/import_https/transfer_data.md',
                     '/zh/import_https/charles.md',
-                    '/zh/import_https/mitmproxy.md'
+                    '/zh/import_https/mitmproxy.md',
+                    '/zh/import_https/decoder.md',
                   ]
                 },
                 '/zh/summon.md',

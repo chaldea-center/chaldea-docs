@@ -3,15 +3,23 @@
 本文详细介绍借助Charles实现https抓包的步骤。
 
 ## 所需软件或工具
-- Charles: 提供Windows、macOS以及Linux版，官方正版试用版存在单次使用30分钟的限制且时不时跳出来一个提示，与本例中足矣
+- Charles: 提供Windows、macOS以及Linux版，官方正版试用版存在单次使用30分钟的限制，但功能够用
    - 下载地址: [https://www.charlesproxy.com/download/](https://www.charlesproxy.com/download/)
 - 全局http代理软件:
-  - iOS: `Potatso Lite`, 免费应用; `shadowrocket`付费应用。需非国区账号下载，其他可用软件欢迎补充。
-  - Android: `Drony v1.3.x`, 免费应用, [下载地址(密码:chaldea)](https://wws.lanzoui.com/b01uoc3qh)
+  - iOS: `Potatso Lite`, 免费应用; `shadowrocket`付费应用。均需非国区账号下载，其他可用软件欢迎补充~~有很多~~。
+  - Android: `Drony v1.3.x`, 免费应用, [下载地址(密码:chaldea)](https://wws.lanzoui.com/b01uoc3qh)。百度下载Drony可以下载到各式各样文件体积的版本，有些是不能用的，建议直接从网盘下载。
 - Android only:
-  - Android版本需**小于等于6**，现在手机基本见不到旧版本的安卓了，模拟器使用Android 6较多，可在`设置-关于`中查看Android版本
-  - BetterFGO客户端: 获取方式见下方，仅用于日服和美服
+  - Android版本需**小于等于6**，现在手机基本见不到旧版本的安卓了，模拟器尚有不少6的，可在`设置-关于`中查看Android版本
+  - BetterFGO客户端: 获取方式见[获取日服美服安装包](./README.md#获取日服美服安装包)
 
+
+## 关于模拟器
+
+本教程基于蓝MuMu(Android 6)，至少经过多次多人使用验证是没问题的。
+
+如果模拟器或手机的Android版本大于6，需要将CA证书塞进系统证书，root是前提，还需要adb操作，没有经验的请直接使用本教程的蓝MuMu模拟器。
+
+模拟器种类太多，总有莫名其妙的问题，如蓝叠(BluStacks)根本没有WiFi和证书安全的设置项，夜神(Nox)未知原因抓不到等。抓包失败或不想折腾的请使用蓝MuMu
 
 ## 配置Charles
 
@@ -99,7 +107,7 @@
 
 ### FGO抓包
 
-> 2022.01.04国服更新2.36.0支持iOS/Android互登，目标域名更改为`line3-s2-xxx-fate.bilibiligame.net`，但仍有可能依旧为`line1`。
+> 2022.01.04国服更新2.36.0支持iOS/Android互登，目标域名更改为`line3-s2-xxx-fate.bilibiligame.net`，但仍有可能依旧为`line1`，总之都找找试试。
 
 1. 重新启动并登陆FGO国服、台服、BetterFGO日服/美服，直到看到地球仪或公告栏为止
 2. 找到Charles的列表中以下url，**如果找不到就关闭FGO重新打开多试几次**
@@ -112,7 +120,10 @@
     ```:no-line-numbers
     https://game.fate-go.jp/login/top?_userId=xxxx
     ``` 
-    - 美服: 与日服类似，域名为`https://game.fate-go.us`，由于无美服账号，待确认
+    - 美服:
+    ```:no-line-numbers
+    https://game.fate-go.us/login/top?_userId=xxxx
+    ```
 3. 选中上述url右键`Save Response`，(注意是`Response`，不要和Request搞混了)，另存为fgo.txt(名字随意)
 4. 检查: 任意文本编辑器打开保存的txt文件，对于国服和台服，内容为`ey`开头的一大串字母数字符号组成的base64编码；对于日服和美服，为`{`开头的可读性极高的json格式。默认应为utf8编码，打开后仅查看，请勿编辑保存导致编码格式改变。
 
@@ -144,23 +155,11 @@
 - VitualXposed框架+JustTrustMe 绕过证书验证: (第一次接触xposed)个人测试失败了，有经验的欢迎尝试讨论。如果可行的话无需使用修改版客户端。
 
 ## FAQ
-- 在抓包时FGO可能经常提示连接失败之类的提示，多点几次重试，仍然不行请确保运行WiFi代理与全局代理软件均打开
+- 在抓包时FGO可能经常提示连接失败之类的提示，多点两三次重试，仍然不行请确保运行WiFi代理与全局代理软件均打开，再对照一遍教程
 - 韩服目前没法子
-- 测试ing,有任何问题(包括文档)及时反馈
+- 有任何问题(包括文档)及时反馈
 
 
 ## 解码小工具
-对于国服与台服，原始数据经Base64编码+url编码，不可读，APP内可自动转化。若希望查看原始数据，可自行解码或使用本工具解码得到可读性较高的json格式。
 
-操作流程：
-1. 点击`加载文件/choose file`选择上述保存的fgo.txt，或手动复制内容并粘贴至`输入`中，点击`解码`。
-2. 此时`输入`里为原文本，`输出`里为解码后json文本。
-3. 点击`结果另存为`保存结果至fgo.json。可自行检查文件内容，其中只包含游戏相关信息，而无账号密码等隐私，可以放心使用。
-
-此外，也可在输入框里自行输入内容测试解码(decode)和编码(encode)
-
-> 解码: 输入 -> url解码 -> base64解码 -> 输出<br />
-> 
-> 编码: 输入 -> base64编码 -> 输出
-
-<decoder></decoder>
+迁移至[解码小工具](./decoder.md)
