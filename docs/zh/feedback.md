@@ -3,10 +3,10 @@
 如有任何建议或问题反馈，可以通过以下方式联系开发者
 
 * Email(推荐): [chaldea@narumi.cc](mailto:chaldea.narumi.cc)
-* Github issue/pull request: [https://github.com/chaldea-center/chaldea](https://github.com/chaldea-center/chaldea/releases)
+* Github: [https://github.com/chaldea-center/chaldea/issues](https://github.com/chaldea-center/chaldea/issues)
 * NGA-FGO版块: [https://bbs.nga.cn/read.php?tid=24926789](https://bbs.nga.cn/read.php?tid=24926789)
 * Discord: [https://discord.gg/5M6w5faqjP](https://discord.gg/5M6w5faqjP)
-* QQ频道: [Chaldea](https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&inviteCode=1bVHFW&from=181074&biz=ka&shareSource=5)
+* QQ频道: [需最新版QQ&内测](https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&inviteCode=1bVHFW&from=181074&biz=ka&shareSource=5)
 * 应用内反馈（bug反馈优先此项！）
 
 

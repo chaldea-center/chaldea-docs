@@ -32,7 +32,7 @@ Click :gear: setting button to show the dialog. It will looks red if using the n
 5. **Efficiency**: use per 20AP or per battle
 6. **Blacklist**: custom quest blacklist, e.g. which maybe too hard for me to 3T
 
-### Plan Result Tab
+## Plan Result Tab
 After demands set, click **solve**, the plan tab will show the best solution.
 
 Click quest to expand its detail info. You can choose to add it to blacklist or remove from blacklist, then solve again.
@@ -43,7 +43,7 @@ Here we use Linear Programming, without Integer limit. So the solution may have 
 
 Invalid items will be shown at top - for which you cannot find any quest.
 
-### Efficiency Tab
+## Efficiency Tab
 Sort all quest which drops this item. The weight for each item is set in demands tab.
 
 **Sort:** by total efficiency, or by bond efficiency(BP/AP)
@@ -54,5 +54,5 @@ Sort all quest which drops this item. The weight for each item is set in demands
   - **"AND"** mode: quests containing all these items
   - **"OR"** mode: quests containing any of these items
 
-### Free Quests List
+## Free Quests List
 View all free quests of main story.

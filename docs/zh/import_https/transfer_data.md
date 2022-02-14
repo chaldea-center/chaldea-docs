@@ -7,7 +7,7 @@
 
 ### 存档目录
 
-- Android: `/sdcard/Android/data/<package>/files/data/`
+- Android: `/storage/emulated/0/Android/data/<package>/files/data/`
 - iOS: `Fate_GO.imazingapp/Container/Documents/`
 
 对于Android-Android, iOS-iOS迁移，只需上述文件夹中的文件(不包括子文件夹)全部复制到目标文件夹覆盖原文件即可。
@@ -16,9 +16,8 @@
 
 ### 导出Android存档
 
-Android系统的FGO**存档目录**为: `/sdcard/Android/data/<package>/files/data/`，d713等子文件夹为资源文件，可忽略。
+Android系统的FGO**存档目录**为: `/storage/emulated/0/Android/data/<package>/files/data/`，d713等子文件夹为资源文件，可忽略。
 
-`/sdcard/`即为打开文件管理的默认根目录, 对于内部储存此处`/sdcard/`=`/storage/emulated/0/`
 
 不同安装包的`<package>`包名如下，需至少打开应用一次以生成该文件夹
 - 日服: `com.aniplex.fategrandorder`

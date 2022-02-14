@@ -1,7 +1,7 @@
 {
   "name": "chaldea-docs",
   "version": "0.0.1",
-  "description": "Documentation of Chaldea - A cross platform material planning tools for Fate/GO.",
+  "description": "Documentation of Chaldea - Yet another material planning tool for Fate/GO.",
   "main": "index.js",
   "scripts": {
     "docs:dev": "vuepress dev docs",

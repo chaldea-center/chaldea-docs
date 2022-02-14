@@ -163,7 +163,6 @@ export default defineUserConfig<DefaultThemeOptions>({
           "/zh/": [
             {
               text: "Chaldea",
-              collapsible: true,
               children: [
                 "/zh/introduction.md",
                 "/zh/installation.md",

@@ -9,6 +9,7 @@
 | Windows | Windows 7 SP1 (64-bit), x86-64 based |
 | macOS   | macOS 10.12.2 (macOS 10.14 in future)  |
 | Linux   | Debian 10 & above             |
+| Web     | Coming soon...                |
 
 ## 下载
 

@@ -3,7 +3,7 @@
 If you have any advice or feedback, you can contact developer through:
 
 * Email(Recommended): [chaldea@narumi.cc](mailto:chaldea.narumi.cc)
-* Github issue/pull request: [https://github.com/chaldea-center/chaldea](https://github.com/chaldea-center/chaldea/releases)
+* Github: [https://github.com/chaldea-center/chaldea/issues](https://github.com/chaldea-center/chaldea/issues)
 * NGA-FGO Forum: [https://bbs.nga.cn/read.php?tid=24926789](https://bbs.nga.cn/read.php?tid=24926789)
 * Discord: [https://discord.gg/5M6w5faqjP](https://discord.gg/5M6w5faqjP)
 * QQ Channel: [Chaldea](https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&inviteCode=1bVHFW&from=181074&biz=ka&shareSource=5)

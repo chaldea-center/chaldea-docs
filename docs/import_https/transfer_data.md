@@ -6,7 +6,7 @@ No need to use and update transfer code time and time again. You can directly co
 
 ## Data File Directory
 
-- Android: `/sdcard/Android/data/<package>/files/data/`
+- Android: `/storage/emulated/0/Android/data/<package>/files/data/`
 - iOS: `Fate_GO.imazingapp/Container/Documents/`
 
 For Android-Android and iOS-iOS transferring, it's just copy then paste the above directory.
@@ -15,7 +15,7 @@ If you want to transfer from iOS to Android or reverse, you need to rename the f
 
 ### Extract Android Data
 
-Just copy the files under `/sdcard/Android/data/<package>/files/data/`, subfolder can be skipped.
+Just copy the files under `/storage/emulated/0/Android/data/<package>/files/data/`, subfolder can be skipped.
 
 The `<package>` name for different apk is:
 - JP: `com.aniplex.fategrandorder`

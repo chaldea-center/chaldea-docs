@@ -8,7 +8,10 @@
       或输入/粘贴文本
       <textarea v-model="vin" rows="10" placeholder="请输入文本或加载文件" />
     </label>
-
+    <span>
+      <button @click="decode">解码</button>
+      <button @click="encode">编码</button>
+    </span>
     <label>
       输出结果
       <textarea
@@ -19,8 +22,6 @@
       />
     </label>
     <span>
-      <button @click="decode">解码</button>
-      <button @click="encode">编码</button>
       <button @click="format">格式化JSON</button>
       <button @click="downloadOutput">结果另存为</button>
     </span>
@@ -71,7 +72,7 @@ export default {
       this.errorHint = null;
       reader.onload = (event) => {
         $this.vin = event.target.result;
-        $this.decode(event.target.result);
+        $this.decode();
       };
       reader.onerror = () => {
         this.errorHint = "failed reading file";
@@ -79,8 +80,15 @@ export default {
       reader.readAsText(file, "utf-8");
     },
     downloadOutput() {
+      const t = new Date();
+      const year = t.getFullYear(),
+        month = t.getMonth() + 1,
+        day = t.getDate(),
+        hour = t.getHours(),
+        minute = t.getMinutes(),
+        sec = t.getSeconds();
       let downLink = document.createElement("a");
-      downLink.download = "result.json";
+      downLink.download = `result ${year}-${month}-${day} ${hour}-${minute}-${sec}.json`;
       let blob = new Blob([this.vout]);
       downLink.href = URL.createObjectURL(blob);
       document.body.appendChild(downLink);
