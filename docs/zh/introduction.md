@@ -1,13 +1,13 @@
 # 关于 Chaldea
 
-Chaldea是一款用于[Fate/Grand Order](https://www.fate-go.jp)/[命运-冠位指定](https://game.bilibili.com/fgo/)的规划软件，支持Android、iOS、Windows、macOS和Linux平台。Chaldea可以帮助Master规划从者练度、素材和活动等。
+Chaldea是一款用于[Fate/Grand Order](https://www.fate-go.jp)/[命运-冠位指定](https://game.bilibili.com/fgo/)的规划软件，支持Android、iOS、Windows、macOS、Linux和Web平台。Chaldea可以帮助Master规划从者练度、素材和活动等。
 
 ![Chaldea Preview](/images/zh/home_svt_preview.webp)
 <figcaption style="text-align:center">Chaldea预览</figcaption>
 
 ## 主要功能/特性
 
-- **多平台支持：** Android、iOS、Windows、macOS、Linux
+- **多平台支持：** Android、iOS、Windows、macOS、Linux和Web
 - **多语种支持：** 中文、英文、日文，完善中
 - **资料查询：** 从者、概念礼装、指令纹章、魔术礼装等。
 - **素材规划**

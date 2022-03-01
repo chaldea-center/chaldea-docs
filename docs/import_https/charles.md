@@ -1,7 +1,7 @@
 # Charles Sniffning
 
 ## Requirements
-- Charles: support Windows, macOS and Linux, you can download from official website: [https://www.charlesproxy.com/download/](https://www.charlesproxy.com/download/)
+- Charles: support Windows, macOS, Linux, you can download from official website: [https://www.charlesproxy.com/download/](https://www.charlesproxy.com/download/)
 - Global http proxy app
   - iOS: `Potatso Lite`(free), `shadowrocket`(paid) or others you know
   - Android: `Drony v1.3.x`(free) or other you know, you can also download it from [cloud drive(password:chaldea)](https://wws.lanzoui.com/b01uoc3qh)

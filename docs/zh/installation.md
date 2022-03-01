@@ -9,7 +9,9 @@
 | Windows | Windows 7 SP1 (64-bit), x86-64 based |
 | macOS   | macOS 10.12.2 (macOS 10.14 in future)  |
 | Linux   | Debian 10 & above             |
-| Web     | Coming soon...                |
+| Web     | [https://chaldea.center](https://chaldea.center)<br>[https://cn.chaldea.center](https://cn.chaldea.center)|
+
+关于Web版详见[V2 Release](./v2_release.md)
 
 ## 下载
 
@@ -36,8 +38,11 @@
 
 Github访问存在障碍的情况下，请选择镜像网站访问：
 - [Github Releases](https://github.com/chaldea-center/chaldea/releases)
-- [fastgit镜像](https://hub.fastgit.org/chaldea-center/chaldea/releases) ~~被qiang了~~
+- [fastgit镜像](https://hub.fastgit.org/chaldea-center/chaldea/releases) ~~也被qiang了~~
 - [cnpmjs镜像](https://github.com.cnpmjs.org/chaldea-center/chaldea/releases) ~~被Github限制了~~
+
+蓝奏云网盘，最后的底线，更新可能不及时。
+- [https://wws.lanzoui.com/b01tuahmf](https://wws.lanzoui.com/b01tuahmf) 密码:chaldea
 
 ## 安装注意事项
 

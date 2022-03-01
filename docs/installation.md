@@ -9,7 +9,9 @@
 | Windows  | Windows 7 SP1 (64-bit), x86-64 based |
 | macOS    | macOS 10.12.2 (macOS 10.14 in future)  |
 | Linux    | Debian 10 & above             |
-| Web      | Coming soon...                |
+| Web      | [https://chaldea.center](https://chaldea.center)<br>[https://cn.chaldea.center](https://cn.chaldea.center)|
+
+For more details about Web version, see [V2 Release Note](./v2_release.md)
 
 ## Download
 

@@ -8,7 +8,7 @@ export default defineUserConfig<DefaultThemeOptions>({
   lang: "en-US",
   title: "Chaldea",
   description:
-    "Chaldea - A cross-platform material planning tool for Fate/Grand Order",
+    "Chaldea - Yet Another Material Planning Tool for Fate/Grand Order",
   // dest: 'dist',
   head: [
     ["link", { rel: "icon", href: "/logo.png" }],
@@ -17,7 +17,7 @@ export default defineUserConfig<DefaultThemeOptions>({
       {
         name: "keywords",
         content:
-          "Chaldea,迦勒底,素材规划,Material Planning,Planner,FGO,fate,Fate/Grand Order,命运-冠位指定,型月,typemoon,周回,free",
+          "Chaldea,Chaldea Center,Chaldea App,迦勒底,素材规划,Material Planning,Planner,FGO,fate,Fate/Grand Order,命运-冠位指定,型月,typemoon,周回,free",
       },
     ],
     [
@@ -95,12 +95,30 @@ export default defineUserConfig<DefaultThemeOptions>({
     locales: {
       "/": {
         selectLanguageText: "Language/语言",
+
+        navbar: [
+          {
+            text: "Web App",
+            children: [
+              {
+                text: "chaldea.center",
+                link: "https://chaldea.center",
+              },
+              {
+                text: "cn.chaldea.center",
+                link: "https://cn.chaldea.center",
+              },
+            ],
+          },
+        ],
+
         sidebar: {
           "/": [
             {
               text: "Chaldea",
               children: [
                 "/introduction.md",
+                "/zh/v2_release.md",
                 "/installation.md",
                 "/feedback.md",
                 "/servant_plan.md",
@@ -159,12 +177,29 @@ export default defineUserConfig<DefaultThemeOptions>({
         toggleDarkMode: "切换深色模式",
         toggleSidebar: "切换侧边栏",
 
+        navbar: [
+          {
+            text: "Web App",
+            children: [
+              {
+                text: "cn.chaldea.center",
+                link: "https://cn.chaldea.center",
+              },
+              {
+                text: "chaldea.center",
+                link: "https://chaldea.center",
+              },
+            ],
+          },
+        ],
+
         sidebar: {
           "/zh/": [
             {
               text: "Chaldea",
               children: [
                 "/zh/introduction.md",
+                "/zh/v2_release.md",
                 "/zh/installation.md",
                 "/zh/feedback.md",
                 "/zh/servant_plan.md",
