@@ -9,8 +9,9 @@ If you are inside China mainland, [https://cn.chaldea.center](https://cn.chaldea
 
 ## Web Renderer
 
-There are two renderer, HTML renderer and CanvasKit renderer. By default, it is automatically chosen according to device info.
-Also you can specify the renderer in Settings, the change will take affect at next loading or page refreshing.
+There are two renderer, HTML renderer and CanvasKit renderer. Also you can specify the renderer in Settings, the change will take affect at next loading or page refreshing.
+
+By default, `html` renderer is used.
 
 ### HTML Renderer
 Uses a combination of HTML elements, CSS, Canvas elements, and SVG elements. .
@@ -22,6 +23,56 @@ Uses a combination of HTML elements, CSS, Canvas elements, and SVG elements. .
 
 - advantages: fully consistent with Flutter mobile and desktop, has faster performance with higher widget density
 - disadvantages: larger app size, especially the first loading. Need to download then render Google fonts at runtime. It may take several seconds before you can see the correct characters.
+
+### auto
+
+Automatically choose renderer according to device info.
+
+
+## Help Translation
+
+### Game Data
+
+Current based on JP data, added CN/TW/NA/KR translations of released part for each region. Besides, Mooncell translation for CN and AtlasAcademy translation for NA is also included.
+
+In order to display future data in other region, help with our translation welcomed! 
+
+Translation files locate at [https://github.com/chaldea-center/chaldea-data/tree/main/mappings](https://github.com/chaldea-center/chaldea-data/tree/main/mappings)
+
+```json
+{
+  "jp_key": {
+    "JP": null, // keep null if key is jp
+    "CN": "Simplified Chinese",
+    "TW": "Traditional Chinese",
+    "NA": "English",
+    "KR": "Korean"
+  }
+}
+```
+
+
+### UI Text
+
+App ui text also support multi-language, besides the official 5 languages, we can extend support for other languages too.
+
+Translation files locate at [https://github.com/chaldea-center/chaldea/tree/main/lib/l10n](https://github.com/chaldea-center/chaldea/tree/main/lib/l10n)
+
+- `intl_ar.arb` - Arabic(RTL)
+- `intl_en.arb` - English
+- `intl_es.arb` - Spanish/Español
+- `intl_ja.arb` - Japanese
+- `intl_ko.arb` - Korean
+- `intl_zh.arb` - Chinese
+- `intl_zh_Hant.arb` - Traditional Chinese
+
+
+### How to help
+
+You can help translation through:
+- Github Pull Request
+- Join Discord Channel, directly provide translation texts/files
+
 
 ## Feedback
 
