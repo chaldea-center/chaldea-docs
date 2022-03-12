@@ -1,6 +1,6 @@
 # V2 Release Note
 
-本次更新带来了渐进式Web应用(PWA)的支持，原APP核心功能已适配过半，目前仍处于测试阶段。
+本次更新带来了渐进式Web应用(PWA)的支持，原APP核心功能已适配过半，目前仍处于测试阶段。同时数据结构也经过大幅度变更，因此与V1的数据是不兼容的。
 
 目前提供两个网址可供访问: 
 - [https://cn.chaldea.center](https://cn.chaldea.center)
@@ -8,9 +8,26 @@
 
 由于国内对googleapis.com的访问限制，将可能出现字体无法加载的情况。因此增加cn.chaldea.center作为国内访问入口。
 
+
+## 从V1迁移
+
+从**主页**进入**导入**子页面，目前提供了从V1导入、抓包导入、FGOSim(webcrow)网站导入。
+从V1导入旧版数据时，仅导入从者数据和素材数据，原先的一个或多个账号将会作为新账号添加到已有账号之后，请前往账号页切换所需账号。
+::: warning
+**设置-用户数据-导入** 仅支持当前版本的应用数据导入，无法导入V1数据。
+:::
+
+## 注意事项
+
+- 去除银芙芙规划，仅保留金芙芙规划
+- 未来活动的规划分的更细了，由于数据源不同，和旧数据完全不兼容，因此导入V1数据无活动信息
+- 搜索功能由于性能/设计等问题暂时禁用
+- 服务器备份暂未启用
+
+
 ## Web渲染模式
 
-目前存在两种渲染方式，各有优缺点。可在设置最下方手动选择渲染模式，更改渲染方式将于下次启动/刷新页面生效。默认使用html渲染。
+目前Web端存在两种渲染方式，各有优缺点。可在设置最下方手动选择渲染模式，更改渲染方式将于下次启动/刷新页面生效。默认使用canvaskit渲染。
 
 ### HTML渲染
 使用 HTML，CSS，Canvas 和 SVG 元素来渲染。
@@ -30,9 +47,9 @@
 
 ### 游戏数据
 
-目前以日服(JP)数据为基础，并增加国服(CN)、台服(TW)、美服(NA)和韩服(KR)已实装的部分翻译，并集成了部分Mooncell和AtlasAcademy的翻译。为了更好的展示各个区服未实装的资料，欢迎贡献翻译！
+目前以日服(JP)数据为基础，并增加国服(CN)、台服(TW)、美服(NA)和韩服(KR)已实装的部分翻译，并增加了部分Mooncell、AtlasAcademy和Fandom的翻译。为了更好的展示各个区服未实装的资料，欢迎贡献翻译！
 
-翻译文件位于[https://github.com/chaldea-center/chaldea-data/tree/main/mappings](https://github.com/chaldea-center/chaldea-data/tree/main/mappings)
+所需翻译的文件位于[https://github.com/chaldea-center/chaldea-data/tree/main/mappings](https://github.com/chaldea-center/chaldea-data/tree/main/mappings)
 
 ```json
 {

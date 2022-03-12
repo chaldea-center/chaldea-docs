@@ -7,11 +7,27 @@ Website domain:
 
 If you are inside China mainland, [https://cn.chaldea.center](https://cn.chaldea.center) is recommended.
 
+## Migrate from V1
+
+Enter **Import Data** from Home page, you can now import V1 data, sniffed data and FGOSim(webcrow) data.
+
+When importing V1 data, only servants and items data are handled. All previous accounts will be added after current ones. Please go to `Settings-Accounts` to switch account.
+ 
+::: warning
+**Settings-Userdata-Import** can only import data that is saved by current app version. NOT for V1 data. 
+:::
+
+## Attentions
+- Silver Fou is removed from plan now. Only Gold Fou is planned.
+- More detailed future event planning, incompatible with V1 data.
+- Search is disabled temporary.
+- Server backup/restore is disabled either.
+
 ## Web Renderer
 
 There are two renderer, HTML renderer and CanvasKit renderer. Also you can specify the renderer in Settings, the change will take affect at next loading or page refreshing.
 
-By default, `html` renderer is used.
+By default, `canvaskit` renderer is used.
 
 ### HTML Renderer
 Uses a combination of HTML elements, CSS, Canvas elements, and SVG elements. .
@@ -33,7 +49,7 @@ Automatically choose renderer according to device info.
 
 ### Game Data
 
-Current based on JP data, added CN/TW/NA/KR translations of released part for each region. Besides, Mooncell translation for CN and AtlasAcademy translation for NA is also included.
+Current based on JP data, added CN/TW/NA/KR translations of released part for each region. Besides, Mooncell translation for CN and AtlasAcademy/Fandom translation for NA is also included.
 
 In order to display future data in other region, help with our translation welcomed! 
 
