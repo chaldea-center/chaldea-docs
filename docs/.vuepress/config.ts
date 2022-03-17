@@ -269,8 +269,6 @@ export default defineUserConfig<DefaultThemeOptions>({
     // ],
     seo({
       hostname: "https://docs.chaldea.center",
-      author: "narumi",
-      twitterID: "narumi147",
       isArticle: () => false,
       customHead: (head) => {
         head.push(
@@ -313,8 +311,7 @@ export default defineUserConfig<DefaultThemeOptions>({
             "meta",
             {
               property: "og:description",
-              content:
-                "Chaldea - Yet Another Material Planning Tool for Fate/Grand Order",
+              content: "Chaldea - Yet Another Planning Tool for FGO",
             },
           ]
         );
