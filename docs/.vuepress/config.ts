@@ -271,6 +271,54 @@ export default defineUserConfig<DefaultThemeOptions>({
       hostname: "https://docs.chaldea.center",
       author: "narumi",
       twitterID: "narumi147",
+      isArticle: () => false,
+      customHead: (head) => {
+        head.push(
+          [
+            "meta",
+            {
+              property: "og:image",
+              content: "https://docs.chaldea.center/logo.png",
+            },
+          ],
+          [
+            "meta",
+            {
+              property: "og:image:type",
+              content: "image/png",
+            },
+          ],
+          [
+            "meta",
+            {
+              property: "og:image:width",
+              content: "64",
+            },
+          ],
+          [
+            "meta",
+            {
+              property: "og:image:height",
+              content: "64",
+            },
+          ],
+          [
+            "meta",
+            {
+              property: "og:image:alt",
+              content: "Chaldea icon",
+            },
+          ],
+          [
+            "meta",
+            {
+              property: "og:description",
+              content:
+                "Chaldea - Yet Another Material Planning Tool for Fate/Grand Order",
+            },
+          ]
+        );
+      },
     }),
     sitemap({
       hostname: "https://docs.chaldea.center",

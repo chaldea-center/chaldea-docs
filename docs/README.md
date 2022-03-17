@@ -6,13 +6,13 @@ heroText: Chaldea
 tagline: Cross-platform Material Planning Tool for Fate/GO
 actions:
   - text: Installation
-    link: /installation.md
+    link: /installation.html
     type: primary
   - text: Web App
-    link: /v2_release.md
+    link: /v2_release.html
     type: primary
   - text: User Manual
-    link: /introduction.md
+    link: /introduction.html
     type: secondary
 features:
   - title: Cross Platform
