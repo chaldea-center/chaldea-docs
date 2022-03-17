@@ -15,8 +15,8 @@
 
 1. 导入`ffo-data.zip`资源包，可从下面地址下载:
     - 应用内点击下载按钮下载导入，若导入失败，请手动解压至`root_path/ffo/`。`root_path`具体路径请参考[目录结构](./app_setting.md#应用数据)
-    - [Github](https://github.com/chaldea-center/chaldea/releases/tag/ffo-data)或[fastgit镜像](https://hub.fastgit.org/chaldea-center/chaldea/releases/tag/ffo-data)
-      - 下载链接: [Github](https://github.com/chaldea-center/chaldea/releases/download/ffo-data/ffo.zip), [cnpmjs镜像](https://github.com.cnpmjs.org/chaldea-center/chaldea/releases/download/ffo-data/ffo.zip), [fastgit镜像](https://hub.fastgit.org/chaldea-center/chaldea/releases/download/ffo-data/ffo.zip)
+    - [Github](https://github.com/chaldea-center/chaldea/releases/tag/ffo-data)或[fastgit镜像](https://hub.fastgit.xyz/chaldea-center/chaldea/releases/tag/ffo-data)
+      - 下载链接: [Github](https://github.com/chaldea-center/chaldea/releases/download/ffo-data/ffo.zip), [cnpmjs镜像](https://github.com.cnpmjs.org/chaldea-center/chaldea/releases/download/ffo-data/ffo.zip), [fastgit镜像](https://hub.fastgit.xyz/chaldea-center/chaldea/releases/download/ffo-data/ffo.zip)
     - [Gitee](https://gitee.com/chaldea-center/chaldea/releases/ffo-data)
       - 注意: 两个压缩包均需下载并导入
 2. 依此选择 **背景**、**头部**、**身体**

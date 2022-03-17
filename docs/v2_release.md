@@ -47,43 +47,13 @@ Automatically choose renderer according to device info.
 
 ## Help Translation
 
-### Game Data
+The app support all 5 official regions(JP/CN/TW/NA/KR) for gamedata. And also support other languages for app UI, like Spanish and Arabic.
 
-Current based on JP data, added CN/TW/NA/KR translations of released part for each region. Besides, Mooncell translation for CN and AtlasAcademy/Fandom translation for NA is also included.
-
-In order to display future data in other region, help with our translation welcomed! 
-
-Translation files locate at [https://github.com/chaldea-center/chaldea-data/tree/main/mappings](https://github.com/chaldea-center/chaldea-data/tree/main/mappings)
-
-```json
-{
-  "jp_key": {
-    "JP": null, // keep null if key is jp
-    "CN": "Simplified Chinese",
-    "TW": "Traditional Chinese",
-    "NA": "English",
-    "KR": "Korean"
-  }
-}
-```
-
-
-### UI Text
-
-App ui text also support multi-language, besides the official 5 languages, we can extend support for other languages too.
-
-Translation files locate at [https://github.com/chaldea-center/chaldea/tree/main/lib/l10n](https://github.com/chaldea-center/chaldea/tree/main/lib/l10n)
-
-- `intl_ar.arb` - Arabic(RTL)
-- `intl_en.arb` - English
-- `intl_es.arb` - Spanish/Español
-- `intl_ja.arb` - Japanese
-- `intl_ko.arb` - Korean
-- `intl_zh.arb` - Chinese
-- `intl_zh_Hant.arb` - Traditional Chinese
-
+However human translation is wanted for unreleased game data and UI text. If you are interested in helping translation or adding more language support, please contact me! Really welcomed!
 
 ### How to help
+
+See [Help Translation](./translation.md) for translation details.
 
 You can help translation through:
 - Github Pull Request

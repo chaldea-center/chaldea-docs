@@ -62,7 +62,7 @@
   }
 }
 ```
-
+更多详情请见[Help Translation](/translation.md)
 
 ### UI文本
 

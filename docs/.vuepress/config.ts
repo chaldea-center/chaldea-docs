@@ -118,7 +118,8 @@ export default defineUserConfig<DefaultThemeOptions>({
               text: "Chaldea",
               children: [
                 "/introduction.md",
-                "/zh/v2_release.md",
+                "/v2_release.md",
+                "/translation.md",
                 "/installation.md",
                 "/feedback.md",
                 "/servant_plan.md",

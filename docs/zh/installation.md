@@ -38,7 +38,7 @@
 
 Github访问存在障碍的情况下，请选择镜像网站访问：
 - [Github Releases](https://github.com/chaldea-center/chaldea/releases)
-- [fastgit镜像](https://hub.fastgit.org/chaldea-center/chaldea/releases) ~~也被qiang了~~
+- [fastgit镜像](https://hub.fastgit.xyz/chaldea-center/chaldea/releases) ~~也被qiang了~~
 - [cnpmjs镜像](https://github.com.cnpmjs.org/chaldea-center/chaldea/releases) ~~被Github限制了~~
 
 蓝奏云网盘，最后的底线，更新可能不及时。
