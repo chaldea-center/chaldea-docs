@@ -2,7 +2,8 @@ import { defineUserConfig } from "vuepress";
 import type { DefaultThemeOptions } from "vuepress";
 import { path } from "@vuepress/utils";
 import { DocsearchOptions } from "@vuepress/plugin-docsearch";
-import { SitemapOptions } from "vuepress-plugin-sitemap2";
+import { sitemap } from "vuepress-plugin-sitemap2";
+import { seo } from "vuepress-plugin-seo2";
 
 export default defineUserConfig<DefaultThemeOptions>({
   lang: "en-US",
@@ -242,15 +243,6 @@ export default defineUserConfig<DefaultThemeOptions>({
     },
   },
   plugins: [
-    // [
-    //   '@vuepress/plugin-search',
-    //   {
-    //     locales: {
-    //       '/': { placeholder: 'Search' },
-    //       '/zh/': { placeholder: '搜索' }
-    //     }
-    //   }
-    // ],
     [
       "@vuepress/plugin-docsearch",
       <DocsearchOptions>{
@@ -261,12 +253,6 @@ export default defineUserConfig<DefaultThemeOptions>({
           "/": { placeholder: "Search" },
           "/zh/": { placeholder: "搜索" },
         },
-      },
-    ],
-    [
-      "vuepress-plugin-sitemap2",
-      <SitemapOptions>{
-        hostname: "https://docs.chaldea.center",
       },
     ],
     [
@@ -281,12 +267,14 @@ export default defineUserConfig<DefaultThemeOptions>({
     //     id: 'G-PPD5M5TR2R',
     //   },
     // ],
-    // [
-    //   "vuepress-plugin-seo2",
-    //   {
-    //     author: 'narumi',
-    //     twitterID: 'narumi147',
-    //   }
-    // ],
+    seo({
+      hostname: "https://docs.chaldea.center",
+      author: "narumi",
+      twitterID: "narumi147",
+    }),
+    sitemap({
+      hostname: "https://docs.chaldea.center",
+      changefreq: "monthly",
+    }),
   ],
 });
