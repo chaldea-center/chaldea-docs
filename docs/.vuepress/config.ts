@@ -271,6 +271,12 @@ export default defineUserConfig<DefaultThemeOptions>({
       hostname: "https://docs.chaldea.center",
       isArticle: () => false,
       customHead: (head) => {
+        for (let index = head.length - 1; index >= 0; index--) {
+          if (head[index][1]?.["name"] == "twitter:card") {
+            head.splice(index, 1);
+          }
+        }
+
         head.push(
           [
             "meta",
