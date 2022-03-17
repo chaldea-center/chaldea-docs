@@ -28,27 +28,32 @@ Mostly the `"key"` is Japanese name, and you need to fill the translations for `
 **File list:**
 - `item_names`
 - `svt_names`
+- `event_names`
 - `ce_names`
+- `skill_detail`
+- `td_detail`
+- `func_popuptext`
+- `buff_detail`
+- `buff_names`
+- `quest_names`
+- `spot_names`
+- `entity_names`
 - `cc_names`
 - `cv_names`
 - `mc_names`
-- `illustrator_names`
-- `bgm_names`
-- `buff_detail`
-- `buff_names`
 - `costume_names`
-- `entity_names`
-- `event_names`
-- `func_popuptext`
-- `quest_names`
-- `skill_detail`
+- `war_names`
+- `illustrator_names`
 - `skill_names`
-- `spot_names`
-- `td_detail`
 - `td_names`
 - `td_ruby`
 - `td_types`
-- `war_names`
+- `bgm_names`
+
+You can translate important files first, the above list is sorted by my own judgement.
+
+If a string contains year, such as "クリスマス2017"(Christmas 2017), please changed the year according to your region. Commonly, add 1 year for CN, add 2 years for NA/KR, 1~2 years for TW.
+
 
 2 - `"key"` is Simplified Chinese
 
