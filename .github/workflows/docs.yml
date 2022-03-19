@@ -51,5 +51,6 @@ jobs:
           repo: chaldea-center/chaldea-center.github.io
           target_branch: main
           build_dir: docs/.vuepress/dist
+          keep_history: true
         env:
           GH_PAT: ${{ secrets.GH_PAGES_TOKEN }}
