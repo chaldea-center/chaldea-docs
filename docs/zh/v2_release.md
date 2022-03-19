@@ -8,6 +8,15 @@
 
 由于国内对googleapis.com的访问限制，将可能出现字体无法加载的情况。因此增加cn.chaldea.center作为国内访问入口。
 
+::: warning
+目前域名正在申请备案，所有解析将暂时停止，也即所有服务将暂时停止。包括文档、web应用和api。预计于4月份可用。
+
+在线文档可从以下网址临时访问:
+- [https://github-center.github.io](https://github-center.github.io)
+- [https://chaldea-center-github-io.vercel.app](https://chaldea-center-github-io.vercel.app)
+
+应用内的素材识别和技能识别同样不可用。
+:::
 
 ## 从V1迁移
 

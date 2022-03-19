@@ -7,6 +7,17 @@ Website domain:
 
 If you are inside China mainland, [https://cn.chaldea.center](https://cn.chaldea.center) is recommended.
 
+::: warning
+The domain is disabled until website approved from China gov. The domain may be available in April.
+Thus the original web app/doc site/api are all unavailable.
+
+The docs site is temporarily moved to:
+- [https://github-center.github.io](https://github-center.github.io)
+- [https://chaldea-center-github-io.vercel.app](https://chaldea-center-github-io.vercel.app)
+
+In-app skill and item recognition is disabled! Please waiting.
+:::
+
 ## Migrate from V1
 
 Enter **Import Data** from Home page, you can now import V1 data, sniffed data and FGOSim(webcrow) data.
