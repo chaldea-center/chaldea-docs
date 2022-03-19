@@ -26,7 +26,8 @@ export default defineUserConfig<DefaultThemeOptions>({
       {},
       `
       var _url = new URL(window.location.href);
-      var _need_redirect = _url.hostname === "chaldea-center.github.io" || _url.hostname === "chaldea.center";
+      // var _need_redirect = _url.hostname === "chaldea-center.github.io" || _url.hostname === "chaldea.center";
+      var _need_redirect = _url.hostname === "chaldea.center";
       if (_need_redirect) {
         _url.hostname = "docs.chaldea.center";
         window.location.href = _url.toString();
