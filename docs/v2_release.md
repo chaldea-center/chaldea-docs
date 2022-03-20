@@ -18,6 +18,8 @@ The docs site is temporarily moved to:
 In-app skill and item recognition is disabled! Please waiting.
 :::
 
+Native app for Android/iOS/Desktop will still be available for V2. Because it is not stable and publish for multiple platforms is a little troublesome, currently only web version is in test.
+
 ## Migrate from V1
 
 Enter **Import Data** from Home page, you can now import V1 data, sniffed data and FGOSim(webcrow) data.

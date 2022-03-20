@@ -26,9 +26,6 @@
 
 ## 捐赠方式
 
-### Bilibili Charge/B站充电
-[![Bilibili Charge](/images/bilicharge.webp)](https://space.bilibili.com/3785253)
-
 ### WeChat Pay/微信
 ::: details 点击显示微信二维码
 <img src="/images/wechat_pay.webp" alt="Wechat Pay" width="240"/>

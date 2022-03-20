@@ -31,8 +31,6 @@ Check the detailed report and donator list on the following online sheet:
 ### PayPal.Me
 [<img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png" alt="paypal.me/narumishi" width="240"/>](https://paypal.me/narumishi)
 
-### Bilibili Charge
-[![Bilibili Charge](/images/bilicharge.webp)](https://space.bilibili.com/3785253)
 
 ### WeChat Pay
 ::: details Click to show WeChat QRCode
