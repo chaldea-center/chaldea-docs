@@ -5,6 +5,12 @@ Chaldea is a cross-platform material planning tool for [Fate/Grand Order](https:
 ![Chaldea Preview](/images/en/home_svt_preview.webp)
 <figcaption style="text-align:center">Chaldea Preview</figcaption>
 
+::: warning
+I have stopped updating the dataset for V1.x, because of difficulty to parse wiki data.
+
+V2 is on the way, please wait for some time.
+:::
+
 ## Features
 
 - **Cross platform:** Android, iOS, Windows, macOS, Linux and Web
