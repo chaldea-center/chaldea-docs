@@ -4,19 +4,10 @@ This upgrade brings Progressive Web App(PWA) support. Most of functions have bee
 
 Website domain: 
 - [https://chaldea.center](https://chaldea.center)
+- [https://cn.chaldea.center](https://cn.chaldea.center)
 
 If you are inside China mainland, [https://cn.chaldea.center](https://cn.chaldea.center) is recommended.
 
-::: warning
-The domain is disabled until website approved from China gov. The domain may be available in April.
-Thus the original web app/doc site/api are all unavailable.
-
-The docs site is temporarily moved to:
-- [https://github-center.github.io](https://github-center.github.io)
-- [https://chaldea-center-github-io.vercel.app](https://chaldea-center-github-io.vercel.app)
-
-In-app skill and item recognition is disabled! Please waiting.
-:::
 
 Native app for Android/iOS/Desktop will still be available for V2. Because it is not stable and publish for multiple platforms is a little troublesome, currently only web version is in test.
 
