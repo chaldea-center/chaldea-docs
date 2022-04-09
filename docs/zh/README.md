@@ -8,7 +8,7 @@ actions:
   - text: 下载安装
     link: /zh/installation.html
     type: primary
-  - text: Web App
+  - text: V2 & Web
     link: /zh/v2_release.html
     type: primary
   - text: 使用手册

@@ -1,54 +1,68 @@
-# V2 Release Note
+# V2 大版本更新
 
-本次更新带来了渐进式Web应用(PWA)的支持，原APP核心功能已适配过半，目前仍处于测试阶段。同时数据结构也经过大幅度变更，因此与V1的数据是不兼容的。
+## 关于 V1 版本
 
-目前提供两个网址可供访问: 
+最后一个版本为 v1.7.0，将不再提供更新，包括 bug 修复。数据也不再更新，征氏姐妹不包含在内。
+
+在将来的某一刻，用户注册、服务器备份、素材&技能识别等在线服务均会停止。届时请使用 V2 版本。
+
+V1 与 V2 数据兼容性不好，当升级大版本时，目前仅提供基础的素材和从者练度信息的迁移，其他本地设置或资料将被忽略。
+若需手动导入 V1 版本数据，请从**主页**进入**导入**子页面，选择相应导入选项。
+
+**注意事项**:
+
+- 去除银芙芙规划，仅保留金芙芙规划
+- 未来活动的规划分的更细了，由于数据源不同，和旧数据完全不兼容，因此导入 V1 数据无活动信息
+- 服务器备份储存方式和位置迁移，请重新注册。
+
+## 关于 V2 版本
+
+本次大版本更新带来了渐进式 Web 应用(PWA)的支持，原 APP 核心功能已大部分完成迁移，目前仍处于测试阶段。同时数据结构也经过大幅度变更，因此与 V1 的数据是不兼容的。
+
+目前提供两个网址可供访问:
+
 - [https://cn.chaldea.center](https://cn.chaldea.center)
 - [https://chaldea.center](https://chaldea.center)
 
-如果在国内访问，请使用cn.chaldea.center，否则出现加载过慢、字体无法显示等问题。
+如果在国内访问，请使用 [https://cn.chaldea.center](https://cn.chaldea.center)，否则出现加载过慢、字体无法显示等问题。
 
+> 但是 web 版在移动端的体验较差，时不时崩溃重启。。。
 
-V2版本仍将提供本地客户端，但由于目前还不稳定功能不完善，加之发布多个平台~~尤其苹果~~安装包有亿丝丝麻烦，所以在正式版前只提供web版的预览。
+V2 版本仍将提供本地客户端，由于目前仍处于预览阶段，加之发布 iOS/macOS 版本必须通过 Apple 审核，因此目前仅提供 Android、Windows 和 Linux 的版本。
 
-## 从V1迁移
+预览版可从 github 下载:
 
-从**主页**进入**导入**子页面，目前提供了从V1导入、抓包导入、FGOSim(webcrow)网站导入。
-从V1导入旧版数据时，仅导入从者数据和素材数据，原先的一个或多个账号将会作为新账号添加到已有账号之后，请前往账号页切换所需账号。
-::: warning
-**设置-用户数据-导入** 虽然默认会转换V1的数据，但仍然建议事先备份，以后将会移出旧版本相关兼容。
-:::
+- [https://github.com/chaldea-center/chaldea/releases/canary](https://github.com/chaldea-center/chaldea/releases/canary)
 
-## 注意事项
+该预览版随代码更新自动更新，因此版本号可能不会变化，覆盖安装即可。另 Android 预览版(`cc.narumi.chaldea.preview`)可与正式版(V1&V2, `cc.narumi.chaldea`)共存，两者具有不同的包名。
 
-- 去除银芙芙规划，仅保留金芙芙规划
-- 未来活动的规划分的更细了，由于数据源不同，和旧数据完全不兼容，因此导入V1数据无活动信息
-- 服务器备份储存方式和位置迁移，请重新注册。
+## Web 渲染模式
 
+目前 Web 端存在两种渲染方式，各有优缺点。可在设置最下方手动选择渲染模式，更改渲染方式将于下次启动/刷新页面生效。
 
-## Web渲染模式
+### HTML 渲染
 
-目前Web端存在两种渲染方式，各有优缺点。可在设置最下方手动选择渲染模式，更改渲染方式将于下次启动/刷新页面生效。默认使用canvaskit渲染。
-
-### HTML渲染
 使用 HTML，CSS，Canvas 和 SVG 元素来渲染。
+
 - 优点: 应用的大小相对较小。可使用系统字体，无需下载网络字体。
 - 缺点: 页面布局可能不准确，如字体大小计算不正确, 不同设备页面布局不同。
 
-### CanvasKit渲染
+### CanvasKit 渲染
+
 将 Skia 编译成 WebAssembly 格式，并使用 WebGL 渲染。
+
 - 优点: 应用在移动和桌面端保持一致，有更好的性能，以及降低不同浏览器渲染效果不一致的风险。
-- 缺点: 应用的大小较大，尤其是第一次加载。其次使用Google字体，渲染时下载字体，即使不存在网络问题，从页面显示到字体渲染仍需长达数秒的间隔，此时字体均显示为一个框。
+- 缺点: 应用的大小较大，尤其是第一次加载。其次使用 Google 字体，渲染时下载字体，即使不存在网络问题，从页面显示到字体渲染仍需长达数秒的间隔，此时字体均显示为一个框。
 
 ### auto/自动
-此时应用根据设备参数自动选择HTML渲染或CanvasKit渲染。
 
+此时应用根据设备参数自动选择 HTML 渲染或 CanvasKit 渲染。
 
 ## 帮助翻译/多语言支持
 
 ### 游戏数据
 
-目前以日服(JP)数据为基础，并增加国服(CN)、台服(TW)、美服(NA)和韩服(KR)已实装的部分翻译，并增加了部分Mooncell、AtlasAcademy和Fandom的翻译。为了更好的展示各个区服未实装的资料，欢迎贡献翻译！
+目前以日服(JP)数据为基础，并增加国服(CN)、台服(TW)、美服(NA)和韩服(KR)已实装的部分翻译，并增加了部分 Mooncell、AtlasAcademy 和 Fandom 的翻译。为了更好的展示各个区服未实装的资料，欢迎贡献翻译！
 
 所需翻译的文件位于[https://github.com/chaldea-center/chaldea-data/tree/main/mappings](https://github.com/chaldea-center/chaldea-data/tree/main/mappings)
 
@@ -63,11 +77,12 @@ V2版本仍将提供本地客户端，但由于目前还不稳定功能不完善
   }
 }
 ```
+
 更多详情请见[Help Translation](/translation.md)
 
-### UI文本
+### UI 文本
 
-应用UI的文本同样支持以上五种语言，并可扩展至其他语种。急需任何语言的翻译，包括简中繁中。
+应用 UI 的文本同样支持以上五种语言，并可扩展至其他语种。急需任何语言的翻译，包括简中繁中。
 
 所需翻译的文件位于[https://github.com/chaldea-center/chaldea/tree/main/lib/l10n](https://github.com/chaldea-center/chaldea/tree/main/lib/l10n)
 
@@ -79,20 +94,18 @@ V2版本仍将提供本地客户端，但由于目前还不稳定功能不完善
 - `intl_zh.arb` - Chinese, 简体中文
 - `intl_zh_Hant.arb` - Traditional Chinese, 繁体中文
 
-
 ### 如何提供翻译
 
 您可以通过以下方式帮助翻译：
-- 通过Github Pull Request
-- 加入下方QQ频道或Discord频道，直接提供翻译好的文本。
 
+- 通过 Github Pull Request
+- 加入下方 QQ 频道或 Discord 频道，直接提供翻译好的文本。
 
 ## 反馈
 
 有任何问题可通过以下方式反馈：
 
-* Email: [chaldea@narumi.cc](mailto:chaldea.narumi.cc)
-* QQ频道: [QQ频道-Chaldea](https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&inviteCode=1bVHFW&from=181074&biz=ka&shareSource=5)
-* Discord: [https://discord.gg/5M6w5faqjP](https://discord.gg/5M6w5faqjP)
-* Github: [https://github.com/chaldea-center/chaldea/issues](https://github.com/chaldea-center/chaldea/issues)
-
+- Email: [chaldea@narumi.cc](mailto:chaldea.narumi.cc)
+- QQ 频道: [QQ 频道-Chaldea](https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&inviteCode=1bVHFW&from=181074&biz=ka&shareSource=5)
+- Discord: [https://discord.gg/5M6w5faqjP](https://discord.gg/5M6w5faqjP)
+- Github: [https://github.com/chaldea-center/chaldea/issues](https://github.com/chaldea-center/chaldea/issues)

@@ -8,7 +8,7 @@ actions:
   - text: Installation
     link: /installation.html
     type: primary
-  - text: Web App
+  - text: V2 & Web
     link: /v2_release.html
     type: primary
   - text: User Manual
