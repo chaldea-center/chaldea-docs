@@ -30,9 +30,10 @@ V1 与 V2 数据兼容性不好，当升级大版本时，目前仅提供基础�
 
 V2 版本仍将提供本地客户端，由于目前仍处于预览阶段，加之发布 iOS/macOS 版本必须通过 Apple 审核，因此目前仅提供 Android、Windows 和 Linux 的版本。
 
-预览版可从 github 下载:
+预览版可从 github 下载，若无法访问 Github，请使用第二个 fastgit 代理:
 
 - [https://github.com/chaldea-center/chaldea/releases/canary](https://github.com/chaldea-center/chaldea/releases/canary)
+- [https://hub.fastgit.xyz/chaldea-center/chaldea/releases/tag/canary](https://hub.fastgit.xyz/chaldea-center/chaldea/releases/tag/canary)
 
 该预览版随代码更新自动更新，因此版本号可能不会变化，覆盖安装即可。另 Android 预览版(`cc.narumi.chaldea.preview`)可与正式版(V1&V2, `cc.narumi.chaldea`)共存，两者具有不同的包名。
 
