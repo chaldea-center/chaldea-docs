@@ -1,9 +1,9 @@
 ---
 home: true
-title: Chaldea - Material Planning for Fate/GO
+title: Chaldea - Material Planner for Fate/GO
 heroImage: /images/chaldea.png
 heroText: Chaldea
-tagline: Cross-platform Material Planning Tool for Fate/GO
+tagline: Cross-platform Material Planner for Fate/GO
 actions:
   - text: Installation
     link: /installation.html
@@ -22,7 +22,7 @@ features:
   - title: Free Quest Planner
     details: Give the best free quest farming solution and efficiency comparison according to your material demands and master mission targets.
   - title: Multi-language Support
-    details: English, Simplified Chinese, Japanese and Korean. Still W.I.P.
+    details: English, Simplified Chinese, Traditional Chinese, Japanese and Korean. Spanish and Arabic for UI is partially supported for UI.
   - title: Quick Start
     details: No need of manual data input, easily import from other platforms, screenshots and game directly.
   - title: SQ Planner

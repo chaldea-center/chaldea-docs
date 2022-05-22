@@ -1,40 +1,41 @@
-# V2 Release Note
+# v2 Release Note
 
-## About V1
+## About v1
 
-The last version of V1 is v1.7.0, no updates anymore, the next version will be v2.x. And the dataset won't update either.
+The last version of v1 is v1.7.0, no updates anymore, the next version will be v2.x. And the dataset won't update either.
 
-After V2 released, the service for V1 will be stopped, including account system, server backup and item&skill recognizer.
+v2 is released! The service for v1 will be stopped until 2022/5/31, including account system, server backup and item&skill recognizer.
 
-Because the incompatibility of V1 and V2, please make a manual backup before upgrading, we will only provide the basic migration for item and servant info. You can also import V1 data in "Home-Import".
+Because the incompatibility of v1 and v2, please make a manual backup before upgrading, we will only provide the basic migration for item and servant info. You can also import V1 data in "Home-Import".
 
 **Attentions**
 
 - Silver Fou is removed from plan now. Only Gold Fou is planned.
 - More detailed future event planning, incompatible with V1 data.
-- Search is disabled temporary.
-- Server backup/restore is disabled either.
+- Server backup/chaldea account system has been moved to another service provider, you have to register again.
+- Android users must uninstall v1.x first before installing v2.
 
-## About V2
+## About v2
 
-This upgrade brings Progressive Web App(PWA) support. Most of features have been migrated, though still in test now.
+This upgrade brings Progressive Web App(PWA) support. Most of features have been migrated.
 
 Website domain:
 
 - [https://chaldea.center](https://chaldea.center)
 - [https://cn.chaldea.center](https://cn.chaldea.center)
 
-If you are inside China mainland, [https://cn.chaldea.center](https://cn.chaldea.center) is recommended.
+If you are inside China mainland, [https://cn.chaldea.center](https://cn.chaldea.center) is recommended, and set Chaldea server to CN.
 
-> However, the web app performs pooooorly on mobile, crash and refresh page ~~sometimes~~ frequently.
+::: warning
+However, the web app has pooooor performance, especially on mobile browser. Crash ~~sometimes~~ frequently.
+:::
 
-Native app for mobile and desktop will still be available for V2. Since it is in preview stage and publish for iOS/macOS is a little troublesome which must upload to Apple to review, thus, currently only provide Android/Windows/Linux preview.
-
-You can download installer of preview version from github release:
+You can download installer of preview version from github release for canary version(Preview), it will be updated once any code changed.
+Only Android/Windows/Linux available for canary version.
 
 - [https://github.com/chaldea-center/chaldea/releases/canary](https://github.com/chaldea-center/chaldea/releases/canary)
 
-Note that it is updated automatically when source code updated, so the version code may not changed, just override the old one. Meanwhile, Android preview can be installed together with V1, they have different package name.
+For Android, it has different package name, which means you can install both normal version and canary version.
 
 ## Web Renderer
 
@@ -60,7 +61,7 @@ Automatically choose renderer according to device info.
 
 ## Help Translation
 
-The app support all 5 official regions(JP/CN/TW/NA/KR) for gamedata. And also support other languages for app UI, like Spanish and Arabic.
+The app supports all 5 official regions(JP/CN/TW/NA/KR) for gamedata. And also support other languages for app UI, like Spanish and Arabic.
 
 However human translation is wanted for unreleased game data and UI text. If you are interested in helping translation or adding more language support, please contact me! Really welcomed!
 

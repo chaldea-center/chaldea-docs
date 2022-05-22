@@ -9,7 +9,7 @@ export default defineUserConfig<DefaultThemeOptions>({
   lang: "en-US",
   title: "Chaldea",
   description:
-    "Chaldea - Yet Another Material Planning Tool for Fate/Grand Order",
+    "Chaldea - Yet Another Material Planner for Fate/Grand Order",
   // dest: 'dist',
   head: [
     ["link", { rel: "icon", href: "/logo.png" }],
@@ -79,7 +79,7 @@ export default defineUserConfig<DefaultThemeOptions>({
       lang: "en-US",
       title: "Chaldea",
       description:
-        "Chaldea - A cross-platform material planning tool for Fate/Grand Order",
+        "Chaldea - A cross-platform material planner for Fate/Grand Order",
     },
     "/zh/": {
       lang: "zh-CN",

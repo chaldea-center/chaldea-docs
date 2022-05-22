@@ -7,7 +7,7 @@
 | Android  | Android 6.0 (API level 23)    |
 | iOS      | iOS 10.0                      |
 | Windows  | Windows 7 SP1 (64-bit), x86-64 based |
-| macOS    | macOS 10.12.2 (macOS 10.14 in future)  |
+| macOS    | macOS 10.12.2                 |
 | Linux    | Debian 10 & above             |
 | Web      | [https://chaldea.center](https://chaldea.center)<br>[https://cn.chaldea.center](https://cn.chaldea.center)|
 
@@ -20,6 +20,8 @@ For more details about Web version, see [V2 Release Note](./v2_release.md)
 [<img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' width="137.5"/>](https://play.google.com/store/apps/details?id=cc.narumi.chaldea)
 
 [Get it on Google Play](https://play.google.com/store/apps/details?id=cc.narumi.chaldea)
+
+For v1.x, check [Attentions](#attentions)
 
 ### App Store
 
@@ -34,7 +36,7 @@ Including iOS App Store and Mac App Store
 
 ### GitHub Release
 
-Contains Android, Windows, macOS and Linux binary assets.
+Contains Android, Windows and Linux binary assets.
 
 [Releases](https://github.com/chaldea-center/chaldea/releases)
 
@@ -44,19 +46,11 @@ If the latest version doesn't contain the platform you want, please check the pr
 
 ### Android
 
-There are 3 ABI versions for Android:
-
-| ABI         | build | Description                        |
-| :---------- | ----- | :--------------------------------- |
-| arm64-v8a   | 2xxx  | Recommended, support most devices  |
-| armeabi-v7a | 1xxx  | Compatible with old models         |
-| x86_64      | 4xxx  | Tablet and emulator with 64-bit processor  |
-
-> The x86 installer is not supported. If you need to install in 32-bit Android emulator, please switch on the **compatibility mode** and install the **armeabi-v7a** version. But why not install the desktop version directly? 
+All android ABIs(arm64-v8a, armeabi-v7a, x86_64) are merged into one apk in v2.x. 
 
 ::: warning
-For the same app release(v1.6.0, build 600), different ABI version has different build number(1600/2600/4600). 
-Make sure you are installing the bigger build number than the installed one. Otherwise, the previous version will be uninstalled first, which will swipe all your data. Backup is expected if changing the ABI version.
+If you are using v1.x, you have to UNINSTALL old version first! All data will be swiped, 
+so make sure to backup to local before upgrading. V1 server backup is incompatible with v2. 
 :::
 
 ### Windows
@@ -74,8 +68,9 @@ If there is such an error message on startup, please install [Microsoft Visual C
 Don't run multiple Chaldea instances, because the data is shared. Otherwise, data may be overridden unexpectedly. 
 
 ::: tip
-The macOS installer on Github release and on Mac App Store have different app signature and may have slight difference in app.
+The macOS version is only available on Mac App Store.
 :::
 
 ## Auto-upgrade
+
 See [APP auto-upgrade](./app_setting.md#app-auto-upgrade)
