@@ -49,7 +49,12 @@ bfgo客户端(包名`io.rayshift.betterfgo(.en)`)和原客户端(包名`com.anip
 Disclaimer: While I believe this app will not get you banned, I take no responsibility for anything that might happen. I have been using this for over a year myself without issues.
 :::
 
-1. 科xue上网
+现在可以直接通过以下链接下载
+- 日服: [https://rayshift.io/betterfgo/download/jp](https://rayshift.io/betterfgo/download/jp)
+- 美服: [https://rayshift.io/betterfgo/download/na](https://rayshift.io/betterfgo/download/na)
+
+若需从Rayshift下载或了解更多信息:
+1. 学会上网
 2. 加入rayshift的Discord频道(qq频道原型): [https://discord.gg/8JeHHvh](https://discord.gg/8JeHHvh)
 3. 在`ANNOUNCEMENT-roles`频道，点击`BetterFGO`的~~yls~~ emoji认领权限
    ```:no-line-numbers

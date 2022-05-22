@@ -37,7 +37,11 @@ BetterFGO can be installed together with original FGO client, and you can login 
 Disclaimer: While I believe this app will not get you banned, I take no responsibility for anything that might happen. I have been using this for over a year myself without issues.
 :::
 
-You can get it from their discord channel:
+Now you can directly download BFGO from following links:
+- JP: [https://rayshift.io/betterfgo/download/jp](https://rayshift.io/betterfgo/download/jp)
+- NA: [https://rayshift.io/betterfgo/download/na](https://rayshift.io/betterfgo/download/na)
+
+You can also join Discord to get more information:
 1. Join [https://discord.gg/8JeHHvh](https://discord.gg/8JeHHvh)
 2. In `ANNOUNCEMENT-roles`, click the `BetterFGO` role emoji to get the role and permission.
 3. Goto `betterfgo-cli` channel, there are JP/NA apk mod links.
