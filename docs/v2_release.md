@@ -52,12 +52,12 @@ Uses a combination of HTML elements, CSS, Canvas elements, and SVG elements. .
 
 ### CanvasKit Renderer
 
-- advantages: fully consistent with Flutter mobile and desktop, has faster performance with higher widget density
+- advantages: fully consistent with Flutter mobile and desktop, ~~has faster performance with higher widget density~~ it's laggy and annoying.
 - disadvantages: larger app size, especially the first loading. Need to download then render Google fonts at runtime. It may take several seconds before you can see the correct characters.
 
 ### auto
 
-Automatically choose renderer according to device info.
+Automatically choose renderer by flutter.
 
 ## Help Translation
 
