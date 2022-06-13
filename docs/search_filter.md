@@ -25,8 +25,8 @@ If there is no such a setting button, only search the critical info.
 ### Multi-keywords
 Use **space** to split keywords.
 
-- By default, use ***OR*** to combine keywords
-  - `A B C` = A OR B OR C
+- By default, use ***AND*** to combine keywords
+  - `A B C` = `A +B +C` = A AND B and C
 - `+B` means MUST contain `B`
   - `A +B` = `+A +B` = A AND B
 - `-C` means MUST NOT contain `C`

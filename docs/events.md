@@ -45,5 +45,4 @@ The month setting is inferred from current game server:
 
 Click item icon to show detail, click the number button right to icon to choose planned count.
 
-## Campaign
-Similar with limit event, but most of them have no rewards, only some special rewards included.
+Some months in your region may have different items with JP.

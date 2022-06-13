@@ -4,34 +4,34 @@ Solution for master mission/weekly mission.
 
 Similar to free quest solver, using linear programming, but here we use **Integer** constraints.
 
-## Add Mission Target
+## Get Master Mission
 
-- Click the top trait tabs, after select all traits for one mission, then click **ADD** to add to mission list.
-- Click search button to filter traits in current tab.
+Choose your region through the dropdown button at top. Check the weekly mission or extra mission.
 
-Generally, mission targets are described as **OR**: defeat 15 enemy type A or enemy type B.
+For missions can be planned, there is a search icon at the trailing. Click it to search targets for this mission.
+Or click "Solve" button to solve all missions together.
 
-e.g.
-- 15 Saber or Rider enemy(not servant): select **Enemy Class-Saber** and **Enemy Class-Rider**
-- 15 demon enemy(include servant): select **Servant Trait-Demon** and **Enemy Trait-Demon**
-- .....
+## Custom Mission
 
-**For JP/CN weekly missions**: easily add this week's missions by selecting in the popup menu.
+You can add custom mission and get the least AP solution.
 
-## About **AND** Mode
-It won't be used in most most most most situations.
+Mission detail:
+- Type: enemy trait, enemy class, servant class, etc.
+- Count: the mission target count
+- IDs: the mission target id, it should match mission type, the id may be invalid if type is wrong. Click <+> icon to add more target id.
 
-e.g. mission: defeat enemies with both demon and divine.
+**Free Progress**
+- basically, it uses Main Story's free quests to plan, you can choose the different mains story progress
+- You can also choose event quests, only JP/NA quests after 2020.11 has enemy data.
 
-But the dataset only records a quest with how many demon and how many divine, you don't how many enemies with both.
+**Solution**
+Solution tab is the least AP solution and you can also choose related quests by your own demands. Each quest has shown the count of mission target count.
 
-So here we use `min(x1,x2)` as the mission target count for the quest, although it is incorrect maybe.
+**Attention**
+- some quests of limit event may not have data, and these quest data are downloaded when solving
+- events with enemy appearance rate up may be inaccurate
+- some missions may be impossible to complete so may be ignored
 
+## Event Mission
 
-## Results and Related Quests
-Mostly are quests in the first several main stories. If you want to choose other quests, check the related quests.
-It shows the all quests with mission targets.
-
-The related quests are sorted by target `efficiency=target count/AP`.
-
-If you cannot find any quest for a mission, that mission will display grey style.
+In the mission tab of event, you can also choose missions and solve them here.

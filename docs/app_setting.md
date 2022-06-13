@@ -12,12 +12,7 @@ NO security guarantee! DON'T use frequently used passwords!!!
 
 ## Game Account
 * Switch among multiple game accounts
-* Game Server: related with exchange ticket's month setting and default event/summon progress
-  * JP: as base
-  * CN: 15 months gap
-  * TW: 21 months gap
-  * NA/EN: 24 months gap
-* Event Progress: this setting is used to hide the outdated events and summons in the list
+* Game Server
 
 ## App Data
 > Root folder for app data(`root_path`): All data saved here, you can manually backup them.
@@ -38,17 +33,16 @@ The root path differs from platforms
 Directory Structure:
 ```:no-line-numbers
 root_path
+├── assets  // image/voice assets downloaded path
 ├── backup  // daily backup of userdata.json
 ├── config  // some local configuration and caches
-├── data    // app dataset(dataset*.zip) extracted folder
-│   ├── dataset.json
-│   └── icons
+├── game    // app dataset
 ├── downloads
-├── ffo     // Fate/Freedom Order data(ffo-data.zip) extracted folder
 ├── ffo_output
 ├── logs
 ├── temp
 └── user
+    ├── settings.json   // main local settings
     └── userdata.json   // ALL user-related data
 ```
 
@@ -72,20 +66,9 @@ You need to restart app to let it take effect.
 The dataset version is just the created date. A full version contains the minimal compatible app version.
 e.g. 20210922-1.6.0 means the 20210922 version dataset requires your app version at least 1.6.0, or may be incompatible.
 
-* Download Source
-  * Server: fetch app and dataset updates from Chaldea server proxy, it's only recommended if you cannot access Github.
-  * Github: Recommended if you can access Github
-  * Gitee: blocked currently, but you can still manually download assets.
-* Dataset update methods
-  * Auto update: fetch patch from Chaldea server at every app startup, if failed, download full data.
-  * Patch Gamedata: fetch patch from Chaldea server
-  * Download Full Dataset: download `dataset-text.zip` directly from the source selected above.
-  * Download Icons: cache all icons to `app_path/data/icons/`, about 3000+ icons. Thus, download requests are limited to 5 requests per second at most.
-  * Import dataset.zip: manually download `dataset-text.zip` from github release, and import it here.Pay attention to the compatibility of data version and app version.
-  * Reload Default: app build-in data
-* Cached resources：
-  * Icons: Card thumbs and skill icons, they will be permanently saved in `app_path/data/icons/`
-  * Illustrations and voices: once cleared cache, you need to download again. Only cached when used.
+* Download Source: Global and China source, set at top of Settings page
+* Auto update: background update after startup, and apply it at the next startup or manually update it here.
+* Cached resources: mainly servant/ce/cc/buff icons
 
 ### General Settings
 * Multi-language support: Chinese, English and Japanese(part)
@@ -116,7 +99,5 @@ e.g. 20210922-1.6.0 means the 20210922 version dataset requires your app version
 
 ## APP Auto Upgrade
 Inside `About Chaldea`, you can turn on app auto upgrade. The download source is the same as dataset source.
-- Auto upgrade is only for Android and Windows.
-- For windows, auto upgrade may failed if the path contains non English chars.
-- For Linux version and Github downloaded macOS version, you need to manually extract the auto downloaded zip.
+- Auto upgrade is for Android, Windows and Linux. You have to manually extract and replace the downloaded file.
 - For iOS and Mac App Store version, please check update in store

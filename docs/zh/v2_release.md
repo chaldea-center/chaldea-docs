@@ -11,7 +11,6 @@ v1 与 v2 数据兼容性不好，当升级大版本时，目前仅提供基础�
 
 **注意事项**:
 
-- 去除银芙芙规划，仅保留金芙芙规划
 - 未来活动的规划分的更细了，由于数据源不同，和旧数据完全不兼容，因此导入 v1 数据时无活动信息
 - 服务器备份储存方式和位置迁移，请重新注册。
 - Android用户必须先卸载再安装v2
@@ -109,6 +108,6 @@ v1 与 v2 数据兼容性不好，当升级大版本时，目前仅提供基础�
 有任何问题可通过以下方式反馈：
 
 - Email: [chaldea@narumi.cc](mailto:chaldea.narumi.cc)
-- QQ 频道: [QQ 频道-Chaldea](https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&inviteCode=1bVHFW&from=181074&biz=ka&shareSource=5)
+- QQ 频道: [QQ 频道-Chaldea](https://jq.qq.com/?_wv=1027&k=kvHMMxGn)
 - Discord: [https://discord.gg/5M6w5faqjP](https://discord.gg/5M6w5faqjP)
 - Github: [https://github.com/chaldea-center/chaldea/issues](https://github.com/chaldea-center/chaldea/issues)

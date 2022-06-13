@@ -98,22 +98,6 @@ export default defineUserConfig<DefaultThemeOptions>({
       "/": {
         selectLanguageText: "Language/语言",
 
-        navbar: [
-          {
-            text: "Web App",
-            children: [
-              {
-                text: "chaldea.center",
-                link: "https://chaldea.center",
-              },
-              {
-                text: "cn.chaldea.center",
-                link: "https://cn.chaldea.center",
-              },
-            ],
-          },
-        ],
-
         sidebar: {
           "/": [
             {
@@ -179,22 +163,6 @@ export default defineUserConfig<DefaultThemeOptions>({
         openInNewWindow: "在新窗口打开",
         toggleDarkMode: "切换深色模式",
         toggleSidebar: "切换侧边栏",
-
-        navbar: [
-          {
-            text: "Web App",
-            children: [
-              {
-                text: "cn.chaldea.center",
-                link: "https://cn.chaldea.center",
-              },
-              {
-                text: "chaldea.center",
-                link: "https://chaldea.center",
-              },
-            ],
-          },
-        ],
 
         sidebar: {
           "/zh/": [

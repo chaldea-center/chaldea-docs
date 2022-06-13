@@ -6,10 +6,6 @@ There are two kinds of effects:
 - `FuncType`: act directly, like NP charge, gain star
 - `BuffType`: display as buff in servant status bar, like invincible, Arts Up, regain NP per turn.
 
-There is a kind of special buff, it will trigger another skill at some timing, like skill on entrance/dead/attack.
-Currently, we cannot know the actual effect of those. Especially for command codes, most will trigger another skill on attack.
-
-
 ## Servant/CE/Command Code Filter Dialog
 Here, the filters are optimized by me:
 - merge similar effects: Buster Up and Buster resistance down, NP Charge and absorb NP

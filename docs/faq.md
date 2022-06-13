@@ -2,20 +2,22 @@
 
 ## Loading Image Failed
 Most of all images(card thumbs, skill icons, illustrations, voices) are downloaded on demands.
-Too frequent download requests may cause error, just try again later, or goto 
-`Settings-Game Data-Download full dataset-Image` to import most icons(icons only).
+
+Possible reason:
+- check Network Setting, if it shows offline, you can switch on the Force Online Mode
+- chaldea server: one in China and one is Global
+- program must not be saved at folders which need admin permission, like Program Files, C:\
 
 ## Cannot find ** Servant/CE
 Please check your favorite button and filter setting, maybe you just hide them. Reset those filters and check again.
 
 
 ## Wrong Text/Data
-- For game related data:
 
-all data are fetched from those websites in references, please check the data there is true or not. If only display the wrong data in app, please tell me.
+**Game Data**
+- some unreleased data in your region may not have translation
+- skill/NP/mission are described according to game data, if there is any mistake, please submit feedback
 
-- For UI text
-
-personal translation, please tell me if any mistake or join the collaboration to improve translation.
+For any translation missing or mistake, feedback welcomed, and help translation wanted!!!
 
 ## [Feedback](./feedback.md)

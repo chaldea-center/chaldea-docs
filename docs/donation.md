@@ -17,6 +17,7 @@ Main Expenditures
 | Apple Developer Account | $100/year   | Upload app to App Store    |
 | Google Developer Account| $25         | Upload app to Google Play  |
 | AWS Cloud Server        | $100/year   | Server backup, screenshot recognition. Unfixed expenditure.|
+| Aliyun CDN/OSS          | $20-30/month | CDN in China              |
 
 Check the detailed report and donator list on the following online sheet:
 

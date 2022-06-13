@@ -1,5 +1,59 @@
 # Change Log
 
+## 2.0.5
+
+- support backup to Github repo
+- support different exchange ticket info for each region
+- settings: custom shown servant plan detail
+- add wiki translation for servant profile
+- add append skill stuff to button bar of plan related page
+- re-add fou3 planning
+- support excluding event shop items
+- show more items
+- support servant AprilFools' icon
+- upload userdata warning before closing desktop app
+- plan list: add option - only unlocked append 
+- add network settings(force online mode)
+- add event digging
+- add effect search for all svt/ce/cc
+
+## 2.0.2
+
+- add Fate/Freedom Order
+
+## 2.0.1
+
+- improve memory usage
+- add MC april fool illustration and sprite models
+- added to F-Droid
+- minor fixes
+
+## 2.0.0
+
+- The new age for v2.x
+- support all 5 official regions: JP/CN/TW/NA/KR
+
+## 1.7.0
+
+- last build for v1.x
+
+## 1.6.7
+
+- fix planner give wrong solution if containing ignored items
+- improve web support
+- set custom name for each Plan
+- add target selection in skill effect filter
+- fix append skill level in import https response
+
+## 1.6.6
+
+- Korean support for UI text
+
+## 1.6.5
+
+- partially support Korean
+- enable 120Hz ProMotion by cycling power saving mode
+
 ## 1.6.4
 
 - improve performance when loading and updating game data

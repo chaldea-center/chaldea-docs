@@ -17,7 +17,7 @@ Bottom buttons:
 - **:white_check_mark:Event**: whether to include event rewards when calculating item demands.
   > Reset to checked every time entering the item list page
 
-For each item: `Current+Event-Total=Left`
+For each item: `Current+Event-TotalDemand=Left`
 
 ## Item Detail Page
 
@@ -51,6 +51,3 @@ List all servant quests containing the item.
 
 ### Info
 Item icon, description and so on.
-
-## About Servant Coin
-Waiting...

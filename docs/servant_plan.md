@@ -85,7 +85,7 @@ The item detail page only shows favorite servants' demands by default.
 - **Switch Slider/Dropdown**: switch display mode as you like
 - **Create Duplicated Servant**: see following section
 
-### Duplicated Servant
+### Duplicated Servant(Disabled in v2)
 By default, we use servant collection number as key. So every servant can have only one instance. Here we call it **Primary** one.
 
 If your true love is Ishtar, and want to plan 2 Ishtar for same servant collection number. You can create **duplicated** servant. in popup menu.

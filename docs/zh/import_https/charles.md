@@ -10,7 +10,8 @@
   - Android: `Drony v1.3.x`, 免费应用, [下载地址(密码:chaldea)](https://wws.lanzoui.com/b01uoc3qh)。百度下载Drony可以下载到各式各样文件体积的版本，有些是不能用的，建议直接从网盘下载。
 - Android only:
   - Android版本需**小于等于6**，现在手机基本见不到旧版本的安卓了，模拟器尚有不少6的，可在`设置-关于`中查看Android版本
-  - BetterFGO客户端: 获取方式见[获取日服美服安装包](./README.md#获取日服美服安装包)
+  - 第三方BetterFGO客户端: 获取方式见[获取日服美服安装包](./README.md#获取日服美服安装包)
+  - 如果Android版本大于等于8.1，且已root，有magisk经验，可参考[https://sekibetu.com/sniff01.html](https://sekibetu.com/sniff01.html)
 
 
 ## 关于模拟器
@@ -30,7 +31,7 @@
 ![Charles Configuration](/images/import_https/charles-2.webp)
 <figcaption style="text-align:center">Charles配置</figcaption>
 
-:::details
+::: details
 [https://zhile.io/2017/07/07/charles-proxy-usage-and-license.html](https://zhile.io/2017/07/07/charles-proxy-usage-and-license.html)
 :::
 0. 确保手机与电脑处于同一局域网，或模拟器与Charles在同一电脑，关闭电脑上其他一切ⅤΡΝ等代理软件

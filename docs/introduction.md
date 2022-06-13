@@ -11,7 +11,7 @@ I have stopped updating the dataset for V1.x, both app and dataset
 V2 is already released. For more information and breaking changes, check [V2 release](./v2_release.md)
 :::
 
-::: tips
+::: tip
 The document may not be up to date, some contents are still for v1.x, please take care when reading docs.
 :::
 
@@ -38,7 +38,7 @@ The document may not be up to date, some contents are still for v1.x, please tak
 - **Others**
   * **EXP card cost calculator**
   * **Statistics on item demands, consumed items and servant collection**
-  * ~~**Fate/Freedom Order：** 2021 April Fool's mini game~~ Unavailable now.
+  * **Fate/Freedom Order：** 2021 April Fool's mini game
   * Illustrator and CV list
 
 ## Data Source

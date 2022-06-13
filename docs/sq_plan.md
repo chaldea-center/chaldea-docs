@@ -2,6 +2,10 @@
 
 Estimate SQ/ticket/fruits(apple) amounts at each day in future.
 
+::: tip
+Large difference with the true SQ data, many rewards are not predictable and not counted. 
+:::
+
 ## SQ income
 Now, only predictable incomes are included:
 - continuous login bonus: 2(1 SQ),4(1 SQ),6(2 SQs),7(1 Ticket)

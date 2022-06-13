@@ -12,5 +12,4 @@ List the permissions used by this application and the data that may be collected
     > As there is no security guarantee, please do not use common used passwords
 2. Device id - used for screenshot recognizer as the user identifier
 3. Log collection - When a non-crash bug is captured, it will report the bug details, screenshot of the current application (not including the screen content outside this application) and device parameters, which are only used for debugging
-4. Baidu Mobile Statistics - Use Baidu Mobile Statistics to analyze app usage (anonymous), for app optimization, etc.
-5. The App does not have any ads, nor does it provide any related services such as ad tracking
+4. The App does not have any ads, nor does it provide any related services such as ad tracking

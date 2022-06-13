@@ -10,7 +10,6 @@ Because the incompatibility of v1 and v2, please make a manual backup before upg
 
 **Attentions**
 
-- Silver Fou is removed from plan now. Only Gold Fou is planned.
 - More detailed future event planning, incompatible with V1 data.
 - Server backup/chaldea account system has been moved to another service provider, you have to register again.
 - Android users must uninstall v1.x first before installing v2.

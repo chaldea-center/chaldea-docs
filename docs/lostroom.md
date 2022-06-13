@@ -18,11 +18,5 @@ Nothing special, just an overview for each thing.
   - search: search creator's name and cards' name
   - attention: one card with several creators may not be split
 - Enemy List
-    - [https://fgo.wiki/w/敌人一览](https://fgo.wiki/w/%E6%95%8C%E4%BA%BA%E4%B8%80%E8%A7%88)
-
-## Support Party
-Work in progress.
-
-Custom support party
-- support illustration, ascension icon and battle model image
-- support custom picture
+  - only show enemies from main story's free quests. You can search trait or alignment.
+  - other servants/enemies which is not in your servant category will be listed the basic info, and click to show the details.
