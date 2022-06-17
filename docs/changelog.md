@@ -2,6 +2,8 @@
 
 ## 2.0.5
 
+- fix offline startup
+- fix svt coin stat, but all owned coin counts cleared
 - support backup to Github repo
 - support different exchange ticket info for each region
 - settings: custom shown servant plan detail
@@ -12,7 +14,7 @@
 - show more items
 - support servant AprilFools' icon
 - upload userdata warning before closing desktop app
-- plan list: add option - only unlocked append 
+- plan list: add option - only unlocked append
 - add network settings(force online mode)
 - add event digging
 - add effect search for all svt/ce/cc
