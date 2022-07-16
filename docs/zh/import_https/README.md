@@ -65,4 +65,7 @@ Disclaimer: While I believe this app will not get you banned, I take no responsi
     :kanou: : BetterFGO 
    ```
 4. 在`betterfgo-cli`频道中查看并下载日服或美服的安装包
-5. 通过[迁移数据](./transfer_data.md)将iOS或Android原存档迁移至BFGO存档。
+   
+### 迁移数据
+
+最后通过[迁移数据](./transfer_data.md)将iOS或Android官方客户端的存档迁移至BFGO存档。

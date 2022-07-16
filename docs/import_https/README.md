@@ -45,4 +45,7 @@ You can also join Discord to get more information:
 1. Join [https://discord.gg/8JeHHvh](https://discord.gg/8JeHHvh)
 2. In `ANNOUNCEMENT-roles`, click the `BetterFGO` role emoji to get the role and permission.
 3. Goto `betterfgo-cli` channel, there are JP/NA apk mod links.
-4. [Transfer](./transfer_data.md) iOS/Android FGO data to BetterFGO.
+
+### Transfer Data
+
+Finally remember to [Transfer](./transfer_data.md) your account data from official client to BetterFGO client。

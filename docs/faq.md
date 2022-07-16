@@ -11,6 +11,7 @@ Possible reason:
 ## Cannot find ** Servant/CE
 Please check your favorite button and filter setting, maybe you just hide them. Reset those filters and check again.
 
+If you are still using v1.x, please upgrade to v2.x. For Android, you must uninstall and re-install v2.x, remember to backup data.
 
 ## Wrong Text/Data
 

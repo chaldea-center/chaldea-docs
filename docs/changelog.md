@@ -1,5 +1,29 @@
 # Change Log
 
+Check [Github Release](https://github.com/chaldea-center/chaldea/releases) for more details.
+
+## 2.0.8
+
+- add next level exp in exp calc
+- interlude&rankup timeline(date may not correct)
+- add cv/illustrator detail page
+- add character list
+- add various kinds of conditions
+- pull to refresh svt/ce/cc list
+- improve effect filter
+- add event search and filter
+
+## 2.0.7
+
+- fix GSSR lessThan calculation
+- search keyword for func/buff descriptor
+- add more filter options for effect search
+- github backup: custom commit message
+
+## 2.0.6
+
+- fix incorrect path on Android
+
 ## 2.0.5
 
 - fix offline startup
