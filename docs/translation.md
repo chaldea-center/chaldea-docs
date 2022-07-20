@@ -26,17 +26,18 @@ These are all json files, the basic format is:
 Mostly the `"key"` is Japanese name, and you need to fill the translations for `CN/TW/NA/KR`. Left `"JP": null` if the key is Japanese. For already released content, the translation will be automatically added or overridden.
 
 **File list:**
-- `item_names`
-- `svt_names`
-- `event_names`
+
 - `buff_names`
 - `func_popuptext`
+- `skill_detail`
+- `td_detail`
+- `event_names`
+- `item_names`
+- `svt_names`
 - `buff_detail`
 - `cv_names`
 - `illustrator_names`
 - `ce_names`
-- `skill_detail`
-- `td_detail`
 - `quest_names`
 - `spot_names`
 - `entity_names`
@@ -49,7 +50,7 @@ Mostly the `"key"` is Japanese name, and you need to fill the translations for `
 - `td_ruby`
 - `td_types`
 - `bgm_names`
-
+  
 You can translate important files first, the above list is sorted by my own judgement.
 
 If a string contains year, such as "クリスマス2017"(Christmas 2017), please changed the year according to your region. Commonly, add 1 year for CN, add 2 years for NA/KR, 1~2 years for TW.
@@ -63,20 +64,15 @@ So only left `"CN": null` then fill Japanese and other translations.
 - `chara_names`
 - `summon_names`
   
-3 - `"key"` is a number
+3 - special `"key"`
 
-The most important file is `trait.json`, all fields need translations. It maps the trait id to display name. 
+The most important files are `enums.json` and `trait.json`, all fields need translations. It maps the trait id or game words to display name. 
 
 You should check the trait description in game data then fill the trait.
 Try search on AtlasAcademy and switch regions to check descriptions:
 - [https://apps.atlasacademy.io/db/JP/buffs?tvals=1](https://apps.atlasacademy.io/db/JP/buffs?tvals=1)
 - [https://apps.atlasacademy.io/db/JP/funcs?tvals=2](https://apps.atlasacademy.io/db/JP/funcs?tvals=2)
 
-**File list:**
-- `trait`
-- `svt_class`
-- `costume_detail`: skip it now
-- `mc_detail`: skip it now
 
 4 - `override_mapping.json`
 
@@ -116,3 +112,7 @@ Translation files locate at [https://github.com/chaldea-center/chaldea/tree/main
 
 If you want to add more language, just copy `intl_en.arb` or `intl_zh.arb` and translate the listed strings.
 You'd better to check these strings in APP to see where it would be used.
+
+## Contact us
+
+Please contact us through [feedback page](./feedback.md) to contribute or give feedback.

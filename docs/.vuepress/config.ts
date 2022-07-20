@@ -171,6 +171,7 @@ export default defineUserConfig<DefaultThemeOptions>({
               children: [
                 "/zh/introduction.md",
                 "/zh/v2_release.md",
+                "/zh/translation.md",
                 "/zh/installation.md",
                 "/zh/feedback.md",
                 "/zh/servant_plan.md",

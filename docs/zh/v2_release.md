@@ -60,54 +60,6 @@ v1 与 v2 数据兼容性不好，当升级大版本时，目前仅提供基础�
 
 此时由flutter引擎自动选择 HTML 渲染或 CanvasKit 渲染。
 
-## 帮助翻译/多语言支持
+## 贡献翻译/多语言支持
 
-### 游戏数据
-
-目前以日服(JP)数据为基础，并增加国服(CN)、台服(TW)、美服(NA)和韩服(KR)已实装的部分翻译，并增加了部分 Mooncell、AtlasAcademy 和 Fandom 的翻译。为了更好的展示各个区服未实装的资料，欢迎贡献翻译！
-
-所需翻译的文件位于[https://github.com/chaldea-center/chaldea-data/tree/main/mappings](https://github.com/chaldea-center/chaldea-data/tree/main/mappings)
-
-```json
-{
-  "jp_key": {
-    "JP": null, // keep null if key is jp
-    "CN": "Simplified Chinese",
-    "TW": "Traditional Chinese",
-    "NA": "English",
-    "KR": "Korean"
-  }
-}
-```
-
-更多详情请见[Help Translation](/translation.md)
-
-### UI 文本
-
-应用 UI 的文本同样支持以上五种语言，并可扩展至其他语种。急需任何语言的翻译，包括简中繁中。
-
-所需翻译的文件位于[https://github.com/chaldea-center/chaldea/tree/main/lib/l10n](https://github.com/chaldea-center/chaldea/tree/main/lib/l10n)
-
-- `intl_ar.arb` - Arabic, 阿拉伯语(RTL)
-- `intl_en.arb` - English, 英语
-- `intl_es.arb` - Spanish/Español, 西班牙语
-- `intl_ja.arb` - Japanese, 日语
-- `intl_ko.arb` - Korean, 韩语
-- `intl_zh.arb` - Chinese, 简体中文
-- `intl_zh_Hant.arb` - Traditional Chinese, 繁体中文
-
-### 如何提供翻译
-
-您可以通过以下方式帮助翻译：
-
-- 通过 Github Pull Request
-- 加入下方 QQ 频道或 Discord 频道，直接提供翻译好的文本。
-
-## 反馈
-
-有任何问题可通过以下方式反馈：
-
-- Email: [chaldea@narumi.cc](mailto:chaldea.narumi.cc)
-- QQ 频道: [QQ 频道-Chaldea](https://jq.qq.com/?_wv=1027&k=kvHMMxGn)
-- Discord: [https://discord.gg/5M6w5faqjP](https://discord.gg/5M6w5faqjP)
-- Github: [https://github.com/chaldea-center/chaldea/issues](https://github.com/chaldea-center/chaldea/issues)
+详情请见[贡献翻译](./translation.md)
