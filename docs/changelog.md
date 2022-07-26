@@ -4,14 +4,16 @@ Check [Github Release](https://github.com/chaldea-center/chaldea/releases) for m
 
 ## 2.0.8
 
+- 🎉 Happy 7th/6th/5th Anniversary! 🎉
 - add next level exp in exp calc
-- interlude&rankup timeline(date may not correct)
+- add quest/skill conditions
 - add cv/illustrator detail page
-- add character list
-- add various kinds of conditions
-- pull to refresh svt/ce/cc list
-- improve effect filter
+- add character list(non-servant chara)
+- add skill/td/func/buff/trait listing
+- interlude&rankup timeline
 - add event search and filter
+- pull to refresh svt/ce/cc list
+
 
 ## 2.0.7
 
