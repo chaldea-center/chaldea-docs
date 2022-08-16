@@ -8,8 +8,7 @@ import { seo } from "vuepress-plugin-seo2";
 export default defineUserConfig<DefaultThemeOptions>({
   lang: "en-US",
   title: "Chaldea",
-  description:
-    "Chaldea - Yet Another Material Planner for Fate/Grand Order",
+  description: "Chaldea - Yet Another Material Planner for Fate/Grand Order",
   // dest: 'dist',
   head: [
     ["link", { rel: "icon", href: "/logo.png" }],
@@ -94,10 +93,16 @@ export default defineUserConfig<DefaultThemeOptions>({
     docsDir: "docs",
     editLink: true,
     lastUpdated: false,
+    navbar: [
+      {
+        text: "Discord",
+        link: "https://discord.gg/5M6w5faqjP",
+      },
+    ],
     locales: {
       "/": {
         selectLanguageText: "Language/语言",
-
+        
         sidebar: {
           "/": [
             {
