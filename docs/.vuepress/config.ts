@@ -1,11 +1,15 @@
-import { defineUserConfig } from "vuepress";
-import type { DefaultThemeOptions } from "vuepress";
+import { viteBundler } from "@vuepress/bundler-vite";
+import { defineUserConfig } from "@vuepress/cli";
+import { docsearchPlugin } from "@vuepress/plugin-docsearch";
+import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
+import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
+import { defaultTheme } from "@vuepress/theme-default";
 import { path } from "@vuepress/utils";
-import { DocsearchOptions } from "@vuepress/plugin-docsearch";
-import { sitemap } from "vuepress-plugin-sitemap2";
-import { seo } from "vuepress-plugin-seo2";
 
-export default defineUserConfig<DefaultThemeOptions>({
+import { seoPlugin } from "vuepress-plugin-seo2";
+import { sitemapPlugin } from "vuepress-plugin-sitemap2";
+
+export default defineUserConfig({
   lang: "en-US",
   title: "Chaldea",
   description: "Chaldea - Yet Another Material Planner for Fate/Grand Order",
@@ -78,7 +82,7 @@ export default defineUserConfig<DefaultThemeOptions>({
       lang: "en-US",
       title: "Chaldea",
       description:
-        "Chaldea - A cross-platform material planner for Fate/Grand Order",
+        "Chaldea - Yet Another Material Planner for Fate/Grand Order",
     },
     "/zh/": {
       lang: "zh-CN",
@@ -86,23 +90,22 @@ export default defineUserConfig<DefaultThemeOptions>({
       description: "Chaldea - 一款跨平台的FGO素材规划软件",
     },
   },
-  themeConfig: {
+  theme: defaultTheme({
     logo: "/logo.png",
     repo: "chaldea-center/chaldea",
     docsRepo: "chaldea-center/chaldea-docs",
     docsDir: "docs",
     editLink: true,
-    lastUpdated: false,
+    lastUpdated: true,
     navbar: [
       {
         text: "Discord",
         link: "https://discord.gg/5M6w5faqjP",
       },
     ],
+    selectLanguageText: "Language/语言",
     locales: {
       "/": {
-        selectLanguageText: "Language/语言",
-        
         sidebar: {
           "/": [
             {
@@ -150,7 +153,6 @@ export default defineUserConfig<DefaultThemeOptions>({
       },
       "/zh/": {
         selectLanguageName: "简体中文",
-        selectLanguageText: "Language/语言",
         selectLanguageAriaLabel: "选择语言",
         // custom containers
         tip: "提示",
@@ -216,89 +218,46 @@ export default defineUserConfig<DefaultThemeOptions>({
         },
       },
     },
-  },
+  }),
   plugins: [
-    [
-      "@vuepress/plugin-docsearch",
-      <DocsearchOptions>{
-        apiKey: "8cb8481c0034b89290985b41f425004d",
-        indexName: "chaldea-center",
-        appId: "BH4D9OD16A",
-        locales: {
-          "/": { placeholder: "Search" },
-          "/zh/": { placeholder: "搜索" },
-        },
+    docsearchPlugin({
+      appId: "BH4D9OD16A",
+      apiKey: "8cb8481c0034b89290985b41f425004d",
+      indexName: "chaldea-center",
+      locales: {
+        "/": { placeholder: "Search" },
+        "/zh/": { placeholder: "搜索" },
       },
-    ],
-    [
-      "@vuepress/plugin-register-components",
-      {
-        componentsDir: path.resolve(__dirname, "./components"),
-      },
-    ],
-    // [  // no effect
-    //   '@vuepress/plugin-google-analytics',
-    //   {
-    //     id: 'G-PPD5M5TR2R',
-    //   },
-    // ],
-    seo({
+    }),
+    registerComponentsPlugin({
+      componentsDir: path.resolve(__dirname, "./components"),
+    }),
+
+    // googleAnalyticsPlugin({
+    //   // no effects
+    //   id: 'G-PPD5M5TR2R',
+    // }),
+
+    seoPlugin({
       hostname: "https://docs.chaldea.center",
-      isArticle: () => false,
+      // isArticle: () => false,
+      fallBackImage: "https://docs.chaldea.center/logo.png",
       customHead: (head) => {
         for (let index = head.length - 1; index >= 0; index--) {
           if (head[index][1]?.["name"] == "twitter:card") {
             head.splice(index, 1);
           }
         }
-
-        head.push(
-          [
-            "meta",
-            {
-              property: "og:image",
-              content: "https://docs.chaldea.center/logo.png",
-            },
-          ],
-          [
-            "meta",
-            {
-              property: "og:image:type",
-              content: "image/png",
-            },
-          ],
-          [
-            "meta",
-            {
-              property: "og:image:width",
-              content: "64",
-            },
-          ],
-          [
-            "meta",
-            {
-              property: "og:image:height",
-              content: "64",
-            },
-          ],
-          [
-            "meta",
-            {
-              property: "og:image:alt",
-              content: "Chaldea icon",
-            },
-          ],
-          [
-            "meta",
-            {
-              property: "og:description",
-              content: "Chaldea - Yet Another Planning Tool for FGO",
-            },
-          ]
-        );
+        head.push([
+          "meta",
+          {
+            property: "og:description",
+            content: "Chaldea - Yet Another Planning Tool for FGO",
+          },
+        ]);
       },
     }),
-    sitemap({
+    sitemapPlugin({
       hostname: "https://docs.chaldea.center",
       changefreq: "monthly",
     }),
