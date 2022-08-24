@@ -18,11 +18,11 @@
 | Apple开发者账号 | ¥688/年       | 每年订阅，用于上传应用至App Store ~~苹果吸血鬼啊~~|
 | Google开发者   | $25=¥162      | 用于上传应用至Google Play    |
 | AWS云服务器    | ~¥1000/年      | 截图解析等功能，支出不固定     |
-| 阿里云CDN/OSS等 | 150~200/月     | 国内资源托管与加速           |
+| 阿里云CDN/OSS等 | 200~400/月    | 国内资源托管与加速           |
 
 详细**收支明细**以及**捐赠名单**可参考以下在线文档:
 
-[https://shimo.im/sheets/Q3yHkVQJvqHqHtP3](https://shimo.im/sheets/Q3yHkVQJvqHqHtP3)
+[https://docs.qq.com/sheet/DVG5FcFFSUWF2bURC](https://docs.qq.com/sheet/DVG5FcFFSUWF2bURC)
 
 
 ## 捐赠方式
