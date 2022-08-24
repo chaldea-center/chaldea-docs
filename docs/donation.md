@@ -23,6 +23,12 @@ Check the detailed report and donator list on the following online sheet:
 
 [https://docs.qq.com/sheet/DVG5FcFFSUWF2bURC](https://docs.qq.com/sheet/DVG5FcFFSUWF2bURC)
 
+| Item       | Total(CNY) | Total(USD) | CNY only   | USD only |
+|:----------:|:----------:|:----------:|:----------:|:--------:|
+| 捐赠Donation | ¥3,547.34  | $528.66    | ¥3,157.02  | $58.17   |
+| 支出Expense  | -¥4,340.22 | -$646.83   | -¥4,340.22 | /        |
+| 结余/Balance | -¥792.88   | -$118.16   | /          | /        |
+> Updated: 2022/08/24
 
 ## Donations
 
