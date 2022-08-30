@@ -1,16 +1,17 @@
-# Buff检索
+# 效果检索
 
-使用AtlasAcademy的数据进行卡牌的技能/宝具效果筛选。
+技能效果分为两类，一类是一次性发动的`FuncType`，如NP增加、HP回复、获得暴击星等，包括宝具特攻，绊增加等礼装效果。
 
-技能分为两类，一类是一次性发动的`FuncType`，如NP增加、HP回复、获得暴击星等，包括宝具特攻，绊增加等礼装效果。
-另一类`BuffType`是在从者状态栏显示为Buff/Debuff的效果，若无敌、Arts卡性能提升、每回合回NP等。一般的我们均把他们认为是**效果**即可，无需特意区分。
+另一类`BuffType`是在从者状态栏显示为Buff/Debuff的效果，如无敌、Arts卡性能提升、每回合回NP等。(添加buff对应的FuncType为`addState`和`addStateShort`以及爱尔奎特的场地buff`addFieldBuffToField`)
 
 ## 从者/礼装/纹章筛选对话框
-此处的效果筛选经过了个人的优化重组，包括:
-- 合并类似的效果: Buster性能提升&Buster耐性下降，NP增加和吸收NP
-- 区分Arts/Quick/Buster性能: 三者均为指令卡性能提升(`upCommandall`)
+此处的效果筛选项已经过个人的挑选，仅显示常用的一些效果筛选
+- 合并了一些常用的效果类似但FuncType/BuffType不同的效果。
+- 其中带星号的是有限制条件，状态解除=解除所有效果，而 强化解除(\*)=解除所有包含"强化状态"属性的效果。
 
-## Buff检索页
+## 效果检索页
 此页面提供了原始的`FuncType`和`BuffType`的筛选。
 - 指定搜索范围(仅限从者): 保有技能、宝具、被动技能。不考虑附加技能(因为都一样)
 - 简单得视`FuncType`和`BuffType`为效果可多选进行且/或筛选
+
+举例，QAB卡性能提升都属于指令卡性能提升(upCommandall)，但各自限定了指令卡必需包含Quick/Arts/Buster卡特性。

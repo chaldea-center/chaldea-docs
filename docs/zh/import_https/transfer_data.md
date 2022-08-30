@@ -3,11 +3,26 @@
 无需来回引继，仅需第一次迁移即可实现类似BGO的多设备(iOS, Android, 模拟器)、多客户端(FGO,BetterFGO)登陆。支持在iOS和Android之间任意迁移。
 仅适用于使用引继码方式的日服和美服。
 
+## 简要流程
+
+拷贝/导出存档文件 - 修改引继文件文件名(仅跨平台) - 删除目标目录其余文件(子文件夹可保留) - 粘贴存档文件
+
+- Android->Android: 仅复制粘贴存档目录下所有文件即可
+- iOS->iOS: 两台设备均使用iMazing备份，导出FGO存档后还原至另一台设备
+- iOS->Android(推荐): iMazing备份并导出iOS存档，解压并重命名文件名，清空Android存档目录(files/data)，粘贴存档文件
+- Android->iOS(不推荐): iMazing备份导出并iOS存档，WinRAR打开，Container/Documents为存档目录，删除目录下的文件并用添加已重命名的Android存档文件，还原iOS存档
+
+## 注意事项
+
+- 引继码/引继文件是一次性的，一旦发行新的引继码，过往的引继码和引继文件全部作废，每个客户端都得重新拷贝新的引继文件
+- 跨平台时推荐iOS->Android无损操作，因为iOS还原存档时存在一定分险，可能导致iOS在以后重启/更新系统时恢复至某一个还原点(本人:某一次更新系统后桌面设置恢复至备份时的布局,大量app需要重新下载(数据没有丢失,仅app重下))。目标设备iOS的话，可以选择还原后尽快更新一次系统以免除后患
+
+
 ## 导出存档
 
 ### 存档目录
 
-- Android: `/storage/emulated/0/Android/data/<package>/files/data/`
+- Android: `/storage/emulated/0/Android/data/<package>/files/data/` 或 `sdcard/Android/data/<package>/files/data/`
 - iOS: `Fate_GO.imazingapp/Container/Documents/`
 
 对于Android-Android, iOS-iOS迁移，只需上述文件夹中的文件(不包括子文件夹)全部复制到目标文件夹覆盖原文件即可。
@@ -16,7 +31,7 @@
 
 ### 导出Android存档
 
-Android系统的FGO**存档目录**为: `/storage/emulated/0/Android/data/<package>/files/data/`，d713等子文件夹为资源文件，可忽略。
+Android系统的FGO**存档目录**下的d713等子文件夹为资源文件，可忽略。
 
 
 不同安装包的`<package>`包名如下，需至少打开应用一次以生成该文件夹
@@ -39,23 +54,24 @@ iMazing的使用图文教程网上很多，就不细说。备份较大，若希�
 4. imazingapp类型文件相当于zip压缩包，可使用WinRAR打开，若需替换文件，建议直接在WinRAR中替换。
 5. 压缩包内`Container/Documents`即为存档目录。
 
-iOS与Android存档目录下文件对应关系如下，还原到不同系统时记得修改文件名。注意此处显示的文件名并非完整文件名。
+::: tip
+登录凭据的文件名在iOS和Android中并不相同，跨平台时时记得修改文件名。
+务必确保粘贴前**已清空目标存档目录下其他文件**(不含子文件夹)，否则可能会失败，进入新手号。
+:::
 
-| iOS (*.dat)    | Android    | 备注          |
-| -------------- | ---------- | ------------ |
-| authsave*      | 54cc79     | 登陆凭据      |
-| friendcode<br>save | e1a9f8 | 用户id        |
-| signupsave     | 644b05     | 用户名？       |
+| iOS (*.dat)    | Android(无后缀)    | 备注          |
+| -------------- | ----------------- | ------------ |
+| authsave.dat   | 54cc790bf952ea710ed7e8be08049531   | 登陆凭据(必需)  |
+<!-- | friendcode<br>save | e1a9f8 | 用户id        | -->
+<!-- | signupsave     | 644b05     | 用户名？       | -->
 
-> 在iOS中可能同时存在`authsave.dat`和`authsave2.dat`两个文件，内容一样，复制一份即可
-
-登陆凭据是唯一指定通行证，其他均可删除。复制时可只复制主文件或上述三个都行。
+<!-- > 在iOS中可能同时存在`authsave.dat`和`authsave2.dat`两个文件，内容一样，删除2或复制一份即可 -->
 
 ## 还原存档
 
 ### 还原至Android存档
 
-删除data存档目录下所有其他文件，子目录可保留，然后复制上述`54cc790`等3个文件。万事大吉。
+删除data存档目录下所有其他文件，子目录可保留，然后复制上述`54cc790`个文件。万事大吉。
 
 ### 还原至iOS存档
 
@@ -64,7 +80,3 @@ iOS需在设置中关闭**查找我的手机**功能才能使用还原功能。�
 1. WinRAR打开imazingapp文件后，将重命名的`authsave.dat`等4个文件直接拖进去覆盖。(虽为zip压缩，但未尝试过先解压再重新压缩是否可行)
 2. 回到iMazing的管理应用的应用列表，右键`还原应用存档`，手机将重启。
 3. 重启后会需要id验证、安全隐私设置。**有一项从何处恢复数据的选项，选择不要恢复！** 万事大吉。
-
-## 其他
-
-为了降低还原iOS过程中可能带来的风险，比如一不小心出错或bug之类的导致的意外，建议先将账号引继到iOS设备中，然后从iOS迁移FGO存档到Android设备。由于在Android中只需复制粘贴即可，因此这样对双方系统的侵入性最低，不会有什么风险。
