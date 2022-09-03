@@ -8,11 +8,16 @@
 - 全局http代理软件:
   - iOS: `Potatso Lite`, 免费应用; `shadowrocket`付费应用。均需非国区账号下载，其他可用软件欢迎补充~~有很多~~。
   - Android: `Drony v1.3.x`, 免费应用, [下载地址(密码:chaldea)](https://wws.lanzoui.com/b01uoc3qh)。百度下载Drony可以下载到各式各样文件体积的版本，有些是不能用的，建议直接从网盘下载。
-- Android only:
-  - Android版本需**小于等于6**，现在手机基本见不到旧版本的安卓了，模拟器尚有不少6的，可在`设置-关于`中查看Android版本
-  - 第三方BetterFGO客户端: 获取方式见[获取日服美服安装包](./README.md#获取日服美服安装包)
-  - 如果Android版本大于等于8.1，且已root，有magisk经验，可参考[https://sekibetu.com/sniff01.html](https://sekibetu.com/sniff01.html)
-
+- FGO
+  - 国服/台服官方安装包，支持iOS和Android
+  - 日服/美服官方安装包会拒绝抓包软件证书，提示应用需要更新，需使用第三方apk(iOS用不了)：BetterFGO客户端: 获取方式见[获取日服美服安装包](./README.md#获取日服美服安装包)
+  - 韩服没辙
+- Android only: Android版本大于6时不信任用户证书，可选以下解决方案
+  1. 使用Android版本**小于等于6**的手机或模拟器，可在`设置-关于`中查看Android版本
+  2. root状态下通过adb手动将证书塞进系统证书目录:  [https://stackoverflow.com/a/46569793](https://stackoverflow.com/a/46569793)
+  3. 类似2，通过magisk等框架自动复制用户证书至系统证书: magisk需Android8.1及以上, [https://sekibetu.com/sniff01.html](https://sekibetu.com/sniff01.html)
+- iOS only:
+  - 只有国服和台服可用，越狱不会再见。这已经是啰嗦第三遍了。
 
 ## 关于模拟器
 
@@ -110,8 +115,8 @@
 
 > 2022.01.04国服更新2.36.0支持iOS/Android互登，目标域名更改为`line3-s2-xxx-fate.bilibiligame.net`，但仍有可能依旧为`line1`，总之都找找试试。
 
-1. 重新启动并登陆FGO国服、台服、BetterFGO日服/美服，直到看到地球仪或公告栏为止
-2. 找到Charles的列表中以下url，**如果找不到就关闭FGO重新打开多试几次**
+1. 重新启动并登陆FGO，直到看到地球仪或公告栏为止
+2. 找到Charles的列表中以下url，**如果找不到就关闭FGO重试，再不行检查前面步骤是否正确**
     - 国服: 其中`line3-s2-ios-fate`随账号所在服务器(iOS/b服/渠道服)以及所在地理位置等有所不同，最重要的是`_key=toplogin`
     ```:no-line-numbers
     https://line3-s2-ios-fate.bilibiligame.net/rongame_beta//rgfate/60_1001/ac.php?_userId=xxxx&_key=toplogin
@@ -152,15 +157,6 @@
 - 打开Charles和FGO抓包
 
 
-## Xopsed
-- VitualXposed框架+JustTrustMe 绕过证书验证: (第一次接触xposed)个人测试失败了，有经验的欢迎尝试讨论。如果可行的话无需使用修改版客户端。
-
 ## FAQ
-- 在抓包时FGO可能经常提示连接失败之类的提示，多点两三次重试，仍然不行请确保运行WiFi代理与全局代理软件均打开，再对照一遍教程
-- 韩服目前没法子
-- 有任何问题(包括文档)及时反馈
-
-
-## 解码小工具
-
-迁移至[解码小工具](./decoder.md)
+- 提问前请确保你已经仔细阅读了文档: [简介](./README.md)和本页内容
+- 百度谷歌搜索欢迎您，请先动手尝试自己找答案
