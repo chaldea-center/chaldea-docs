@@ -5,9 +5,16 @@
 - Global http proxy app
   - iOS: `Potatso Lite`(free), `shadowrocket`(paid) or others you know
   - Android: `Drony v1.3.x`(free) or other you know, you can also download it from [cloud drive(password:chaldea)](https://wws.lanzoui.com/b01uoc3qh)
-- Android only:
-  - Android device: android version ≤ 6. You can check the version in Setting-About.
-  - BetterFGO apk: see [Get BetterFGO apk mod](./README.md#get-betterfgo-apk-mod)
+- FGO
+  - CN/TW: official game client, support iOS/Android
+  - JP/NA: must use third-party apk, iOS is not supported. BetterFGO client: see [Get BetterFGO apk](./README.md#get-betterfgo-apk-mod)
+  - KR: not supported since I don't know any public apk mod.
+- Android only: Android 7+ won't trust user cert, you can choose one of these solution
+  1. Use Android 6(or lower)
+  2. \[root\] Install user cert as system cert via ADB: [https://stackoverflow.com/a/46569793](https://stackoverflow.com/a/46569793)
+  3. \[root\] magisk+JustTrustMe module
+- iOS only:
+  - only CN/TW supported!
 
 ## About Emulator
 This tutorial is based on [MuMu(Android 6)](https://mumu.163.com/), at least this is tested okay.
@@ -39,6 +46,9 @@ There may be strange problems in other emulators. For example, BlueStacks doesn'
 
 
 ## Configure iOS
+
+Only CN/TW supported!!!
+
 ![iOS Configuration](/images/import_https/ios-1.webp)
 <figcaption style="text-align:center">iOS Configuration</figcaption>
 
@@ -102,8 +112,8 @@ Take the MuMu emulator (Android 6.0.1) as an example, there may be differences o
 <figcaption style="text-align:center">Target URL and Saving Response</figcaption>
 
 ### Capture FGO Traffic
-1. Restart and log in to terminal (using BetterFGO for JP/NA)
-2. Find the following url in Charles's list, **If you can't find it, close FGO and reopen it and try a few more times**
+1. Restart and log in to terminal (using BetterFGO apk for JP/NA)
+2. Find the following url in Charles's list, **If you can't find it, reopen FGO once or check previous steps again**
     - **JP**: 
     ```:no-line-numbers
     https://game.fate-go.jp/login/top?_userId=xxxx
@@ -145,6 +155,6 @@ The next https traffic capture:
 
 
 ## FAQ
-- When capturing packets, FGO may often prompt the connection failure. Please try again for several times. If it still does not work, then make sure that the WiFi proxy and global proxy software are both turned on and then check the tutorial again.
+- JP/NA: only Android+BetterFGO!
 - KR server is not supported yet.
 - Any feedback on this method or documents is welcomed.

@@ -1,5 +1,10 @@
 # About HTTPS Sniffing
 
+> FGO JP/NA/KR app has cert-pinning, which will reject custom cert. 
+> So we must use modified apk(here BetterFGO JP/NA). iOS is not supported.
+>
+> For CN/TW, Android/iOS are both supported yet.
+
 Capture the network traffic when FGO client login to terminal which contains the data of all servants(ascension/palingenesis/bond/active skill/append skill/costume/coins), materials and CEs. Then easily import it to Chaldea app, no need to manually input servant data anymore.
 
 The tutorial is just an example. The core of the method is HTTPS traffic capture, so any method or software that can obtain the https response body can be used, such as **Charles**, **Fiddler**, **mitmproxy**, **Surge** or **NetCapture**. You can search the following keywords `Charles/https sniffing/mobile/emulator/global proxy` to find more online tutorials.

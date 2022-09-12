@@ -49,6 +49,9 @@
 
 
 ## 配置iOS
+
+仅国服/台服支持！！！
+
 ![iOS Configuration](/images/import_https/ios-1.webp)
 <figcaption style="text-align:center">iOS配置</figcaption>
 

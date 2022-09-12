@@ -5,11 +5,16 @@
 | Platform | Minimum Version               |
 | :------- | :---------------------------- |
 | Android  | Android 6.0 (API level 23)    |
-| iOS      | iOS 10.0                      |
-| Windows  | Windows 7 SP1 (64-bit), x86-64 based |
+| iOS      | iOS 11.0                      |
+| Windows  | Windows 8 (64-bit), x86-64 based |
 | macOS    | macOS 10.12.2                 |
-| Linux    | Debian 10 & above             |
+| Linux    | Debian 10, 64-bit             |
 | Web      | [https://chaldea.center](https://chaldea.center)<br>[https://cn.chaldea.center](https://cn.chaldea.center)|
+
+> Windows 7 SP1 should be supported, but app will crash at startup with unknown reason.
+
+Check [Flutter docs](https://docs.flutter.dev/development/tools/sdk/release-notes/supported-platforms) for more about supported platforms.
+
 
 For more details about Web version, see [V2 Release Note](./v2_release.md)
 

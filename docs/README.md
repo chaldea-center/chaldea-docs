@@ -8,9 +8,6 @@ actions:
   - text: Installation
     link: /installation.html
     type: primary
-  - text: V2 & Web
-    link: /v2_release.html
-    type: primary
   - text: User Manual
     link: /introduction.html
     type: secondary
