@@ -1,5 +1,15 @@
 # About HTTPS Sniffing
 
+## Contents
+- This page: Https sniffing introdution 
+- [BetterFGO apk](./bfgo.md): For JP/NA sniffing
+- [Transfer Data](./transfer_data.md): Keep JP/NA account data in multiple clients
+- [Stream-iOS](./stream.md): Only for CN/TW sniffing on iOS
+- [HttpCanary-Android](./httpcanary.md): JP/NA/CN/TW on Android 
+- [Charles-PC](./charles.md): Android/iOS with Charles(PC)
+- [mitmproxy-PC](./mitmproxy.md): Android/iOS with mitmproxy(PS)
+
+
 > FGO JP/NA/KR app has cert-pinning, which will reject custom cert. 
 > So we must use modified apk(here BetterFGO JP/NA). iOS is not supported.
 >
@@ -31,26 +41,3 @@ The network traffics are HTTPS encrypted, thus, we need some tricks to hacking i
 Further, JP/NA/KR FGO client will validate the certificate before establish https connection, so the above CA cert will be rejected. Now we need to modify the client app to remove the https cert validation. This doc will use the apk mod by [rayshift.io](https://rayshift.io). Obviously, Android is supported and only JP and NA(EN) version mods are provided.
 
 For CN/TW version, you don't this step, and both Android and iOS version of original FGO clients support https sniffing.
-
-## Get BetterFGO apk mod
-
-For JP and NA, we need modified apk to bypass cert-pinning, here we take the [Rayshift](https://rayshift.io)'s BetterFGO mod.
-
-BetterFGO can be installed together with original FGO client, and you can login BFGO and original iOS/Android FGO together after [transferring data](./transfer_data.md)
-
-::: danger Disclaimer from Rayshift.io
-Disclaimer: While I believe this app will not get you banned, I take no responsibility for anything that might happen. I have been using this for over a year myself without issues.
-:::
-
-Now you can directly download BFGO from following links:
-- JP: [https://rayshift.io/betterfgo/download/jp](https://rayshift.io/betterfgo/download/jp)
-- NA: [https://rayshift.io/betterfgo/download/na](https://rayshift.io/betterfgo/download/na)
-
-You can also join Discord to get more information:
-1. Join [https://discord.gg/8JeHHvh](https://discord.gg/8JeHHvh)
-2. In `ANNOUNCEMENT-roles`, click the `BetterFGO` role emoji to get the role and permission.
-3. Goto `betterfgo-cli` channel, there are JP/NA apk mod links.
-
-### Transfer Data
-
-Finally remember to [Transfer](./transfer_data.md) your account data from official client to BetterFGO client。

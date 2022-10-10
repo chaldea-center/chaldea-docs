@@ -2,6 +2,12 @@
 
 本文详细介绍借助Charles实现https抓包的步骤。
 
+::: tip
+国服目前已恢复默认使用系统代理，iOS推荐使用原[Stream-iOS](./stream.md)教程，无需电脑操作，方便快捷。
+
+Android可使用[HttpCanary-Android](./httpcanary.md)教程，证书安装完成后也可无需电脑操作。
+:::
+
 ## 所需软件或工具
 - Charles: 提供Windows、macOS以及Linux版，官方正版试用版存在单次使用30分钟的限制，但功能够用
    - 下载地址: [https://www.charlesproxy.com/download/](https://www.charlesproxy.com/download/)
