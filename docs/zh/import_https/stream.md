@@ -31,7 +31,7 @@ App Store链接: [https://apps.apple.com/app/stream/id1312141691](https://apps.a
 11. 点击分享-拷贝，在Chaldea中选择从剪切板导入即可。或另存为文件，在Chaldea中选择从文件导入。
 12. 后处理：对于主力机，建议第5步关闭信任证书即可，也前往第4步删除。删除/不信任后，下次抓包需重新设置。
 
-## 部分示例截图：
+## 部分示例截图
 
 1. 目标请求网址
 ![目标请求](/images/import_https/stream-1.webp)

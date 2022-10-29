@@ -1,5 +1,7 @@
 # Help Translation
 
+Also UI/UX needed.
+
 ### Game Data
 
 Current based on JP data, added CN/TW/NA/KR translations of released part for each region. Besides, Mooncell translation for CN and AtlasAcademy/Fandom translation for NA are also used.

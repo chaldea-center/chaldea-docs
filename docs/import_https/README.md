@@ -7,8 +7,10 @@
 - [Stream-iOS](./stream.md): Only for CN/TW sniffing on iOS
 - [HttpCanary-Android](./httpcanary.md): JP/NA/CN/TW on Android 
 - [Charles-PC](./charles.md): Android/iOS with Charles(PC)
-- [mitmproxy-PC](./mitmproxy.md): Android/iOS with mitmproxy(PS)
+- [mitmproxy-PC](./mitmproxy.md): Android/iOS with mitmproxy(PC)
 
+
+## Introduction
 
 > FGO JP/NA/KR app has cert-pinning, which will reject custom cert. 
 > So we must use modified apk(here BetterFGO JP/NA). iOS is not supported.
