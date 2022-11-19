@@ -2,6 +2,12 @@
 
 同时也需要UI/UX...
 
+## 联系我们
+
+通过[反馈](./feedback.md)中的途径联系我们贡献翻译或反馈纠错。
+
+如果可以帮忙翻译，欢迎通过Discord/QQ联系。
+
 ### Game Data
 
 ### 游戏数据
@@ -101,7 +107,3 @@
 - `intl_ko.arb` - Korean, 韩语
 - `intl_zh.arb` - Chinese, 简体中文
 - `intl_zh_Hant.arb` - Traditional Chinese, 繁体中文
-
-## 联系我们
-
-通过[反馈](./feedback.md)中的途径联系我们贡献翻译或反馈纠错。

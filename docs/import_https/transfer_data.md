@@ -2,6 +2,10 @@
 
 No need to use and update transfer code time and time again. You can directly copy FGO data from original client to target client. Support both iOS and Android. And only for JP and NA server which use transfer code.
 
+::: warning
+NOT allowed according to FGO's user agreement: emulator, apk mod and so on.
+:::
+
 ## Extract Data
 
 ## Data File Directory
@@ -9,7 +13,7 @@ No need to use and update transfer code time and time again. You can directly co
 - Android: `/storage/emulated/0/Android/data/<package>/files/data/`
 - iOS: `Fate_GO.imazingapp/Container/Documents/`
 
-For Android-Android and iOS-iOS transferring, it's just copy then paste the above directory.
+For Android-Android and iOS-iOS transferring, just copy then paste the above directory or file.
 
 If you want to transfer from iOS to Android or reverse, you need to rename the files, they have different filename for the same file.
 

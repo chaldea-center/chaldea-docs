@@ -4,7 +4,7 @@
 - [Starring](https://github.com/chaldea-center/chaldea/stargazers) the repo
 - 在 [Google Play](https://play.google.com/store/apps/details?id=cc.narumi.chaldea) 或 [App Store](https://apps.apple.com/us/app/chaldea/id1548713491?itsct=apps_box&itscg=30200) 上评分.
 - 分享给你的好友
-- 祈祷FGO不要关服
+- 帮忙[翻译](./translation.md)
 - 捐赠
 
 
@@ -24,12 +24,13 @@
 
 [https://docs.qq.com/sheet/DVG5FcFFSUWF2bURC](https://docs.qq.com/sheet/DVG5FcFFSUWF2bURC)
 
-| Item       | Total(CNY) | Total(USD) | CNY only   | USD only |
-|:----------:|:----------:|:----------:|:----------:|:--------:|
-| 捐赠Donation | ¥3,547.34  | $528.66    | ¥3,157.02  | $58.17   |
-| 支出Expense  | -¥4,340.22 | -$646.83   | -¥4,340.22 | /        |
-| 结余/Balance | -¥792.88   | -$118.16   | /          | /        |
-> 更新时间: 2022/08/24
+| **Item**   | **Total(CNY)** | **Total(USD)** | **CNY only** | **USD only** |
+|------------|----------------|----------------|--------------|--------------|
+| 捐赠Donation | ¥3,845.94      | $573.17        | ¥3,455.62    | $58.17       |
+| 支出Expense  | -¥5,519.16     | -$822.53       | -¥5,519.16   | /            |
+| 结余/Balance | -¥1,673.22     | -$249.36       | /            | /            |
+
+> 更新时间: 2022/11/19
 
 ## 捐赠方式
 

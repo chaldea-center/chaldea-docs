@@ -2,6 +2,12 @@
 
 Also UI/UX needed.
 
+## Contact us
+
+Please contact me through [feedback page](./feedback.md) to contribute or give feedback.
+
+**Discord** or **QQ** is preferred if you want to contribute translations.
+
 ### Game Data
 
 Current based on JP data, added CN/TW/NA/KR translations of released part for each region. Besides, Mooncell translation for CN and AtlasAcademy/Fandom translation for NA are also used.
@@ -114,7 +120,3 @@ Translation files locate at [https://github.com/chaldea-center/chaldea/tree/main
 
 If you want to add more language, just copy `intl_en.arb` or `intl_zh.arb` and translate the listed strings.
 You'd better to check these strings in APP to see where it would be used.
-
-## Contact us
-
-Please contact us through [feedback page](./feedback.md) to contribute or give feedback.
