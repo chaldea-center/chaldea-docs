@@ -1,5 +1,16 @@
 # FAQ
 
+## Forgot Password
+Please send following information through Email or in-app feedback:
+- username
+- register date
+- device UUID that has been successfully logged in recently
+
+UUID: via "About Chaldea" - long press logo - paste UUID.
+
+In-app feedback will attach UUID automatically.
+
+
 ## Fail to start or white screen
 - Web: for Firefox, if InPrivate mode or "Clear history when close" setting is turned on, it will disable IndexedDB then stop app.
 - It seems not support Windows 7, btw only 64-bit supported.
