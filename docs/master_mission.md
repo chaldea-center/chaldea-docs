@@ -24,6 +24,11 @@ Mission detail:
 - basically, it uses Main Story's free quests to plan, you can choose the different mains story progress
 - You can also choose event quests, only JP/NA quests after 2020.11 has enemy data.
 
+**Main Story's Free Quest Scope**:
+- All free quests from Singularity F to selected war/chapter, plus all "Enter the Treasure Vault - Novice~Extreme" in Daily Quests.
+- "Training Ground" and "Ember Gathering" quests are not included because of random enemies.
+- All above quest and enemy data use JP data.
+ 
 **Solution**
 Solution tab is the least AP solution and you can also choose related quests by your own demands. Each quest has shown the count of mission target count.
 
