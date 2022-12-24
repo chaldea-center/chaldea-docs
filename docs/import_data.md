@@ -29,6 +29,12 @@ See [Import HTTPS Response](./import_https.md) for details.
 
 
 ## Item Screenshots
+::: warning
+Don't crop, don't use split screen mode, make sure the game fills the entire screen.
+
+Don't upload too many screenshots at once, 100 seconds timeout limit!
+:::
+
 1. Goto **My Room-Item List** then take screenshots
 2. Import these screenshots and upload to chaldea server
 3. In **Result** tab, you can manually correct the wrong results.
@@ -41,7 +47,14 @@ Don't crop, don't use split screen mode, make sure the game fills the entire scr
 ![Item Screenshot Example](/images/item_recognition_example.webp)
 <figcaption style="text-align:center">Item Screenshot Example</figcaption>
 
+
 ## Active/Append Skill Recognition
+::: warning
+Don't crop, don't use split screen mode, make sure the game fills the entire screen.
+
+Don't upload too many screenshots at once, 100 seconds timeout limit!
+:::
+
 1. Goto **Enhance-Skill/Append Skill**, on the screen of selecting servant, take screenshots
    - in order to improve recognition accuracy, select the middle density of servant avatar layout by clicking the left-bottom button
 2. Similar to item recognition, upload to server

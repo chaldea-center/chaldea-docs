@@ -1,5 +1,11 @@
 # HttpCanary-Android
 
+::: warning
+不知为什么，用不了了。还是用[Charles](./charles.md)方法吧。
+
+如果有好心的专业人士了解详情，还请点拨点拨。
+:::
+
 总结：适用于Android，无需电脑(或仅需第一次adb安装证书)，国服/台服/日服/美服均可。
 
 ::: tip
@@ -11,22 +17,22 @@
 根据安卓版本不同，证书安装步骤有些许不同。
 1. <=6: 无需root，安装至用户证书即可（蓝MuMu模拟器即可！）
 2. 7-10: 需root，使用HttpCanary自带的安装证书功能安装至用户证书，adb移动至系统证书或Magisk+JustTrustMe模块实现
-3. 11+: 在HttpCanary中导出pem证书，在系统设置中手动安装，再adb或Magisk
+3. 11+: 在HttpCanary中导出pem证书，在系统设置中手动安装，再adb或Magisk移动证书至系统证书。或导出.0证书，直接复制到系统证书。
 4. 12+: 似乎更麻烦了，自行研究╮(╯▽╰)╭
 5. 也有使用各种虚拟机等机制将HttpCanary及FGO应用安装在虚拟机内再抓包的，无需root，请自行研究
 
 ## adb
 
-0. 打开手机开发者选项和调试模式，USB连接电脑
-1. 下载adb, 将adb路径添加至Path环境变量中(可选): 
+1. 打开手机开发者选项和调试模式，USB连接电脑
+2. 下载adb, 将adb路径添加至Path环境变量中(可选): 
    - 谷歌官方: [https://developer.android.com/studio/releases/platform-tools](https://developer.android.com/studio/releases/platform-tools)
    - [https://adbshell.com/downloads](https://adbshell.com/downloads)
-2. 打开CMD/PowerShell, 确保 adb 或./adb 可用，执行以下命令
-3. USB连接手机（adb会自动连接?），或模拟器 `adb connect 127.0.0.1:xxxx`
+3. 打开CMD/PowerShell, 确保 adb 或./adb 可用，执行以下命令
+4. USB连接手机（adb会自动连接?），或模拟器 `adb connect 127.0.0.1:xxxx`
    
    不同模拟器的端口xxxx不同，百度之或参考下方。真机连接后应该会自动识别无需手动连接。注意请只连接一个Android设备，否则各命令需要指定目标设备。
    `adb devices`可查看已连接设备。
-4. 执行以下命令
+5. 执行以下命令
     ```
     adb shell
     su
@@ -36,7 +42,7 @@
     touch /data/data/com.guoshi.httpcanary/cache/HttpCanary.jks
     chmod 600 /data/data/com.guoshi.httpcanary/cache/HttpCanary.jks
     ```
-5. 打开HttpCanary，开始抓包，保存目标请求的响应。
+6. 打开HttpCanary，开始抓包，保存目标请求的响应。
 
 ### 常见模拟器端口
 

@@ -1,5 +1,11 @@
 # HttpCanary-Android
 
+::: warning
+It is not working again on some devices, I don't know why ╮(╯▽╰)╭ 
+
+Please use [Charles](./charles.md) if HttpCanary failed.
+:::
+
 Once you installed CA cert, you don't need PC anymore.
 
 For Android 6 or lower:
