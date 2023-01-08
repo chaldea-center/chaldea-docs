@@ -8,7 +8,7 @@ Please contact me through [feedback page](./feedback.md) to contribute or give f
 
 **Discord** or **QQ** is preferred if you want to contribute translations.
 
-### Game Data
+## Game Data
 
 Current based on JP data, added CN/TW/NA/KR translations of released part for each region. Besides, Mooncell translation for CN and AtlasAcademy/Fandom translation for NA are also used.
 
@@ -104,7 +104,7 @@ This is a special file to override official translations. The format is:
 Attention, only file_name without `.json` suffix here. And only add fields need overridden.
 
 
-### UI Text
+## UI Text
 
 App ui text also support multi-language, besides the official 5 languages, we can extend support for other languages too.
 

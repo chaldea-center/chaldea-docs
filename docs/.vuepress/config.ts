@@ -1,18 +1,15 @@
-import { viteBundler } from "@vuepress/bundler-vite";
 import { defineUserConfig } from "@vuepress/cli";
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
-import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
 import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
 import { defaultTheme } from "@vuepress/theme-default";
 import { path } from "@vuepress/utils";
-
 import { seoPlugin } from "vuepress-plugin-seo2";
 import { sitemapPlugin } from "vuepress-plugin-sitemap2";
 
 export default defineUserConfig({
   lang: "en-US",
   title: "Chaldea",
-  description: "Chaldea - Yet Another Material Planner for Fate/Grand Order",
+  description: "Chaldea - Yet Another Planner for Fate/Grand Order",
   // dest: 'dist',
   head: [
     ["link", { rel: "icon", href: "/logo.png" }],
@@ -82,7 +79,7 @@ export default defineUserConfig({
       lang: "en-US",
       title: "Chaldea",
       description:
-        "Chaldea - Yet Another Material Planner for Fate/Grand Order",
+        "Chaldea - Yet Another Planner for Fate/Grand Order",
     },
     "/zh/": {
       lang: "zh-CN",
@@ -172,7 +169,7 @@ export default defineUserConfig({
 
         // a11y
         openInNewWindow: "在新窗口打开",
-        toggleDarkMode: "切换深色模式",
+        toggleColorMode: "切换深色模式",
         toggleSidebar: "切换侧边栏",
 
         sidebar: {
@@ -261,7 +258,7 @@ export default defineUserConfig({
           "meta",
           {
             property: "og:description",
-            content: "Chaldea - Yet Another Planning Tool for FGO",
+            content: "Chaldea - Yet Another Planner for FGO",
           },
         ]);
       },

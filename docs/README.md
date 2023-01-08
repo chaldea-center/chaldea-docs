@@ -1,9 +1,9 @@
 ---
 home: true
-title: Chaldea - Material Planner for Fate/GO
+title: Chaldea docs
 heroImage: /images/chaldea.png
 heroText: Chaldea
-tagline: Cross-platform Material Planner for Fate/GO
+tagline: Yet Another Planner for Fate/GO
 actions:
   - text: Installation
     link: /installation.html
@@ -13,7 +13,7 @@ actions:
     type: secondary
 features:
   - title: Cross Platform
-    details: Support iOS, Android, Windows, macOS, Linux and Web, with multi-device synchronization. Plan your chaldea everywhere.
+    details: Support Web, iOS, Android, Windows, macOS and Linux, with multi-device synchronization. Plan your chaldea everywhere.
   - title: Rich Planning
     details: Servant ascension, active/append skills and palingenesis. Limit events, main story, exchange tickets and more to explore.
   - title: Free Quest Planner
