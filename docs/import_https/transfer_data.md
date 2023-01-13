@@ -8,7 +8,7 @@ NOT allowed according to FGO's user agreement: emulator, apk mod and so on.
 
 ## Extract Data
 
-## Data File Directory
+### Data File Directory
 
 - Android: `/storage/emulated/0/Android/data/<package>/files/data/`
 - iOS: `Fate_GO.imazingapp/Container/Documents/`

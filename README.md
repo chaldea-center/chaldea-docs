@@ -10,8 +10,9 @@ Documentation for [Chaldea](https://github.com/chaldea-center/chaldea) app.
 
 ## Documentation
 
-https://docs.chaldea.center
+https://docs.chaldea.center/
 
+https://docs.chaldea.center/zh/
 
 
 ## License
