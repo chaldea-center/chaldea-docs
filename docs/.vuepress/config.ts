@@ -12,7 +12,27 @@ export default defineUserConfig({
   description: "Chaldea - Yet Another Planner for Fate/Grand Order",
   // dest: 'dist',
   head: [
-    ["link", { rel: "icon", href: "/logo.png" }],
+    ["link", { rel: "apple-touch-icon", href: "/apple-touch-icon.png" }],
+    [
+      "link",
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "32x32",
+        href: "/favicon-32x32.png",
+      },
+    ],
+    [
+      "link",
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "16x16",
+        href: "/favicon-16x16.png",
+      },
+    ],
+    ["link", { rel: "manifest", href: "/site.webmanifest" }],
+
     [
       "meta",
       {
@@ -78,8 +98,7 @@ export default defineUserConfig({
     "/": {
       lang: "en-US",
       title: "Chaldea",
-      description:
-        "Chaldea - Yet Another Planner for Fate/Grand Order",
+      description: "Chaldea - Yet Another Planner for Fate/Grand Order",
     },
     "/zh/": {
       lang: "zh-CN",
