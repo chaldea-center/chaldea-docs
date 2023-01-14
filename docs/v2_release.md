@@ -31,12 +31,12 @@ If you are inside China mainland, [https://cn.chaldea.center](https://cn.chaldea
 However, the web app has pooooor performance, especially on mobile browser. Crash ~~sometimes~~ frequently.
 :::
 
-You can download installer of preview version from github release for canary version(Preview), it will be updated once any code changed.
-Only Android/Windows/Linux available for canary version.
+You can download installer of preview version from github release for beta version(Preview), it will be updated once any code changed.
+Only Android/Windows/Linux available for beta version.
 
-- [https://github.com/chaldea-center/chaldea/releases/canary](https://github.com/chaldea-center/chaldea/releases/canary)
+- [https://github.com/chaldea-center/chaldea/releases/beta](https://github.com/chaldea-center/chaldea/releases/beta)
 
-For Android, it has different package name, which means you can install both normal version and canary version.
+For Android, it has different package name, which means you can install both normal version and beta version.
 
 ## Web Renderer
 

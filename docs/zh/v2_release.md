@@ -35,8 +35,8 @@ v1 与 v2 数据兼容性不好，当升级大版本时，目前仅提供基础�
 
 预览版可从 github 下载，提供Android/Windows/Linux最新的预览版:
 
-- [https://github.com/chaldea-center/chaldea/releases/canary](https://github.com/chaldea-center/chaldea/releases/canary)
-- [https://hub.fastgit.xyz/chaldea-center/chaldea/releases/tag/canary](https://hub.fastgit.xyz/chaldea-center/chaldea/releases/tag/canary)~~被qiang了~~
+- [https://github.com/chaldea-center/chaldea/releases/beta](https://github.com/chaldea-center/chaldea/releases/beta)
+- [https://hub.fastgit.xyz/chaldea-center/chaldea/releases/tag/beta](https://hub.fastgit.xyz/chaldea-center/chaldea/releases/tag/beta)~~被qiang了~~
 
 该预览版随代码更新自动更新，因此版本号可能不会变化，覆盖安装即可。另 Android 预览版(`cc.narumi.chaldea.preview`)可与正式版(`cc.narumi.chaldea`)共存，两者具有不同的包名。
 
