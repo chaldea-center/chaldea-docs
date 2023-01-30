@@ -7,7 +7,7 @@
 | Android  | Android 6.0 (API level 23)    |
 | iOS      | iOS 11.0                      |
 | Windows  | Windows 8 (64-bit), x86-64 based |
-| macOS    | macOS 10.12.2                 |
+| macOS    | macOS 10.14                   |
 | Linux    | Debian 10, 64-bit             |
 | Web      | [https://chaldea.center](https://chaldea.center)<br>[https://cn.chaldea.center](https://cn.chaldea.center)|
 
@@ -17,6 +17,10 @@ Check [Flutter docs](https://docs.flutter.dev/development/tools/sdk/release-note
 
 
 For more details about Web version, see [V2 Release Note](./v2_release.md)
+
+::: tip
+Don't run multiple instances or web pages together, otherwise data will be overridden by each other.
+:::
 
 ## Download
 
@@ -70,8 +74,6 @@ Please run the app after decompression. And save to non-system folder, e.g. `Pro
 If there is such an error message on startup, please install [Microsoft Visual C++ redistributable package](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads) and restart again.
 
 ### macOS
-
-Don't run multiple Chaldea instances, because the data is shared. Otherwise, data may be overridden unexpectedly. 
 
 ::: tip
 The macOS version is only available on Mac App Store.

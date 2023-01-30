@@ -25,5 +25,3 @@ You can freely combine these 3 parts.
 ## FFO Summon Simulator
 
 Synthesis servants randomly, experience the surprise.
-
-~~Maybe memory exploded and crash after a longtime summon~~

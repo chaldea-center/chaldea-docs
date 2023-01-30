@@ -7,8 +7,8 @@
 | Android | Android 6.0 (API level 23)    |
 | iOS     | iOS 11.0                      |
 | Windows | Windows 8 (64-bit), x86-64 based |
-| macOS   | macOS 10.12.2                 |
-| Linux   | Debian 10, 64-bit                |
+| macOS   | macOS 10.14                   |
+| Linux   | Debian 10, 64-bit             |
 | Web     | [https://chaldea.center](https://chaldea.center)<br>[https://cn.chaldea.center](https://cn.chaldea.center)|
 
 > Windows 7 SP1 理论可运行，但存在未知bug无法启动
@@ -16,6 +16,10 @@
 更多关于系统版本要求可查看[Flutter 文档](https://docs.flutter.dev/development/tools/sdk/release-notes/supported-platforms)
 
 关于v2和Web版详见[V2 Release](./v2_release.md)
+
+::: tip
+由于数据储存位置共享，请勿同时运行多个实例或网页，否则会导致数据相互覆盖。
+:::
 
 ## 下载
 
@@ -43,12 +47,9 @@ v1.x用户请阅读[注意事项](#安装注意事项)
 
 包含Android、Windows和Linux安装包。若最新版不包含所需平台，请检查更早的发布版本。
 
-Github访问存在障碍的情况下，请选择镜像网站访问：
 - [Github Releases](https://github.com/chaldea-center/chaldea/releases)
-- [fastgit镜像](https://hub.fastgit.xyz/chaldea-center/chaldea/releases) ~~也被qiang了~~
-- [cnpmjs镜像](https://github.com.cnpmjs.org/chaldea-center/chaldea/releases) ~~被Github限制了~~
 
-蓝奏云网盘，最后的底线，更新可能不及时。
+蓝奏云网盘，随缘上传，更新不及时。
 - [https://wws.lanzoui.com/b01tuahmf](https://wws.lanzoui.com/b01tuahmf) 密码:chaldea
 
 ## 安装注意事项
@@ -72,8 +73,6 @@ Windows压缩包，请解压后再运行，并储存于非系统目录，`Progra
 若启动时报该错误，先安装[Microsoft Visual C++ redistributable package](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
 
 ### macOS
-
-由于数据储存位置共享，请勿同时运行多个实例，否则会导致数据相互覆盖。
 
 ::: tip
 macOS现在仅提供应用商店版本

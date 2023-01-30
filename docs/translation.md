@@ -6,7 +6,7 @@ Also UI/UX needed.
 
 Please contact me through [feedback page](./feedback.md) to contribute or give feedback.
 
-**Discord** or **QQ** is preferred if you want to contribute translations.
+**Discord** is preferred if you want to contribute translations.
 
 ## Game Data
 
