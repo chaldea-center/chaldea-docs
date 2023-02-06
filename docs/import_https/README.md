@@ -13,7 +13,7 @@
 ## Introduction
 
 > FGO JP/NA/KR app has cert-pinning, which will reject custom cert. 
-> So we must use modified apk(here BetterFGO JP/NA). iOS is not supported.
+> So we must use modified apk, BFGO has stopped sniffing support because of some people use it to cheat. 
 >
 > For CN/TW, Android/iOS are both supported yet.
 
@@ -24,7 +24,9 @@ The tutorial is just an example. The core of the method is HTTPS traffic capture
 Note that the final exported data must only include the response body, excluding response headers and other information, and the response body must be a valid json(for JP/NA), or base64 encoded string(for CN/TW). 
 
 ::: danger Disclaimer
-Make sure you are aware of the risk of capturing HTTPS traffic. Chaldea app doesn't handle any sensitive data like password and https decryption, these are all done by third-party software or client.
+Make sure you are aware of the risk of capturing HTTPS traffic. Chaldea app only reads the sniffed data which doesn't contains accounts secrets or password.
+
+But if you are using simulating login JP/NA via auth file(recent added), it does read your login secrets to perform a login in chaldea app.
 :::
 
 - [Charles Tutorial](./charles.md)
@@ -40,6 +42,6 @@ The network traffics are HTTPS encrypted, thus, we need some tricks to hacking i
 - remove or don't trust the installed CA cert once you finished importing to Chaldea
 
 ### Cert-pinning
-Further, JP/NA/KR FGO client will validate the certificate before establish https connection, so the above CA cert will be rejected. Now we need to modify the client app to remove the https cert validation. This doc will use the apk mod by [rayshift.io](https://rayshift.io). Obviously, Android is supported and only JP and NA(EN) version mods are provided.
+Further, JP/NA/KR FGO client will validate the certificate before establish https connection, so the above CA cert will be rejected. ~~Now we need to modify the client app to remove the https cert validation. This doc will use the apk mod by [rayshift.io](https://rayshift.io). Obviously, Android is supported and only JP and NA(EN) version mods are provided.~~
 
 For CN/TW version, you don't this step, and both Android and iOS version of original FGO clients support https sniffing.

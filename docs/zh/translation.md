@@ -1,12 +1,18 @@
 # 贡献翻译
 
-同时也需要UI/UX...
+绝大部分翻译不定期同步至谷歌表格(需要科学上网):
+
+[https://docs.google.com/spreadsheets/d/1SSFQgfg-EFqfRzdKnoyRZIB7t6cwc_4MyseFXRdOSqs/edit](https://docs.google.com/spreadsheets/d/1SSFQgfg-EFqfRzdKnoyRZIB7t6cwc_4MyseFXRdOSqs/edit)
+
+非常希望有能人志士帮忙一起翻译! TAT 其中繁/英/韩部分确实严重。
+
+- 部分文件如`enums.json`由于格式问题未同步至谷歌表格
+- 更新后请及时告知我进行合并
 
 ## 联系我们
 
-通过[反馈](./feedback.md)中的途径联系我们贡献翻译或反馈纠错。
+通过[反馈](./feedback.md)中的途径联系我们。
 
-如果可以帮忙翻译，欢迎通过Discord联系。
 
 ## 游戏数据
 

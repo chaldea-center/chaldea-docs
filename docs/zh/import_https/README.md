@@ -2,7 +2,7 @@
 
 ## 目录
 - 本页：抓包介绍
-- [BetterFGO客户端apk](./bfgo.md): 日服/美服所需
+- [BetterFGO客户端apk](./bfgo.md): 日服/美服所需， 目前已不可用
 - [迁移数据](./transfer_data.md): 日服/美服多客户端共存
 - [Stream-iOS](./stream.md): 国服/台服iOS抓包教程
 - [HttpCanary-Android](./httpcanary.md): Android抓包教程
@@ -11,9 +11,9 @@
 - [Quantumult X-iOS](./quantumultx.md): 国服&台服iOS抓包（付费app）
 
 ::: warning
-说在前面: 日服/美服/韩服有证书绑定(cert-pinning)，会拒绝抓包软件的证书，**“必须”** 使用第三方apk！(也即不支持iOS) 
+日服/美服/韩服有证书绑定(cert-pinning)，会拒绝抓包软件的证书，**“必须”** 使用第三方apk！
 
-日服/美服第三方apk可使用本文介绍的Rayshift.io制作的BetterFGO版本。
+~~日服/美服第三方apk可使用本文介绍的Rayshift.io制作的BetterFGO版本。~~ 不再支持，详见[BetterFGO](./bfgo.md)
 :::
 
 国服和台服没有证书绑定，支持Android和iOS的官方安装包的抓包。
@@ -47,5 +47,5 @@ Fiddler/Charles~~以及更底层的wireshark等~~为目前主流的网络调试/
 ## 证书绑定
 目前国服和台服通过上述抓包软件即可实现https的解密。但日服/美服/韩服还有进一步的安保措施: **证书绑定(cert pinning)**。通过在客户端中预置证书，在通信前对比从"服务器"传过来的证书(抓包工具提供的CA证书)和预置证书是否一致有效，无效则拒绝连接，此时登陆FGO时会直接提示前往应用商店更新版本。
 
-由于目前FGO的证书信息是写进代码里的，有自己的验证步骤，常用因此若需跳过证书验证，需要修改安装包，~~如有其他方法欢迎告知~~。修改安装包仅支持apk，即仅Android平台。
-此处使用[rayshift.io](https://rayshift.io/)制作的BetterFGO客户端(简称bfgo，仅Android apk)，包含日服和美服。具体请见[获取BetterFGO](./bfgo.md)
+由于目前FGO的证书信息是写进代码里的，有自己的验证步骤，常用因此若需跳过证书验证，需要修改安装包，~~如有其他方法欢迎告知~~。
+~~此处使用[rayshift.io](https://rayshift.io/)制作的BetterFGO客户端(简称bfgo，仅Android apk)，包含日服和美服。具体请见[获取BetterFGO](./bfgo.md)~~ 不再支持

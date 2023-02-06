@@ -150,6 +150,7 @@ export default defineUserConfig({
                     "/import_https/httpcanary.md",
                     "/import_https/charles.md",
                     "/import_https/mitmproxy.md",
+                    "/import_https/auto_login.md"
                   ],
                 },
                 "/summon.md",
@@ -219,6 +220,7 @@ export default defineUserConfig({
                     "/zh/import_https/charles.md",
                     "/zh/import_https/mitmproxy.md",
                     "/zh/import_https/quantumultx.md",
+                    "/zh/import_https/auto_login.md",
                     "/zh/import_https/decoder.md",
                   ],
                 },

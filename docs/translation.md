@@ -1,12 +1,19 @@
 # Help Translation
 
-Also UI/UX needed.
+Most translations will be synced to Google Spreadsheet:
+
+[https://docs.google.com/spreadsheets/d/1SSFQgfg-EFqfRzdKnoyRZIB7t6cwc_4MyseFXRdOSqs/edit](https://docs.google.com/spreadsheets/d/1SSFQgfg-EFqfRzdKnoyRZIB7t6cwc_4MyseFXRdOSqs/edit)
+
+Looking forward to your contribution!!! Especially English/Traditional Chinese/Korean parts.
+
+- some files such as `enums.json` are not uploaded because of different format.
+- inform me to merge changes when you update the spreadsheet.
+
 
 ## Contact us
 
-Please contact me through [feedback page](./feedback.md) to contribute or give feedback.
+Please contact me via [feedback page](./feedback.md).
 
-**Discord** is preferred if you want to contribute translations.
 
 ## Game Data
 

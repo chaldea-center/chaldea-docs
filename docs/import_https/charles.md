@@ -11,7 +11,7 @@ HttpCanary is recommended for Android sniffing. It doesn't need PC or the first 
   - Android: `Drony v1.3.x`(free) or other you know, you can also download it from [cloud drive(password:chaldea)](https://wws.lanzoui.com/b01uoc3qh)
 - FGO
   - CN/TW: official game client, support iOS/Android
-  - JP/NA: must use third-party apk, iOS is not supported. BetterFGO client: see [Get BetterFGO apk](./README.md#get-betterfgo-apk-mod)
+  - JP/NA: stop supporting ~~must use third-party apk, iOS is not supported. BetterFGO client: see [Get BetterFGO apk](./bfgo.md)~~
   - KR: not supported since I don't know any public apk mod.
 - Android only: Android 7+ won't trust user cert, you can choose one of these solution
   1. Use Android 6(or lower)
@@ -116,7 +116,7 @@ Take the MuMu emulator (Android 6.0.1) as an example, there may be differences o
 <figcaption style="text-align:center">Target URL and Saving Response</figcaption>
 
 ### Capture FGO Traffic
-1. Restart and log in to terminal (using BetterFGO apk for JP/NA)
+1. Restart and login to terminal
 2. Find the following url in Charles's list, **If you can't find it, reopen FGO once or check previous steps again**
     - **JP**: 
     ```:no-line-numbers
@@ -159,6 +159,6 @@ The next https traffic capture:
 
 
 ## FAQ
-- JP/NA: only Android+BetterFGO!
+- JP/NA: no mod apk available, BFGO stopped supporting.
 - KR server is not supported yet.
 - Any feedback on this method or documents is welcomed.

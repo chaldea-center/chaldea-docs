@@ -1,7 +1,11 @@
 # HttpCanary-Android
 
 ::: warning
-不知为什么，用不了了。还是用[Charles](./charles.md)方法吧。
+不知为什么，有时失败。部分数据请求失败导致无法到发送登陆请求这一步。
+
+建议开启白名单模式(whitelist)，仅目标网址的域名（`game.fate-go.jp`, `line*-fate.bilibiligame.net`）进行抓包解密。
+
+还是不行就用[Charles](./charles.md)方法吧。
 
 如果有好心的专业人士了解详情，还请点拨点拨。
 :::
