@@ -63,13 +63,24 @@ Otherwise, you can choose to manually copy your data.
 
 You need to restart app to let it take effect.
 
-### App Dataset Management
+### Game Data Management
 The dataset has minimal app requirement. If you cannot update to the latest data, please upgrade app first.
 
 * Download Source: Global and China source, set at top of Settings page
 * Auto update: background update after startup, and apply it at the next startup or manually update it here.
 * Cached resources: mainly servant/ce/cc/buff icons
 * Clear caches: such as memory cache, temp dir, image assets etc.
+  
+### Spoiler Settings
+There are 2 similar settings:
+1. "Hide Unreleased Cards": 
+   - Only turn on filter in svt/cc/ce list page. All data are still there, turn off filter or in other pages, you can still find the unreleased cards.
+   - The filter is based on current game account's region setting.
+2. "Delete Unreleased Cards": 
+   - Delete unreleased Servant/CE/CC data when loading, Events, main stories and mystic codes are kept there.
+   - You must restart app to make spoiler change to take effect. 
+   - So when you check future event, there may be some icons only display `IDxxxx` which is already removed from local database.
+   - All game accounts use the same spoiler settings when they set to different game server region.
 
 ### General Settings
 * Multi-language support: Simplified and Traditional Chinese, English, Japanese and Korean(partial supported)
