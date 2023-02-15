@@ -48,7 +48,8 @@ Including iOS App Store and Mac App Store
 
 Contains Android, Windows and Linux binary assets.
 
-[Releases](https://github.com/chaldea-center/chaldea/releases)
+- [Github Releases](https://github.com/chaldea-center/chaldea/releases)
+- [Releases](./releases.md)
 
 If the latest version doesn't contain the platform you want, please check the previous versions.
 
@@ -78,7 +79,3 @@ If there is such an error message on startup, please install [Microsoft Visual C
 ::: tip
 The macOS version is only available on Mac App Store.
 :::
-
-## Auto-upgrade
-
-See [APP auto-upgrade](./app_setting.md#app-auto-upgrade)

@@ -48,8 +48,9 @@ v1.x用户请阅读[注意事项](#安装注意事项)
 包含Android、Windows和Linux安装包。若最新版不包含所需平台，请检查更早的发布版本。
 
 - [Github Releases](https://github.com/chaldea-center/chaldea/releases)
+- [历史版本](./releases.md) 可选代理下载
 
-蓝奏云网盘，随缘上传，更新不及时。
+蓝奏云网盘，~~随缘上传，更新不及时~~ 不再上传，请通过历史版本下载。
 - [https://wws.lanzoui.com/b01tuahmf](https://wws.lanzoui.com/b01tuahmf) 密码:chaldea
 
 ## 安装注意事项
@@ -77,7 +78,3 @@ Windows压缩包，请解压后再运行，并储存于非系统目录，`Progra
 ::: tip
 macOS现在仅提供应用商店版本
 :::
-
-## 自动更新
-
-详见[APP自动更新](./app_setting.md#app自动更新)
