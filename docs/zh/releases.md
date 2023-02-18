@@ -8,4 +8,4 @@
 
 更多发布版本请见[Github Releases](https://github.com/chaldea-center/chadlea/releases)
 <hr/>
-<app-release></app-release>
+<AppRelease/>

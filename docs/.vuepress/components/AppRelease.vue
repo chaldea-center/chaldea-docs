@@ -14,11 +14,11 @@
         style="margin: 0.2em 0; padding: 0.8em"
       >
         <summary>
-          Release Note ({{ new Date(release.published_at).toDateString() }})
+          Release Note ({{
+            new Date(release.published_at).toLocaleDateString()
+          }})
         </summary>
-        <pre style="padding: 0.5rem 1.2rem; margin: 0.5rem 0 0 0">{{
-          release.body.trim()
-        }}</pre>
+        <pre class="release-note">{{ release.body.trim() }}</pre>
       </details>
       <table>
         <tbody>
@@ -50,13 +50,47 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
+<script lang="ts">
+import { defineComponent } from "vue";
+
+declare global {
+  interface Window {
+    github_releases: GithubRelease[] | null;
+  }
+}
+
+interface GithubAsset {
+  id: number;
+  name: string;
+  content_type: string;
+  size: number;
+  browser_download_url: string;
+}
+interface GithubRelease {
+  id: number;
+  tag_name: string;
+  name: string;
+  draft: boolean;
+  prerelease: boolean;
+  created_at: string;
+  published_at: string;
+  assets: GithubAsset[];
+  body: string;
+}
+
+interface IState {
+  loading: boolean;
+  msg: string;
+  all_releases: GithubRelease[];
+  releases: GithubRelease[];
+}
+
+export default defineComponent({
+  data(): IState {
     return {
       loading: false,
       msg: "",
-      allReleases: [],
+      all_releases: [],
       releases: [],
     };
   },
@@ -68,7 +102,8 @@ export default {
   },
   methods: {
     filter() {
-      let releases = this.allReleases.filter(
+      console.log(this.all_releases.length);
+      let releases = this.all_releases.filter(
         (r) => !r.prerelease && r.tag_name.startsWith("v2")
       );
       releases = releases.sort(
@@ -83,7 +118,7 @@ export default {
       const local_cache = window.github_releases || [];
       if (local_cache && local_cache.length > 0) {
         this.loading = false;
-        this.allReleases = new Array(...local_cache);
+        this.all_releases = new Array(...local_cache);
         this.msg = "";
         this.filter();
         return;
@@ -97,7 +132,7 @@ export default {
         .then((response) => response.json())
         .then((data) => {
           this.loading = false;
-          this.allReleases = data;
+          this.all_releases = data;
           window.github_releases = new Array(...data);
           this.msg = "";
           this.filter();
@@ -114,7 +149,7 @@ export default {
       return "https://worker-cn.chaldea.center/proxy/github/" + url;
     },
   },
-};
+});
 </script>
 
 <style>
@@ -124,5 +159,11 @@ export default {
 } */
 .error-hint {
   color: red;
+}
+
+.release-note {
+  padding: 0.5rem 1.2rem;
+  margin: 0.5rem 0 0 0;
+  font: var(--font-family);
 }
 </style>

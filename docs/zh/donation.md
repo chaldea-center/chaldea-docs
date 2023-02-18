@@ -47,8 +47,8 @@
 ### Buy me a coffee
 [<img src="/images/kofi2.webp" alt="ko-fi" width="240"/>](https://ko-fi.com/G2G152BDO)
 
-### PayPal.Me
-[<img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png" alt="paypal.me/narumishi" width="240"/>](https://paypal.me/narumishi)
+<!-- ### PayPal.Me
+[<img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png" alt="paypal.me/narumishi" width="240"/>](https://paypal.me/narumishi) -->
 
 ## Contact me/联系方式
 如果有任何问题或希望退回款项，可以通过以下方式联系

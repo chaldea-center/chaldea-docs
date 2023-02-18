@@ -8,4 +8,4 @@ If you have trouble downloading from the **Github** link, please use the **Proxy
 
 More releases can be found at [Github Releases](https://github.com/chaldea-center/chadlea/releases)
 <hr/>
-<app-release></app-release>
+<AppRelease/>
