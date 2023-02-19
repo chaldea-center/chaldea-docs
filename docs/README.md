@@ -5,11 +5,14 @@ heroImage: /images/chaldea.png
 heroText: Chaldea
 tagline: Yet Another Planner for Fate/GO
 actions:
-  - text: Installation
+  - text: Install
     link: /installation.html
     type: primary
-  - text: User Manual
+  - text: Manual
     link: /introduction.html
+    type: secondary
+  - text: 中文文档
+    link: /zh/
     type: secondary
 features:
   - title: Cross Platform
@@ -30,5 +33,6 @@ features:
     details: Just experience summons here with unlimited SQs.😈 
   - title: Freedom Order
     details: April Fool's mini game, the head is "free" today!
-footer: MIT Licensed | Copyright © 2021-present narumi
+footerHtml: true
+footer: Powered by <a href="https://v2.vuepress.vuejs.org/" target="_blank">Vuepress</a> <br> Copyright © 2021-present narumi | MIT License
 ---

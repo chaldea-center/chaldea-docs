@@ -8,8 +8,11 @@ actions:
   - text: 下载安装
     link: /zh/installation.html
     type: primary
-  - text: 使用手册
+  - text: 使用指南
     link: /zh/introduction.html
+    type: secondary
+  - text: English
+    link: /
     type: secondary
 features:
   - title: 多平台支持
@@ -30,5 +33,6 @@ features:
     details: 单抽奇迹和千石沉船就是这么的刺激😈 玛斯塔的止氪小能手
   - title: Freedom Order
     details: 愚人节接头小霸王，头也是free的
-footer: MIT Licensed | Copyright © 2021-present narumi
+footerHtml: true
+footer: Powered by <a href="https://v2.vuepress.vuejs.org/" target="_blank">Vuepress</a> <br> Copyright © 2021 narumi | MIT License
 ---
