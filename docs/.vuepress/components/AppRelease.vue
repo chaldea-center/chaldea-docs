@@ -104,7 +104,8 @@ export default defineComponent({
     filter() {
       console.log(this.all_releases.length);
       let releases = this.all_releases.filter(
-        (r) => !r.prerelease && r.tag_name.startsWith("v2")
+        (r) =>
+          (!r.prerelease && r.tag_name.startsWith("v2")) || r.tag_name == "beta"
       );
       releases = releases.sort(
         (a, b) =>
