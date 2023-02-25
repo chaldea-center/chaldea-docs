@@ -11,7 +11,7 @@ actions:
   - text: Manual
     link: /introduction.html
     type: secondary
-  - text: 中文文档
+  - text: 中文
     link: /zh/
     type: secondary
 features:

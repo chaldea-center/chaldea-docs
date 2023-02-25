@@ -29,6 +29,8 @@ If you are inside China mainland, [https://cn.chaldea.center](https://cn.chaldea
 
 ::: warning
 However, the web app has pooooor performance, especially on mobile browser. Crash ~~sometimes~~ frequently.
+
+Data saved in browser local storage(IndexedDB), may be cleared by browser unexpectedly.
 :::
 
 You can download installer of preview version from github release for beta version(Preview), it will be updated once souce code changed.
