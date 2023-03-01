@@ -2,25 +2,22 @@
   <div>
     <span>
       <label for="file-chooser" class="file-btn"> 加载文件 </label>
-      <input type="file" id="file-chooser" @change="decodeFile" />
-    </span>
-    <label>
-      或输入/粘贴文本
-      <textarea v-model="vin" rows="10" placeholder="请输入文本或加载文件" />
-    </label>
+      <input type="file" id="file-chooser" @change="decodeFile" /> </span
+    ><span> 或输入/粘贴文本 </span>
+
+    <textarea v-model="vin" rows="10" placeholder="请输入文本或加载文件" />
     <span>
       <button @click="decode">解码</button>
       <button @click="encode">编码</button>
     </span>
-    <label>
-      输出结果
-      <textarea
-        v-model="vout"
-        rows="10"
-        placeholder="复制结果或保存至文件"
-        readonly
-      />
-    </label>
+    <span> 输出结果 </span>
+    <textarea
+      v-model="vout"
+      rows="10"
+      placeholder="复制结果或保存至文件"
+      readonly
+      onclick="this.select()"
+    />
     <span>
       <button @click="format">格式化JSON</button>
       <button @click="downloadOutput">结果另存为</button>
