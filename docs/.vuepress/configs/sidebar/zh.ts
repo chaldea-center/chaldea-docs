@@ -5,7 +5,7 @@ export const sidebarZh: SidebarConfig = {
     {
       text: 'Chaldea',
       children: [
-        '/zh/guide/introduction.md',
+        '/zh/guide/README.md',
         '/zh/guide/v2_release.md',
         '/zh/guide/translation.md',
         '/zh/guide/installation.md',

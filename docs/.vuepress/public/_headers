@@ -1,2 +1,5 @@
 /images/*
   Access-Control-Allow-Origin: *
+
+*.png
+  Access-Control-Allow-Origin: *

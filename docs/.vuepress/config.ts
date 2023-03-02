@@ -5,7 +5,13 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { path } from '@vuepress/utils'
 import { seoPlugin } from 'vuepress-plugin-seo2'
 import { sitemapPlugin } from 'vuepress-plugin-sitemap2'
-import { head, navbarEn, navbarZh, sidebarEn, sidebarZh } from './configs'
+import {
+  head,
+  navbarEn,
+  navbarZh,
+  sidebarEn,
+  sidebarZh,
+} from './configs/index.js'
 
 export default defineUserConfig({
   lang: 'en-US',

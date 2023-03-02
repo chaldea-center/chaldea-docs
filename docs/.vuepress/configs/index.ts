@@ -1,3 +1,3 @@
-export * from './head'
-export * from './navbar/index'
-export * from './sidebar/index'
+export * from './head.js'
+export * from './navbar/index.js'
+export * from './sidebar/index.js'

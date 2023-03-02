@@ -6,10 +6,10 @@ heroText: Chaldea
 tagline: Yet Another Planner for Fate/GO
 actions:
   - text: Install
-    link: /installation.html
+    link: /guide/installation
     type: primary
   - text: Manual
-    link: /introduction.html
+    link: /guide/
     type: secondary
   - text: 中文
     link: /zh/

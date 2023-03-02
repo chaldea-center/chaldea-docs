@@ -6,10 +6,10 @@ heroText: Chaldea
 tagline: 用于FGO的跨平台素材规划软件
 actions:
   - text: 下载安装
-    link: /zh/installation.html
+    link: /zh/guide/installation
     type: primary
   - text: 使用指南
-    link: /zh/introduction.html
+    link: /zh/guide/
     type: secondary
   - text: English
     link: /
