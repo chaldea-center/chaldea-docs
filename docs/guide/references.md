@@ -5,7 +5,7 @@
 - [Atlas Academy](https://atlasacademy.io/)
 - [Mooncell](https://fgo.wiki)
 - [Fate/Grand Order Wiki | Fandom](https://fategrandorder.fandom.com/wiki/Fate/Grand_Order_Wikia)
-- [FGOアイテム効率劇場](https://sites.google.com/view/fgo-domus-aurea)
+- [FGO アイテム効率劇場](https://sites.google.com/view/fgo-domus-aurea)
 - [Mini Program - Material Programe](https://github.com/lacus87/fgo)
 - [Guda](https://apps.apple.com/sg/app/guda/id1229055088)
 - icyalala@NGA

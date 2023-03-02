@@ -2,8 +2,8 @@
 
 Introduce some minor features here or features still under development.
 
-
 ## EXP Card Calculation
+
 According to servant rarity and Lv range, calculate the cost of EXP card/QP/grail/coin.
 
 - support star 5/4/3 EXP cards
@@ -11,9 +11,10 @@ According to servant rarity and Lv range, calculate the cost of EXP card/QP/grai
 - support Max Lv.120
 - "Next" is the required exp to next level. If "Next"=0, this param is not used.
 
-
 ## Some List View
+
 Nothing special, just an overview for each thing.
+
 - Costume List
 - Mystic Code List
   - Level setting is just for recording, not used yet.

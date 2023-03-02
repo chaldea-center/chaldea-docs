@@ -2,20 +2,20 @@
 
 ### 系统要求
 
-| 平台     | 最低要求                       |
-| :------ | :---------------------------- |
-| Android | Android 6.0 (API level 23)    |
-| iOS     | iOS 11.0                      |
-| Windows | Windows 8 (64-bit), x86-64 based |
-| macOS   | macOS 10.14                   |
-| Linux   | Debian 10, 64-bit             |
-| Web     | [https://chaldea.center](https://chaldea.center)<br>[https://cn.chaldea.center](https://cn.chaldea.center)|
+| 平台    | 最低要求                                                                                                   |
+| :------ | :--------------------------------------------------------------------------------------------------------- |
+| Android | Android 6.0 (API level 23)                                                                                 |
+| iOS     | iOS 11.0                                                                                                   |
+| Windows | Windows 8 (64-bit), x86-64 based                                                                           |
+| macOS   | macOS 10.14                                                                                                |
+| Linux   | Debian 10, 64-bit                                                                                          |
+| Web     | [https://chaldea.center](https://chaldea.center)<br>[https://cn.chaldea.center](https://cn.chaldea.center) |
 
-> Windows 7 SP1 理论可运行，但存在未知bug无法启动
+> Windows 7 SP1 理论可运行，但存在未知 bug 无法启动
 
 更多关于系统版本要求可查看[Flutter 文档](https://docs.flutter.dev/development/tools/sdk/release-notes/supported-platforms)
 
-关于v2和Web版详见[V2 Release](./v2_release.md)
+关于 v2 和 Web 版详见[V2 Release](./v2_release.md)
 
 ::: tip
 由于数据储存位置共享，请勿同时运行多个实例或网页，否则会导致数据相互覆盖。
@@ -30,7 +30,7 @@
 
 [Get it on Google Play](https://play.google.com/store/apps/details?id=cc.narumi.chaldea)
 
-v1.x用户请阅读[注意事项](#安装注意事项)
+v1.x 用户请阅读[注意事项](#安装注意事项)
 
 ### App Store
 
@@ -39,34 +39,34 @@ v1.x用户请阅读[注意事项](#安装注意事项)
 [Download on the App Store](https://apps.apple.com/us/app/chaldea/id1548713491?itsct=apps_box&itscg=30200)
 
 ::: tip
-包括iOS App Store和Mac App Store
+包括 iOS App Store 和 Mac App Store
 :::
-
 
 ### GitHub Release
 
-包含Android、Windows和Linux安装包。若最新版不包含所需平台，请检查更早的发布版本。
+包含 Android、Windows 和 Linux 安装包。若最新版不包含所需平台，请检查更早的发布版本。
 
 - [Github Releases](https://github.com/chaldea-center/chaldea/releases)
 - [历史版本](./releases.md) 可选代理下载
 
 蓝奏云网盘，~~随缘上传，更新不及时~~ 不再上传，请通过历史版本下载。
+
 - [https://wws.lanzoui.com/b01tuahmf](https://wws.lanzoui.com/b01tuahmf) 密码:chaldea
 
 ## 安装注意事项
 
 ### Android
 
-对于v2，所有Android版本均合并到一个安装包中，因此下载时无需分辨arm64-v8a、armeabi-v7a、x86_64
+对于 v2，所有 Android 版本均合并到一个安装包中，因此下载时无需分辨 arm64-v8a、armeabi-v7a、x86_64
 
 ::: warning
-如果你正在使用v1.x，升级v2前必须要先**卸载**旧版本才能安装新版本，因此务必先备份数据到本地！v1与v2的服务器备份也不相同！
+如果你正在使用 v1.x，升级 v2 前必须要先**卸载**旧版本才能安装新版本，因此务必先备份数据到本地！v1 与 v2 的服务器备份也不相同！
 :::
 
 ### Windows
 
 ::: tip
-Windows压缩包，请解压后再运行，并储存于非系统目录，`Program File`等系统目录内将导致程序无法运行。
+Windows 压缩包，请解压后再运行，并储存于非系统目录，`Program File`等系统目录内将导致程序无法运行。
 :::
 
 #### Error: `VCRUNTIME140_1.dll was not found`
@@ -76,5 +76,5 @@ Windows压缩包，请解压后再运行，并储存于非系统目录，`Progra
 ### macOS
 
 ::: tip
-macOS现在仅提供应用商店版本
+macOS 现在仅提供应用商店版本
 :::

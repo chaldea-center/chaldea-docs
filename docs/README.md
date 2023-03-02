@@ -30,7 +30,7 @@ features:
   - title: Buff Filter
     details: Servant skill and NP effects, CE and Command Code effects filter.
   - title: Summon Simulator
-    details: Just experience summons here with unlimited SQs.😈 
+    details: Just experience summons here with unlimited SQs.😈
   - title: Freedom Order
     details: April Fool's mini game, the head is "free" today!
 footerHtml: true

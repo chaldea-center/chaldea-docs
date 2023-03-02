@@ -8,4 +8,4 @@ dist/
 # Node modules
 node_modules/
 
-*.md
+# *.md

@@ -16,23 +16,27 @@ Or click "Solve" button to solve all missions together.
 You can add custom mission and get the least AP solution.
 
 Mission detail:
+
 - Type: enemy trait, enemy class, servant class, etc.
 - Count: the mission target count
 - IDs: the mission target id, it should match mission type, the id may be invalid if type is wrong. Click <+> icon to add more target id.
 
 **Free Progress**
+
 - basically, it uses Main Story's free quests to plan, you can choose the different mains story progress
 - You can also choose event quests, only JP/NA quests after 2020.11 has enemy data.
 
 **Main Story's Free Quest Scope**:
+
 - All free quests from Singularity F to selected war/chapter, plus all "Enter the Treasure Vault - Novice~Extreme" in Daily Quests.
 - "Training Ground" and "Ember Gathering" quests are not included because of random enemies.
 - All above quest and enemy data use JP data.
- 
+
 **Solution**
 Solution tab is the least AP solution and you can also choose related quests by your own demands. Each quest has shown the count of mission target count.
 
 **Attention**
+
 - some quests of limit event may not have data, and these quest data are downloaded when solving
 - events with enemy appearance rate up may be inaccurate
 - some missions may be impossible to complete so may be ignored

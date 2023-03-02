@@ -5,9 +5,11 @@ This app provides multiple methods to import or migrate your data, without tirin
 Before import, please make sure the correct target account.
 
 ## From Backup of Chaldea
+
 All user data of Chaldea app are saved in `root_path/user/userdata.json`.
 
 You can backup data through:
+
 - manually backup the above file
 - **Settings-User Data-Backup**
 - **Settings-User Data-History Backup**: daily backup (automatically).
@@ -23,12 +25,13 @@ Different app version may use the different user data structure, in another word
 You can also import v1 data here, only some of servants and item data will be imported.
 
 ## HTTPS Sniffing
-Capture the game data on login(not password or login credential). For NA/JP, you need the modified apk on Android, iOS not supported. For CN/TW, you can capture it on both iOS and Android. 
+
+Capture the game data on login(not password or login credential). For NA/JP, you need the modified apk on Android, iOS not supported. For CN/TW, you can capture it on both iOS and Android.
 
 See [Import HTTPS Response](./import_https.md) for details.
 
-
 ## Item Screenshots
+
 ::: warning
 Don't crop, don't use split screen mode, make sure the game fills the entire screen.
 
@@ -45,10 +48,11 @@ Don't crop, don't use split screen mode, make sure the game fills the entire scr
 :::
 
 ![Item Screenshot Example](/images/item_recognition_example.webp)
+
 <figcaption style="text-align:center">Item Screenshot Example</figcaption>
 
-
 ## Active/Append Skill Recognition
+
 ::: warning
 Don't crop, don't use split screen mode, make sure the game fills the entire screen.
 
@@ -65,10 +69,11 @@ Don't upload too many screenshots at once, 100 seconds timeout limit!
 Currently only support skill levels, ascension level and grails are not included.
 
 ![Skill Screenshot Example](/images/skill_recognition_example.webp)
+
 <figcaption style="text-align:center">Skill Screenshot Example</figcaption>
 
-
 ## FGO Simulator - Material
+
 Import from [http://fgosimulator.webcrow.jp/Material/](http://fgosimulator.webcrow.jp/Material/)
 The new site: [https://fgosim.github.io/Material](https://fgosim.github.io/Material)
 
@@ -76,6 +81,7 @@ The new site: [https://fgosim.github.io/Material](https://fgosim.github.io/Mater
 2. Copy the text to the input field, then parse it to import
 
 ## CSV Template
+
 Since input servant data in app is a little annoying, and not convenient on desktop, you can export account data to csv file, and edit it in Excel/Google Sheet.
 
 Once you finished, save as csv file again, and import it in app.

@@ -10,7 +10,7 @@
 
 注意: `beta`版即预览版，随最新版代码一起更新。一般情况下下载 v2.x 最新正式版即可。
 
-> FGO游戏安装包请查看[FGO APK](./fgo_apk.md)
+> FGO 游戏安装包请查看[FGO APK](./fgo_apk.md)
 
 <hr/>
 <AppRelease/>

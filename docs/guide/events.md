@@ -1,6 +1,7 @@
 # Event Planning
 
 ## Event List
+
 Including **Limit Event**, **Main Record**, **Exchange Ticket** and **Campaign Event**.
 
 Click :stopwatch: button to show outdated events. It can be set in **Settings-Progress**.
@@ -29,15 +30,17 @@ For lottery event or raid event, a star :star: is shown to inform you there are 
 
 **Floating Button-Collect Items**: Archive items for each part and reset lottery and extra parts after archived. If all parts are selected, this event will be removed from plan after archived.
 
-
 ## Main Record
 
 There are two main item sources:
+
 - Fixed drop of main quests
 - Rewards of main quests
 
 ## Exchange Ticket
+
 The month setting is inferred from current game server:
+
 - JP: as base
 - CN: +12 months
 - TW: 21 months

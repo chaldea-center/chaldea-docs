@@ -19,7 +19,7 @@ You can freely combine these 3 parts.
 1. Resources are downloaded on demand, no need to import them anymore
 2. Select **BG**、**HEAD**、**BODY**
 3. Click **Crop** to crop the region out of background, click **Same Servant** to use the same servant's parts
-    - the full resolution of synthesized image is 1024×1024, after cropped is 512×720(BG size). The servant parts may exceed the BG region
+   - the full resolution of synthesized image is 1024×1024, after cropped is 512×720(BG size). The servant parts may exceed the BG region
 4. Click save to save to local, long press image to show save/share options, click image to show in full screen.
 
 ## FFO Summon Simulator

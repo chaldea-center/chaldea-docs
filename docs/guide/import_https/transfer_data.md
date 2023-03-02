@@ -22,6 +22,7 @@ If you want to transfer from iOS to Android or reverse, you need to rename the f
 Just copy the files under `/storage/emulated/0/Android/data/<package>/files/data/`, subfolder can be skipped.
 
 The `<package>` name for different apk is:
+
 - JP: `com.aniplex.fategrandorder`
 - NA: `com.aniplex.fategrandorder.en`
 - JP BetterFGO: `io.rayshift.betterfgo`
@@ -39,11 +40,11 @@ With the ability of **iMazing** software, you can backup entire phone then extra
 
 The files under data folder have the different names in iOS and Android. Refer the following table.
 
-| iOS (*.dat)    | Android    | 备注           |
-| -------------- | ---------- | -------------- |
-| authsave*      | 54cc79     | login credential |
-| friendcode<br>save | e1a9f8 | user id        |
-| signupsave     | 644b05     | user name?     |
+| iOS (\*.dat)       | Android | 备注             |
+| ------------------ | ------- | ---------------- |
+| authsave\*         | 54cc79  | login credential |
+| friendcode<br>save | e1a9f8  | user id          |
+| signupsave         | 644b05  | user name?       |
 
 > in iOS, there may be two files: `autosave.dat` and `autosave2.dat`, they are the same, just duplicate and rename.
 
@@ -67,6 +68,8 @@ You should turn off `Find My Phone` first.
 4. Over.
 
 ## Others
+
 In order to bypass the risk of iOS restoration, it was recommended to:
+
 1. transfer your FGO account to iOS client, generate transfer code
-2. Extract iOS data and copy to another device. 
+2. Extract iOS data and copy to another device.

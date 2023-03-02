@@ -4,7 +4,7 @@
 
 最后一个版本为 v1.7.0，将不再提供更新，数据也不再更新.
 
-v2已发布，v1的用户注册、服务器备份、素材技能识别等在线服务均将于2022/5/31停止。
+v2 已发布，v1 的用户注册、服务器备份、素材技能识别等在线服务均将于 2022/5/31 停止。
 
 v1 与 v2 数据兼容性不好，当升级大版本时，目前仅提供基础的素材和从者练度信息的迁移，其他本地设置或资料将被忽略。
 若需手动导入 v1 版本数据，请从**主页**进入**导入**子页面，选择相应导入选项。
@@ -13,7 +13,7 @@ v1 与 v2 数据兼容性不好，当升级大版本时，目前仅提供基础�
 
 - 未来活动的规划分的更细了，由于数据源不同，和旧数据完全不兼容，因此导入 v1 数据时无活动信息
 - 服务器备份储存方式和位置迁移，请重新注册。
-- Android用户必须先卸载再安装v2
+- Android 用户必须先卸载再安装 v2
 
 ## 关于 v2 版本
 
@@ -27,7 +27,7 @@ v1 与 v2 数据兼容性不好，当升级大版本时，目前仅提供基础�
 - [https://chaldea.center](https://chaldea.center)
 
 如果在国内访问，请使用 [https://cn.chaldea.center](https://cn.chaldea.center)，否则出现加载过慢、字体无法显示等问题。
-同时在设置中选择Chaldea服务器为**国内**
+同时在设置中选择 Chaldea 服务器为**国内**
 
 ::: warning
 但是 web 版性能很很很很很很差，尤其在移动端的浏览器，时不时崩溃重启。。。
@@ -35,7 +35,7 @@ v1 与 v2 数据兼容性不好，当升级大版本时，目前仅提供基础�
 数据保存在浏览器本地(IndexedDB)，可能会被浏览器不定期清除。
 :::
 
-预览版可从 github 下载，提供Android/Windows/Linux最新的预览版:
+预览版可从 github 下载，提供 Android/Windows/Linux 最新的预览版:
 
 - [https://github.com/chaldea-center/chaldea/releases/beta](https://github.com/chaldea-center/chaldea/releases/beta)
 
@@ -61,7 +61,7 @@ v1 与 v2 数据兼容性不好，当升级大版本时，目前仅提供基础�
 
 ### auto/自动
 
-此时由flutter引擎自动选择 HTML 渲染或 CanvasKit 渲染。
+此时由 flutter 引擎自动选择 HTML 渲染或 CanvasKit 渲染。
 
 ## 贡献翻译/多语言支持
 

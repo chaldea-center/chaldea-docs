@@ -13,14 +13,13 @@
 
 通过[反馈](./feedback.md)中的途径联系我们。
 
-
 ## 游戏数据
 
 目前以日服(JP)数据为基础，并增加国服(CN)、台服(TW)、美服(NA)和韩服(KR)已实装的部分翻译，并增加了部分 Mooncell、AtlasAcademy 和 Fandom 的翻译。为了更好的展示各个区服未实装的资料，欢迎贡献翻译！
 
 所需翻译的文件位于[https://github.com/chaldea-center/chaldea-data/tree/main/mappings](https://github.com/chaldea-center/chaldea-data/tree/main/mappings)
 
-上述文件均为JSON文件，其基本格式如下: 
+上述文件均为 JSON 文件，其基本格式如下:
 
 ```json
 {
@@ -33,11 +32,13 @@
   }
 }
 ```
+
 1 - `"key"` 为日文
 
-绝大多数文件的 `"key"` 为日文，因此只需翻译成其他几种语言，而JP部分留空。对于各个区服已经实装的内容，翻译会被官方翻译覆盖。
+绝大多数文件的 `"key"` 为日文，因此只需翻译成其他几种语言，而 JP 部分留空。对于各个区服已经实装的内容，翻译会被官方翻译覆盖。
 
 **文件列表:**
+
 - `buff_names`
 - `func_popuptext`
 - `skill_detail`
@@ -62,19 +63,21 @@
 - `td_types`
 - `bgm_names`
 
-可以依据上述优先级选择文件翻译。注意，对于包含年份的词条，请将年份替换成相应区服的年份。一般的，国服差1年，台服差1年9月，美服和韩服差两年。
+可以依据上述优先级选择文件翻译。注意，对于包含年份的词条，请将年份替换成相应区服的年份。一般的，国服差 1 年，台服差 1 年 9 月，美服和韩服差两年。
 
 2 - `"key"` 为简中
 
 此时将`"CN": null`留空即可，目前只有以下两个文件
+
 - `chara_names`
 - `summon_names`
-  
+
 3 - `"key"` 的特殊情况！！
 
 主要有 `trait.json` 和 `enums.json`，为游戏内各类名词词条，全部手动添加。
 
 其中特性(trait)翻译建议遵从游戏内文本描述，可从以下网址搜索相应特性描述：
+
 - [https://apps.atlasacademy.io/db/JP/buffs?tvals=1](https://apps.atlasacademy.io/db/JP/buffs?tvals=1)
 - [https://apps.atlasacademy.io/db/JP/funcs?tvals=2](https://apps.atlasacademy.io/db/JP/funcs?tvals=2)
 
@@ -96,7 +99,6 @@
   }
 }
 ```
-
 
 ## UI 文本
 

@@ -7,13 +7,11 @@
 
 Documentation for [Chaldea](https://github.com/chaldea-center/chaldea) app. Powered by [Vuepress](https://v2.vuepress.vuejs.org/).
 
-
 ## Documentation
 
 https://docs.chaldea.center/
 
 https://docs.chaldea.center/zh/
-
 
 ## License
 

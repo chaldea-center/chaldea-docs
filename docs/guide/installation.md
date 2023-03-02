@@ -2,19 +2,18 @@
 
 ### System Requirement
 
-| Platform | Minimum Version               |
-| :------- | :---------------------------- |
-| Android  | Android 6.0 (API level 23)    |
-| iOS      | iOS 11.0                      |
-| Windows  | Windows 8 (64-bit), x86-64 based |
-| macOS    | macOS 10.14                   |
-| Linux    | Debian 10, 64-bit             |
-| Web      | [https://chaldea.center](https://chaldea.center)<br>[https://cn.chaldea.center](https://cn.chaldea.center)|
+| Platform | Minimum Version                                                                                            |
+| :------- | :--------------------------------------------------------------------------------------------------------- |
+| Android  | Android 6.0 (API level 23)                                                                                 |
+| iOS      | iOS 11.0                                                                                                   |
+| Windows  | Windows 8 (64-bit), x86-64 based                                                                           |
+| macOS    | macOS 10.14                                                                                                |
+| Linux    | Debian 10, 64-bit                                                                                          |
+| Web      | [https://chaldea.center](https://chaldea.center)<br>[https://cn.chaldea.center](https://cn.chaldea.center) |
 
 > Windows 7 SP1 should be supported, but app will crash at startup with unknown reason.
 
 Check [Flutter docs](https://docs.flutter.dev/development/tools/sdk/release-notes/supported-platforms) for more about supported platforms.
-
 
 For more details about Web version, see [V2 Release Note](./v2_release.md)
 
@@ -43,7 +42,6 @@ For v1.x, check [Attentions](#attentions)
 Including iOS App Store and Mac App Store
 :::
 
-
 ### GitHub Release
 
 Contains Android, Windows and Linux binary assets.
@@ -57,11 +55,11 @@ If the latest version doesn't contain the platform you want, please check the pr
 
 ### Android
 
-All android ABIs(arm64-v8a, armeabi-v7a, x86_64) are merged into one apk in v2.x. 
+All android ABIs(arm64-v8a, armeabi-v7a, x86_64) are merged into one apk in v2.x.
 
 ::: warning
-If you are using v1.x, you have to UNINSTALL old version first! All data will be swiped, 
-so make sure to backup to local before upgrading. V1 server backup is incompatible with v2. 
+If you are using v1.x, you have to UNINSTALL old version first! All data will be swiped,
+so make sure to backup to local before upgrading. V1 server backup is incompatible with v2.
 :::
 
 ### Windows

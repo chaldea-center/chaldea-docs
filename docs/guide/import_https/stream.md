@@ -4,7 +4,7 @@
 Only useful for CN/TW clients!!!
 :::
 
-Check [Chinese doc](/zh/import_https/stream.md)
+Check [Chinese doc](/zh/guide/import_https/stream.md)
 
 For JP/NA users, please check [HttpCanary doc](./httpcanary.md) on Android device/emulator.
 
