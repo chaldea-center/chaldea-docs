@@ -51,106 +51,106 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue'
 
 declare global {
   interface Window {
-    github_releases: GithubRelease[] | null;
+    github_releases: GithubRelease[] | null
   }
 }
 
 interface GithubAsset {
-  id: number;
-  name: string;
-  content_type: string;
-  size: number;
-  browser_download_url: string;
+  id: number
+  name: string
+  content_type: string
+  size: number
+  browser_download_url: string
 }
 interface GithubRelease {
-  id: number;
-  tag_name: string;
-  name: string;
-  draft: boolean;
-  prerelease: boolean;
-  created_at: string;
-  published_at: string;
-  assets: GithubAsset[];
-  body: string;
+  id: number
+  tag_name: string
+  name: string
+  draft: boolean
+  prerelease: boolean
+  created_at: string
+  published_at: string
+  assets: GithubAsset[]
+  body: string
 }
 
 interface IState {
-  loading: boolean;
-  msg: string;
-  all_releases: GithubRelease[];
-  releases: GithubRelease[];
+  loading: boolean
+  msg: string
+  all_releases: GithubRelease[]
+  releases: GithubRelease[]
 }
 
 export default defineComponent({
   data(): IState {
     return {
       loading: false,
-      msg: "",
+      msg: '',
       all_releases: [],
       releases: [],
-    };
+    }
   },
   created() {
-    this.filter();
+    this.filter()
   },
   mounted() {
-    this.getData();
+    this.getData()
   },
   methods: {
     filter() {
-      console.log(this.all_releases.length);
+      console.log(this.all_releases.length)
       let releases = this.all_releases.filter(
         (r) =>
-          (!r.prerelease && r.tag_name.startsWith("v2")) || r.tag_name == "beta"
-      );
+          (!r.prerelease && r.tag_name.startsWith('v2')) || r.tag_name == 'beta'
+      )
       releases = releases.sort(
         (a, b) =>
           new Date(b.published_at).getTime() -
           new Date(a.published_at).getTime()
-      );
-      this.releases = releases;
+      )
+      this.releases = releases
     },
     getData() {
-      this.loading = true;
-      const local_cache = window.github_releases || [];
+      this.loading = true
+      const local_cache = window.github_releases || []
       if (local_cache && local_cache.length > 0) {
-        this.loading = false;
-        this.all_releases = new Array(...local_cache);
-        this.msg = "";
-        this.filter();
-        return;
+        this.loading = false
+        this.all_releases = new Array(...local_cache)
+        this.msg = ''
+        this.filter()
+        return
       }
 
       fetch(
         this.proxy(
-          "https://api.github.com/repos/chaldea-center/chaldea/releases"
+          'https://api.github.com/repos/chaldea-center/chaldea/releases'
         )
       )
         .then((response) => response.json())
         .then((data) => {
-          this.loading = false;
-          this.all_releases = data;
-          window.github_releases = new Array(...data);
-          this.msg = "";
-          this.filter();
+          this.loading = false
+          this.all_releases = data
+          window.github_releases = new Array(...data)
+          this.msg = ''
+          this.filter()
         })
         .catch((error) => {
-          this.loading = false;
-          this.msg = error;
-        });
+          this.loading = false
+          this.msg = error
+        })
     },
-    proxy(url) {
-      if (url.startsWith("http")) {
-        url = url.split("://", 2)[1];
+    proxy(url: string) {
+      if (url.startsWith('http')) {
+        url = url.split('://', 2)[1]
       }
-      return "https://worker-cn.chaldea.center/proxy/github/" + url;
+      return 'https://worker-cn.chaldea.center/proxy/github/' + url
     },
   },
-});
+})
 </script>
 
 <style>

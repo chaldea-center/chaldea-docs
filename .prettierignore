@@ -1,0 +1,11 @@
+# Vuepress Cache
+**/.vuepress/.cache/**
+# Vuepress Temp
+**/.vuepress/.temp/**
+# Vuepress Output
+dist/
+
+# Node modules
+node_modules/
+
+*.md

@@ -30,70 +30,70 @@
 export default {
   data() {
     return {
-      vin: "",
-      vout: "",
-      errorHint: "",
-    };
+      vin: '',
+      vout: '',
+      errorHint: '',
+    }
   },
   methods: {
     encode() {
       try {
-        this.errorHint = null;
-        this.vout = window.btoa(unescape(encodeURIComponent(this.vin)));
+        this.errorHint = null
+        this.vout = window.btoa(unescape(encodeURIComponent(this.vin)))
       } catch (error) {
-        this.errorHint = error;
+        this.errorHint = error
       }
     },
     decode() {
       try {
-        this.errorHint = null;
+        this.errorHint = null
         this.vout = unescape(
           decodeURIComponent(escape(window.atob(decodeURIComponent(this.vin))))
-        );
+        )
       } catch (error) {
-        this.errorHint = error;
+        this.errorHint = error
       }
     },
     format() {
       try {
-        this.errorHint = null;
-        this.vout = JSON.stringify(JSON.parse(this.vout), null, 2);
+        this.errorHint = null
+        this.vout = JSON.stringify(JSON.parse(this.vout), null, 2)
       } catch (error) {
-        this.errorHint = error;
+        this.errorHint = error
       }
     },
     decodeFile(e) {
-      const file = e.target.files[0];
-      const reader = new FileReader();
-      const $this = this;
-      this.errorHint = null;
+      const file = e.target.files[0]
+      const reader = new FileReader()
+      const $this = this
+      this.errorHint = null
       reader.onload = (event) => {
-        $this.vin = event.target.result;
-        $this.decode();
-      };
+        $this.vin = event.target.result
+        $this.decode()
+      }
       reader.onerror = () => {
-        this.errorHint = "failed reading file";
-      };
-      reader.readAsText(file, "utf-8");
+        this.errorHint = 'failed reading file'
+      }
+      reader.readAsText(file, 'utf-8')
     },
     downloadOutput() {
-      const t = new Date();
+      const t = new Date()
       const year = t.getFullYear(),
         month = t.getMonth() + 1,
         day = t.getDate(),
         hour = t.getHours(),
         minute = t.getMinutes(),
-        sec = t.getSeconds();
-      let downLink = document.createElement("a");
-      downLink.download = `result ${year}-${month}-${day} ${hour}-${minute}-${sec}.json`;
-      let blob = new Blob([this.vout]);
-      downLink.href = URL.createObjectURL(blob);
-      document.body.appendChild(downLink);
-      downLink.click();
-      document.body.removeChild(downLink);
+        sec = t.getSeconds()
+      let downLink = document.createElement('a')
+      downLink.download = `result ${year}-${month}-${day} ${hour}-${minute}-${sec}.json`
+      let blob = new Blob([this.vout])
+      downLink.href = URL.createObjectURL(blob)
+      document.body.appendChild(downLink)
+      downLink.click()
+      document.body.removeChild(downLink)
     },
   },
-};
+}
 </script>
 
 <style>
@@ -120,7 +120,7 @@ button,
   cursor: pointer;
 }
 
-input[type="file"] {
+input[type='file'] {
   display: none;
 }
 
