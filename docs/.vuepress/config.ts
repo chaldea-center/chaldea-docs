@@ -1,7 +1,7 @@
 import { defineUserConfig } from '@vuepress/cli'
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
-import { defaultTheme } from '@vuepress/theme-default'
+import { localTheme } from './theme/index.js'
 import { path } from '@vuepress/utils'
 import { seoPlugin } from 'vuepress-plugin-seo2'
 import { sitemapPlugin } from 'vuepress-plugin-sitemap2'
@@ -31,7 +31,7 @@ export default defineUserConfig({
       description: 'Chaldea - 一款跨平台的FGO素材规划软件',
     },
   },
-  theme: defaultTheme({
+  theme: localTheme({
     logo: '/logo.png',
     repo: 'chaldea-center/chaldea',
     docsRepo: 'chaldea-center/chaldea-docs',
