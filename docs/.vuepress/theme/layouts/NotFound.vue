@@ -3,6 +3,7 @@ import { useRouteLocale } from '@vuepress/client'
 import { DefaultThemeData } from '@vuepress/theme-default'
 import { useThemeLocaleData } from '@vuepress/plugin-theme-data/client'
 import type { ThemeLocaleDataRef } from '@vuepress/plugin-theme-data/client'
+import { useRoute } from 'vue-router'
 
 const routeLocale = useRouteLocale()
 const themeLocale: ThemeLocaleDataRef<DefaultThemeData> = useThemeLocaleData()
@@ -13,15 +14,13 @@ const getMsg = (): string =>
 const homeLink = themeLocale.value.home ?? routeLocale.value
 const homeText = themeLocale.value.backToHome ?? 'Back to home'
 
-let guideLink = ''
 const _getGuideLink = () => {
-  guideLink =
-    window.location.href.indexOf('/guide') === -1
-      ? routeLocale.value +
+  const route = useRoute()
+  return route.path.indexOf('/guide') === -1
+    ? routeLocale.value +
         'guide/' +
-        window.location.pathname.substring(routeLocale.value.length)
-      : ''
-  return guideLink
+        route.path.substring(routeLocale.value.length)
+    : ''
 }
 </script>
 
@@ -34,7 +33,9 @@ const _getGuideLink = () => {
         <blockquote>{{ getMsg() }}</blockquote>
         <template v-if="_getGuideLink()">
           <p>
-            Try <RouterLink :to="guideLink">{{ guideLink }}</RouterLink> ?
+            Try
+            <RouterLink :to="_getGuideLink()">{{ _getGuideLink() }}</RouterLink>
+            ?
           </p>
         </template>
         <RouterLink :to="homeLink">{{ homeText }}</RouterLink>
