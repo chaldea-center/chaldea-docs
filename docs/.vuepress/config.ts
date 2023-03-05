@@ -36,7 +36,7 @@ export default defineUserConfig({
     repo: 'chaldea-center/chaldea',
     docsRepo: 'chaldea-center/chaldea-docs',
     docsDir: 'docs',
-    editLink: true,
+    editLink: false,
     lastUpdated: false,
     selectLanguageText: 'Language/语言',
     locales: {
