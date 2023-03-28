@@ -23,7 +23,7 @@ Laplace 主要负责战斗模拟的功能。目前仍处于测试阶段，欢迎
 
 - 如果勾选优先使用玩家数据且选中的是规划中的从者，会自动使用当前规划的灵基阶段、技能等级、宝具等级等设置
 - 宝具、技能强化默认为日服进度，可更改。后期将默认设置为根据账号设置的区服
-- 提供禁用或自定义技能、宝具等选项
+- 提供禁用或自定义(数据库中已有的)技能、宝具等选项
 
 ### 战斗模拟
 
@@ -43,14 +43,20 @@ Laplace 主要负责战斗模拟的功能。目前仍处于测试阶段，欢迎
 - 我方从者技能、buff 除巴姐小安宝具以外理论上全部实现
 - 有大量敌方技能、buff 未实现，可以通过战斗记录的 DEBUG 记录确认
 
+## TODO
+
+- 更易用的日志功能查看历史回合的出卡及伤害等详情
+- 自定义技能效果，目前仅可从已有技能中选择
+- 更多详细 TODO 可见[Github](https://github.com/chaldea-center/chaldea/blob/main/TODO.md)
+
 ## Bug 反馈
 
 - 可以在主界面 Laplace 下或设置页找到反馈界面
-- NGA 中回复: [Lapace帖](https://nga.178.com/read.php?tid=35805016) [Chaldea主帖](https://nga.178.com/read.php?tid=24926789)
+- NGA 中回复: [Laplace帖](https://nga.178.com/read.php?tid=35805016) [Chaldea主帖](https://nga.178.com/read.php?tid=24926789)
 
 ## 参考资料
 
 - [FGO Simulator](https://github.com/SharpnelXu/FGOSimulator)
 - [FGO Teamup](https://www.fgo-teamup.com)
-- [Atlas Academy](url=https://apps.atlasacademy.io/fgo-docs/)
-- [Mooncell](url=https://fgo.wiki/w/%E6%B8%B8%E6%88%8F%E6%95%B0%E6%8D%AE%E5%9F%BA%E7%A1%80)
+- [Atlas Academy](https://apps.atlasacademy.io/fgo-docs/)
+- [Mooncell](https://fgo.wiki)
