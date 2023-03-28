@@ -21,8 +21,8 @@ Laplace 主要负责战斗模拟的功能。目前仍处于测试阶段，欢迎
 
 <figcaption style="text-align:center">从者编辑界面</figcaption>
 
-- 如果选中的是规划中的从者，会自动使用当前规划的灵基阶段、技能等级、宝具等级等设置
-- 宝具、技能的强化默认为日服进度，可更改
+- 如果勾选优先使用玩家数据且选中的是规划中的从者，会自动使用当前规划的灵基阶段、技能等级、宝具等级等设置
+- 宝具、技能强化默认为日服进度，可更改。后期将默认设置为根据账号设置的区服
 - 提供禁用或自定义技能、宝具等选项
 
 ### 战斗模拟
@@ -46,9 +46,11 @@ Laplace 主要负责战斗模拟的功能。目前仍处于测试阶段，欢迎
 ## Bug 反馈
 
 - 可以在主界面 Laplace 下或设置页找到反馈界面
-- NGA 中回复:
+- NGA 中回复: [Lapace帖](https://nga.178.com/read.php?tid=35805016) [Chaldea主帖](https://nga.178.com/read.php?tid=24926789)
 
 ## 参考资料
 
 - [FGO Simulator](https://github.com/SharpnelXu/FGOSimulator)
 - [FGO Teamup](https://www.fgo-teamup.com)
+- [Atlas Academy](url=https://atlasacademy.github.io/fgo-docs/)
+- [Mooncell](url=https://fgo.wiki/w/%E6%B8%B8%E6%88%8F%E6%95%B0%E6%8D%AE%E5%9F%BA%E7%A1%80)
