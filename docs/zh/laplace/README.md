@@ -46,4 +46,9 @@ Laplace 主要负责战斗模拟的功能。目前仍处于测试阶段，欢迎
 ## Bug 反馈
 
 - 可以在主界面 Laplace 下或设置页找到反馈界面
-- NGA 中回复: 
+- NGA 中回复:
+
+## 参考资料
+
+- [FGO Simulator](https://github.com/SharpnelXu/FGOSimulator)
+- [FGO Teamup](https://www.fgo-teamup.com)

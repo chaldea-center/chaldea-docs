@@ -11,6 +11,9 @@ actions:
   - text: 使用指南
     link: /zh/guide/
     type: secondary
+  - text: Laplace
+    link: /zh/laplace/
+    type: secondary
   - text: English
     link: /
     type: secondary

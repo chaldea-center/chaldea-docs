@@ -11,6 +11,9 @@ actions:
   - text: Manual
     link: /guide/
     type: secondary
+  - text: Laplace
+    link: /laplace/
+    type: secondary
   - text: 中文
     link: /zh/
     type: secondary
