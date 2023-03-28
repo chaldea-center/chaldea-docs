@@ -52,5 +52,5 @@ Laplace 主要负责战斗模拟的功能。目前仍处于测试阶段，欢迎
 
 - [FGO Simulator](https://github.com/SharpnelXu/FGOSimulator)
 - [FGO Teamup](https://www.fgo-teamup.com)
-- [Atlas Academy](url=https://atlasacademy.github.io/fgo-docs/)
+- [Atlas Academy](url=https://apps.atlasacademy.io/fgo-docs/)
 - [Mooncell](url=https://fgo.wiki/w/%E6%B8%B8%E6%88%8F%E6%95%B0%E6%8D%AE%E5%9F%BA%E7%A1%80)
