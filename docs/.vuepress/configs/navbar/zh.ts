@@ -6,8 +6,8 @@ export const navbarZh: NavbarConfig = [
     link: '/zh/guide/',
   },
   {
-    text: 'Chaldeas',
-    link: '/zh/chaldeas/',
+    text: 'Laplace',
+    link: '/zh/laplace/',
   },
   {
     text: 'Discord',

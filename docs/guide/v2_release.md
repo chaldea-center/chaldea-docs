@@ -77,6 +77,6 @@ You can help translation through:
 
 ## Feedback
 
-- Email: [chaldea@narumi.cc](mailto:chaldea.narumi.cc)
+- Email: [chaldea@narumi.cc](mailto:chaldea@narumi.cc)
 - Discord: [https://discord.gg/5M6w5faqjP](https://discord.gg/5M6w5faqjP)
 - Github: [https://github.com/chaldea-center/chaldea/issues](https://github.com/chaldea-center/chaldea/issues)

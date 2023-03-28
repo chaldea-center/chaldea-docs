@@ -48,10 +48,10 @@ export const sidebarEn: SidebarConfig = {
       ],
     },
   ],
-  '/chaldeas/': [
+  '/laplace/': [
     {
-      text: 'Chaldeas',
-      children: ['/chaldeas/'],
+      text: 'Laplace',
+      children: ['/laplace/'],
     },
   ],
 }

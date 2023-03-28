@@ -50,10 +50,10 @@ export const sidebarZh: SidebarConfig = {
       ],
     },
   ],
-  '/zh/chaldeas/': [
+  '/zh/laplace/': [
     {
-      text: 'Chaldeas',
-      children: ['/zh/chaldeas/'],
+      text: 'Laplace',
+      children: ['/zh/laplace/'],
     },
   ],
 }
