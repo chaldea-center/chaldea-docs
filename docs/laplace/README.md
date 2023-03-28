@@ -26,7 +26,7 @@ you can try Challenge quests using custom skill activation.
   application
   will automatically set the ascension phase, skill levels, and np level to match the setting stored
 - NP & skill upgrades default to JP and modifiable. In later version this will match the user's server setting
-- Also provide the ability to disable or customize skills/np
+- Also provide the ability to disable or customize skills/np (in local database)
 
 ### Battle Simulation
 
@@ -51,6 +51,12 @@ you can try Challenge quests using custom skill activation.
 - All servant skills and buffs should all be implemented except Bazett & Angra Mainyu's NP
 - A ton of enemy skills and buffs are not implemented, which can be confirmed via DEBUG battle logs
 
+## TODO
+
+- Easy to access battle log & details
+- Custom skill functions as now there are only selections
+- More TODO on [Github](https://github.com/chaldea-center/chaldea/blob/main/TODO.md)
+
 ## Bug Report
 
 - The feedback page can be found in Laplace page
@@ -60,5 +66,5 @@ you can try Challenge quests using custom skill activation.
 
 - [FGO Simulator](https://github.com/SharpnelXu/FGOSimulator)
 - [FGO Teamup](https://www.fgo-teamup.com)
-- [Atlas Academy](url=https://apps.atlasacademy.io/fgo-docs/)
-- [Mooncell](url=https://fgo.wiki/w/%E6%B8%B8%E6%88%8F%E6%95%B0%E6%8D%AE%E5%9F%BA%E7%A1%80)
+- [Atlas Academy](https://apps.atlasacademy.io/fgo-docs/)
+- [Mooncell](https://fgo.wiki)
