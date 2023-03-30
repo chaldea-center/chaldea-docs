@@ -1,7 +1,7 @@
 {
   "name": "chaldea-docs",
   "version": "0.0.1",
-  "description": "Documentation of Chaldea - Yet another material planning tool for Fate/GO.",
+  "description": "Documentation of Chaldea - Yet another planner & battle simulator for Fate/GO.",
   "type": "module",
   "main": "index.js",
   "scripts": {

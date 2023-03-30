@@ -2,6 +2,8 @@
 
 Chaldea 是一款用于[Fate/Grand Order](https://www.fate-go.jp)/[命运-冠位指定](https://game.bilibili.com/fgo/)的规划软件，支持 Android、iOS、Windows、macOS、Linux 和 Web 平台。Chaldea 可以帮助 Master 规划从者练度、素材和活动等。
 
+关于战斗模拟器Laplace可前往[Laplace](/zh/laplace/)。
+
 ![Chaldea Preview](/images/zh/home_svt_preview.webp)
 
 <figcaption style="text-align:center">Chaldea预览</figcaption>

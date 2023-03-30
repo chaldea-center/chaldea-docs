@@ -2,6 +2,8 @@
 
 Chaldea is a cross-platform material planning tool for [Fate/Grand Order](https://www.fate-go.jp), supporting Android, iOS, Windows, macOS, Linux and Web. Chaldea will help masters plan their servants, events and materials.
 
+Go to [Laplace](/laplace/) for details about battle simulator.
+
 ![Chaldea Preview](/images/en/home_svt_preview.webp)
 
 <figcaption style="text-align:center">Chaldea Preview</figcaption>

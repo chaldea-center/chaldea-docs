@@ -16,19 +16,19 @@ import {
 export default defineUserConfig({
   lang: 'en-US',
   title: 'Chaldea',
-  description: 'Chaldea - Yet Another Planner for Fate/Grand Order',
+  description: 'Chaldea - Yet Another Planner & Battle Simulator for Fate/Grand Order',
   // dest: 'dist',
   head: head,
   locales: {
     '/': {
       lang: 'en-US',
       title: 'Chaldea',
-      description: 'Chaldea - Yet Another Planner for Fate/Grand Order',
+      description: 'Chaldea - Yet Another Planner & Battle Simulator for Fate/Grand Order',
     },
     '/zh/': {
       lang: 'zh-CN',
       title: 'Chaldea',
-      description: 'Chaldea - 一款跨平台的FGO素材规划软件',
+      description: 'Chaldea - 一款跨平台的FGO素材规划&战斗模拟软件',
     },
   },
   theme: localTheme({
@@ -102,7 +102,7 @@ export default defineUserConfig({
           'meta',
           {
             property: 'og:description',
-            content: 'Chaldea - Yet Another Planner for FGO',
+            content: 'Chaldea - Yet Another Planner & Battle Simulator for Fate/Grand Order',
           },
         ])
       },
