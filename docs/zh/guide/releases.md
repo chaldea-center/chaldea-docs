@@ -1,6 +1,8 @@
 # 历史版本
 
-以下列出了 Chaldea app 的 Android、Linux 和 Windows 客户端下载地址，包括beta版。iOS 及 macOS 版本请前往 App Store。
+> FGO 游戏安装包请查看[FGO APK](./fgo_apk.md)
+
+以下列出了 Chaldea app 的 Android、Linux 和 Windows 客户端下载地址，包括 beta 版。iOS 及 macOS 版本请前往 App Store。
 
 关于安装方式及更多信息请前往[下载与安装](./installation.md)
 
@@ -10,7 +12,11 @@
 
 注意: `beta`版即预览版，随最新版代码一起更新。一般情况下下载 v2.x 最新正式版即可。
 
-> FGO 游戏安装包请查看[FGO APK](./fgo_apk.md)
+最新稳定版下载地址:
+
+- Android: [https://worker-cn.chaldea.center/releases/latest/android](https://worker-cn.chaldea.center/releases/latest/android)
+- Windows: [https://worker-cn.chaldea.center/releases/latest/windows](https://worker-cn.chaldea.center/releases/latest/windows)
+- Linux: [https://worker-cn.chaldea.center/releases/latest/linux](https://worker-cn.chaldea.center/releases/latest/linux)
 
 <hr/>
 <AppRelease/>

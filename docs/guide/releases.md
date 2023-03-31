@@ -1,5 +1,7 @@
 # Releases
 
+> For FGO game apk, please visit [FGO APK](./fgo_apk.md).
+
 This page lists all **Chaldea** v2+beta download links for Android, Linux and Windows. Visit App Store for iOS and macOS version.
 
 For more about installation, please check [Installation](./installation.md).
@@ -10,7 +12,11 @@ More releases can be found at [Github Releases](https://github.com/chaldea-cente
 
 Tips: `beta` version is the latest preview version, updated when source code got updated. Usually v2.x release is wanted for most users.
 
-> For FGO game apk, please visit [FGO APK](./fgo_apk.md).
+To download the latest stable version:
+
+- Android: [https://worker.chaldea.center/releases/latest/android](https://worker.chaldea.center/releases/latest/android)
+- Windows: [https://worker.chaldea.center/releases/latest/windows](https://worker.chaldea.center/releases/latest/windows)
+- Linux: [https://worker.chaldea.center/releases/latest/linux](https://worker.chaldea.center/releases/latest/linux)
 
 <hr/>
 <AppRelease/>
