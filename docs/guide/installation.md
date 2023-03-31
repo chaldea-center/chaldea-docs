@@ -21,6 +21,10 @@ For more details about Web version, see [V2 Release Note](./v2_release.md)
 Don't run multiple instances or web pages together, otherwise data will be overridden by each other.
 :::
 
+::: tip
+If you encounter installation/startup problems, please check [Notes](#notes) first.
+:::
+
 ## Download
 
 ### Google Play
@@ -51,7 +55,7 @@ Contains Android, Windows and Linux binary assets.
 
 If the latest version doesn't contain the platform you want, please check the previous versions.
 
-## Attentions
+## Notes
 
 ### Android
 
@@ -68,7 +72,7 @@ so make sure to backup to local before upgrading. V1 server backup is incompatib
 Please run the app after decompression. And save to non-system folder, e.g. `Program File` is not recommended, you may need admin permission, and some functions may not work properly.
 :::
 
-#### Error: `VCRUNTIME140_1.dll was not found`
+**Error: `VCRUNTIME140_1.dll was not found`**
 
 If there is such an error message on startup, please install [Microsoft Visual C++ redistributable package](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads) and restart again.
 
@@ -77,3 +81,16 @@ If there is such an error message on startup, please install [Microsoft Visual C
 ::: tip
 The macOS version is only available on Mac App Store.
 :::
+
+### Linux
+
+Since v2.3.0, desktop app can be shown in system tray, and `libappindicator` is required in linux system.
+If it doesn't exist in your system, please install it before launching chaldea app, otherwise startup will fail silently.
+
+Any one of following libs should be fine.
+
+```sh
+sudo apt install libappindicator-gtk3
+# sudo apt install libappindicator3-1
+# sudo apt install libayatana-appindicator3-1
+```

@@ -21,6 +21,10 @@
 由于数据储存位置共享，请勿同时运行多个实例或网页，否则会导致数据相互覆盖。
 :::
 
+::: tip
+若遇到安装/启动问题，请先检查[安装注意事项](#注意事项)。
+:::
+
 ## 下载
 
 ### Google Play
@@ -53,7 +57,7 @@ v1.x 用户请阅读[注意事项](#安装注意事项)
 
 - [https://wws.lanzoui.com/b01tuahmf](https://wws.lanzoui.com/b01tuahmf) 密码:chaldea
 
-## 安装注意事项
+## 注意事项
 
 ### Android
 
@@ -78,3 +82,15 @@ Windows 压缩包，请解压后再运行，并储存于非系统目录，`Progr
 ::: tip
 macOS 现在仅提供应用商店版本
 :::
+
+### Linux
+
+自 v2.3.0 起，桌面应用支持在系统托盘显示，在 Linux 系统中需要使用`libappindicator`相关库。如果系统未内置或未安装，则应用启动时可能会失败而无错误提示。
+
+只需安装以下任意一种即可。
+
+```sh
+sudo apt install libappindicator-gtk3
+# sudo apt install libappindicator3-1
+# sudo apt install libayatana-appindicator3-1
+```
