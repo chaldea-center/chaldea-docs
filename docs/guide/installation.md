@@ -2,16 +2,19 @@
 
 ### System Requirement
 
-| Platform | Minimum Version                                                                                            |
-| :------- | :--------------------------------------------------------------------------------------------------------- |
-| Android  | Android 6.0 (API level 23)                                                                                 |
-| iOS      | iOS 11.0                                                                                                   |
-| Windows  | Windows 8 (64-bit), x86-64 based                                                                           |
-| macOS    | macOS 10.14                                                                                                |
-| Linux    | Debian 10, 64-bit                                                                                          |
-| Web      | [https://chaldea.center](https://chaldea.center)<br>[https://cn.chaldea.center](https://cn.chaldea.center) |
+| Platform   | Minimum Version                                        |
+| :--------- | :----------------------------------------------------- |
+| Android    | Android 6.0 (API level 23)                             |
+| iOS        | iOS 11.0                                               |
+| Windows    | Windows 8 (64-bit), x86-64 based <sup>1</sup>          |
+| macOS      | macOS 10.14                                            |
+| Linux      | Debian 10, 64-bit <sup>2</sup>                         |
+| Web        | [https://chaldea.center](https://chaldea.center)       |
+| Web(China) | [https://cn.chaldea.center](https://cn.chaldea.center) |
 
-> Windows 7 SP1 should be supported, but app will crash at startup with unknown reason.
+> <sup>1</sup> **Windows 7 SP1** should be supported, but app may crash at startup with unknown reason.
+>
+> <sup>2</sup> Only **Debian** based Linux distributions are supported and tested. While it may work on other Linux distributions, we cannot guarantee full compatibility nor offer technical support for issues arising from those platforms at this time.
 
 Check [Flutter docs](https://docs.flutter.dev/development/tools/sdk/release-notes/supported-platforms) for more about supported platforms.
 
@@ -84,13 +87,14 @@ The macOS version is only available on Mac App Store.
 
 ### Linux
 
+If app cannot be started, try to run it from terminal `./chaldea` and check the possible error.
+
 Since v2.3.0, desktop app can be shown in system tray, and `libappindicator` is required in linux system.
 If it doesn't exist in your system, please install it before launching chaldea app, otherwise startup will fail silently.
 
-Any one of following libs should be fine.
+For Debian based Linux, you can install it through the following command:
 
 ```sh
-sudo apt install libappindicator-gtk3
-# sudo apt install libappindicator3-1
-# sudo apt install libayatana-appindicator3-1
+# Debian based
+sudo apt install libappindicator3-1
 ```

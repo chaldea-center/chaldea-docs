@@ -2,16 +2,19 @@
 
 ### 系统要求
 
-| 平台    | 最低要求                                                                                                   |
-| :------ | :--------------------------------------------------------------------------------------------------------- |
-| Android | Android 6.0 (API level 23)                                                                                 |
-| iOS     | iOS 11.0                                                                                                   |
-| Windows | Windows 8 (64-bit), x86-64 based                                                                           |
-| macOS   | macOS 10.14                                                                                                |
-| Linux   | Debian 10, 64-bit                                                                                          |
-| Web     | [https://chaldea.center](https://chaldea.center)<br>[https://cn.chaldea.center](https://cn.chaldea.center) |
+| 平台      | 最低要求                                               |
+| :-------- | :----------------------------------------------------- |
+| Android   | Android 6.0 (API level 23)                             |
+| iOS       | iOS 11.0                                               |
+| Windows   | Windows 8 (64-bit), x86-64 based <sup>1</sup>          |
+| macOS     | macOS 10.14                                            |
+| Linux     | Debian 10, 64-bit <sup>2</sup>                         |
+| Web(海外) | [https://chaldea.center](https://chaldea.center)       |
+| Web(国内) | [https://cn.chaldea.center](https://cn.chaldea.center) |
 
-> Windows 7 SP1 理论可运行，但存在未知 bug 无法启动
+> <sup>1</sup> Windows 7 SP1 理论可运行，但可能存在无法启动的未知错误
+>
+> <sup>2</sup> 仅 Debian 发行版的 Linux 得到测试与支持。虽然可能能运行在其他发行版上，但我们目前无法保证完全兼容，也无法为这些平台出现的问题提供技术支持
 
 更多关于系统版本要求可查看[Flutter 文档](https://docs.flutter.dev/development/tools/sdk/release-notes/supported-platforms)
 
@@ -85,12 +88,13 @@ macOS 现在仅提供应用商店版本
 
 ### Linux
 
+如果应用启动失败，请尝试从 Terminal 中启动`./chaldea`并检查可能输出的报错信息。
+
 自 v2.3.0 起，桌面应用支持在系统托盘显示，在 Linux 系统中需要使用`libappindicator`相关库。如果系统未内置或未安装，则应用启动时可能会失败而无错误提示。
 
-只需安装以下任意一种即可。
+以 Deibian 系列为例（如 Ubuntu），可以通过以下命令安装上述库：
 
 ```sh
-sudo apt install libappindicator-gtk3
-# sudo apt install libappindicator3-1
-# sudo apt install libayatana-appindicator3-1
+# Debian based
+sudo apt install libappindicator3-1
 ```
