@@ -97,4 +97,6 @@ For Debian based Linux, you can install it through the following command:
 ```sh
 # Debian based
 sudo apt install libappindicator3-1
+# Ubuntu 22.04 or higher
+sudo apt-get install libayatana-appindicator3-dev
 ```

@@ -97,4 +97,6 @@ macOS 现在仅提供应用商店版本
 ```sh
 # Debian based
 sudo apt install libappindicator3-1
+# Ubuntu 22.04 或更高
+sudo apt-get install libayatana-appindicator3-dev
 ```
