@@ -53,7 +53,7 @@ export const sidebarZh: SidebarConfig = {
   '/zh/laplace/': [
     {
       text: 'Laplace',
-      children: ['/zh/laplace/'],
+      children: ['/zh/laplace/', '/zh/laplace/bugs.md'],
     },
   ],
 }

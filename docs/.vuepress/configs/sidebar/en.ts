@@ -51,7 +51,7 @@ export const sidebarEn: SidebarConfig = {
   '/laplace/': [
     {
       text: 'Laplace',
-      children: ['/laplace/'],
+      children: ['/laplace/', '/laplace/bugs.md'],
     },
   ],
 }
