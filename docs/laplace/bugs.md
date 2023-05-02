@@ -1,23 +1,17 @@
 # Bugs
 
-Up to v2.3.4
-
-## Known Issues
-
-- NP super effective damage of Beast Nero is not applied: since this super effective damage
-  uses a new trait added in the latest JP version, so enemy servants from recorded old quests data
-  do not possess such traits, thus failing to proc the super effective damage.
-  - For quests from old events: since it's not possible to get quest data from game server, so those
-    cannot be updated at the moment.
-  - For free quests from main story chapters: data will be gradually updated after players clear those quests.
-  - For quests from new events: Beast Nero's NP will correctly apply this super effective damage.
+Up to v2.3.5
 
 ## Unimplemented Functions
-
-- hpReduceToRegain - Locusta Skill 2
 - damageNpCounter - Aŋra Mainiiu NP
 - counterFunction - Bazett NP
-- Enemy / Challenge Quest functions & buffs. E.g. doNotGainNp
+
+## Fixed in v2.3.5
+
+- hpReduceToRegain - Locusta Skill 2
+- functionAttackAfter is not called after NP - Super Bunyan NP
+- NP super effective damage of Beast Nero is not applied
+  - added an option to automatically add the necessary traits to enemy servants to proc Beat Nero's NP super effective damage when she's in the team
 
 ## Fixed in v2.3.3
 
