@@ -1,11 +1,16 @@
 # Bugs
 
-以下信息截至 v2.3.5
+以下信息截至 v2.3.6
 
 ## 未实现
 
 - damageNpCounter - 安哥拉曼纽宝具
 - counterFunction - 巴泽特宝具
+
+## 已于v2.3.6版本修复
+
+- 为修复回合结束时效果可能提前一回合消失的问题重构 buff 回合数计数方式
+- gainNpIndividualSum 现在正确地从指定的目标进行特性计数
 
 ## 已于v2.3.5版本修复
 

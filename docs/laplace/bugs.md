@@ -1,10 +1,15 @@
 # Bugs
 
-Up to v2.3.5
+Up to v2.3.6
 
 ## Unimplemented Functions
 - damageNpCounter - Aŋra Mainiiu NP
 - counterFunction - Bazett NP
+
+## Fixed in v2.3.6
+
+- Proper buff turn duration counting to fix issues related to endOfTurn buffs end one turn early than expected
+- gainNpIndividualSum now properly counts traits from specified targets 
 
 ## Fixed in v2.3.5
 
