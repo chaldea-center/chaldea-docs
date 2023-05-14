@@ -16,7 +16,7 @@
 >
 > <sup>2</sup> Only **Debian** based Linux distributions are supported and tested. While it may work on other Linux distributions, we cannot guarantee full compatibility nor offer technical support for issues arising from those platforms at this time.
 
-Check [Flutter docs](https://docs.flutter.dev/development/tools/sdk/release-notes/supported-platforms) for more about supported platforms.
+Check [Flutter docs](https://docs.flutter.dev/reference/supported-platforms) for more about supported platforms.
 
 For more details about Web version, see [V2 Release Note](./v2_release.md)
 

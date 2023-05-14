@@ -16,7 +16,7 @@
 >
 > <sup>2</sup> 仅 Debian 发行版的 Linux 得到测试与支持。虽然可能能运行在其他发行版上，但我们目前无法保证完全兼容，也无法为这些平台出现的问题提供技术支持
 
-更多关于系统版本要求可查看[Flutter 文档](https://docs.flutter.dev/development/tools/sdk/release-notes/supported-platforms)
+更多关于系统版本要求可查看[Flutter 文档](https://docs.flutter.dev/reference/supported-platforms)
 
 关于 v2 和 Web 版详见[V2 Release](./v2_release.md)
 
