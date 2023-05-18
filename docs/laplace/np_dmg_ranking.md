@@ -1,0 +1,3 @@
+# NP Damage Ranking
+
+TODO

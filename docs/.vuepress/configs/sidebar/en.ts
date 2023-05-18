@@ -55,6 +55,7 @@ export const sidebarEn: SidebarConfig = {
         '/laplace/',
         '/laplace/team.md',
         '/laplace/battle.md',
+        '/laplace/np_dmg_ranking.md',
         '/laplace/bugs.md',
       ],
     },
