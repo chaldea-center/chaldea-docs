@@ -2,6 +2,13 @@
 
 Up to v2.3.6
 
+## Known Issues
+
+- Miyamoto Musashi's (Saber) upgraded NP always apply super effective damage
+- CE passive skills are not activated after all the servant passives. This would result in an edge case where if Amor (Caren)
+  is equipped with a CE that grants her debuff immune, allies' Avenger passive may not correctly grant Caren Debuff resist down
+  depending on party order
+
 ## Unimplemented Functions
 - damageNpCounter - Aŋra Mainiiu NP
 - counterFunction - Bazett NP
