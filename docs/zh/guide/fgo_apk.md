@@ -1,5 +1,11 @@
 # FGO APK
 
+::: warning
+2023.5.27之后暂不可用，请前往[apkpure](https://apkpure.com/fate-grand-order/com.aniplex.fategrandorder)下载日服或者其他服的安装包（仅64位）
+
+请等待后续恢复。
+:::
+
 - Google Play 下载的各区服的 FGO 原版 apk
 - 其中日服自 2.63 后分为 64 位和 32 位包
   - `armeabi_v7a/32-bit`, 32 位版多为旧模拟器或旧安卓或特殊设备使用
