@@ -1,17 +1,25 @@
 # Bugs
 
-Up to v2.3.6
+Up to v2.4.1
 
 ## Known Issues
+
+- StackOverflow if an add/remove trait buff requires checks on servants' traits
+
+## Unimplemented Functions
+- damageNpCounter - Aŋra Mainiiu NP
+- counterFunction - Bazett NP
+
+## Fixed in v2.4.1
+
+- Ally servants immediate enter field on quests where enemy immediate appears
+
+## Fixed in v2.4.0
 
 - Miyamoto Musashi's (Saber) upgraded NP always apply super effective damage
 - CE passive skills are not activated after all the servant passives. This would result in an edge case where if Amor (Caren)
   is equipped with a CE that grants her debuff immune, allies' Avenger passive may not correctly grant Caren Debuff resist down
   depending on party order
-
-## Unimplemented Functions
-- damageNpCounter - Aŋra Mainiiu NP
-- counterFunction - Bazett NP
 
 ## Fixed in v2.3.6
 
