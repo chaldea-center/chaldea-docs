@@ -58,6 +58,7 @@ export const sidebarZh: SidebarConfig = {
         '/zh/laplace/team.md',
         '/zh/laplace/battle.md',
         '/zh/laplace/np_dmg_ranking.md',
+        '/zh/laplace/faq.md',
         '/zh/laplace/bugs.md',
       ],
     },
