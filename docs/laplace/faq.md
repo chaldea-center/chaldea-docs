@@ -1,5 +1,14 @@
 # FAQ
 
+### What is Atlas DB URL?
+Chaldea uses [Atlas Academy DB](https://apps.atlasacademy.io/db/) as backend, so you can copy Atlas's link directly for
+loading specific quests or skills.
+
+E.g. URL of Kama's second Interlude: https://apps.atlasacademy.io/db/JP/quest/91603792/3
+
+E.g. URL of Kiyohime's third skill: https://apps.atlasacademy.io/db/JP/skill/235550
+
+
 ### About Team Setup
 In the team setup section, servant strengthen status can be configured to match that of a specific FGO server. Whether to 
 use current user's planning data can also be configured here. When a servant is selected, Laplace will automatically set

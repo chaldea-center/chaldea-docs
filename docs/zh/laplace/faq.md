@@ -1,5 +1,12 @@
 # 常见问题
 
+### 什么是 Atlas DB URL?
+Chaldea 使用 [Atlas Academy DB](https://apps.atlasacademy.io/db/) 作为数据来源，所以你可以直接使用 Atlas 的链接来读取想要的关卡或是技能。
+
+举例：迦摩第二个幕间的关卡 URL: https://apps.atlasacademy.io/db/JP/quest/91603792/3
+
+举例：清姬的三技能 URL: https://apps.atlasacademy.io/db/JP/skill/235550
+
 ### 关于战斗配置
 可以在编队配置界面选择当前使用的从者强化状态(对应各个服务器)和是否使用用户规划的从者配置。此时当选择从者之后，会自动使用当前用户的规划配置和对应的强化状态。
 对于玩家规划中未包含的从者，也会根据默认等级中的配置自动调整。另外，礼装也是可以记录用户数据的。
