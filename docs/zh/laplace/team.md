@@ -9,7 +9,7 @@
 3. 输入关卡的 Atlas ID 或 URL: **93000002/3**, 表示关卡 id 为 93000002 的进度 3。此外以下 Chaldea 和 AADB 的网址均可识别，关卡数据信息来源仅限日服(JP)和美服(NA)。
    - https://cn.chaldea.center/quest/93000002
    - https://apps.atlasacademy.io/db/JP/quest/93000002/3
-   - 详细说明可参见[常见问题](faq.md#什么是 Atlas DB URL?)
+   - 详细说明可参见[常见问题](faq.md#什么是-atlas-db-url)
 4. 通过JSON格式导入关卡。数据格式参照 AADB 结构，可以使用导出功能获得范本。除非对相关数据有一定研究，否则不建议使用此方式导入关卡
 
 ![选择关卡](https://data-cn.chaldea.center/public/select_quest.png)

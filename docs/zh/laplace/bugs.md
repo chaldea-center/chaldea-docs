@@ -1,15 +1,19 @@
 # Bugs
 
-以下信息截至 v2.4.1
+以下信息截至 v2.4.3
 
 ## 已知问题
 
-- 当添加或去除特性的 buff 需要检测从者特性时会导致 StackOverflow
+- 从者HP芙芙调整上限为20000
 
 ## 未实现
 
 - damageNpCounter - 安哥拉曼纽宝具
 - counterFunction - 巴泽特宝具
+
+## 已于v2.4.2版本修复
+
+- 当添加或去除特性的 buff 需要检测从者特性时会导致 StackOverflow
 
 ## 已于v2.4.1版本修复
 
