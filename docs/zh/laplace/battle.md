@@ -1,6 +1,6 @@
 # 战斗模拟
 
-![战斗模拟示例](https://data-cn.chaldea.center/image/battle_simulation.jpg)
+![战斗模拟示例](https://data-cn.chaldea.center/public/battle.png)
 
 <figcaption style="text-align:center">战斗模拟示例</figcaption>
 
@@ -32,7 +32,7 @@
 - 单次选择指令卡为普通攻击（蓝色框）、再次选择该指令卡为暴击攻击（红色框）
 - 随机数：控制指令卡伤害计算的随机数值, 取值范围 0.900-1.099
 - 七周年后:
-  - 七周年后: Might Chain 即 QAB 连携同时获得三种首卡加成，且 QQQ 连携获得 20 星，首卡无效时仍可提供首卡加成
+  - 七周年后: Mighty Chain 即 QAB 连携同时获得三种首卡加成，且 QQQ 连携获得 20 星，首卡无效时仍可提供首卡加成
   - 七周年前: QQQ 连携获得 10 星，首卡无效时不提供首卡加成
 
 ### 右上角弹出菜单

@@ -1,14 +1,18 @@
 # Bugs
 
-Up to v2.4.1
+Up to v2.4.3
 
-## Known Issues
+## 已知问题
 
-- StackOverflow if an add/remove trait buff requires checks on servants' traits
+- Servant HP Foufou is capped at 20000
 
 ## Unimplemented Functions
 - damageNpCounter - Aŋra Mainiiu NP
 - counterFunction - Bazett NP
+
+## Fixed in v2.4.2
+
+- StackOverflow if an add/remove trait buff requires checks on servants' traits
 
 ## Fixed in v2.4.1
 

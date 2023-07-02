@@ -85,7 +85,7 @@
 - 额外被动多为活动技能，仅在关卡满足要求时(如绑定活动与活动场地特性)才会生效。可选择移除。保存编队时暂时无法保存该部分信息
 - 如想选择敌方从者或关卡的特殊助战(如大总统)，可通过右上角菜单选择
 
-![从者编辑界面](https://data-cn.chaldea.center/image/svt_options.jpg)
+![从者编辑界面](https://data-cn.chaldea.center/public/servant_edit.png)
 
 <figcaption style="text-align:center">从者编辑界面</figcaption>
 
