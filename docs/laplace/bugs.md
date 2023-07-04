@@ -1,14 +1,18 @@
 # Bugs
 
-Up to v2.4.3
+Up to v2.4.4
 
-## 已知问题
+## Known Issues
 
-- Servant HP Foufou is capped at 20000
+- Hokusai (Foreigner) Skill 3 triggers before NP attack
 
 ## Unimplemented Functions
 - damageNpCounter - Aŋra Mainiiu NP
 - counterFunction - Bazett NP
+
+## Fixed in v2.4.4
+
+- Servant HP Foufou is capped at 20000
 
 ## Fixed in v2.4.2
 
