@@ -1,17 +1,18 @@
 # Bugs
 
-Up to v2.4.4
-
-## Known Issues
-
-- Hokusai (Foreigner) Skill 3 triggers before NP attack
-- Users able to interact with UI while Laplace is trying to fetch necessary data. This will result in errors under certain circumstances
-- Certain skills that impose rarity constraints do not actually check for rarity  
-- functionWaveStart - usually used by enemies / scripted events to trigger skills at the start of a wave
+Up to v2.4.5
 
 ## Unimplemented Functions
 - damageNpCounter - Aŋra Mainiiu NP
 - counterFunction - Bazett NP
+
+## Fixed in v2.4.5
+
+- Hokusai (Foreigner) Skill 3 triggers before NP attack
+- Users able to interact with UI while Laplace is trying to fetch necessary data. This will result in errors under certain circumstances
+- Certain skills that impose rarity constraints do not actually check for rarity
+- functionWaveStart - usually used by enemies / scripted events to trigger skills at the start of a wave
+
 
 ## Fixed in v2.4.4
 
