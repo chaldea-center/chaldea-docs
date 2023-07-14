@@ -2,6 +2,11 @@
 
 Up to v2.4.5
 
+## Known Issues
+
+- Damage cut & Damage up (granted from Melusine ST NP) buffs behave as opposite
+- After an enemy activates a custom skill, subsequent mystic code skill are applied incorrectly 
+
 ## Unimplemented Functions
 - damageNpCounter - Aŋra Mainiiu NP
 - counterFunction - Bazett NP
