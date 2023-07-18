@@ -4,8 +4,6 @@
 
 > 国服目前可 Android 和 iOS 互登
 
-日服和美服或安卓用户请移步[HttpCanary-Android](./httpcanary.md)
-
 App Store 链接: [https://apps.apple.com/app/stream/id1312141691](https://apps.apple.com/app/stream/id1312141691)
 
 自 2021 年 9 月大版本更新之后，BGO 一度不走系统代理，而 Stream 软件实则为代理模式而非 VPN 模式，因此此方法被一度删除，目前新版本似乎已恢复，支持系统代理。

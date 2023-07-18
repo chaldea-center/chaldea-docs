@@ -1,5 +1,7 @@
 # BetterFGO@rayshift.io
 
+- Rayshift: [https://rayshift.io](https://rayshift.io)
+
 ## 获取日服美服安装包
 
 对于日服和美服，需要使用修改过的 apk 安装包，仅适用于 Android，原先 iOS 或 Android 上 FGO 存档可通过[迁移数据](./transfer_data.md)的方法在不使用引继码下实现多设备/多客户端登陆。

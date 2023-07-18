@@ -1,10 +1,14 @@
 # BetterFGO @ rayshift.io
 
+- Rayshift: [https://rayshift.io](https://rayshift.io)
+
 ## Get BetterFGO apk mod
 
 ::: warning
 BFGO has removed http sniffing functionality because of some people `are using it to produce cheat/leak videos`.
 :::
+
+You can use [Login via Account File](./auto_login.md) to import all data in one minute, but read carefully and do it at your risk.
 
 ::: details unavailable
 

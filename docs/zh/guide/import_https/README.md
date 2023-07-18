@@ -3,16 +3,18 @@
 ## 目录
 
 - 本页：抓包介绍
-- [BetterFGO 客户端 apk](./bfgo.md): 日服/美服所需， 目前已不可用
-- [迁移数据](./transfer_data.md): 日服/美服多客户端共存
+- ~~[BetterFGO 客户端 apk](./bfgo.md): 日服/美服所需， 目前已不可用~~
+- [模拟登陆](./auto_login.md): 日服&美服 ，读取54cc账号文件实现账号登录并获取数据，最快捷但风险自理
 - [Stream-iOS](./stream.md): 国服/台服 iOS 抓包教程
 - [HttpCanary-Android](./httpcanary.md): Android 抓包教程
 - [Charles 版教程-PC](./charles.md): Android/iOS 配合 Charles(PC)教程
 - [mitmproxy 版教程-PC](./mitmproxy.md): Android/iOS 配合 mitmproxy(PC)教程
 - [Quantumult X-iOS](./quantumultx.md): 国服&台服 iOS 抓包（付费 app）
+- [迁移数据](./transfer_data.md): 日服/美服多客户端共存
 
 ::: warning
 日服/美服/韩服有证书绑定(cert-pinning)，会拒绝抓包软件的证书，**“必须”** 使用第三方 apk！
+目前无可用公开apk，可使用模拟登陆。
 
 ~~日服/美服第三方 apk 可使用本文介绍的 Rayshift.io 制作的 BetterFGO 版本。~~ 不再支持，详见[BetterFGO](./bfgo.md)
 :::

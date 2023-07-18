@@ -43,7 +43,7 @@ May be different with actual port ╮(╯▽╰)╭
 
 - NetEase MuMu 7555
 - Nox 62001
-- BlueStacks 5555 (ps:There is no network/cert related settings?
+- BlueStacks 5555 (ps:There is no network/cert related settings?)
 
 ## Magisk+JustTrustMe
 

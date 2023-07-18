@@ -26,7 +26,9 @@
 
 ## HTTPS 抓包
 
-通过抓取登陆时的数据导入账户所有信息。国服与台服均可使用(iOS&Android)，日服于美服需要使用修改过的 apk 安装包(仅 Android 可用)。
+- 日服/美服：官方客户端和BFGO客户端均一不支持，可以使用[账号文件登陆](./import_https/auto_login.md).
+- 国服/台服：支持官方客户端抓包，Android和iOS均可。
+
 详见[导入抓包](./import_https/README.md)。
 
 ## 素材截图解析

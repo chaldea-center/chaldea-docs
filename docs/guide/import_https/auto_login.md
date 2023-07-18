@@ -1,11 +1,13 @@
-# Auto Login via Transfer File(JP/NA)
+# Login via Transfer File(JP/NA)
 
 Ref: [hexstr/FGODailyBonus](https://github.com/hexstr/FGODailyBonus)。
 
 Read your account auth file to create login request to FGO server. Then import the response data to chaldea app.
 
 ::: danger Declaimer
-It reads your account auth file! Use in RISK!
+It reads your account auth file! 
+Breaking Term of Service (ToS).
+Use in RISK!
 I take no responsibility for anything.
 :::
 

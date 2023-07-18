@@ -3,17 +3,19 @@
 ## Contents
 
 - This page: Https sniffing introdution
-- [BetterFGO apk](./bfgo.md): For JP/NA sniffing
-- [Transfer Data](./transfer_data.md): Keep JP/NA account data in multiple clients
+- ~~[BetterFGO apk](./bfgo.md): For JP/NA sniffing~~ not supported now
+- [Login via Account File](./auto_login.md): JP&NA, read 54cc file and login to retrieve data, convenient but at your own risk 
 - [Stream-iOS](./stream.md): Only for CN/TW sniffing on iOS
 - [HttpCanary-Android](./httpcanary.md): JP/NA/CN/TW on Android
 - [Charles-PC](./charles.md): Android/iOS with Charles(PC)
 - [mitmproxy-PC](./mitmproxy.md): Android/iOS with mitmproxy(PC)
+- [Transfer Data](./transfer_data.md): Keep JP/NA account data in multiple clients
 
 ## Introduction
 
 > FGO JP/NA/KR app has cert-pinning, which will reject custom cert.
 > So we must use modified apk, BFGO has stopped sniffing support because of some people use it to cheat.
+> Use Login via Account File if needed.
 >
 > For CN/TW, Android/iOS are both supported yet.
 
