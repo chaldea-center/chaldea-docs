@@ -27,7 +27,7 @@ export const head: HeadConfig[] = [
     {
       name: 'keywords',
       content:
-        'Chaldea,Chaldea Center,Chaldea App,迦勒底,素材规划,Material Planning,Planner,FGO,fate,Fate/Grand Order,命运-冠位指定,型月,typemoon,周回,free',
+        'Chaldea,Chaldea Center,Chaldea App,Laplace,迦勒底,素材规划,Material Planning,Planner,模拟器,组队,Battle Simulator,3T Simulator,companion,FGO,fate,Fate/Grand Order,命运-冠位指定,型月,typemoon,周回,free',
     },
   ],
   [
