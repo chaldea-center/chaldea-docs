@@ -15,7 +15,7 @@
       >
         <summary>
           Release Note ({{
-            new Date(release.published_at).toLocaleDateString()
+            new Date(release.created_at).toLocaleDateString()
           }})
         </summary>
         <pre class="release-note">{{ release.body.trim() }}</pre>
@@ -109,8 +109,8 @@ export default defineComponent({
       )
       releases = releases.sort(
         (a, b) =>
-          new Date(b.published_at).getTime() -
-          new Date(a.published_at).getTime()
+          new Date(b.created_at).getTime() -
+          new Date(a.created_at).getTime()
       )
       this.releases = releases
     },
