@@ -11,7 +11,6 @@
   - 下载地址: [https://www.mitmproxy.org/](https://www.mitmproxy.org/)
 - Android only:
   - Android 版本需**小于等于 6**，现在手机基本见不到旧版本的安卓了，模拟器使用 Android 6 较多，可在`设置-关于`中查看 Android 版本
-  - BetterFGO 客户端: 获取方式见下方，仅用于日服和美服
 
 > 对于 iOS/Android 上的部分设置与 Charles 版教程类似，如有疑惑可前往带截图的 Charles 教程做参考。
 

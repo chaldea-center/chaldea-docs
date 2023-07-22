@@ -12,8 +12,8 @@ HttpCanary is recommended for Android sniffing. It doesn't need PC or the first 
   - Android: `Drony v1.3.x`(free) or other you know, you can also download it from [cloud drive(password:chaldea)](https://wws.lanzoui.com/b01uoc3qh)
 - FGO
   - CN/TW: official game client, support iOS/Android
-  - JP/NA: stop supporting ~~must use third-party apk, iOS is not supported. BetterFGO client: see [Get BetterFGO apk](./bfgo.md)~~
-  - KR: not supported since I don't know any public apk mod.
+  - JP/NA: not supported, use [Login via Account File](./auto_login.md) instead.
+  - KR: not supported
 - Android only: Android 7+ won't trust user cert, you can choose one of these solution
   1. Use Android 6(or lower)
   2. \[root\] Install user cert as system cert via ADB: [https://stackoverflow.com/a/46569793](https://stackoverflow.com/a/46569793)
@@ -171,6 +171,6 @@ The next https traffic capture:
 
 ## FAQ
 
-- JP/NA: no mod apk available, BFGO stopped supporting.
-- KR server is not supported yet.
+- JP/NA: not supported.
+- KR: not supported.
 - Any feedback on this method or documents is welcomed.

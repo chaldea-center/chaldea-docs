@@ -15,9 +15,9 @@ Android 可使用[HttpCanary-Android](./httpcanary.md)教程，证书安装完�
 - 全局 http 代理软件:
   - iOS: `Potatso Lite`, 免费应用; `shadowrocket`付费应用。均需非国区账号下载，其他可用软件欢迎补充~~有很多~~。
   - Android: `Drony v1.3.x`, 免费应用, [下载地址(密码:chaldea)](https://wws.lanzoui.com/b01uoc3qh)。百度下载 Drony 可以下载到各式各样文件体积的版本，有些是不能用的，建议直接从网盘下载。
-- FGO
+- FGO客服端
   - 国服/台服官方安装包，支持 iOS 和 Android
-  - 日服/美服官方安装包会拒绝抓包软件证书，提示应用需要更新，需使用第三方 apk。BetterFGO 客户端不再可用: 详见[BetterFGO 日服美服安装包](./bfgo.md)
+  - 不支持日服/美服官方安装包，可以用账号文件模拟登陆代替抓包
   - 韩服没辙
 - Android only: Android 版本大于 6 时不信任用户证书，可选以下解决方案
   1. 使用 Android 版本**小于等于 6**的手机或模拟器，可在`设置-关于`中查看 Android 版本

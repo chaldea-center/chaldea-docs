@@ -26,8 +26,9 @@ You can also import v1 data here, only some of servants and item data will be im
 
 ## HTTPS Sniffing
 
-- For JP/NA, official apk and bfgo apk mod are both not supported, use [Login via Account File](./import_https/auto_login.md) if needed.
+- For JP/NA, official apk is not supported, use [Login via Account File](./import_https/auto_login.md) instead if needed.
 - For CN/TW, official app is support, you can capture login data ob iOS and Android.
+- For KR, no way yet.
 
 See [Import HTTPS Response](./import_https) for details.
 

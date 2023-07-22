@@ -3,7 +3,6 @@
 ## Contents
 
 - This page: Https sniffing introdution
-- ~~[BetterFGO apk](./bfgo.md): For JP/NA sniffing~~ not supported now
 - [Login via Account File](./auto_login.md): JP&NA, read 54cc file and login to retrieve data, convenient but at your own risk 
 - [Stream-iOS](./stream.md): Only for CN/TW sniffing on iOS
 - [HttpCanary-Android](./httpcanary.md): CN/TW on Android
@@ -16,10 +15,12 @@
 ## Introduction
 
 > FGO JP/NA/KR app has cert-pinning, which will reject custom cert.
-> So we must use modified apk, BFGO has stopped sniffing support because of some people use it to cheat.
+> So we must use modified apk, but there is no public apk mod support.
 > Use Login via Account File if needed.
 >
-> For CN/TW, Android/iOS are both supported yet.
+> If you can modify apk to remove cert pinning by yourself, surely these methods are also useful for these regions.
+>
+> For CN/TW, Android/iOS official fgo apps are both supported yet.
 
 Capture the network traffic when FGO client login to terminal which contains the data of all servants(ascension/palingenesis/bond/active skill/append skill/costume/coins), materials and CEs. Then easily import it to Chaldea app, no need to manually input servant data anymore.
 
