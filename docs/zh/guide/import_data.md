@@ -29,7 +29,7 @@
 - 日服/美服：官方客户端和BFGO客户端均一不支持，可以使用[账号文件登陆](./import_https/auto_login.md).
 - 国服/台服：支持官方客户端抓包，Android和iOS均可。
 
-详见[导入抓包](./import_https/README.md)。
+详见[导入抓包](./import_https/)。
 
 ## 素材截图解析
 

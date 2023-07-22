@@ -29,7 +29,7 @@ You can also import v1 data here, only some of servants and item data will be im
 - For JP/NA, official apk and bfgo apk mod are both not supported, use [Login via Account File](./import_https/auto_login.md) if needed.
 - For CN/TW, official app is support, you can capture login data ob iOS and Android.
 
-See [Import HTTPS Response](./import_https.md) for details.
+See [Import HTTPS Response](./import_https) for details.
 
 ## Item Screenshots
 

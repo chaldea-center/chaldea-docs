@@ -6,10 +6,12 @@
 - ~~[BetterFGO apk](./bfgo.md): For JP/NA sniffing~~ not supported now
 - [Login via Account File](./auto_login.md): JP&NA, read 54cc file and login to retrieve data, convenient but at your own risk 
 - [Stream-iOS](./stream.md): Only for CN/TW sniffing on iOS
-- [HttpCanary-Android](./httpcanary.md): JP/NA/CN/TW on Android
+- [HttpCanary-Android](./httpcanary.md): CN/TW on Android
 - [Charles-PC](./charles.md): Android/iOS with Charles(PC)
 - [mitmproxy-PC](./mitmproxy.md): Android/iOS with mitmproxy(PC)
 - [Transfer Data](./transfer_data.md): Keep JP/NA account data in multiple clients
+
+> All methods except **Login via Account File** doesn't support official JP/NA/KR fgo app.
 
 ## Introduction
 
