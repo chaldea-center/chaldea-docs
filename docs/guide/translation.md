@@ -1,5 +1,13 @@
 # Help Translation
 
+REALLLLLLLLY WANTED!!!!!!!!!!
+
+## Contact us
+
+Please contact me via [feedback page](./feedback.md). Discord is preferred: [https://discord.gg/5M6w5faqjP](https://discord.gg/5M6w5faqjP)
+
+## Game Data
+
 Most translations will be synced to Google Spreadsheet:
 
 [https://docs.google.com/spreadsheets/d/1SSFQgfg-EFqfRzdKnoyRZIB7t6cwc_4MyseFXRdOSqs/edit](https://docs.google.com/spreadsheets/d/1SSFQgfg-EFqfRzdKnoyRZIB7t6cwc_4MyseFXRdOSqs/edit)
@@ -7,13 +15,7 @@ Most translations will be synced to Google Spreadsheet:
 Looking forward to your contribution!!! Especially English/Traditional Chinese/Korean parts.
 
 - some files such as `enums.json` are not uploaded because of different format.
-- inform me to merge changes when you update the spreadsheet.
-
-## Contact us
-
-Please contact me via [feedback page](./feedback.md).
-
-## Game Data
+- inform me to update sheet first! Ask me to merge changes when you complete the edition.
 
 Current based on JP data, added CN/TW/NA/KR translations of released part for each region. Besides, Mooncell translation for CN and AtlasAcademy/Fandom translation for NA are also used.
 

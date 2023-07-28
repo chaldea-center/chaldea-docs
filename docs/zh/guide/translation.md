@@ -1,19 +1,21 @@
 # 贡献翻译
 
-绝大部分翻译不定期同步至谷歌表格(需要科学上网):
+一个人真的坚持不下去了啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊 _(:з」∠)_
+
+## 联系我们
+
+可以通过[反馈](./feedback.md)中的途径联系我们。最好是 Discord: [https://discord.gg/5M6w5faqjP](https://discord.gg/5M6w5faqjP)
+
+## 游戏数据
+
+绝大部分翻译不定期同步至谷歌表格(需要科学上网)，也可直接github修改提交pr。
 
 [https://docs.google.com/spreadsheets/d/1SSFQgfg-EFqfRzdKnoyRZIB7t6cwc_4MyseFXRdOSqs/edit](https://docs.google.com/spreadsheets/d/1SSFQgfg-EFqfRzdKnoyRZIB7t6cwc_4MyseFXRdOSqs/edit)
 
 非常希望有能人志士帮忙一起翻译! TAT 其中繁/英/韩部分确实严重。
 
 - 部分文件如`enums.json`由于格式问题未同步至谷歌表格
-- 更新后请及时告知我进行合并
-
-## 联系我们
-
-通过[反馈](./feedback.md)中的途径联系我们。
-
-## 游戏数据
+- 修改前通知我进行更新表格，更新后请及时告知我进行合并
 
 目前以日服(JP)数据为基础，并增加国服(CN)、台服(TW)、美服(NA)和韩服(KR)已实装的部分翻译，并增加了部分 Mooncell、AtlasAcademy 和 Fandom 的翻译。为了更好的展示各个区服未实装的资料，欢迎贡献翻译！
 
