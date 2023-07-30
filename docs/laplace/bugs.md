@@ -1,15 +1,30 @@
 # Bugs
 
-Up to v2.4.5
+Up to v2.4.8
 
 ## Known Issues
 
-- Damage cut & Damage up (granted from Melusine ST NP) buffs behave as opposite
-- After an enemy activates a custom skill, subsequent mystic code skill are applied incorrectly 
+- It's 8th anniversary, and I have no rolls left - by Yome
 
 ## Unimplemented Functions
 - damageNpCounter - Aŋra Mainiiu NP
 - counterFunction - Bazett NP
+
+## Fixed in v2.4.8
+
+- Fix a bug that may cause replaceMember to execute incorrectly
+- Supports Tonelico's skills
+  - Rewrote activation logic for effects that require a previous function to succeed. This also fixed Cursed Arm's NP
+
+## Fixed in v2.4.7
+
+- Refactor targeting related code logic to fix issues that cause mystic code skills to have incorrect activators in certain situations
+
+## Fixed in v2.4.6
+
+- Damage cut & Damage up (granted from Melusine ST NP) buffs behave as opposite
+- After an enemy activates a custom skill, subsequent mystic code skill are applied incorrectly
+- Supports INDIVIDUALITIE_AND & INDIVIDUALITIE_OR related scripts
 
 ## Fixed in v2.4.5
 
