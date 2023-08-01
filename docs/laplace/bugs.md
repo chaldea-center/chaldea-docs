@@ -4,7 +4,13 @@ Up to v2.4.8
 
 ## Known Issues
 
-- Rewriting attackAfterFunction trigger logic since it doesn't align with Altria (Alter)'s skill strengthen
+- Rewriting attackAfterFunction trigger logic
+  - Altrai (Alter) skill 1 vs NP
+  - Bakin skill 3 vs NP
+  - Koyan of Dark skill 3 vs NP
+  - Hokusai skill 3 vs NP
+  - Bhima skill 3 vs NP
+- OC damage vs Sleep buff
 
 ## Unimplemented Functions
 - damageNpCounter - Aŋra Mainiiu NP
