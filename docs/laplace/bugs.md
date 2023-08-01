@@ -4,7 +4,7 @@ Up to v2.4.8
 
 ## Known Issues
 
-- It's 8th anniversary, and I have no rolls left - by Yome
+- Rewriting attackAfterFunction trigger logic since it doesn't align with Altria (Alter)'s skill strengthen
 
 ## Unimplemented Functions
 - damageNpCounter - Aŋra Mainiiu NP
