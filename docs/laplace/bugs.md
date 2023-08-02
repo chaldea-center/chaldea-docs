@@ -1,8 +1,11 @@
 # Bugs
 
-Up to v2.4.8
+Up to v2.4.9
 
-## Known Issues
+## Unimplemented Functions
+- damageNpCounter - Aŋra Mainiiu NP
+
+## Fixed in v2.4.9
 
 - Rewriting attackAfterFunction trigger logic
   - Altrai (Alter) skill 1 vs NP
@@ -11,10 +14,7 @@ Up to v2.4.8
   - Hokusai skill 3 vs NP
   - Bhima skill 3 vs NP
 - OC damage vs Sleep buff
-
-## Unimplemented Functions
-- damageNpCounter - Aŋra Mainiiu NP
-- counterFunction - Bazett NP
+- counterFunction - Bazett NP test
 
 ## Fixed in v2.4.8
 
