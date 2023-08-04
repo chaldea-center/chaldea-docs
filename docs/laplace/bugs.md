@@ -3,6 +3,7 @@
 Up to v2.4.9
 
 ## Unimplemented Functions
+
 - damageNpCounter - Aŋra Mainiiu NP
 
 ## Fixed in v2.4.9
@@ -39,7 +40,6 @@ Up to v2.4.9
 - Certain skills that impose rarity constraints do not actually check for rarity
 - functionWaveStart - usually used by enemies / scripted events to trigger skills at the start of a wave
 
-
 ## Fixed in v2.4.4
 
 - Servant HP Foufou is capped at 20000
@@ -62,7 +62,7 @@ Up to v2.4.9
 ## Fixed in v2.3.6
 
 - Proper buff turn duration counting to fix issues related to endOfTurn buffs end one turn early than expected
-- gainNpIndividualSum now properly counts traits from specified targets 
+- gainNpIndividualSum now properly counts traits from specified targets
 
 ## Fixed in v2.3.5
 

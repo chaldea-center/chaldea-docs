@@ -1,12 +1,14 @@
 # NP Damage Ranking
 
 ### Select Targets
+
 - **(Recommended)** In any quest detail page, click on enemy icon then select NP Damage from the top right menu to set
   it as the target
 - Edit dummy target directly
   - Needs decent knowledge of FGO data structure, mainly traits & supereffective damage
 
 ### Options
+
 - Support Servant: Skill levels are set to 10/10/10, does not use NP, and will be removed from team once done casting skills
 - Game Server: Determines strengthen status
 - Player Data: Whether to use data from current plan to setup servants
@@ -23,7 +25,9 @@
     AOE Buster NP, and starts with AOE Buster NP directly. These three are also ranked separately
 
 ### Ranking
+
 Click on each lane to check parameters
+
 - Click on the icon in the top right corner for filtering
 - After checking parameters, can click Details to view actions performed
 - NP Gain arrow means there are NP gained not from the NP damage itself. E.g. Space Ishtar

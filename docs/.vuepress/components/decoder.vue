@@ -48,7 +48,7 @@ export default {
       try {
         this.errorHint = null
         this.vout = unescape(
-          decodeURIComponent(escape(window.atob(decodeURIComponent(this.vin))))
+          decodeURIComponent(escape(window.atob(decodeURIComponent(this.vin)))),
         )
       } catch (error) {
         this.errorHint = error

@@ -16,14 +16,16 @@ import {
 export default defineUserConfig({
   lang: 'en-US',
   title: 'Chaldea',
-  description: 'Chaldea - Yet Another Planner & Battle Simulator for Fate/Grand Order',
+  description:
+    'Chaldea - Yet Another Planner & Battle Simulator for Fate/Grand Order',
   // dest: 'dist',
   head: head,
   locales: {
     '/': {
       lang: 'en-US',
       title: 'Chaldea',
-      description: 'Chaldea - Yet Another Planner & Battle Simulator for Fate/Grand Order',
+      description:
+        'Chaldea - Yet Another Planner & Battle Simulator for Fate/Grand Order',
     },
     '/zh/': {
       lang: 'zh-CN',
@@ -102,7 +104,8 @@ export default defineUserConfig({
           'meta',
           {
             property: 'og:description',
-            content: 'Chaldea - Yet Another Planner & Battle Simulator for Fate/Grand Order',
+            content:
+              'Chaldea - Yet Another Planner & Battle Simulator for Fate/Grand Order',
           },
         ])
       },

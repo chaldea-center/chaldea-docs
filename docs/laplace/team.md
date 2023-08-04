@@ -9,9 +9,9 @@ For now there are four different ways to choose a quest:
    icon in the picture below)
 3. Input Atlas ID or URL: **93000002/3** represents a quest with ID 93000002 and phase 3. Aside from this format, the following
    url pattern also works. This is limited to get data from JP and NA servers only
-    - https://cn.chaldea.center/quest/93000002
-    - https://apps.atlasacademy.io/db/JP/quest/93000002/3
-    - Detailed explanation can be found in [FAQ](faq.md#what-is-atlas-db-url)
+   - https://cn.chaldea.center/quest/93000002
+   - https://apps.atlasacademy.io/db/JP/quest/93000002/3
+   - Detailed explanation can be found in [FAQ](faq.md#what-is-atlas-db-url)
 4. Import quest from JSON data. It needs to be structured in Atlas DB format. You can use 'Export JSON' function on any
    quests to see what it looks like. However, unless you know what that means, using this method is not recommended
 
@@ -24,6 +24,7 @@ For now there are four different ways to choose a quest:
 You can use the current selected quest as a template to create custom quests.
 
 Notes:
+
 - After selecting an enemy servant or unit, their traits will be filled automatically. You can continue to edit its traits list
 - Death rate of enemy servants will be filled based on their servant data. However, for enemy servants this value is
   usually less than 1% (most of the time 0.2%)
@@ -40,9 +41,9 @@ Notes:
 3. Player Data: Whether not to use the planned data as default servant settings for favourite servants. Servants not in
    current plan data will use the "Default Lvs" as described above. For detailed explanation of planning, please reference
    [Servant Plan](../guide/servant_plan.md)
-    - Disabled: all servants will use the setting in "Default Lvs"
-    - Current: use the current skill / NP lvs of the current plan 
-    - Target: use the target skill / NP lvs of the current plan
+   - Disabled: all servants will use the setting in "Default Lvs"
+   - Current: use the current skill / NP lvs of the current plan
+   - Target: use the target skill / NP lvs of the current plan
 
 #### Team
 
@@ -55,12 +56,14 @@ Notes:
 #### Shared Teams
 
 This page will list user uploaded teams that cleared the current quest
+
 - Can use the icon on top right corner to filter for certain settings
 - Can use the Details to check the actions done by the uploader
 
 #### Servant And CE Preview
 
 Preview data format is similar to that of the servant lists
+
 - Click the servant/CE icon to modify settings or change selections
 - If there is a buff power up icon (E.g. Castoria in the sample image), then that means this servant has custom skills
 - If there is a friendship icon (E.g. Koyan), then that means this servant is marked as Support / NPC

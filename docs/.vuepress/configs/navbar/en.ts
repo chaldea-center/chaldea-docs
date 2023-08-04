@@ -6,8 +6,8 @@ export const navbarEn: NavbarConfig = [
     link: '/guide/',
   },
   {
-    text: "Laplace",
-    link: "/laplace/",
+    text: 'Laplace',
+    link: '/laplace/',
   },
   {
     text: 'Discord',

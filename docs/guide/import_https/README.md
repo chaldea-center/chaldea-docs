@@ -3,7 +3,7 @@
 ## Contents
 
 - This page: Https sniffing introdution
-- [Login via Account File](./auto_login.md): JP&NA, read 54cc file and login to retrieve data, convenient but at your own risk 
+- [Login via Account File](./auto_login.md): JP&NA, read 54cc file and login to retrieve data, convenient but at your own risk
 - [Stream-iOS](./stream.md): Only for CN/TW sniffing on iOS
 - [HttpCanary-Android](./httpcanary.md): CN/TW on Android
 - [Charles-PC](./charles.md): Android/iOS with Charles(PC)

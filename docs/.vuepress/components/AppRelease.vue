@@ -14,9 +14,7 @@
         style="margin: 0.2em 0; padding: 0.8em"
       >
         <summary>
-          Release Note ({{
-            new Date(release.created_at).toLocaleDateString()
-          }})
+          Release Note ({{ new Date(release.created_at).toLocaleDateString() }})
         </summary>
         <pre class="release-note">{{ release.body.trim() }}</pre>
       </details>
@@ -105,12 +103,12 @@ export default defineComponent({
       console.log(this.all_releases.length)
       let releases = this.all_releases.filter(
         (r) =>
-          (!r.prerelease && r.tag_name.startsWith('v2')) || r.tag_name == 'beta'
+          (!r.prerelease && r.tag_name.startsWith('v2')) ||
+          r.tag_name == 'beta',
       )
       releases = releases.sort(
         (a, b) =>
-          new Date(b.created_at).getTime() -
-          new Date(a.created_at).getTime()
+          new Date(b.created_at).getTime() - new Date(a.created_at).getTime(),
       )
       this.releases = releases
     },
@@ -127,8 +125,8 @@ export default defineComponent({
 
       fetch(
         this.proxy(
-          'https://api.github.com/repos/chaldea-center/chaldea/releases'
-        )
+          'https://api.github.com/repos/chaldea-center/chaldea/releases',
+        ),
       )
         .then((response) => response.json())
         .then((data) => {

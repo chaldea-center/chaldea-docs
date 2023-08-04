@@ -4,7 +4,7 @@
 
 <figcaption style="text-align:center">Battle Simulation</figcaption>
 
-The simulation mostly behaves the same as [FGO Teamup](https://www.fgo-teamup.com), and the backend behaves similarly to 
+The simulation mostly behaves the same as [FGO Teamup](https://www.fgo-teamup.com), and the backend behaves similarly to
 [FGO Simulator](https://github.com/SharpnelXu/FGOSimulator) but with Atlas DB data structure.
 
 ### Normal Operations

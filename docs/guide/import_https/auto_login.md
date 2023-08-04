@@ -5,7 +5,7 @@ Ref: [hexstr/FGODailyBonus](https://github.com/hexstr/FGODailyBonus)。
 Read your account auth file to create login request to FGO server. Then import the response data to chaldea app.
 
 ::: danger Declaimer
-It reads your account auth file! 
+It reads your account auth file!
 Breaking Term of Service (ToS).
 Use in RISK!
 I take no responsibility for anything.
