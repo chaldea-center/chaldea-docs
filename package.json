@@ -4,6 +4,7 @@
   "description": "Documentation of Chaldea - Yet another planner & battle simulator for Fate/GO.",
   "type": "module",
   "main": "index.js",
+  "packageManager": "yarn@3.6.1",
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs --clean-cache",
@@ -27,8 +28,8 @@
     "prettier": "^2.8.4",
     "prettier-config-vuepress": "^4.0.0",
     "vuepress": "2.0.0-beta.61",
-    "vuepress-vite": "2.0.0-beta.61",
     "vuepress-plugin-seo2": "2.0.0-beta.152",
-    "vuepress-plugin-sitemap2": "2.0.0-beta.152"
+    "vuepress-plugin-sitemap2": "2.0.0-beta.152",
+    "vuepress-vite": "2.0.0-beta.61"
   }
 }
