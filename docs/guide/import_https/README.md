@@ -50,6 +50,6 @@ The network traffics are HTTPS encrypted, thus, we need some tricks to hacking i
 
 ### Cert-pinning
 
-Further, JP/NA/KR FGO client will validate the certificate before establish https connection, so the above CA cert will be rejected. ~~Now we need to modify the client app to remove the https cert validation. This doc will use the apk mod by [rayshift.io](https://rayshift.io). Obviously, Android is supported and only JP and NA(EN) version mods are provided.~~
+Further, JP/NA/KR FGO client will validate the certificate before establish https connection, so the above CA cert will be rejected.
 
 For CN/TW version, you don't this step, and both Android and iOS version of original FGO clients support https sniffing.

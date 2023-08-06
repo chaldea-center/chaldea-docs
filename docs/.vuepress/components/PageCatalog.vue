@@ -31,10 +31,10 @@ type IState = {
 }
 
 export default {
-  data() {
+  data(): IState {
     return {
       contents: [],
-    } as IState
+    }
   },
   mounted() {
     // ##=h2, ###=h3
@@ -100,12 +100,4 @@ export default {
 }
 </script>
 
-<style>
-textarea {
-  width: 100%;
-  padding: 8px 12px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  resize: vertical;
-}
-</style>
+<style></style>

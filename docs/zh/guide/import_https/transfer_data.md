@@ -40,8 +40,6 @@ Android 系统的 FGO**存档目录**下的 d713 等子文件夹为资源文件�
 
 - 日服: `com.aniplex.fategrandorder`
 - 美服: `com.aniplex.fategrandorder.en`
-- 日服 BetterFGO: `io.rayshift.betterfgo`
-- 美服 BetterFGO: `io.rayshift.betterfgo.en`
 
 ### 导出 iOS 存档
 

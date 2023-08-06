@@ -25,8 +25,6 @@ The `<package>` name for different apk is:
 
 - JP: `com.aniplex.fategrandorder`
 - NA: `com.aniplex.fategrandorder.en`
-- JP BetterFGO: `io.rayshift.betterfgo`
-- NA BetterFGO: `io.rayshift.betterfgo.en`
 
 ### Extract iOS Data
 
