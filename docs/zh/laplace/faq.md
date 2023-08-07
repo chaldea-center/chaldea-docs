@@ -50,7 +50,9 @@ Chaldea 使用 [Atlas Academy DB](https://apps.atlasacademy.io/db/) 作为数据
 
 ### 查看详细buff
 
-除了点击从者头像外或查看debug log外，点击战斗记录的数值即可查看针对每个目标的具体buff
+指令卡货宝具攻击后点击受击对象下面的**DMG/NP/Star**查看最终计算的各个buff总量。
+
+无法在我方从者目前状态中显示当前总buff量：由于许多buff存在限制，如对龙、仅水边场地、仅Quick卡等，即使统计了数值也是不准确的。
 
 ### 兽尼禄无法特攻
 
