@@ -2,6 +2,9 @@
 
 Up to v2.4.9
 
+## Known Issues
+- Andersen skill upgrade's check on non-standard alignment servants
+
 ## Unimplemented Functions
 
 - damageNpCounter - Aŋra Mainiiu NP
