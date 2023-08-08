@@ -1,6 +1,6 @@
 ---
 home: true
-title: Chaldea docs
+title: Chaldea - Another Planner & 3T Simulator for Fate/GO
 heroImage: /images/chaldea.png
 heroText: Chaldea
 tagline: Yet Another Planner and Battle Simulator for Fate/GO

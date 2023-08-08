@@ -1,4 +1,4 @@
-# Laplace
+# Laplace - 3T模拟器
 
 <a href="#">事象記録電脳魔・ラプラス</a>
 

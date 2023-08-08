@@ -1,6 +1,6 @@
 ---
 home: true
-title: Chaldea文档
+title: Chaldea - FGO素材规划&3T模拟
 heroImage: /images/chaldea.png
 heroText: Chaldea
 tagline: 用于FGO的素材规划&战斗模拟软件
