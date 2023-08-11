@@ -124,11 +124,11 @@ export default defineComponent({
             const href = ele.children[1]
                 .getElementsByTagName('a')[0]
                 .getAttribute('href'),
-              size = ele.children[2].getAttribute('data-order'),
+              size = ele.children[2].getAttribute('data-size'),
               date = ele.children[3]
                 .getElementsByTagName('time')[0]
                 .getAttribute('datetime')
-            if (!href) continue
+            if (!href || !href.endsWith('.apk')) continue
             const name = href.split('/').at(-1) || href
             const match = name.match(/v(\d+)\.(\d+)\.(\d+)(\..+)?(?=\.apk)/)
             data.push({
