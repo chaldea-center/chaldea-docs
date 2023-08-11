@@ -68,6 +68,7 @@ export const head: HeadConfig[] = [
     `var _hmt = _hmt || [];
       (function() {
         if(_need_redirect) return;
+        if(_hmt.id) return;  // avoid dup injection
         var hm = document.createElement("script");
         hm.src = "https://hm.baidu.com/hm.js?bb56c04bd266194546d3e8b96ba9d6c2";
         var s = document.getElementsByTagName("script")[0]; 

@@ -5,11 +5,22 @@
 - 本页：抓包介绍
 - [模拟登陆](./auto_login.md): 日服&美服 ，读取 54cc 账号文件实现账号登录并获取数据，最快捷但风险自理
 - [Stream-iOS](./stream.md): 国服/台服 iOS 抓包教程
-- [HttpCanary-Android](./httpcanary.md): Android 抓包教程
-- [Charles 版教程-PC](./charles.md): Android/iOS 配合 Charles(PC)教程
 - [mitmproxy 版教程-PC](./mitmproxy.md): Android/iOS 配合 mitmproxy(PC)教程
+- [Charles 版教程-PC](./charles.md): Android/iOS 配合 Charles(PC)教程
+- [HttpCanary-Android](./httpcanary.md): Android 抓包教程
 - [Quantumult X-iOS](./quantumultx.md): 国服&台服 iOS 抓包（付费 app）
 - [迁移数据](./transfer_data.md): 日服/美服多客户端共存
+
+## 如何选择？
+
+- 日服/美服: 模拟登录，目前唯一方法
+- 国服/台服(注意国服iOS和Android已经可以互登):
+  - iOS: [Stream](./stream.md)! 5分钟搞定！
+  - Android: [mitmproxy](./mitmproxy.md) > [Charles](./charles.md)
+
+以上方法基于目前客户端版本可用，并不保证适用于未来的客户端更新。
+
+## 简介
 
 ::: warning
 日服/美服/韩服有证书绑定(cert-pinning)，会拒绝抓包软件的证书，**“必须”** 使用第三方 apk！但是目前没有公开可用的第三方 apk。
@@ -18,10 +29,6 @@
 
 当然如果你有办法自行修改apk，这些方法自然都可行，~~既然技术那么高超了更没有必要看这个文档了~~
 :::
-
-国服和台服没有证书绑定，支持 Android 和 iOS 的官方安装包的抓包。
-
-## 简介
 
 通过抓取用户登陆时的 https 请求的响应内容可以将用户所有的数据导入到 Chaldea 应用中，包括从者信息(灵基再临、圣杯、羁绊、主动技能、附加技能、灵衣、从者硬币)、素材数量以及概念礼装图鉴的情况。第一次使用需要配置抓包软件、代理软件等步骤多一些，成功后第二次就比较简洁。
 

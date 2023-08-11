@@ -3,11 +3,11 @@
 ## Contents
 
 - This page: Https sniffing introdution
-- [Login via Account File](./auto_login.md): JP&NA, read 54cc file and login to retrieve data, convenient but at your own risk
-- [Stream-iOS](./stream.md): Only for CN/TW sniffing on iOS
-- [HttpCanary-Android](./httpcanary.md): CN/TW on Android
-- [Charles-PC](./charles.md): Android/iOS with Charles(PC)
+- [Login via Account File](./auto_login.md): The only method for JP/NA, read 54cc file and login
+- [Stream-iOS](./stream.md): iOS only
 - [mitmproxy-PC](./mitmproxy.md): Android/iOS with mitmproxy(PC)
+- [Charles-PC](./charles.md): Android/iOS with Charles(PC)
+- [HttpCanary-Android](./httpcanary.md): Android only
 - [Transfer Data](./transfer_data.md): Keep JP/NA account data in multiple clients
 
 > All methods except **Login via Account File** doesn't support official JP/NA/KR fgo app.

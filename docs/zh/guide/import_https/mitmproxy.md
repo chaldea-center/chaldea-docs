@@ -11,23 +11,29 @@
   - 下载地址: [https://www.mitmproxy.org/](https://www.mitmproxy.org/)
 - Android only:
   - Android 版本需**小于等于 6**，现在手机基本见不到旧版本的安卓了，模拟器使用 Android 6 较多，可在`设置-关于`中查看 Android 版本
+  - 若Android版本大于6，则需要将抓包软件的证书从胡勇证书移到系统证书（需root）
+    - adb: [https://stackoverflow.com/a/46569793](https://stackoverflow.com/a/46569793)
+    - 各类框架: Magisk等，一般模拟器不支持框架
 
 > 对于 iOS/Android 上的部分设置与 Charles 版教程类似，如有疑惑可前往带截图的 Charles 教程做参考。
 
 ## 设置服务器地址与本机地址
 
-> 2022.01.04 国服更新 2.36.0 支持 iOS/Android 互登，目标域名更改为`line3-s2-xxx-fate.bilibiligame.net`，但仍有可能依旧为`line1`。
-> 若没有抓到可尝试更改`line3`/`line1`。
+> 2022.01.04 国服更新 2.36.0 支持 iOS/Android 互登。
+> 
+> 目标域名`line3-s2-xxx-fate.bilibiligame.net`中
+> `line3-s2`会根据用户/地域的差别分配不同的数字，
+> 若没有抓到可尝试更改`line3`/`line1`/`line2`。
 
 编辑`fgoproxy.ini`：
 
 1. 将`server=***`的地址替换为对应服务器地址
    - 国服 b 服: `https://line3-s2-bili-fate.bilibiligame.net`
    - 国服 iOS 服: `https://line3-s2-ios-fate.bilibiligame.net`
-   - 国服渠道服: 未测试
+   - 国服渠道服: 未测试，欢迎渠道服的master用Charles测试后告知！
    - 台服: `https://line3-s1-all.fate-go.com.tw`
-   - 日服: `https://game.fate-go.jp`
-   - 美服: `https://game.fate-go.us`
+   - ~~日服: `https://game.fate-go.jp`~~ 暂不可用
+   - ~~美服: `https://game.fate-go.us`~~ 暂不可用
 2. 设置电脑的本机地址`ip`为：
    - Android: 同下一步的网关/DNS/电脑 ip
    - iOS: 局域网下的电脑 ip
@@ -49,7 +55,7 @@
    - DNS 1=10.0.2.2
    - DNS 2=（留空）
 
-注意，若使用其他模拟器，可以尝试将上述的**10.0.2.\***替换成以下值
+注意，若使用其他模拟器，可以尝试将上述的 **10.0.2.\*** 替换成以下值
 
 | 模拟器 | IP            | DNS/网关     |
 | ------ | ------------- | ------------ |
@@ -57,7 +63,7 @@
 | 夜神   | 172.17.100.15 | 172.17.100.2 |
 | 逍遥   | 10.0.3.15     | 10.0.3.2     |
 
-> 除 MuMu 外的模拟器未验证，若抓包失败，不确保可用性。
+> 百度搜的，除 MuMu 外的模拟器未验证，不确保可用性。模拟器IP一般可在模拟器的信息或安卓设置里查询到，网关与IP一般仅最后一位不同。
 
 ### 安装证书
 
