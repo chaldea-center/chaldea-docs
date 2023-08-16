@@ -1,6 +1,6 @@
 ---
 home: true
-title: Chaldea - Another Planner & 3T Simulator for Fate/GO
+title: Chaldea - Another Planner & Battle Simulator for Fate/GO
 heroImage: /images/chaldea.png
 heroText: Chaldea
 tagline: Yet Another Planner and Battle Simulator for Fate/GO
@@ -22,7 +22,7 @@ features:
     details: Servant ascension, active/append skills and palingenesis. Limit events, main story, exchange tickets and more to explore.
   - title: Free Quest & Mission Solver
     details: Give the best free quest farming solution and efficiency comparison for item demands and master/event missions.
-  - title: Battle Simulator
+  - title: 3T Simulator
     details: Laplace can simulate battles on any quests with detailed damage/NP/star calculation, help building your 3T farming team.
   - title: Cross Platform
     details: Support Web, iOS, Android, Windows, macOS and Linux, with multi-device synchronization. Plan your chaldea everywhere.

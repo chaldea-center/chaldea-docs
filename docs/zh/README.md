@@ -22,8 +22,8 @@ features:
     details: 从者再临、主动/追加技能、灵衣、圣杯转临，活动明细、交换券等等应有尽有。
   - title: Free本&周常任务规划
     details: 根据素材/任务需求求解最优刷本组合、关卡效率对比。同时也支持活动任务！
-  - title: 战斗模拟
-    details: Laplace提供关卡组队及战斗流程的模拟，支持宝具卡&指令卡的伤害、NP回收、星掉落计算。
+  - title: 3T模拟器
+    details: Laplace战斗模拟器提供关卡组队及战斗流程的模拟，支持宝具卡&指令卡的伤害、NP回收、星掉落计算。
   - title: 多平台支持
     details: 支持Web、iOS、Android、Windows、macOS和Linux全平台。多设备同步，手机电脑两不误。
   - title: 多语言支持
