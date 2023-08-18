@@ -36,6 +36,8 @@ yarn docs:dev
 # Format
 yarn docs:format
 # or
+npm run docs:format
+# or
 prettier --write .
 
 # Make sure build passed

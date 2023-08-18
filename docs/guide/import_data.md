@@ -76,8 +76,8 @@ Currently only support skill levels, ascension level and grails are not included
 
 ## FGO Simulator - Material
 
-Import from [http://fgosimulator.webcrow.jp/Material/](http://fgosimulator.webcrow.jp/Material/)
-The new site: [https://fgosim.github.io/Material](https://fgosim.github.io/Material)
+Import from <http://fgosimulator.webcrow.jp/Material/>
+The new site: <https://fgosim.github.io/Material>
 
 1. On the website, click **My Chaldea-引継ぎコード**, select **サーヴァント/アイテム** and **発行**
 2. Copy the text to the input field, then parse it to import

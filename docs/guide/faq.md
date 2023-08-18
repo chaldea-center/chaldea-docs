@@ -41,7 +41,7 @@ In settings, change web renderer from canvas to html. Html renderer is a little 
 
 ## Anti-Virus
 
-1. this is an open-source project [https://github.com/chaldea-center/chaldea](https://github.com/chaldea-center/chaldea)
+1. this is an open-source project <https://github.com/chaldea-center/chaldea>
 2. Trust the app or exclude its folder in Anti-Virus software
 
 ## Wrong Text/Data

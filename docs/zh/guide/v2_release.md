@@ -23,10 +23,10 @@ v1 与 v2 数据兼容性不好，当升级大版本时，目前仅提供基础�
 
 目前提供两个网址可供访问:
 
-- [https://cn.chaldea.center](https://cn.chaldea.center)
-- [https://chaldea.center](https://chaldea.center)
+- <https://cn.chaldea.center>
+- <https://chaldea.center>
 
-如果在国内访问，请使用 [https://cn.chaldea.center](https://cn.chaldea.center)，否则出现加载过慢、字体无法显示等问题。
+如果在国内访问，请使用 <https://cn.chaldea.center>，否则出现加载过慢、字体无法显示等问题。
 同时在设置中选择 Chaldea 服务器为**国内**
 
 ::: warning
@@ -37,7 +37,7 @@ v1 与 v2 数据兼容性不好，当升级大版本时，目前仅提供基础�
 
 预览版可从 github 下载，提供 Android/Windows/Linux 最新的预览版:
 
-- [https://github.com/chaldea-center/chaldea/releases/beta](https://github.com/chaldea-center/chaldea/releases/beta)
+- <https://github.com/chaldea-center/chaldea/releases/beta>
 
 该预览版随代码更新自动更新，因此版本号可能不会变化，覆盖安装即可。
 

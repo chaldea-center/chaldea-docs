@@ -18,7 +18,7 @@ For Android 6 or lower:
 For Android 7-10(root required) 0. Turn on Developer Mode and Debugging Mode in Android Settings
 
 1. Install CA cert in HttpCanary
-2. download adb from [https://developer.android.com/studio/releases/platform-tools](https://developer.android.com/studio/releases/platform-tools), add it to Path(environment variable)
+2. download adb from <https://developer.android.com/studio/releases/platform-tools>, add it to Path(environment variable)
 3. open CMD or PowerShell, make sure `adb` or `./adb` works
 4. connect mobile phone via USB, or connect emulator via `adb connect 127.0.0.1:xxxx`
 

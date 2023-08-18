@@ -22,7 +22,7 @@ Main Expenditures
 
 Check the detailed report and donator list on the following online sheet:
 
-[https://docs.qq.com/sheet/DVG5FcFFSUWF2bURC](https://docs.qq.com/sheet/DVG5FcFFSUWF2bURC)
+<https://docs.qq.com/sheet/DVG5FcFFSUWF2bURC>
 
 | **Item**      | **Total(CNY)** | **Total(USD)** | **CNY only** | **USD only** |
 | ------------- | -------------- | -------------- | ------------ | ------------ |

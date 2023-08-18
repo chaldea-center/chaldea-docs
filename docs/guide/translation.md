@@ -4,13 +4,13 @@ REALLLLLLLLY WANTED!!!!!!!!!!
 
 ## Contact us
 
-Please contact me via [feedback page](./feedback.md). Discord is preferred: [https://discord.gg/5M6w5faqjP](https://discord.gg/5M6w5faqjP)
+Please contact me via [feedback page](./feedback.md). Discord is preferred: <https://discord.gg/5M6w5faqjP>
 
 ## Game Data
 
 Most translations will be synced to Google Spreadsheet:
 
-[https://docs.google.com/spreadsheets/d/1SSFQgfg-EFqfRzdKnoyRZIB7t6cwc_4MyseFXRdOSqs/edit](https://docs.google.com/spreadsheets/d/1SSFQgfg-EFqfRzdKnoyRZIB7t6cwc_4MyseFXRdOSqs/edit)
+<https://docs.google.com/spreadsheets/d/1SSFQgfg-EFqfRzdKnoyRZIB7t6cwc_4MyseFXRdOSqs/edit>
 
 Looking forward to your contribution!!! Especially English/Traditional Chinese/Korean parts.
 
@@ -21,7 +21,7 @@ Current based on JP data, added CN/TW/NA/KR translations of released part for ea
 
 In order to display future data in other regions, please help us with the translation!
 
-Translation files locate at [https://github.com/chaldea-center/chaldea-data/tree/main/mappings](https://github.com/chaldea-center/chaldea-data/tree/main/mappings)
+Translation files locate at <https://github.com/chaldea-center/chaldea-data/tree/main/mappings>
 
 These are all json files, the basic format is:
 
@@ -87,8 +87,8 @@ The most important files are `enums.json` and `trait.json`, all fields need tran
 You should check the trait description in game data then fill the trait.
 Try search on AtlasAcademy and switch regions to check descriptions:
 
-- [https://apps.atlasacademy.io/db/JP/buffs?tvals=1](https://apps.atlasacademy.io/db/JP/buffs?tvals=1)
-- [https://apps.atlasacademy.io/db/JP/funcs?tvals=2](https://apps.atlasacademy.io/db/JP/funcs?tvals=2)
+- <https://apps.atlasacademy.io/db/JP/buffs?tvals=1>
+- <https://apps.atlasacademy.io/db/JP/funcs?tvals=2>
 
 4 - `override_mapping.json`
 
@@ -115,7 +115,7 @@ Attention, only file_name without `.json` suffix here. And only add fields need 
 
 App ui text also support multi-language, besides the official 5 languages, we can extend support for other languages too.
 
-Translation files locate at [https://github.com/chaldea-center/chaldea/tree/main/lib/l10n](https://github.com/chaldea-center/chaldea/tree/main/lib/l10n)
+Translation files locate at <https://github.com/chaldea-center/chaldea/tree/main/lib/l10n>
 
 - `intl_ar.arb` - Arabic(RTL)
 - `intl_en.arb` - English

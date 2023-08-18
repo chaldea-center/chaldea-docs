@@ -22,10 +22,10 @@ This upgrade brings Progressive Web App(PWA) support. Most of features have been
 
 Website domain:
 
-- [https://chaldea.center](https://chaldea.center)
-- [https://cn.chaldea.center](https://cn.chaldea.center)
+- <https://chaldea.center>
+- <https://cn.chaldea.center>
 
-If you are inside China mainland, [https://cn.chaldea.center](https://cn.chaldea.center) is recommended, and set Chaldea server to CN.
+If you are inside China mainland, <https://cn.chaldea.center> is recommended, and set Chaldea server to CN.
 
 ::: warning
 However, the web app has pooooor performance, especially on mobile browser. Crash ~~sometimes~~ frequently.
@@ -36,7 +36,7 @@ Data saved in browser local storage(IndexedDB), may be cleared by browser unexpe
 You can download installer of preview version from github release for beta version(Preview), it will be updated once souce code changed.
 Only Android/Windows/Linux available for beta version.
 
-- [https://github.com/chaldea-center/chaldea/releases/beta](https://github.com/chaldea-center/chaldea/releases/beta)
+- <https://github.com/chaldea-center/chaldea/releases/beta>
 
 ## Web Renderer
 
@@ -78,5 +78,5 @@ You can help translation through:
 ## Feedback
 
 - Email: [chaldea@narumi.cc](mailto:chaldea@narumi.cc)
-- Discord: [https://discord.gg/5M6w5faqjP](https://discord.gg/5M6w5faqjP)
-- Github: [https://github.com/chaldea-center/chaldea/issues](https://github.com/chaldea-center/chaldea/issues)
+- Discord: <https://discord.gg/5M6w5faqjP>
+- Github: <https://github.com/chaldea-center/chaldea/issues>

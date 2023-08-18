@@ -67,9 +67,9 @@
 
 ## FGO Simulator - Material
 
-导入[http://fgosimulator.webcrow.jp/Material/](http://fgosimulator.webcrow.jp/Material/)的数据。
+导入<http://fgosimulator.webcrow.jp/Material/>的数据。
 
-新版网站[https://fgosim.github.io/Material](https://fgosim.github.io/Material)
+新版网站<https://fgosim.github.io/Material>
 
 1. 在网站上点击 **My Chaldea-引継ぎコード**, 选择**発行**，将素材或从者信息粘贴至应用内文本框
 2. 点击解析数据自动解析从者信息或素材信息，导入即可

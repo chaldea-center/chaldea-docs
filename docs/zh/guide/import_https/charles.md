@@ -11,7 +11,7 @@ Android 可使用[HttpCanary-Android](./httpcanary.md)教程，证书安装完�
 ## 所需软件或工具
 
 - Charles: 提供 Windows、macOS 以及 Linux 版，官方正版试用版存在单次使用 30 分钟的限制，但功能够用
-  - 下载地址: [https://www.charlesproxy.com/download/](https://www.charlesproxy.com/download/)
+  - 下载地址: <https://www.charlesproxy.com/download/>
 - 全局 http 代理软件:
   - iOS: `Potatso Lite`, 免费应用; `shadowrocket`付费应用。均需非国区账号下载，其他可用软件欢迎补充~~有很多~~。
   - Android: `Drony v1.3.x`, 免费应用, [下载地址(密码:chaldea)](https://wws.lanzoui.com/b01uoc3qh)。百度下载 Drony 可以下载到各式各样文件体积的版本，有些是不能用的，建议直接从网盘下载。
@@ -21,8 +21,8 @@ Android 可使用[HttpCanary-Android](./httpcanary.md)教程，证书安装完�
   - 韩服没辙
 - Android only: Android 版本大于 6 时不信任用户证书，可选以下解决方案
   1. 使用 Android 版本**小于等于 6**的手机或模拟器，可在`设置-关于`中查看 Android 版本
-  2. root 状态下通过 adb 手动将证书塞进系统证书目录: [https://stackoverflow.com/a/46569793](https://stackoverflow.com/a/46569793)
-  3. 类似 2，通过 magisk 等框架自动复制用户证书至系统证书: magisk 需 Android8.1 及以上, [https://sekibetu.com/sniff01.html](https://sekibetu.com/sniff01.html)
+  2. root 状态下通过 adb 手动将证书塞进系统证书目录: <https://stackoverflow.com/a/46569793>
+  3. 类似 2，通过 magisk 等框架自动复制用户证书至系统证书: magisk 需 Android8.1 及以上, <https://sekibetu.com/sniff01.html>
 - iOS only:
   - 只有国服和台服可用
 
@@ -45,7 +45,7 @@ Android 可使用[HttpCanary-Android](./httpcanary.md)教程，证书安装完�
 <figcaption style="text-align:center">Charles配置</figcaption>
 
 ::: details
-[https://zhile.io/2017/07/07/charles-proxy-usage-and-license.html](https://zhile.io/2017/07/07/charles-proxy-usage-and-license.html)
+<https://zhile.io/2017/07/07/charles-proxy-usage-and-license.html>
 ::: 0. 确保手机与电脑处于同一局域网，或模拟器与 Charles 在同一电脑，关闭电脑上其他一切 ⅤΡΝ 等代理软件
 
 1. `Help-Local IP Address`, 记录显示的本机 IPv4 地址，例如`192.168.0.5`

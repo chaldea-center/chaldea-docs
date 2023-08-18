@@ -8,11 +8,11 @@
 
 - 脚本: [蓝奏云网盘](https://wwe.lanzoui.com/b01uoc3qh), 密码 chaldea, 下载并解压`mitmproxy抓包.zip`，压缩包中已包含 Windows 版 mitmproxy/dump.exe 可执行文件
 - mitmproxy: 同样提供 Windows、macOS 以及 Linux 版，开源软件。若需要可从官网更新新版或下载其他系统版本:
-  - 下载地址: [https://www.mitmproxy.org/](https://www.mitmproxy.org/)
+  - 下载地址: <https://www.mitmproxy.org/>
 - Android only:
   - Android 版本需**小于等于 6**，现在手机基本见不到旧版本的安卓了，模拟器使用 Android 6 较多，可在`设置-关于`中查看 Android 版本
   - 若Android版本大于6，则需要将抓包软件的证书从胡勇证书移到系统证书（需root）
-    - adb: [https://stackoverflow.com/a/46569793](https://stackoverflow.com/a/46569793)
+    - adb: <https://stackoverflow.com/a/46569793>
     - 各类框架: Magisk等，一般模拟器不支持框架
 
 > 对于 iOS/Android 上的部分设置与 Charles 版教程类似，如有疑惑可前往带截图的 Charles 教程做参考。
@@ -20,7 +20,7 @@
 ## 设置服务器地址与本机地址
 
 > 2022.01.04 国服更新 2.36.0 支持 iOS/Android 互登。
-> 
+>
 > 目标域名`line3-s2-xxx-fate.bilibiligame.net`中
 > `line3-s2`会根据用户/地域的差别分配不同的数字，
 > 若没有抓到可尝试更改`line3`/`line1`/`line2`。

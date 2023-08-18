@@ -6,7 +6,7 @@ HttpCanary is recommended for Android sniffing. It doesn't need PC or the first 
 
 ## Requirements
 
-- Charles: support Windows, macOS, Linux, you can download from official website: [https://www.charlesproxy.com/download/](https://www.charlesproxy.com/download/)
+- Charles: support Windows, macOS, Linux, you can download from official website: <https://www.charlesproxy.com/download/>
 - Global http proxy app
   - iOS: `Potatso Lite`(free), `shadowrocket`(paid) or others you know
   - Android: `Drony v1.3.x`(free) or other you know, you can also download it from [cloud drive(password:chaldea)](https://wws.lanzoui.com/b01uoc3qh)
@@ -16,7 +16,7 @@ HttpCanary is recommended for Android sniffing. It doesn't need PC or the first 
   - KR: not supported
 - Android only: Android 7+ won't trust user cert, you can choose one of these solution
   1. Use Android 6(or lower)
-  2. \[root\] Install user cert as system cert via ADB: [https://stackoverflow.com/a/46569793](https://stackoverflow.com/a/46569793)
+  2. \[root\] Install user cert as system cert via ADB: <https://stackoverflow.com/a/46569793>
   3. \[root\] magisk+JustTrustMe module
 - iOS only:
   - only CN/TW supported!
@@ -40,7 +40,7 @@ There may be strange problems in other emulators. For example, BlueStacks doesn'
 <figcaption style="text-align:center">Charles Configurations</figcaption>
 
 ::: details
-[https://zhile.io/2017/07/07/charles-proxy-usage-and-license.html](https://zhile.io/2017/07/07/charles-proxy-usage-and-license.html)
+<https://zhile.io/2017/07/07/charles-proxy-usage-and-license.html>
 :::
 
 0. Make sure that your Android/iOS device and the computer are in the same local area network, or the emulator and Charles are on the same computer.

@@ -23,7 +23,7 @@
 
 总收支如下，详细**收支明细**以及**捐赠名单**可参考以下在线文档:
 
-[https://docs.qq.com/sheet/DVG5FcFFSUWF2bURC](https://docs.qq.com/sheet/DVG5FcFFSUWF2bURC)
+<https://docs.qq.com/sheet/DVG5FcFFSUWF2bURC>
 
 <!-- https://tableconvert.com/zh-cn/ -->
 

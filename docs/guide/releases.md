@@ -14,9 +14,9 @@ Tips: `beta` version is the latest preview version, updated when source code got
 
 To download the latest stable version:
 
-- Android: [https://worker.chaldea.center/releases/latest/android](https://worker.chaldea.center/releases/latest/android)
-- Windows: [https://worker.chaldea.center/releases/latest/windows](https://worker.chaldea.center/releases/latest/windows)
-- Linux: [https://worker.chaldea.center/releases/latest/linux](https://worker.chaldea.center/releases/latest/linux)
+- Android: <https://worker.chaldea.center/releases/latest/android>
+- Windows: <https://worker.chaldea.center/releases/latest/windows>
+- Linux: <https://worker.chaldea.center/releases/latest/linux>
 
 <hr/>
 <AppRelease/>

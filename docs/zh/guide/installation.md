@@ -2,15 +2,15 @@
 
 ### 系统要求
 
-| 平台      | 最低要求                                               |
-| :-------- | :----------------------------------------------------- |
-| Android   | Android 6.0 (API level 23)                             |
-| iOS       | iOS 11.0                                               |
-| Windows   | Windows 8 (64-bit), x86-64 based <sup>1</sup>          |
-| macOS     | macOS 10.14                                            |
-| Linux     | Debian 10, 64-bit <sup>2</sup>                         |
-| Web(海外) | [https://chaldea.center](https://chaldea.center)       |
-| Web(国内) | [https://cn.chaldea.center](https://cn.chaldea.center) |
+| 平台      | 最低要求                                      |
+| :-------- | :-------------------------------------------- |
+| Android   | Android 6.0 (API level 23)                    |
+| iOS       | iOS 11.0                                      |
+| Windows   | Windows 8 (64-bit), x86-64 based <sup>1</sup> |
+| macOS     | macOS 10.14                                   |
+| Linux     | Debian 10, 64-bit <sup>2</sup>                |
+| Web(海外) | <https://chaldea.center>                      |
+| Web(国内) | <https://cn.chaldea.center>                   |
 
 > <sup>1</sup> Windows 7 SP1 理论可运行，但可能存在无法启动的未知错误
 >
@@ -33,7 +33,7 @@
 ### Google Play
 
 [<img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' width="137.5"/>](https://play.google.com/store/apps/details?id=cc.narumi.chaldea)
-[<img alt='Get it on F-droid' src='https://fdroid.gitlab.io/artwork/badge/get-it-on.png' width="137.5px"/>](https://f-droid.org/packages/cc.narumi.chaldea.fdroid/)
+[<img alt='Get it on F-droid' src='https://fdroid.gitlab.io/artwork/badge/get-it-on.png' width="137.5"/>](https://f-droid.org/packages/cc.narumi.chaldea.fdroid/)
 
 [Get it on Google Play](https://play.google.com/store/apps/details?id=cc.narumi.chaldea)
 
@@ -58,7 +58,7 @@ v1.x 用户请阅读[注意事项](#安装注意事项)
 
 蓝奏云网盘，~~随缘上传，更新不及时~~ 不再上传，请通过历史版本下载。
 
-- [https://wws.lanzoui.com/b01tuahmf](https://wws.lanzoui.com/b01tuahmf) 密码:chaldea
+- <https://wws.lanzoui.com/b01tuahmf> 密码:chaldea
 
 ## 注意事项
 

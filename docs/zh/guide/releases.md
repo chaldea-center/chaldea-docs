@@ -14,9 +14,9 @@
 
 最新稳定版下载地址:
 
-- Android: [https://worker-cn.chaldea.center/releases/latest/android](https://worker-cn.chaldea.center/releases/latest/android)
-- Windows: [https://worker-cn.chaldea.center/releases/latest/windows](https://worker-cn.chaldea.center/releases/latest/windows)
-- Linux: [https://worker-cn.chaldea.center/releases/latest/linux](https://worker-cn.chaldea.center/releases/latest/linux)
+- Android: <https://worker-cn.chaldea.center/releases/latest/android>
+- Windows: <https://worker-cn.chaldea.center/releases/latest/windows>
+- Linux: <https://worker-cn.chaldea.center/releases/latest/linux>
 
 <hr/>
 <AppRelease/>

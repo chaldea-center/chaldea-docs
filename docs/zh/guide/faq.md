@@ -43,7 +43,7 @@ UUID: 在“关于 Chaldea”-长按 logo-即可复制 UUID.
 
 ## 杀毒软件
 
-1. 这是开源项目[https://github.com/chaldea-center/chaldea](https://github.com/chaldea-center/chaldea)
+1. 这是开源项目<https://github.com/chaldea-center/chaldea>
 2. 在杀毒软件中排除应用所在文件夹或信任该应用
 
 ## 文本错误

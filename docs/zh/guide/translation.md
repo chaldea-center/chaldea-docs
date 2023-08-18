@@ -4,13 +4,13 @@
 
 ## 联系我们
 
-可以通过[反馈](./feedback.md)中的途径联系我们。最好是 Discord: [https://discord.gg/5M6w5faqjP](https://discord.gg/5M6w5faqjP)
+可以通过[反馈](./feedback.md)中的途径联系我们。最好是 Discord: <https://discord.gg/5M6w5faqjP>
 
 ## 游戏数据
 
 绝大部分翻译不定期同步至谷歌表格(需要科学上网)，也可直接github修改提交pr。
 
-[https://docs.google.com/spreadsheets/d/1SSFQgfg-EFqfRzdKnoyRZIB7t6cwc_4MyseFXRdOSqs/edit](https://docs.google.com/spreadsheets/d/1SSFQgfg-EFqfRzdKnoyRZIB7t6cwc_4MyseFXRdOSqs/edit)
+<https://docs.google.com/spreadsheets/d/1SSFQgfg-EFqfRzdKnoyRZIB7t6cwc_4MyseFXRdOSqs/edit>
 
 非常希望有能人志士帮忙一起翻译! TAT 其中繁/英/韩部分确实严重。
 
@@ -19,7 +19,7 @@
 
 目前以日服(JP)数据为基础，并增加国服(CN)、台服(TW)、美服(NA)和韩服(KR)已实装的部分翻译，并增加了部分 Mooncell、AtlasAcademy 和 Fandom 的翻译。为了更好的展示各个区服未实装的资料，欢迎贡献翻译！
 
-所需翻译的文件位于[https://github.com/chaldea-center/chaldea-data/tree/main/mappings](https://github.com/chaldea-center/chaldea-data/tree/main/mappings)
+所需翻译的文件位于<https://github.com/chaldea-center/chaldea-data/tree/main/mappings>
 
 上述文件均为 JSON 文件，其基本格式如下:
 
@@ -80,8 +80,8 @@
 
 其中特性(trait)翻译建议遵从游戏内文本描述，可从以下网址搜索相应特性描述：
 
-- [https://apps.atlasacademy.io/db/JP/buffs?tvals=1](https://apps.atlasacademy.io/db/JP/buffs?tvals=1)
-- [https://apps.atlasacademy.io/db/JP/funcs?tvals=2](https://apps.atlasacademy.io/db/JP/funcs?tvals=2)
+- <https://apps.atlasacademy.io/db/JP/buffs?tvals=1>
+- <https://apps.atlasacademy.io/db/JP/funcs?tvals=2>
 
 4 - `override_mapping.json`
 
@@ -106,7 +106,7 @@
 
 应用 UI 的文本同样支持以上五种语言，并可扩展至其他语种。急需每一种语言的翻译，包括简中繁中，以韩语日语最缺。
 
-所需翻译的文件位于[https://github.com/chaldea-center/chaldea/tree/main/lib/l10n](https://github.com/chaldea-center/chaldea/tree/main/lib/l10n)
+所需翻译的文件位于<https://github.com/chaldea-center/chaldea/tree/main/lib/l10n>
 
 - `intl_ar.arb` - Arabic, 阿拉伯语(RTL)
 - `intl_en.arb` - English, 英语

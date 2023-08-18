@@ -26,8 +26,8 @@
 
 1. 打开手机开发者选项和调试模式，USB 连接电脑
 2. 下载 adb, 将 adb 路径添加至 Path 环境变量中(可选):
-   - 谷歌官方: [https://developer.android.com/studio/releases/platform-tools](https://developer.android.com/studio/releases/platform-tools)
-   - [https://adbshell.com/downloads](https://adbshell.com/downloads)
+   - 谷歌官方: <https://developer.android.com/studio/releases/platform-tools>
+   - <https://adbshell.com/downloads>
 3. 打开 CMD/PowerShell, 确保 adb 或./adb 可用，执行以下命令
 4. USB 连接手机（adb 会自动连接?），或模拟器 `adb connect 127.0.0.1:xxxx`
 
