@@ -31,6 +31,8 @@
    - 国服 b 服: `https://line3-s2-bili-fate.bilibiligame.net`
    - 国服 iOS 服: `https://line3-s2-ios-fate.bilibiligame.net`
    - 国服渠道服: 未测试，欢迎渠道服的master用Charles测试后告知！
+     - 应用宝: `http://line1-s1-uo-fate.bilibiligame.net` 
+     - 其他渠道未知
    - 台服: `https://line3-s1-all.fate-go.com.tw`
    - ~~日服: `https://game.fate-go.jp`~~ 暂不可用
    - ~~美服: `https://game.fate-go.us`~~ 暂不可用
