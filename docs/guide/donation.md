@@ -24,13 +24,13 @@ Check the detailed report and donator list on the following online sheet:
 
 <https://docs.qq.com/sheet/DVG5FcFFSUWF2bURC>
 
-| **Item**      | **Total(CNY)** | **Total(USD)** | **CNY only** | **USD only** |
-| ------------- | -------------- | -------------- | ------------ | ------------ |
-| 捐赠 Donation | ¥4,398.68      | $655.54        | ¥4,008.36    | $58.17       |
-| 支出 Expense  | -¥6,670.48     | -$994.11       | -¥6,670.48   | /            |
-| 结余/Balance  | -¥2,271.80     | -$338.57       | /            | /            |
+| **Item**     | **Total(CNY)** | **Total(USD)** | **CNY only** | **USD only** |
+| ------------ | -------------- | -------------- | ------------ | ------------ |
+| 捐赠Donation | ¥5,174.21      | $771.12        | ¥4,783.89    | $58.17       |
+| 支出Expense  | -¥8,320.76     | -$1,240.05     | -¥8,320.76   | /            |
+| 结余/Balance | -¥3,146.55     | -$468.93       | /            | /            |
 
-> Updated: 2023/04/01
+> Updated: 2023/08/20
 
 ## Donations
 
