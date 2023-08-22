@@ -38,15 +38,21 @@ With the ability of **iMazing** software, you can backup entire phone then extra
 
 The files under data folder have the different names in iOS and Android. Refer the following table.
 
-| iOS (\*.dat)       | Android | 备注             |
-| ------------------ | ------- | ---------------- |
-| authsave\*         | 54cc79  | login credential |
-| friendcode<br>save | e1a9f8  | user id          |
-| signupsave         | 644b05  | user name?       |
+| iOS (\*.dat)          | Android              | 备注             |
+| --------------------- | -------------------- | ---------------- |
+| authsave<br>authsave2 | 54cc\*\*<br>969b\*\* | login credential |
+| friendcodesave        | e1a9\*\*             | user id          |
+| signupsave            | 644b\*\*             | user name?       |
 
-> in iOS, there may be two files: `autosave.dat` and `autosave2.dat`, they are the same, just duplicate and rename.
+- in iOS, `authsave.dat` and `authsave2.dat` are the same, just duplicate one and rename
+- in Android, `54cc` and `969b` are also the same, delete 969b or duplicate it
+- Full Android filename (**_NO Extension_**):
+  - `54cc790bf952ea710ed7e8be08049531`
+  - `969b46577f365fadeb79ef14cf5d6370`
+  - `e1a9f8e0ff970cc15b1a1d1e31d146db`
+  - `644b05165c512739dc5e70ad513548fe`
 
-The login credential is the only important file, you should retain only this file or 3/4 files above, delete all other files.
+The login credential is the most important file, you should retain only this file or 4 files above, delete all other files (subfolder is safe to keep).
 
 ## Restore Data
 
