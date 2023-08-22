@@ -1,14 +1,36 @@
 # Bugs
 
-Up to v2.4.9
-
-## Known Issues
-
-- Andersen skill upgrade's check on non-standard alignment servants
-
 ## Unimplemented Functions
 
 - damageNpCounter - Aŋra Mainiiu NP
+
+## Known Issues (v2.4.12)
+
+- Command Code triggered buff was processed as passive buff (fixed in beta)
+
+## Fixed in v2.4.12
+
+> Rewrite some code, may bring some bugs!
+
+- Fix Kingprotea skill 3 NP Damage Up
+- Fix Command Seal
+- Fix Serva Fes 2023 event point buff
+- Fix some field buff condition check
+
+## Fixed in v2.4.11
+
+- Support Summer Barghest NP Change buff
+- Fix entry function should only trigger once (Summer Chloe bond CE)
+- Fix team upload ineligibility check
+
+## Fixed in v2.4.10
+
+- Fix CE pin to top not work in Laplace
+- Fix condition check for Andersen skill 3 upgrade and Cnoc na Riabh skill 3
+- Fix summer 2023 point buff
+- Fix move to last member should check actor can act (Summer Chloe S2)
+- [WRONG! originally right but now BUG] Fix entry function should activate multiple times if count >0
+- Fix servant event trait should check limit count (Murasama event bonus in summer 2023)
 
 ## Fixed in v2.4.9
 
