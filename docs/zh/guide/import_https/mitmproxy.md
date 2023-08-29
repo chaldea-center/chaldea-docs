@@ -4,6 +4,8 @@
 
 本文详细介绍借助 mitmproxy 实现 https 抓包的步骤，仅在 Windows 上测试 MuMu 模拟器，其他平台理论可行。
 
+若服务器地址未知或所填服务器地址无效，请使用[Charles](./charles.md)方法。
+
 ## 所需软件或工具
 
 - 脚本: [蓝奏云网盘](https://wwe.lanzoui.com/b01uoc3qh), 密码 chaldea, 下载并解压`mitmproxy抓包.zip`，压缩包中已包含 Windows 版 mitmproxy/dump.exe 可执行文件

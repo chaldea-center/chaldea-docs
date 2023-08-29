@@ -56,10 +56,6 @@ v1.x 用户请阅读[注意事项](#安装注意事项)
 - [Github Releases](https://github.com/chaldea-center/chaldea/releases)
 - [历史版本](./releases.md) 可选代理下载
 
-蓝奏云网盘，~~随缘上传，更新不及时~~ 不再上传，请通过历史版本下载。
-
-- <https://wws.lanzoui.com/b01tuahmf> 密码:chaldea
-
 ## 注意事项
 
 ### Android

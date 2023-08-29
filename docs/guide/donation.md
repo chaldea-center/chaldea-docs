@@ -34,6 +34,12 @@ Check the detailed report and donator list on the following online sheet:
 
 ## Donations
 
+### Patreon
+
+<https://www.patreon.com/Chaldea>
+
+<img src="https://data-cn.chaldea.center/public/image/Patreon-Chaldea.jpg" alt="Patreon" width="240"/>
+
 ### Buy me a coffee
 
 [<img src="/images/kofi2.webp" alt="ko-fi" width="240"/>](https://ko-fi.com/G2G152BDO)
@@ -41,16 +47,22 @@ Check the detailed report and donator list on the following online sheet:
 <!-- ### PayPal.Me
 [<img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png" alt="paypal.me/narumishi" width="240"/>](https://paypal.me/narumishi) -->
 
-### WeChat Pay
+### AFDIAN
 
-::: details Click to show WeChat QRCode
-<img src="/images/wechat_pay.webp" alt="Wechat Pay" width="240"/>
-:::
+<https://afdian.net/a/chaldea-center>
+
+<img src="https://data-cn.chaldea.center/public/image/afdian-ChaldeaCenter.jpeg" alt="AFDIAN" width="240"/>
 
 ### Alipay
 
 ::: details Click to show Alipay QRCode
 <img src="/images/alipay.webp" alt="Alipay" width="240"/>
+:::
+
+### WeChat Pay
+
+::: details Click to show WeChat QRCode
+<img src="/images/wechat_pay.webp" alt="Wechat Pay" width="240"/>
 :::
 
 ## Contact me

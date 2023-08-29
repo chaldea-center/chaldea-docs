@@ -1,6 +1,8 @@
 # LOSTROOM
 
-Introduce some minor features here or features still under development.
+Features on home page can be manually shown or hidden. Hidden ones can be found in LostRoom.
+
+This page, will introduce some minor features or features still under development.
 
 ## EXP Card Calculation
 

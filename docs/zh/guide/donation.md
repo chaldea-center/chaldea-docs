@@ -1,4 +1,4 @@
-# 捐赠
+# 支持与捐赠
 
 如果本项目对你有帮助并希望支持本项目，你可以：
 
@@ -37,17 +37,25 @@
 
 ## 捐赠方式
 
-### WeChat Pay/微信
-
-::: details 点击显示微信二维码
-<img src="/images/wechat_pay.webp" alt="Wechat Pay" width="240"/>
-:::
-
 ### Alipay/支付宝
 
-::: details 点击显示支付宝二维码
 <img src="/images/alipay.webp" alt="Alipay" width="240"/>
-:::
+
+### WeChat Pay/微信
+
+<img src="/images/wechat_pay.webp" alt="Wechat Pay" width="240"/>
+
+### 爱发电
+
+<https://afdian.net/a/chaldea-center>
+
+<img src="https://data-cn.chaldea.center/public/image/afdian-ChaldeaCenter.jpeg" alt="爱发电" width="240"/>
+
+### Patreon
+
+<https://www.patreon.com/Chaldea>
+
+<img src="https://data-cn.chaldea.center/public/image/Patreon-Chaldea.jpg" alt="Patreon" width="240"/>
 
 ### Buy me a coffee
 
