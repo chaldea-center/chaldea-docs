@@ -4,7 +4,13 @@
 
 本文详细介绍借助 mitmproxy 实现 https 抓包的步骤，仅在 Windows 上测试 MuMu 模拟器，其他平台理论可行。
 
-若服务器地址未知或所填服务器地址无效，请使用[Charles](./charles.md)方法。
+::: tip
+2022.01.04 国服更新 2.36.0 支持 iOS/Android 互登。Android操作麻烦可使用iOS设备+[Stream](./stream.md)方法。
+
+关于服务器地址请先阅读[简介-服务器地址](./README.md#服务器地址)
+:::
+
+若服务器地址未知或所有服务器地址无效，请使用[Charles](./charles.md)方法。
 
 ## 所需软件或工具
 
@@ -21,23 +27,9 @@
 
 ## 设置服务器地址与本机地址
 
-> 2022.01.04 国服更新 2.36.0 支持 iOS/Android 互登。
->
-> 目标域名`line3-s2-xxx-fate.bilibiligame.net`中
-> `line3-s2`会根据用户/地域的差别分配不同的数字，
-> 若没有抓到可尝试更改`line3`/`line1`/`line2`。
-
 编辑`fgoproxy.ini`：
 
-1. 将`server=***`的地址替换为对应服务器地址
-   - 国服 b 服: `https://line3-s2-bili-fate.bilibiligame.net`
-   - 国服 iOS 服: `https://line3-s2-ios-fate.bilibiligame.net`
-   - 国服渠道服: 未测试，欢迎渠道服的master用Charles测试后告知！
-     - 应用宝: `http://line1-s1-uo-fate.bilibiligame.net` 
-     - 其他渠道未知
-   - 台服: `https://line3-s1-all.fate-go.com.tw`
-   - ~~日服: `https://game.fate-go.jp`~~ 暂不可用
-   - ~~美服: `https://game.fate-go.us`~~ 暂不可用
+1. 将`server=***`的地址替换为[简介-服务器地址](./README.md#服务器地址)中对应区服的地址
 2. 设置电脑的本机地址`ip`为：
    - Android: 同下一步的网关/DNS/电脑 ip
    - iOS: 局域网下的电脑 ip
@@ -149,6 +141,7 @@
 
 1. 打开“设置-WiFi-已连接 WiFi 末尾详情按钮-配置 DNS-自动”，选择自动后保存
 
-## 注意事项
+## FAQ
 
-1. 若出现 mitm.it 一直加载打不开，或 FGO 连不上等，可尝试在黑色 cmd 窗口中输入任意字符，有可能 cmd 卡住了
+- [FAQ](./README.md#常见问题-faq)
+- 若出现 mitm.it 一直加载打不开，或 FGO 连不上等，可尝试在黑色 cmd 窗口中输入任意字符，有可能 cmd 卡住了

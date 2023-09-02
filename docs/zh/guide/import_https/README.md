@@ -21,12 +21,47 @@
 
 **以上方法基于目前客户端版本(国服2023.07版本)可用，并不保证适用于未来的客户端更新。**
 
+## 服务器地址
+
+::: tip
+目前只有mitmproxy方法需要明确指定服务器地址。
+
+对于国服，此处iOS/Android/渠道服指的是账号所在区服，而非登陆用的设备系统。
+即Android服账号在iOS设备上登录，仍为iOS服地址。
+
+国服台服存在多个可用地址，但客户端实际使用哪个会因区服、地理位置、网络状态等因人而异。
+:::
+
+- ~~日服: `https://game.fate-go.jp`~~
+- ~~美服: `https://game.fate-go.us`~~
+- 台服:
+  - `https://line3-s1-all.fate-go.com.tw`
+  - `https://line1-s1-all.fate-go.com.tw`
+- 国服iOS:
+  - `https://le1-ios-fate.bilibiligame.net`
+  - `https://line3-s2-ios-fate.bilibiligame.net`
+  - `https://line1-s2-ios-fate.bilibiligame.net`
+  - `https://line2-s2-ios-fate.bilibiligame.net`
+- 国服Android:
+  - `https://le1-bili-fate.bilibiligame.net`
+  - `https://line3-s2-bili-fate.bilibiligame.net`
+  - `https://line1-s2-bili-fate.bilibiligame.net`
+  - `https://line2-s2-bili-fate.bilibiligame.net`
+- 国服渠道服:
+  - `https://line3-s1-uo-fate.bilibiligame.net`
+  - `https://line1-s1-uo-fate.bilibiligame.net`
+  - `https://line2-s1-uo-fate.bilibiligame.net`
+
+[点我查看当前可用服务器地址](https://worker-cn.chaldea.center/misc/bili-fgo-server)
+
+若有变更请反馈。
+
 ## 常见问题/FAQ
 
-1. 以前安装过证书的记得检查证书过期时间，如Charles证书只有1年有效期。过期需要重新生成证书并安装。
-2. 不提供除文档错误/bug外的技术支持，请善用搜索引擎。
-3. 抓包得到的数据中不包含用户名密码等信息，仅包含账号内各种游戏资源信息，Chaldea应用无法也不会去获取账密。
-4. 其中日服/美服的引继文件则包含完整的登录用信息，请勿与他人分享。
+1. 以前使用过、安装过证书的记得检查证书过期时间，如Charles证书只有1年有效期。过期需要删除证书&**重新生成证书**&重新安装。
+2. 抓包得到的数据中不包含用户名密码等信息，仅包含账号内各种游戏资源信息，Chaldea应用无法也不会去获取账密。
+3. 其中日服/美服的引继文件则包含完整的登录用信息，请勿与他人分享。
+4. 不提供除文档错误/bug外的技术支持，请善用搜索引擎&社区提问。
 
 ## 简介
 

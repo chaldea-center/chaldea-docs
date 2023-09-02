@@ -6,7 +6,7 @@
 
 App Store 链接: <https://apps.apple.com/app/stream/id1312141691>
 
-自 2021 年 9 月大版本更新之后，BGO 一度不走系统代理，而 Stream 软件实则为代理模式而非 VPN 模式，因此此方法被一度删除，目前新版本似乎已恢复，支持系统代理。
+自 2021 年 9 月大版本更新之后，BGO 一度不走系统代理，而 Stream 软件实则为代理模式而非 VPN 模式，因此此方法被一度删除，目前新版本似乎已恢复，支持系统代理。若未来某个版本再次禁用了系统代理，本方法将失效。
 
 懒得重写了，Stream 配置教程可上网搜索，如：
 
@@ -15,7 +15,7 @@ App Store 链接: <https://apps.apple.com/app/stream/id1312141691>
 ## 大致流程
 
 1. App Store 下载[Stream](https://apps.apple.com/app/stream/id1312141691)，国区可下载
-2. 配置默认浏览器为 Safari
+2. 配置默认浏览器为 Safari: 系统设置-Safari-默认浏览器应用
 3. 打开 Stream，点击“开始抓包”，首次开启需要添加 VPN 配置
 4. 进入“HTTPS 抓包”，点击“安装 CA 证书”，跳转到**Safari**下载证书。必需使用自带的 Safari! Safari! Safari! 一路确定和安装。安装可在`设置-通用-VPN&设置管理` 中出现 `Stream Generated CA xxxx`
 5. 信任证书：`设置-通用-关于本机-证书信任设置`：开启 `Stream Generated CA xxxx`

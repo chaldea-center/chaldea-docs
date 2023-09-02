@@ -3,9 +3,7 @@
 本文详细介绍借助 Charles 实现 https 抓包的步骤。
 
 ::: tip
-国服目前已恢复默认使用系统代理，iOS 推荐使用原[Stream-iOS](./stream.md)教程，无需电脑操作，方便快捷。
-
-Android 可使用[HttpCanary-Android](./httpcanary.md)教程，证书安装完成后也可无需电脑操作。
+国服目前已恢复默认使用系统代理且iOS和Android号可互登，iOS 推荐使用原[Stream-iOS](./stream.md)教程，无需电脑操作，方便快捷。
 :::
 
 ## 所需软件或工具
@@ -46,8 +44,9 @@ Android 可使用[HttpCanary-Android](./httpcanary.md)教程，证书安装完�
 
 ::: details
 <https://zhile.io/2017/07/07/charles-proxy-usage-and-license.html>
-::: 0. 确保手机与电脑处于同一局域网，或模拟器与 Charles 在同一电脑，关闭电脑上其他一切 ⅤΡΝ 等代理软件
+::: 
 
+0. 确保手机与电脑处于同一局域网，或模拟器与 Charles 在同一电脑，关闭电脑上其他一切 ⅤΡΝ 等代理软件
 1. `Help-Local IP Address`, 记录显示的本机 IPv4 地址，例如`192.168.0.5`
 2. `Proxy-Proxy Settings`, 记录或修改端口，默认`8888`
 3. `Help-SSL Proxying-Install Charles Root Certificate on a Mobile device or Remote Browser`, 无操作，提示设置手机代理(`192.168.0.5:8888`)以及证书下载地址`chls.pro/ssl`，详见下一步
@@ -177,5 +176,6 @@ Android 可使用[HttpCanary-Android](./httpcanary.md)教程，证书安装完�
 
 ## FAQ
 
+- [FAQ](./README.md#常见问题-faq)
 - 提问前请确保你已经仔细阅读了文档: [简介](./README.md)和本页内容
 - 百度谷歌搜索欢迎您，请先动手尝试自己找答案
