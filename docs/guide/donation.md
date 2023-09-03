@@ -34,18 +34,19 @@ Check the detailed report and donator list on the following online sheet:
 
 ## Donations
 
-### Patreon
+### PayPal.Me
 
-<https://www.patreon.com/Chaldea>
-
-<img src="https://data-cn.chaldea.center/public/image/Patreon-Chaldea.jpg" alt="Patreon" width="240"/>
+[<img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png" alt="paypal.me/narumishi" width="240"/>](https://paypal.me/narumishi)
 
 ### Buy me a coffee
 
 [<img src="/images/kofi2.webp" alt="ko-fi" width="240"/>](https://ko-fi.com/G2G152BDO)
 
-<!-- ### PayPal.Me
-[<img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png" alt="paypal.me/narumishi" width="240"/>](https://paypal.me/narumishi) -->
+### Patreon
+
+<https://www.patreon.com/Chaldea>
+
+<img src="https://data-cn.chaldea.center/public/image/Patreon-Chaldea.jpg" alt="Patreon" width="240"/>
 
 ### AFDIAN
 
