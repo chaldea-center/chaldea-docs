@@ -1,22 +1,17 @@
 <template>
   <div>
     <p v-if="loading">Loading...</p>
-    <p class="error-hint" v-if="msg">Error: {{ msg }}</p>
+    <p style="color: red;" v-if="msg">Error: {{ msg }}</p>
     <template v-for="release in releases">
       <h3 :id="release.name" tabindex="-1">
-        <a class="header-anchor" :href="'#' + release.name" aria-hidden="true"
-          >#</a
-        >
+        <a class="header-anchor" :href="'#' + release.name" aria-hidden="true">#</a>
         {{ release.tag_name }}
       </h3>
-      <details
-        class="custom-container details"
-        style="margin: 0.2em 0; padding: 0.8em"
-      >
+      <details class="custom-container details" style="margin: 0.2em 0; padding: 0.8em">
         <summary>
           Release Note ({{ new Date(release.created_at).toLocaleDateString() }})
         </summary>
-        <pre class="release-note">{{ release.body.trim() }}</pre>
+        <pre style="font: var(--font-family);margin: 0.5rem 0 0 0;padding: 0.5rem 1rem;">{{ release.body.trim() }}</pre>
       </details>
       <table>
         <tbody>
@@ -24,20 +19,10 @@
             <tr v-if="!asset.name.endsWith('.sha1')">
               <td>{{ asset.name }}</td>
               <td>
-                <a
-                  :href="asset.browser_download_url"
-                  target="_blank"
-                  rel="noreferrer"
-                  >Github</a
-                >
+                <a :href="asset.browser_download_url" target="_blank" rel="noreferrer">Github</a>
               </td>
               <td>
-                <a
-                  :href="proxy(asset.browser_download_url)"
-                  target="_blank"
-                  rel="noreferrer"
-                  >Proxy</a
-                >
+                <a :href="proxy(asset.browser_download_url)" target="_blank" rel="noreferrer">Proxy</a>
               </td>
             </tr>
           </template>
@@ -150,19 +135,3 @@ export default defineComponent({
   },
 })
 </script>
-
-<style>
-/* .details {
-  margin: 0.2em 0;
-  padding: 0.2em 0;
-} */
-.error-hint {
-  color: red;
-}
-
-.release-note {
-  padding: 0.5rem 1.2rem;
-  margin: 0.5rem 0 0 0;
-  font: var(--font-family);
-}
-</style>

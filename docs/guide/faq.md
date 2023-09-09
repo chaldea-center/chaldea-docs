@@ -39,6 +39,10 @@ Possible reason:
 
 In settings, change web renderer from canvas to html. Html renderer is a little faster but maybe worse layout.
 
+## Web: refresh page accidentally
+
+Usually occur on mobile web page, especially in quest page. Website on mobile is not recommended! Use app please!
+
 ## Anti-Virus
 
 1. this is an open-source project <https://github.com/chaldea-center/chaldea>

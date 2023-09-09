@@ -1,6 +1,6 @@
 # 模拟登录(JP/NA)
 
-参考自[hexstr 的 FGO 每日签到脚本](https://github.com/hexstr/FGODailyBonus)。
+参考自[hexstr/FGODailyBonus](https://github.com/hexstr/FGODailyBonus)。
 
 通过读取账号文件（引继文件）解析登陆秘钥，并伪装客户端向 FGO 服务器发送伪造的登录请求，从而获取账户信息。
 

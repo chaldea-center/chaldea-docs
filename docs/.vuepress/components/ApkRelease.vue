@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="apk-release">
     <div class="toggle">
       <template v-for="r in ['jp', 'na', 'tw', 'kr']">
         <input type="radio" :id="r" :value="r" v-model="region" />
@@ -27,9 +27,7 @@
               <a :href="file.link" target="_blank" rel="noreferrer">Download</a>
             </td>
             <td>
-              <a :href="file.link_proxy" target="_blank" rel="noreferrer"
-                >Proxy</a
-              >
+              <a :href="file.link_proxy" target="_blank" rel="noreferrer">Proxy</a>
             </td>
             <td>{{ (file.size / 1024 / 1024).toFixed(0) }} MB</td>
             <td>
@@ -122,8 +120,8 @@ export default defineComponent({
           for (const ele of elements) {
             if (ele.childElementCount < 5) continue
             const href = ele.children[1]
-                .getElementsByTagName('a')[0]
-                .getAttribute('href'),
+              .getElementsByTagName('a')[0]
+              .getAttribute('href'),
               size = ele.children[2].getAttribute('data-size'),
               date = ele.children[3]
                 .getElementsByTagName('time')[0]
@@ -138,7 +136,7 @@ export default defineComponent({
                 match == null
                   ? 0
                   : (parseInt(match[1]) * 100 + parseInt(match[2])) * 100 +
-                    parseInt(match[3]),
+                  parseInt(match[3]),
               versionName:
                 match == null
                   ? ''
@@ -168,21 +166,21 @@ export default defineComponent({
     margin: 0.2em 0;
     padding: 0.2em 0;
   } */
-.error-hint {
+.apk-release .error-hint {
   color: red;
 }
 
-td {
+.apk-release td {
   white-space: nowrap;
 }
 
-input[type='radio'] {
+.apk-release input[type='radio'] {
   position: absolute;
   visibility: hidden;
   display: none;
 }
 
-label {
+.apk-release label {
   color: var(--c-text-accent);
   display: inline-block;
   cursor: pointer;
@@ -190,16 +188,16 @@ label {
   padding: 5px 20px;
 }
 
-input[type='radio']:checked + label {
+.apk-release input[type='radio']:checked+label {
   color: white;
   background: var(--c-text-accent);
 }
 
-label + input[type='radio'] + label {
+.apk-release label+input[type='radio']+label {
   border-left: solid 1.2px var(--c-text-accent);
 }
 
-.toggle {
+.apk-release .toggle {
   border: solid 1.2px var(--c-text-accent);
   display: inline-block;
   margin: 10px 0 0 0;

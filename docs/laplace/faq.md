@@ -1,6 +1,6 @@
 # FAQ
 
-<PageCatalog/>
+[[toc]]
 <hr/>
 
 ### What is Atlas DB URL?

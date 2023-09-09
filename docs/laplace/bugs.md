@@ -4,9 +4,17 @@
 
 - damageNpCounter - Aŋra Mainiiu NP
 
-## Known Issues (v2.4.12)
+## Known bugs
 
-- Command Code triggered buff was processed as passive buff (fixed in beta)
+- ...
+
+## Fixed in v2.4.14
+
+- Fix Summer Chloe cannot move to last
+
+## Fixed in v2.4.13
+
+- Command Code triggered buff was processed as passive buff (introduce bug: Summer Chloe cannot move to last)
 
 ## Fixed in v2.4.12
 

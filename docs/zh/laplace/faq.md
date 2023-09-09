@@ -1,6 +1,6 @@
 # 常见问题
 
-<PageCatalog/>
+[[toc]]
 <hr/>
 
 ### 什么是 Atlas DB URL?

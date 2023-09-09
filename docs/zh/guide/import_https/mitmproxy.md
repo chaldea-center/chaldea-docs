@@ -19,9 +19,9 @@
   - 下载地址: <https://www.mitmproxy.org/>
 - Android only:
   - Android 版本需**小于等于 6**，现在手机基本见不到旧版本的安卓了，模拟器使用 Android 6 较多，可在`设置-关于`中查看 Android 版本
-  - 若Android版本大于6，则需要将抓包软件的证书从胡勇证书移到系统证书（需root）
+  - 若Android版本大于6，则需要将抓包软件的证书从用户证书移到系统证书（需root）
     - adb: <https://stackoverflow.com/a/46569793>
-    - 各类框架: Magisk等，一般模拟器不支持框架
+    - 或各类框架: Magisk等，注意一般情况下模拟器不支持框架
 
 > 对于 iOS/Android 上的部分设置与 Charles 版教程类似，如有疑惑可前往带截图的 Charles 教程做参考。
 

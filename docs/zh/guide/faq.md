@@ -26,6 +26,10 @@ UUID: 在“关于 Chaldea”-长按 logo-即可复制 UUID.
 
 在设置中将 web renderer 从 canvas 修改为 html，更流畅但可能布局会出小问题。
 
+## Web: 莫名刷新页面
+
+一般出现在手机网页版，尤其是查看关卡配置页面，bug原因不明。所以十分不建议使用手机访问网页版，建议使用app版本。
+
 ## 程序无法启动或白屏
 
 - Web 版: Firefox 在无痕模式(InPrivate Mode)下或开启`关闭时清除历史记录`设置时将禁用 IndexedDB 导致启动失败
