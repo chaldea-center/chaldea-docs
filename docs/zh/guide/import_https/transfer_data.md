@@ -41,6 +41,9 @@ Android 系统的 FGO**存档目录**下的 d713 等子文件夹为资源文件�
 - 日服: `com.aniplex.fategrandorder`
 - 美服: `com.aniplex.fategrandorder.en`
 
+在Android 12+系统中，默认文件管理器和其他普通应用是无法访问`/Android/data/`目录，请通过安装ES或RE等文件管理器，并授权后读写目标文件或文件夹。
+因此模拟登录中所需54cc文件也需先拷贝到其他文件夹才可从app内读取。
+
 ### 导出 iOS 存档
 
 iOS 采用备份还原的方式导出或还原存档，首先需要通过**iMazing**软件备份“整个 iPhone”至电脑（往往会有几到几十 GB），然后从备份中导出某个应用存档。

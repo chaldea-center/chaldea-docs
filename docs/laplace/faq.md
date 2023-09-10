@@ -1,6 +1,7 @@
 # FAQ
 
 [[toc]]
+
 <hr/>
 
 ### What is Atlas DB URL?

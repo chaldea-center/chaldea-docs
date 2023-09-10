@@ -24,7 +24,7 @@ export const sidebarEn: SidebarConfig = {
           collapsible: true,
           children: [
             '/guide/import_https/README.md',
-            '/guide/import_https/auto_login.md',
+            '/guide/import_https/authfile_login.md',
             '/guide/import_https/stream.md',
             '/guide/import_https/mitmproxy.md',
             '/guide/import_https/charles.md',

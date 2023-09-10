@@ -26,7 +26,7 @@
 
 ## HTTPS 抓包
 
-- 日服/美服：不支持官方客户端，可以使用[账号文件登陆](./import_https/auto_login.md)。
+- 日服/美服：不支持官方客户端，可以使用[账号文件登陆](./import_https/authfile_login.md)。
 - 国服/台服：支持官方客户端抓包，Android和iOS均可。
 
 详见[导入抓包](./import_https/)。

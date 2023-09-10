@@ -26,6 +26,10 @@ The `<package>` name for different apk is:
 - JP: `com.aniplex.fategrandorder`
 - NA: `com.aniplex.fategrandorder.en`
 
+On Android 12+, `/Android/data/` folder is not readable by default file manager or other apps.
+You need to install ES or RE or other file manager, and grant permission to this folder.
+And in Auth file login, you need 54cc file, so you have to copy the file to another folder so that app can read it.
+
 ### Extract iOS Data
 
 With the ability of **iMazing** software, you can backup entire phone then extract FGO data. You can find more tutorials on web about iMazing.

@@ -24,7 +24,7 @@ export const sidebarZh: SidebarConfig = {
           collapsible: true,
           children: [
             '/zh/guide/import_https/README.md',
-            '/zh/guide/import_https/auto_login.md',
+            '/zh/guide/import_https/authfile_login.md',
             '/zh/guide/import_https/stream.md',
             '/zh/guide/import_https/mitmproxy.md',
             '/zh/guide/import_https/charles.md',

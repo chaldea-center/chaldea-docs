@@ -44,7 +44,7 @@
 
 ::: details
 <https://zhile.io/2017/07/07/charles-proxy-usage-and-license.html>
-::: 
+:::
 
 0. 确保手机与电脑处于同一局域网，或模拟器与 Charles 在同一电脑，关闭电脑上其他一切 ⅤΡΝ 等代理软件
 1. `Help-Local IP Address`, 记录显示的本机 IPv4 地址，例如`192.168.0.5`

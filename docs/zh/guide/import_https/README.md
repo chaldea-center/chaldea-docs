@@ -3,7 +3,7 @@
 ## 目录
 
 - 本页：抓包介绍
-- [模拟登陆](./auto_login.md): 日服&美服 ，读取 54cc 账号文件实现账号登录并获取数据，最快捷但风险自理
+- [模拟登陆](./authfile_login.md): 日服&美服 ，读取 54cc 账号文件实现账号登录并获取数据，最快捷但风险自理
 - [Stream-iOS](./stream.md): 国服/台服 iOS 抓包教程
 - [mitmproxy 版教程-PC](./mitmproxy.md): Android/iOS 配合 mitmproxy(PC)教程
 - [Charles 版教程-PC](./charles.md): Android/iOS 配合 Charles(PC)教程
