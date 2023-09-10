@@ -6,17 +6,19 @@
         <label :for="r"> {{ r.toUpperCase() }}</label>
       </template>
     </div>
-    <div>{{ all_pkgs[region] }}</div>
+    <div>Google Play: <a target="_blank" :href="'https://play.google.com/store/apps/details?id=' + all_pkgs[region]">{{
+      all_pkgs[region]
+    }}</a></div>
     <p v-if="loading">Loading...</p>
     <p class="error-hint" v-if="msg">Error: {{ msg }}</p>
     <table v-if="files.length">
       <thead>
-        <tr>
-          <th>Version</th>
-          <th>Link1</th>
-          <th>Link2</th>
-          <th>Size</th>
-          <th>Modified</th>
+        <tr style="text-wrap: nowrap;">
+          <th>{{ t.version }}</th>
+          <th>{{ t.link }}1</th>
+          <th>{{ t.link }}2</th>
+          <th>{{ t.size }}</th>
+          <th>{{ t.modified }}</th>
         </tr>
       </thead>
       <tbody>
@@ -24,10 +26,10 @@
           <tr>
             <td>{{ file.versionName }}</td>
             <td>
-              <a :href="file.link" target="_blank" rel="noreferrer">Download</a>
+              <a :href="file.link" target="_blank" rel="noreferrer">{{ t.download }}</a>
             </td>
             <td>
-              <a :href="file.link_proxy" target="_blank" rel="noreferrer">Proxy</a>
+              <a :href="file.link_proxy" target="_blank" rel="noreferrer">{{ t.proxy }}</a>
             </td>
             <td>{{ (file.size / 1024 / 1024).toFixed(0) }} MB</td>
             <td>
@@ -62,15 +64,26 @@ interface ApkFile {
   link_proxy: string
 }
 
+interface Il18n {
+  version: string
+  link: string
+  download: string
+  size: string
+  modified: string
+  proxy: string
+}
+
 interface IState {
   loading: boolean
   msg: string
   files: ApkFile[]
   region: string
   all_pkgs: Record<string, string>
+  t: Il18n
 }
 
 export default defineComponent({
+  props: { language: String },
   data(): IState {
     return {
       loading: false,
@@ -83,6 +96,21 @@ export default defineComponent({
         tw: 'com.xiaomeng.fategrandorder',
         kr: 'com.netmarble.fgok',
       },
+      t: this.language?.startsWith('zh') ? {
+        version: '版本',
+        link: '链接',
+        download: '下载',
+        size: '大小',
+        modified: '修改时间',
+        proxy: '代理',
+      } : {
+        version: 'Version',
+        link: 'Link',
+        download: 'Download',
+        size: 'Size',
+        modified: 'Modified',
+        proxy: 'Proxy',
+      }
     }
   },
   mounted() {

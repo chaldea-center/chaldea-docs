@@ -3,7 +3,7 @@
 如果本项目对你有帮助并希望支持本项目，你可以：
 
 - [Starring](https://github.com/chaldea-center/chaldea/stargazers) the repo
-- 在 [Google Play](https://play.google.com/store/apps/details?id=cc.narumi.chaldea) 或 [App Store](https://apps.apple.com/us/app/chaldea/id1548713491?itsct=apps_box&itscg=30200) 上评分.
+- 在 [Google Play](https://play.google.com/store/apps/details?id=cc.narumi.chaldea) 或 [App Store](https://apps.apple.com/us/app/chaldea/id1548713491?itsct=apps_box&itscg=30200) 上评分
 - 分享给你的好友
 - 帮忙[翻译](./translation.md)
 - 捐赠
