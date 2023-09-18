@@ -18,9 +18,9 @@ E.g. URL of Kiyohime's third skill: https://apps.atlasacademy.io/db/JP/skill/235
 If the current team clears the selected quest without using any custom functionality, Laplace will allow this team to be
 uploaded so it can be viewed by others.
 
-- For each quest a user can only upload 10 different teams
+- For each quest a user can only upload 20 different teams
 - One upload every 5 minutes
-- Users can manage their uploaded teams using "Manage Uploaded Teams" located in the main menu page of Laplace
+- Users can manage their uploaded teams using "My Teams" located in the main menu page of Laplace
 
 Teams that used the following functions are disqualified from uploads
 

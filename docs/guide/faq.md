@@ -43,6 +43,14 @@ In settings, change web renderer from canvas to html. Html renderer is a little 
 
 Usually occur on mobile web page, especially in quest page. Website on mobile is not recommended! Use app please!
 
+## Web: cannot update data (CORS issue)
+
+Usually on FireFox with "Global" data source (https://data.chaldea.center).
+
+Press F12 to open developer tool and switch to **Console** or **Network** tab. Check whether there is any error related to **"CORS"** (Cross-origin resource sharing).
+
+If it does have CORS issue, please turn on **`Fix CORS issue for "Global" source`** in **Network Settings**.
+
 ## Anti-Virus
 
 1. this is an open-source project <https://github.com/chaldea-center/chaldea>
