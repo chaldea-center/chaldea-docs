@@ -10,13 +10,26 @@
 - [HttpCanary-Android](./httpcanary.md): Android only
 - [Transfer Data](./transfer_data.md): Keep JP/NA account data in multiple clients
 
-> All methods except **Login via Account File** doesn't support official JP/NA/KR fgo app.
+## How to choose
+
+- JP (after 2.80.5)
+  - [transfer file login](./authfile_login.md)
+  - [mitmproxy](./mitmproxy.md)/[Charles](./charles.md) + Android, not support iOS
+- NA:
+  - [transfer file login](./authfile_login.md)
+- CN/TW:
+  - iOS: [Stream](./stream.md)
+  - Android: [mitmproxy](./mitmproxy.md)/[Charles](./charles.md)
 
 ## Introduction
 
 > FGO JP/NA/KR app has cert-pinning, which will reject custom cert.
-> So we must use modified apk, but there is no public apk mod support.
-> Use Login via Account File if needed.
+>
+> For JP, official apk(after 2.80.5) supports sniffing if cert is installed as system cert.
+>
+> For NA/KR, must use modified apk, which is not available.
+>
+> Use Login via Account File if needed for JP/NA.
 >
 > If you can modify apk to remove cert pinning by yourself, surely these methods are also useful for these regions.
 >

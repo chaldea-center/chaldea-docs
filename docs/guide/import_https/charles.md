@@ -12,10 +12,11 @@ HttpCanary is recommended for Android sniffing. It doesn't need PC or the first 
   - Android: `Drony v1.3.x`(free) or other you know, you can also download it from [cloud drive(password:chaldea)](https://wws.lanzoui.com/b01uoc3qh)
 - FGO
   - CN/TW: official game client, support iOS/Android
-  - JP/NA: not supported, use [Login via Account File](./authfile_login.md) instead.
+  - JP: official apk
+  - NA: not supported, use [Login via Account File](./authfile_login.md) instead.
   - KR: not supported
 - Android only: Android 7+ won't trust user cert, you can choose one of these solution
-  1. Use Android 6(or lower)
+  1. Use Android 6(or lower), JP requires Android 7+
   2. \[root\] Install user cert as system cert via ADB: <https://stackoverflow.com/a/46569793>
   3. \[root\] magisk+JustTrustMe module
 - iOS only:

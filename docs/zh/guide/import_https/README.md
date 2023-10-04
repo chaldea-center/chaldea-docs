@@ -13,11 +13,14 @@
 
 ## 如何选择？
 
-- 日服/美服: 模拟登录，目前唯一方法
+- 日服官方客户端(2.80.5及以后版本)
+  - 模拟登陆
+  - [mitmproxy](./mitmproxy.md)/[Charles](./charles.md) + Android, iOS不可用
 - 国服/台服(注意国服iOS和Android已经可以互登):
   - iOS: [Stream](./stream.md)! 5分钟搞定！
   - Android: 优先[mitmproxy](./mitmproxy.md)，次选[Charles](./charles.md)
-  - 渠道服: 若服务器地址未知，优先使用Charles方法
+- 美服:
+  - 模拟登陆
 
 **以上方法基于目前客户端版本(国服2023.07版本)可用，并不保证适用于未来的客户端更新。**
 
@@ -32,8 +35,8 @@
 国服台服存在多个可用地址，但客户端实际使用哪个会因区服、地理位置、网络状态等因人而异。
 :::
 
-- ~~日服: `https://game.fate-go.jp`~~
-- ~~美服: `https://game.fate-go.us`~~
+- 日服: `https://game.fate-go.jp`
+- 美服: `https://game.fate-go.us`
 - 台服:
   - `https://line3-s1-all.fate-go.com.tw`
   - `https://line1-s1-all.fate-go.com.tw`
@@ -52,7 +55,7 @@
   - `https://line1-s1-uo-fate.bilibiligame.net`
   - `https://line2-s1-uo-fate.bilibiligame.net`
 
-[点我查看当前可用服务器地址](https://worker-cn.chaldea.center/misc/bili-fgo-server)
+[点我查看国服当前可用服务器地址](https://worker-cn.chaldea.center/misc/bili-fgo-server)
 
 若有变更请反馈。
 
@@ -66,9 +69,7 @@
 ## 简介
 
 ::: warning
-日服/美服/韩服有证书绑定(cert-pinning)，会拒绝抓包软件的证书，**“必须”** 使用第三方 apk！但是目前没有公开可用的第三方 apk。
-
-所以除日服美服可以用账号文件模拟登录外，其余方法不适用于日服/美服/韩服。
+日服/美服/韩服有证书绑定(cert-pinning)，会拒绝抓包软件的证书。日服在2.80.5之前必须使用第三方修改的apk才能抓包，2.80.5以后支持官方安装包在Android平台抓包(需root安装证书至系统证书)。美服/韩服官方安装包尚不支持。
 
 当然如果你有办法自行修改apk，这些方法自然都可行，~~既然技术那么高超了更没有必要看这个文档了~~
 :::
