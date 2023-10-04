@@ -1,6 +1,8 @@
 # Laplace - 3T Simulator
 
-<a href="#">事象記録電脳魔・ラプラス</a>
+<a href="#">
+<ruby>事象記録<rp>(</rp><rt>Phenomenon Recording</rt><rp>)</rp></ruby>&nbsp;&nbsp;&nbsp;<ruby>電脳魔<rp>(</rp><rt>Cyber-Daemon</rt><rp>)</rp></ruby>・<ruby>ラプラス<rp>(</rp><rt>LAPLACE</rt><rp>)</rp></ruby>
+</a>
 
 Laplace is in charge of battle simulations. It's currently in beta phase, so any feedback is welcome!
 
