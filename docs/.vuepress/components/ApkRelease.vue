@@ -39,7 +39,6 @@
         </template>
       </tbody>
     </table>
-    <hr />
   </div>
 </template>
 
@@ -126,6 +125,7 @@ export default defineComponent({
           ? b.version - a.version
           : b.versionName.localeCompare(b.versionName),
       )
+      files = files.slice(0, 10)
       return files
     },
     getData() {
