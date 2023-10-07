@@ -37,11 +37,6 @@ Solution tab is the least AP solution and you can also choose related quests by 
 
 **Attention**
 
-::: warning
-JP removed \[Not Base on Servant\] trait for some of Lostbelt 6.5 Class enemies, then they won't progress missions such as "Defeat x enemies (excluding Servants & certain bosses)".
-But the trait exists in other regions yet, so the solution may not be the best for non-JP.
-:::
-
 - some quests of limit event may not have data, and these quest data are downloaded when solving
 - events with enemy appearance rate up may be inaccurate
 - some missions may be impossible to complete so may be ignored
@@ -49,3 +44,10 @@ But the trait exists in other regions yet, so the solution may not be the best f
 ## Event Mission
 
 In the mission tab of event, you can also choose missions and solve them here.
+
+## Options
+
+- **Add [NotBasedOnServant] trait for Traum Enemies**: JP removed \[Not Base on Servant\] trait for some of Lostbelt 6.5 Class enemies, then they won't progress missions such as "Defeat x enemies (excluding Servants & certain bosses)".
+  But the trait exists in other regions yet, so the solution may not be the best for non-JP. You can turn on it to add this trait if you are sure.
+- **Exclude Random Enemy Quests**: some Ordeal Call quests (drop Gems) has random enemies, mainly random class which may affect results.
+- **Balcklist**
