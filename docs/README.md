@@ -14,9 +14,12 @@ actions:
   - text: Laplace
     link: /laplace/
     type: secondary
-  - text: 中文
-    link: /zh/
-    type: secondary
+  - text: Donate
+    link: /guide/donation
+    type: primary
+  # - text: 中文
+  #   link: /zh/
+  #   type: secondary
 features:
   - title: Rich Planning
     details: Servant ascension, active/append skills and palingenesis. Limit events, main story, exchange tickets and more to explore.

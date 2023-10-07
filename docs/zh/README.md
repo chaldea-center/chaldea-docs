@@ -14,9 +14,12 @@ actions:
   - text: Laplace
     link: /zh/laplace/
     type: secondary
-  - text: English
-    link: /
-    type: secondary
+  - text: 支持我们
+    link: /zh/guide/donation
+    type: primary
+  # - text: English
+  #   link: /
+  #   type: secondary
 features:
   - title: 丰富的规划
     details: 从者再临、主动/追加技能、灵衣、圣杯转临，活动明细、交换券等等应有尽有。

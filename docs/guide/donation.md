@@ -7,7 +7,9 @@ If this project is helpful to you and want to support it, you can:
 - Help [Translation](./translation.md)
 - Donation
 
-Donation is also welcomed, please leave a message to let me know that's donated for Chaldea.
+This project is open-source, always FREE and no-AD. However, a certain amount of funds are still needed to maintain the expenses of servers, CDN and domain names. Currently all are paid by developer except some donations.
+
+> Donation is welcomed, please leave a message to let me know that's donated for Chaldea.
 
 ## Project Financial Report
 

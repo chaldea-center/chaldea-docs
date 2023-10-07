@@ -6,9 +6,13 @@
 - 在 [Google Play](https://play.google.com/store/apps/details?id=cc.narumi.chaldea) 或 [App Store](https://apps.apple.com/us/app/chaldea/id1548713491?itsct=apps_box&itscg=30200) 上评分
 - 分享给你的好友
 - 帮忙[翻译](./translation.md)
-- 捐赠
+- [捐赠](#捐赠方式)
 
-如果希望通过捐赠以支持本项目，请添加留言以注明用于捐赠 Chaldea 应用。
+本应用开源免费无广告，但需要投入一定的资金以维持服务器、CDN、域名等的开销。由于无广告收入，因此除部分捐赠外均由开发者自费支付。
+
+鉴于目前三次元难以维持收支平衡以及后续的支出，非常欢迎并感谢能够在各方面支持本项目。
+
+> 如果通过捐赠以支持本项目，请添加留言以注明用于捐赠 Chaldea 应用。
 
 ## 项目收支
 
