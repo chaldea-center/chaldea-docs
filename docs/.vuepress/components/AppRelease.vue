@@ -22,7 +22,8 @@
                 <a :href="asset.browser_download_url" target="_blank" rel="noreferrer">Github</a>
               </td>
               <td>
-                <a :href="proxy(asset.browser_download_url)" target="_blank" rel="noreferrer">Proxy</a>
+                <a :href="proxy(asset.browser_download_url)" target="_blank" rel="noreferrer">{{ lang == 'zh' ?
+                  "代理" : "Proxy" }}</a>
               </td>
             </tr>
           </template>
@@ -69,6 +70,9 @@ interface IState {
 }
 
 export default defineComponent({
+  props: {
+    lang: String,
+  },
   data(): IState {
     return {
       loading: false,

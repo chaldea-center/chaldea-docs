@@ -5,7 +5,7 @@
 | 平台      | 最低要求                                      |
 | :-------- | :-------------------------------------------- |
 | Android   | Android 6.0 (API level 23)                    |
-| iOS       | iOS 11.0                                      |
+| iOS       | iOS 12.0                                      |
 | Windows   | Windows 8 (64-bit), x86-64 based <sup>1</sup> |
 | macOS     | macOS 10.14                                   |
 | Linux     | Debian 10, 64-bit <sup>2</sup>                |

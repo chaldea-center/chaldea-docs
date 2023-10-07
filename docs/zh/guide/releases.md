@@ -19,4 +19,5 @@
 - Linux: <https://worker-cn.chaldea.center/releases/latest/linux>
 
 <hr/>
-<AppRelease/>
+
+<AppRelease lang="zh"/>
