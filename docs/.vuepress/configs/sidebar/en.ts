@@ -30,6 +30,7 @@ export const sidebarEn: SidebarConfig = {
             '/guide/import_https/charles.md',
             '/guide/import_https/httpcanary.md',
             '/guide/import_https/transfer_data.md',
+            '/guide/import_https/gacha_stat.md',
           ],
         },
         '/guide/servant_plan.md',

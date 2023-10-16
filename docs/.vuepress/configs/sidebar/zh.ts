@@ -32,6 +32,7 @@ export const sidebarZh: SidebarConfig = {
             '/zh/guide/import_https/quantumultx.md',
             '/zh/guide/import_https/decoder.md',
             '/zh/guide/import_https/transfer_data.md',
+            '/zh/guide/import_https/gacha_stat.md',
           ],
         },
         '/zh/guide/servant_plan.md',
