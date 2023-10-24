@@ -7,7 +7,7 @@
   - `arm64-v8a/64-bit`: for most modern devices
   - `armeabi_v7a/32-bit`: for some old emulator/phone/special devices
 - **Proxy** link is for China mainland if direct link is unavailable
-- Source: [@Cereal](https://fgo.square.ovh)
+- Source: [@Cereal](https://fgo.bigcereal.com)
 
 ### Download
 

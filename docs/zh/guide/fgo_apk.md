@@ -7,7 +7,7 @@
   - `armeabi_v7a/32-bit`, 32 位版多为旧模拟器或旧安卓或特殊设备使用
   - `arm64-v8a/64-bit`, 未标注即为 64 位，适用于绝大多数机型
 - 其中 **Proxy/代理** 为国内代理路线，若直连无法下载，可使用代理路线
-- 来源: [@Cereal](https://fgo.square.ovh)
+- 来源: [@Cereal](https://fgo.bigcereal.com)
 
 ### 下载地址
 
