@@ -1,25 +1,28 @@
 ---
-home: true
-title: Chaldea - FGO素材规划&3T模拟
-heroImage: /images/chaldea.png
-heroText: Chaldea
-tagline: 用于FGO的素材规划&战斗模拟软件
-actions:
-  - text: 下载安装
-    link: /zh/guide/installation
-    type: primary
-  - text: 使用指南
-    link: /zh/guide/
-    type: secondary
-  - text: Laplace
-    link: /zh/laplace/
-    type: secondary
-  - text: 支持我们
-    link: /zh/guide/donation
-    type: primary
-  # - text: English
-  #   link: /
-  #   type: secondary
+layout: home
+
+description: 'Chaldea - FGO素材规划＆战斗模拟'
+hero:
+  name: 'Chaldea'
+  text: 'Chaldeas & Laplace'
+  tagline: 用于Fate/Grand Order的素材规划&战斗模拟软件
+  image:
+    src: /images/chaldea.png
+    alt: Chaldea
+  actions:
+    - text: 下载安装
+      link: /zh/guide/installation
+      theme: brand
+    - text: 使用指南
+      link: /zh/guide/
+      theme: alt
+    - text: Laplace
+      link: /zh/laplace/
+      theme: alt
+    - text: 支持我们
+      link: /zh/guide/donation
+      theme: brand
+
 features:
   - title: 丰富的规划
     details: 从者再临、主动/追加技能、灵衣、圣杯转临，活动明细、交换券等等应有尽有。
@@ -39,6 +42,4 @@ features:
     details: 单抽奇迹和千石沉船就是这么的刺激😈 Master的止氪小能手
   - title: Freedom Order
     details: 愚人节接头小霸王，头也是free的
-footerHtml: true
-footer: Powered by <a href="https://v2.vuepress.vuejs.org/" target="_blank">Vuepress</a> <br> Copyright © 2021 narumi | MIT License
 ---

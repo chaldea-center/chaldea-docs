@@ -1,25 +1,27 @@
 ---
-home: true
-title: Chaldea - Another Planner & Battle Simulator for Fate/GO
-heroImage: /images/chaldea.png
-heroText: Chaldea
-tagline: Yet Another Planner and Battle Simulator for Fate/GO
-actions:
-  - text: Install
-    link: /guide/installation
-    type: primary
-  - text: Manual
-    link: /guide/
-    type: secondary
-  - text: Laplace
-    link: /laplace/
-    type: secondary
-  - text: Donate
-    link: /guide/donation
-    type: primary
-  # - text: 中文
-  #   link: /zh/
-  #   type: secondary
+layout: home
+
+hero:
+  name: 'Chaldea'
+  text: 'Chaldeas & Laplace'
+  tagline: Yet Another Planner & Battle Simulator for Fate/Grand Order
+  image:
+    src: /images/chaldea.png
+    alt: Chaldea
+  actions:
+    - text: Install
+      link: /guide/installation
+      theme: brand
+    - text: Manual
+      link: /guide/
+      theme: alt
+    - text: Laplace
+      link: /laplace/
+      theme: alt
+    - text: Donate
+      link: /guide/donation
+      theme: brand
+
 features:
   - title: Rich Planning
     details: Servant ascension, active/append skills and palingenesis. Limit events, main story, exchange tickets and more to explore.
@@ -39,6 +41,4 @@ features:
     details: Just experience summons here with unlimited SQs.😈
   - title: Freedom Order
     details: April Fool's mini game, the head is "free" today!
-footerHtml: true
-footer: Powered by <a href="https://v2.vuepress.vuejs.org/" target="_blank">Vuepress</a> <br> Copyright © 2021-present narumi | MIT License
 ---

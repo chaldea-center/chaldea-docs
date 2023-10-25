@@ -15,3 +15,7 @@
 > 编码: 输入 -> base64 编码 -> 输出
 
 <decoder></decoder>
+
+<script setup>
+import Decoder from '../../../components/Decoder.vue'
+</script>

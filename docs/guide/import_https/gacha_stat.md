@@ -1,6 +1,6 @@
 # Gacha Statistics
 
-You have to [Sniffing Login Data](./README.md) first, after read the sniffed login data, press "Gacha" button at the bottom to get here.
+You have to [Sniffing Login Data](./index.md) first, after read the sniffed login data, press "Gacha" button at the bottom to get here.
 
 ## Servant Amount Statistics
 

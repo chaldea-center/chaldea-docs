@@ -20,3 +20,7 @@ To download the latest stable version:
 
 <hr/>
 <AppRelease/>
+
+<script setup>
+import AppRelease from '../components/AppRelease.vue'
+</script>

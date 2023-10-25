@@ -6,14 +6,16 @@
         <label :for="r"> {{ r.toUpperCase() }}</label>
       </template>
     </div>
-    <div>Google Play: <a target="_blank" :href="'https://play.google.com/store/apps/details?id=' + all_pkgs[region]">{{
-      all_pkgs[region]
-    }}</a></div>
+    <div>
+      Google Play:
+      <a target="_blank" :href="'https://play.google.com/store/apps/details?id=' + all_pkgs[region]
+        ">{{ all_pkgs[region] }}</a>
+    </div>
     <p v-if="loading">Loading...</p>
     <p class="error-hint" v-if="msg">Error: {{ msg }}</p>
     <table v-if="files.length">
       <thead>
-        <tr style="text-wrap: nowrap;">
+        <tr style="text-wrap: nowrap">
           <th>{{ t.version }}</th>
           <th>{{ t.link }}1</th>
           <th>{{ t.link }}2</th>
@@ -26,10 +28,14 @@
           <tr>
             <td>{{ file.versionName }}</td>
             <td>
-              <a :href="file.link" target="_blank" rel="noreferrer">{{ t.download }}</a>
+              <a :href="file.link" target="_blank" rel="noreferrer">{{
+                t.download
+              }}</a>
             </td>
             <td>
-              <a :href="file.link_proxy" target="_blank" rel="noreferrer">{{ t.proxy }}</a>
+              <a :href="file.link_proxy" target="_blank" rel="noreferrer">{{
+                t.proxy
+              }}</a>
             </td>
             <td>{{ (file.size / 1024 / 1024).toFixed(0) }} MB</td>
             <td>
@@ -45,7 +51,6 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 
-const base_url = 'https://worker-cn.chaldea.center/proxy/apk/'
 declare global {
   interface Window {
     apk_files: ApkFile[] | null
@@ -95,21 +100,23 @@ export default defineComponent({
         tw: 'com.xiaomeng.fategrandorder',
         kr: 'com.netmarble.fgok',
       },
-      t: this.language?.startsWith('zh') ? {
-        version: '版本',
-        link: '链接',
-        download: '下载',
-        size: '大小',
-        modified: '修改时间',
-        proxy: '代理',
-      } : {
-        version: 'Version',
-        link: 'Link',
-        download: 'Download',
-        size: 'Size',
-        modified: 'Modified',
-        proxy: 'Proxy',
-      }
+      t: this.language?.startsWith('zh')
+        ? {
+          version: '版本',
+          link: '链接',
+          download: '下载',
+          size: '大小',
+          modified: '修改时间',
+          proxy: '代理',
+        }
+        : {
+          version: 'Version',
+          link: 'Link',
+          download: 'Download',
+          size: 'Size',
+          modified: 'Modified',
+          proxy: 'Proxy',
+        },
     }
   },
   mounted() {
@@ -138,7 +145,7 @@ export default defineComponent({
         return
       }
 
-      fetch(base_url)
+      fetch('https://fgo.bigcereal.com/apk/')
         .then((response) => response.text())
         .then((text) => {
           let data: ApkFile[] = []
@@ -171,7 +178,7 @@ export default defineComponent({
                   : match[0].replace('.armeabi_v7a', ' @32').substring(1),
               size: size == null ? 0 : parseFloat(size),
               modified: date == null ? null : new Date(date),
-              link: 'https://fgo.square.ovh/apk/' + name,
+              link: 'https://fgo.bigcereal.com/apk/' + name,
               link_proxy: 'https://worker-cn.chaldea.center/proxy/apk/' + name,
             })
           }
@@ -189,7 +196,7 @@ export default defineComponent({
 })
 </script>
 
-<style lang="scss">
+<style>
 /* .details {
     margin: 0.2em 0;
     padding: 0.2em 0;
@@ -209,24 +216,22 @@ export default defineComponent({
 }
 
 .apk-release label {
-  color: var(--c-text-accent);
   display: inline-block;
   cursor: pointer;
-  //   font-weight: bold;
   padding: 5px 20px;
 }
 
 .apk-release input[type='radio']:checked+label {
   color: white;
-  background: var(--c-text-accent);
+  background: var(--vp-button-brand-bg);
 }
 
 .apk-release label+input[type='radio']+label {
-  border-left: solid 1.2px var(--c-text-accent);
+  border-left: solid 1.2px var(--vp-c-border);
 }
 
 .apk-release .toggle {
-  border: solid 1.2px var(--c-text-accent);
+  border: solid 1.2px var(--vp-c-border);
   display: inline-block;
   margin: 10px 0 0 0;
   border-radius: 5px;

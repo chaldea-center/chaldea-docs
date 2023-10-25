@@ -19,3 +19,7 @@
 
 - [BetterFGO JP latest](https://rayshift.io/betterfgo/download/jp)
 - [BetterFGO NA latest](https://rayshift.io/betterfgo/download/na)
+
+<script setup>
+import ApkRelease from '../../components/ApkRelease.vue'
+</script>

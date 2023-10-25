@@ -1,11 +1,11 @@
-# Vuepress Cache
-**/.vuepress/.cache/**
-# Vuepress Temp
-**/.vuepress/.temp/**
-# Vuepress Output
+# Vitepress Cache
+**/.vitepress/.cache/**
+# Vitepress Temp
+**/.vitepress/.temp/**
+# Vitepress Output
 dist/
 
 # Node modules
 node_modules/
-
+pnpm-lock.yaml
 # *.md

@@ -21,3 +21,7 @@
 <hr/>
 
 <AppRelease lang="zh"/>
+
+<script setup>
+import AppRelease from '../../components/AppRelease.vue'
+</script>

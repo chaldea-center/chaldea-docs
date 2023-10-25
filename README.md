@@ -51,7 +51,7 @@ git pull && git add -A && git commit -m "msg" && git push
 
 - `docs/`: English docs
 - `docs/zh/`: Chinese docs
-- `docs/.vuepress/configs/sidebar/`: Sidebars
+- `docs/.vitepress/configs/sidebar/`: Sidebars
 
 Keep the same structure for English and Chinese.
 Add new page for all languages and add them to sidebars.

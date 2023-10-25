@@ -9,16 +9,19 @@
 - ...
 
 ## Fixed in v2.4.18
+
 - Use 32 bit accuracy for damage and critical star calculation (previously it's 64 bit)
   - Lowered accuracy because FGO uses 32 bit
   - In previous 64 bit calculation, there's a ±1 error in damage value
   - NP calculations are always 32 bit, so nor error there
 
 ## Fixed in v2.4.16
+
 - Fix Summer Chloe's NP unable to trigger NP SE damage
 - Fix Cait Cú Cerpriestess able to extend buff durations of irremovable buffs
 
 ## Fixed in v2.4.15
+
 - Fix issues with additional passives causing simulation errors
 - Fix issues with certain CQ AI skills causing simulation errors
 

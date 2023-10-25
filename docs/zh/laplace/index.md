@@ -1,6 +1,6 @@
 # Laplace - 3T模拟器
 
-<a href="#">
+<br><a href="#">
 <ruby>事象記録<rp>(</rp><rt>事象记录</rt><rp>)</rp>電脳魔<rp>(</rp><rt>电脑魔</rt><rp>)</rp></ruby>・<ruby>ラプラス<rp>(</rp><rt>拉普拉斯</rt><rp>)</rp></ruby>
 </a>
 
@@ -12,7 +12,7 @@ Laplace 主要负责战斗模拟的功能。欢迎测试反馈！
 
 - [编队配置](./team.md)
 - [战斗模拟](./battle.md)
-- [宝具伤害](./np_damage_ranking.md)
+- [宝具伤害](./np_dmg_ranking.md)
 - [常见问题](./faq.md)
 - [BUGS](./bugs.md)
 

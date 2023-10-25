@@ -1,6 +1,6 @@
-import type { NavbarConfig } from '@vuepress/theme-default'
+import type { DefaultTheme } from 'vitepress'
 
-export const navbarZh: NavbarConfig = [
+export const navbarZh: DefaultTheme.NavItem[] = [
   {
     text: 'Chaldeas',
     link: '/zh/guide/',

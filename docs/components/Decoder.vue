@@ -1,11 +1,15 @@
 <template>
-  <div>
+  <div class="my-decoder">
     <span>
       <label for="file-chooser" class="file-btn"> 加载文件 </label>
       <input type="file" id="file-chooser" @change="decodeFile" /> </span
     ><span> 或输入/粘贴文本 </span>
 
-    <textarea v-model="vin" rows="10" placeholder="请输入文本或加载文件" />
+    <textarea
+      v-model="vin"
+      rows="10"
+      placeholder="请输入文本或加载文件"
+    ></textarea>
     <span>
       <button @click="decode">解码</button>
       <button @click="encode">编码</button>
@@ -17,7 +21,7 @@
       placeholder="复制结果或保存至文件"
       readonly
       onclick="this.select()"
-    />
+    ></textarea>
     <span>
       <button @click="format">格式化JSON</button>
       <button @click="downloadOutput">结果另存为</button>
@@ -39,7 +43,7 @@ export default {
     encode() {
       try {
         this.errorHint = null
-        this.vout = window.btoa(unescape(encodeURIComponent(this.vin)))
+        this.vout = window.btoa(decodeURI(encodeURIComponent(this.vin)))
       } catch (error) {
         this.errorHint = error
       }
@@ -47,8 +51,8 @@ export default {
     decode() {
       try {
         this.errorHint = null
-        this.vout = unescape(
-          decodeURIComponent(escape(window.atob(decodeURIComponent(this.vin)))),
+        this.vout = decodeURIComponent(
+          encodeURI(window.atob(decodeURIComponent(this.vin))),
         )
       } catch (error) {
         this.errorHint = error
@@ -97,15 +101,17 @@ export default {
 </script>
 
 <style>
-textarea {
+.my-decoder textarea {
   width: 100%;
   padding: 8px 12px;
   margin: 8px 0;
   box-sizing: border-box;
   resize: vertical;
+  border-radius: 8px;
+  background-color: var(--vp-c-bg-soft);
 }
 
-button,
+.my-decoder button,
 .file-btn {
   background-color: #04aa6d;
   border: none;
@@ -120,11 +126,11 @@ button,
   cursor: pointer;
 }
 
-input[type='file'] {
+.my-decoder input[type='file'] {
   display: none;
 }
 
-.error-hint {
+.my-decoder .error-hint {
   color: red;
 }
 </style>

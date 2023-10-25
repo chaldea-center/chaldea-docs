@@ -37,7 +37,7 @@ If you encounter installation/startup problems, please check [Notes](#notes) fir
 
 [Get it on Google Play](https://play.google.com/store/apps/details?id=cc.narumi.chaldea)
 
-For v1.x, check [Attentions](#attentions)
+For v1.x, check [Notes](#notes)
 
 ### App Store
 

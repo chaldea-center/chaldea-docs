@@ -30,7 +30,7 @@ You can also import v1 data here, only some of servants and item data will be im
 - For CN/TW, official app is support, you can capture login data ob iOS and Android.
 - For KR, no way yet.
 
-See [Import HTTPS Response](./import_https) for details.
+See [Import HTTPS Response](./import_https/) for details.
 
 ## Item Screenshots
 

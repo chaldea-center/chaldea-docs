@@ -1,4 +1,4 @@
-import type { HeadConfig } from '@vuepress/core'
+import type { HeadConfig } from 'vitepress'
 
 export const head: HeadConfig[] = [
   ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }],
@@ -47,7 +47,7 @@ export const head: HeadConfig[] = [
     'script',
     {
       src: 'https://www.googletagmanager.com/gtag/js?id=G-PPD5M5TR2R',
-      async: true,
+      async: '',
     },
   ],
   [

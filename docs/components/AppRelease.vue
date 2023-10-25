@@ -1,17 +1,21 @@
 <template>
   <div>
     <p v-if="loading">Loading...</p>
-    <p style="color: red;" v-if="msg">Error: {{ msg }}</p>
+    <p style="color: red" v-if="msg">Error: {{ msg }}</p>
     <template v-for="release in releases">
       <h3 :id="release.name" tabindex="-1">
-        <a class="header-anchor" :href="'#' + release.name" aria-hidden="true">#</a>
-        {{ release.tag_name }}
+        <a
+          class="header-anchor"
+          :href="'#' + release.name"
+          aria-hidden="true"
+        ></a
+        >{{ release.tag_name }}
       </h3>
-      <details class="custom-container details" style="margin: 0.2em 0; padding: 0.8em">
+      <details class="details custom-block">
         <summary>
           Release Note ({{ new Date(release.created_at).toLocaleDateString() }})
         </summary>
-        <pre style="font: var(--font-family);margin: 0.5rem 0 0 0;padding: 0.5rem 1rem;">{{ release.body.trim() }}</pre>
+        <p><pre style="font: var(--font-family)">{{ release.body.trim() }}</pre></p>
       </details>
       <table>
         <tbody>
@@ -19,11 +23,20 @@
             <tr v-if="!asset.name.endsWith('.sha1')">
               <td>{{ asset.name }}</td>
               <td>
-                <a :href="asset.browser_download_url" target="_blank" rel="noreferrer">Github</a>
+                <a
+                  :href="asset.browser_download_url"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Github</a
+                >
               </td>
               <td>
-                <a :href="proxy(asset.browser_download_url)" target="_blank" rel="noreferrer">{{ lang == 'zh' ?
-                  "代理" : "Proxy" }}</a>
+                <a
+                  :href="proxy(asset.browser_download_url)"
+                  target="_blank"
+                  rel="noreferrer"
+                  >{{ lang == 'zh' ? '代理' : 'Proxy' }}</a
+                >
               </td>
             </tr>
           </template>

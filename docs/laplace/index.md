@@ -1,6 +1,6 @@
 # Laplace - 3T Simulator
 
-<a href="#">
+<br><a href="#">
 <ruby>事象記録<rp>(</rp><rt>Phenomenon Recording</rt><rp>)</rp></ruby>&nbsp;&nbsp;&nbsp;<ruby>電脳魔<rp>(</rp><rt>Cyber-Daemon</rt><rp>)</rp></ruby>・<ruby>ラプラス<rp>(</rp><rt>LAPLACE</rt><rp>)</rp></ruby>
 </a>
 
@@ -13,7 +13,7 @@ you can try Challenge quests using custom skill activation.
 
 - [Formation](./team.md)
 - [Battle Simulation](./battle.md)
-- [NP Damage Ranking](./np_damage_ranking.md)
+- [NP Damage Ranking](./np_dmg_ranking.md)
 - [FAQ](./faq.md)
 - [Bugs](./bugs.md)
 

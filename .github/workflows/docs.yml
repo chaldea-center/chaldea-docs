@@ -29,18 +29,18 @@ jobs:
       - name: Install dependencies
         run: |
           corepack enable
-          corepack prepare yarn@stable --activate
-          yarn --version
-          yarn
+          corepack prepare pnpm@8.9.2 --activate
+          pnpm --version
+          pnpm install
 
       - name: Build documentation site
-        run: yarn docs:build
+        run: pnpm run docs:build
 
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3
         with:
           repo: chaldea-center/chaldea-center.github.io
           target_branch: main
-          build_dir: docs/.vuepress/dist
+          build_dir: docs/.vitepress/dist
         env:
           GH_PAT: ${{ secrets.GH_PAGES_TOKEN }}
