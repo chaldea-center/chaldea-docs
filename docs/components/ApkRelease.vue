@@ -17,8 +17,8 @@
       <thead>
         <tr style="text-wrap: nowrap">
           <th>{{ t.version }}</th>
-          <th>{{ t.link }}1</th>
-          <th>{{ t.link }}2</th>
+          <th>{{ t.link }}</th>
+          <th>{{ t.link }}</th>
           <th>{{ t.size }}</th>
           <th>{{ t.modified }}</th>
         </tr>

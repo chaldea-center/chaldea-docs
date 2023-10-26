@@ -27,7 +27,8 @@
     "prettier": "^3.0.1",
     "prettier-config-vuepress": "^4.4.0",
     "striptags": "^3.2.0",
-    "vitepress": "1.0.0-rc.24"
+    "vitepress": "1.0.0-rc.24",
+    "vue": "^3.3.7"
   },
   "pnpm": {
     "peerDependencyRules": {

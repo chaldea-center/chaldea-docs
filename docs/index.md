@@ -18,8 +18,8 @@ hero:
     - text: Laplace
       link: /laplace/
       theme: alt
-    - text: Donate
-      link: /guide/donation
+    - text: 中文
+      link: /zh/
       theme: brand
 
 features:

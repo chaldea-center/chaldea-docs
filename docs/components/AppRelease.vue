@@ -22,7 +22,7 @@
           <template v-for="asset in release.assets">
             <tr v-if="!asset.name.endsWith('.sha1')">
               <td>{{ asset.name }}</td>
-              <td>
+              <td style="text-wrap: nowrap;">
                 <a
                   :href="asset.browser_download_url"
                   target="_blank"
@@ -30,7 +30,7 @@
                   >Github</a
                 >
               </td>
-              <td>
+              <td style="text-wrap: nowrap;">
                 <a
                   :href="proxy(asset.browser_download_url)"
                   target="_blank"

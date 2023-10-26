@@ -88,6 +88,7 @@ export default defineConfig({
         'Powered by <a href="https://vitepress.dev/" target="_blank">Vitepress</a>',
       copyright: 'Copyright © 2021-present narumi | MIT License',
     },
+    // algolia crawler config: https://github.com/vuejs/vitepress/issues/2592#issuecomment-1627642497
     search: {
       provider: 'algolia',
       options: {

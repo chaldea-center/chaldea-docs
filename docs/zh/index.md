@@ -19,8 +19,8 @@ hero:
     - text: Laplace
       link: /zh/laplace/
       theme: alt
-    - text: 支持我们
-      link: /zh/guide/donation
+    - text: English
+      link: /
       theme: brand
 
 features:
