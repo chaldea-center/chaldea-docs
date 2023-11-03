@@ -25,8 +25,7 @@ export default defineConfig({
     root: {
       label: 'English',
       title: 'Chaldea',
-      description:
-        'Chaldea - Yet Another Planner & Battle Simulator for FGO',
+      description: 'Chaldea - Yet Another Planner & Battle Simulator for FGO',
       themeConfig: {
         nav: navbarEn,
         sidebar: sidebarEn,
@@ -202,6 +201,26 @@ export default defineConfig({
         },
       ],
     )
+    if (!isHome) {
+      heads.push([
+        'script',
+        {},
+        `
+        document.addEventListener(
+          "DOMContentLoaded",
+          function () {
+            const elements = document.querySelectorAll(".main .vp-doc div");
+            if (elements.length == 0) return;
+            elements[0].insertAdjacentHTML(
+              "afterbegin",
+              '<div class="tip custom-block"><p class="custom-block-title">服务器维护</p><p>11.03-11.05服务器迁移，旧版将无法使用备份、分享队伍等功能，请尽快升级。</p></div>'
+            );
+          },
+          false
+        );
+      `,
+      ])
+    }
 
     return heads
   },
@@ -215,4 +234,10 @@ export default defineConfig({
       pageData.titleTemplate = ':title'
     }
   },
+  // transformHtml: async (code, id, ctx) => {
+  //   const isHome = ctx.pageData.frontmatter.layout === 'home'
+  //   // if (isHome) return
+  //   console.log([ctx.page,ctx.content.substring(0, 100)])
+  //   return `<div> Add bulletin board here</div>` + code
+  // },
 })
