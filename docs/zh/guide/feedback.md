@@ -3,7 +3,7 @@
 如有任何建议或问题反馈，可以通过以下方式联系开发者
 
 - Discord: <https://discord.gg/5M6w5faqjP>
-- Email: [chaldea@narumi.cc](mailto:chaldea@narumi.cc)
+- Email: [support@chaldea.center](mailto:support@chaldea.center)
 - 应用内反馈（bug 反馈优先此项！）
 - Github: <https://github.com/chaldea-center/chaldea/issues>
 - NGA-FGO 版块: <https://bbs.nga.cn/read.php?tid=24926789>

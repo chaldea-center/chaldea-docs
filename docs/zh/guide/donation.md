@@ -73,4 +73,4 @@
 
 如果有任何问题或希望退回款项，可以通过以下方式联系
 
-- Email: [chaldea@narumi.cc](mailto:chaldea@narumi.cc)
+- Email: [support@chaldea.center](mailto:support@chaldea.center)

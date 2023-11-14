@@ -2,7 +2,7 @@
 
 If you have any advice or feedback, you can contact developer through:
 
-- Email(Recommended): [chaldea@narumi.cc](mailto:chaldea@narumi.cc)
+- Email(Recommended): [support@chaldea.center](mailto:support@chaldea.center)
 - In-App Feedback(Recommended for BUG feedback!)
 - Github: <https://github.com/chaldea-center/chaldea/issues>
 - NGA-FGO Forum: <https://bbs.nga.cn/read.php?tid=24926789>

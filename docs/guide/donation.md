@@ -72,4 +72,4 @@ Check the detailed report and donator list on the following online sheet:
 
 If you have any question or want the donation back, please contact me.
 
-- Email: [chaldea@narumi.cc](mailto:chaldea@narumi.cc)
+- Email: [support@chaldea.center](mailto:support@chaldea.center)
