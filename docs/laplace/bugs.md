@@ -6,7 +6,7 @@
 
 ## Known bugs
 
-- ...
+- 【Challenge Quest】Max HP buffs does not apply during HP bar break
 
 ## Fixed in v2.4.18
 

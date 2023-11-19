@@ -42,6 +42,15 @@ There are four different ways to construct a custom quest:
    - Click "X Times" and "X Turns" to set durations
    - Click "X% Rate" to set success rate
 
+### Probability Threshold & Chance To Apply Skills
+
+Probability threshold determines whether skills with chances apply or not. If the chance of a skill to apply is greater 
+or equal to the probability threshold, then the skill will apply, otherwise it will not (which is a miss). 
+For example, Space Ishtar's 3rd skill can add all three card buffs with 80% chance each, so the probability threshold 
+needs to be set to 80% or lower for this skill to apply. Also for this skill, if the setup requires only some card buffs
+to apply, clicking the dice icon next to the attack button will turn on the manual random value mode which allows for
+manual selection of skill activation.
+
 ### About Team Setup
 
 In the team setup section, servant strengthen status can be configured to match that of a specific FGO server. Whether to
