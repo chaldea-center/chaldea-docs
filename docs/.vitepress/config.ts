@@ -50,6 +50,10 @@ export default defineConfig({
         sidebarMenuLabel: '目录',
         returnToTopLabel: '返回顶部',
         langMenuLabel: '切换语言',
+        outline: {
+          level: [2, 3],
+          label: '目录',
+        },
         lastUpdated: {
           text: '更新时间',
           formatOptions: {
@@ -73,6 +77,9 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.png',
+    outline: {
+      level: [2, 3],
+    },
 
     editLink: {
       pattern: 'https://github.com/chaldea-center/chaldea/edit/main/docs/:path',

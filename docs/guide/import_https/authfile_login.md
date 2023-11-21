@@ -31,4 +31,12 @@ The app will:
 
 You can import file to chaldea app or just copy the text to app.
 
-Additionally, you can set User-Agent, deviceinfo and Country(for NA). They are mainly device related params, you can leave them default if you don't know much about it.
+Additionally, you can set User-Agent, deviceInfo and Country(for NA). They are mainly device related params, you can leave them default if you don't know much about it.
+
+::: tip
+On **Android/iOS**, `UserAgent` and `deviceInfo` can be detected via "Read this Device's info" button.
+
+Remember to use on the same device with FGO.
+:::
+
+[.](./deep.md)
