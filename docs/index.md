@@ -12,11 +12,11 @@ hero:
     - text: Install
       link: /guide/installation
       theme: brand
-    - text: Manual
-      link: /guide/
-      theme: alt
     - text: Laplace
       link: /laplace/
+      theme: alt
+    - text: Donate
+      link: /guide/donation
       theme: alt
     - text: 中文
       link: /zh/

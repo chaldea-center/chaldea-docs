@@ -5,7 +5,7 @@ description: 'Chaldea - FGO素材规划＆战斗模拟'
 hero:
   name: 'Chaldea'
   text: 'Chaldeas & Laplace'
-  tagline: 用于Fate/Grand Order的素材规划&战斗模拟软件
+  tagline: 用于Fate/Grand Order的素材规划＆战斗模拟软件
   image:
     src: /images/chaldea.png
     alt: Chaldea
@@ -13,11 +13,11 @@ hero:
     - text: 下载安装
       link: /zh/guide/installation
       theme: brand
-    - text: 使用指南
-      link: /zh/guide/
-      theme: alt
     - text: Laplace
       link: /zh/laplace/
+      theme: alt
+    - text: 支持我们
+      link: /zh/guide/donation
       theme: alt
     - text: English
       link: /

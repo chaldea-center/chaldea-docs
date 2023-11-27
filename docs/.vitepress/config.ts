@@ -208,26 +208,6 @@ export default defineConfig({
         },
       ],
     )
-    if (!isHome) {
-      heads.push([
-        'script',
-        {},
-        `
-        document.addEventListener(
-          "DOMContentLoaded",
-          function () {
-            const elements = document.querySelectorAll(".main .vp-doc div");
-            if (elements.length == 0) return;
-            elements[0].insertAdjacentHTML(
-              "afterbegin",
-              '<div class="tip custom-block"><p class="custom-block-title">服务器维护</p><p>11.03-11.05服务器迁移，旧版将无法使用备份、分享队伍等功能，请尽快升级。</p></div>'
-            );
-          },
-          false
-        );
-      `,
-      ])
-    }
 
     return heads
   },
