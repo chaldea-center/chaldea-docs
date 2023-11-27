@@ -20,28 +20,29 @@ https://docs.chaldea.center/zh/
 Requirement: `node 14+`
 
 ```sh
-# Install yarn globally
-npm install -g yarn
+# enable pnpm
+corepack enable
+corepack prepare pnpm@latest --activate
 
 # Install dependencies
-yarn
+pnpm install
 
 # Serve the docs site in the local server
 # http://localhost:8080
-yarn docs:dev
+pnpm run docs:dev
 
 # Edit or create markdown files
 ...
 
 # Format
-yarn docs:format
+pnpm run docs:format
 # or
 npm run docs:format
 # or
 prettier --write .
 
 # Make sure build passed
-yarn docs:build
+pnpm run docs:build
 
 # commit & push
 git pull && git add -A && git commit -m "msg" && git push
