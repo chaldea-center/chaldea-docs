@@ -5,36 +5,40 @@ If this project is helpful to you and want to support it, you can:
 - [Starring](https://github.com/chaldea-center/chaldea/stargazers) the repo
 - Rate on [Google Play](https://play.google.com/store/apps/details?id=cc.narumi.chaldea) or [App Store](https://apps.apple.com/us/app/chaldea/id1548713491?itsct=apps_box&itscg=30200)
 - Help [Translation](./translation.md)
-- Donation
+- [Donate](#donate)
 
-This project is open-source, always FREE and no-AD. However, a certain amount of funds are still needed to maintain the expenses of servers, CDN and domain names. Currently all are paid by developer except some donations.
+::: tip Support
+This project is **open-source, always FREE and no-AD**. However, a certain amount of funds are still needed to cover the expenses of servers, CDN and domains. Currently all are paid by developer except some donations.
 
-> Donation is welcomed, please leave a message to let me know that's donated for Chaldea.
+We sincerely welcome and greatly appreciate your support towards our project, which will be used to cover project expenses.
+:::
+
+> Please leave a message to let me know that's donated for Chaldea.
 
 ## Project Financial Report
 
 Main Expenditures
 
-| Expenditure              | Amount       | Comment                                                     |
-| ------------------------ | ------------ | ----------------------------------------------------------- |
-| Apple Developer Account  | $100/year    | Upload app to App Store                                     |
-| Google Developer Account | $25          | Upload app to Google Play                                   |
-| AWS Cloud Server         | $100/year    | Server backup, screenshot recognition. Unfixed expenditure. |
-| Aliyun CDN/OSS           | $30-50/month | CDN in China                                                |
+| Expenditure              | Amount       | Comment                             |
+| ------------------------ | ------------ | ----------------------------------- |
+| Apple Developer Account  | $100/year    | Upload app to App Store             |
+| Google Developer Account | $25          | Upload app to Google Play           |
+| AWS Cloud Server         | $150/year    | Server, screenshot recognition etc. |
+| Aliyun CDN/OSS           | $30-50/month | CDN in China                        |
 
 Check the detailed report and donator list on the following online sheet:
 
 <https://docs.qq.com/sheet/DVG5FcFFSUWF2bURC>
 
-| **Item**     | **Total(CNY)** | **Total(USD)** | **CNY only** | **USD only** |
-| ------------ | -------------- | -------------- | ------------ | ------------ |
-| 捐赠Donation | ¥5,174.21      | $771.12        | ¥4,783.89    | $58.17       |
-| 支出Expense  | -¥8,320.76     | -$1,240.05     | -¥8,320.76   | /            |
-| 结余/Balance | -¥3,146.55     | -$468.93       | /            | /            |
+| **Item**     | **Total(CNY)** | **Total(USD)** |
+| ------------ | -------------: | -------------: |
+| 捐赠Donation |      ¥7,475.03 |      $1,114.01 |
+| 支出Expense  |    -¥10,732.80 |     -$1,599.52 |
+| 结余/Balance |     -¥3,257.77 |       -$485.51 |
 
-> Updated: 2023/08/20
+> Updated: 2023/11/26
 
-## Donations
+## Donate
 
 ### PayPal.Me
 
