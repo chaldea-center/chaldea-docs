@@ -65,4 +65,11 @@ If it does have CORS issue, please turn on **`Fix CORS issue for "Global" source
 
 For any translation missing or mistake, feedback welcomed, and help translation wanted!!!
 
+## Delete Account
+
+Account system is used for online userdata backup and Laplace team sharing. If you want to delete account and all data, you can:
+
+1. Go to Settings - User Page, input user name and password then click DELETE.
+2. Contact developer to remove data: [support@chaldea.center](mailto:support@chaldea.center)
+
 ## [Feedback](./feedback.md)
