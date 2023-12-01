@@ -47,12 +47,12 @@ export default defineConfig({
         nav: navbarZh,
         sidebar: sidebarZh,
         darkModeSwitchLabel: '深色模式',
-        sidebarMenuLabel: '目录',
         returnToTopLabel: '返回顶部',
         langMenuLabel: '切换语言',
+        sidebarMenuLabel: '目录',
         outline: {
           level: [2, 3],
-          label: '目录',
+          label: '本页内容',
         },
         lastUpdated: {
           text: '更新时间',
