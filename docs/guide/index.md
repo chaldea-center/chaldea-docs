@@ -44,6 +44,10 @@ The document may not be up to date, some contents are still for v1.x, please tak
   - **Fate/Freedom Order：** 2021 April Fool's mini game
   - Illustrator and CV list
 
+There is a simple guide created by [Squirrel](https://www.youtube.com/watch?v=prVJcZUGK1M):
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/prVJcZUGK1M?si=xlJCIWCHShlIvNLc" title="Chaldea App" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Data Source
 
 - [Atlas Academy](https://atlasacademy.io/)

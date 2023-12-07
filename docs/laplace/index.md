@@ -17,6 +17,10 @@ you can try Challenge quests using custom skill activation.
 - [FAQ](./faq.md)
 - [Bugs](./bugs.md)
 
+You can also read the guide created by [Squirrel](https://www.youtube.com/watch?v=Y1n3bBli27g):
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y1n3bBli27g?si=ALlMWwa-NY9fJA7v" title="Laplace Battle Simulator | Chaldea App" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ### Formation
 
 ![Formation](https://data-cn.chaldea.center/public/preview_en.png)
