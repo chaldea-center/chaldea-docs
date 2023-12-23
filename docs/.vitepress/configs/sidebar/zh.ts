@@ -50,6 +50,7 @@ export const sidebarZh: DefaultTheme.Sidebar = {
         { text: '搜索与筛选', link: 'search_filter' },
         { text: '应用设置', link: 'app_setting' },
         { text: 'Fate/Freedom Order', link: 'freedom_order' },
+        { text: 'Mooncell', link: 'mooncell' },
         { text: 'LOSTROOM', link: 'lostroom' },
       ],
     },
