@@ -75,6 +75,7 @@ export const sidebarZh: DefaultTheme.Sidebar = {
         { text: '宝具伤害排行', link: 'np_dmg_ranking' },
         { text: '常见问题', link: 'faq' },
         { text: 'Bugs', link: 'bugs' },
+        { text: '开发笔记', link: 'notes' },
       ],
     },
   ],

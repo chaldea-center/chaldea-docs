@@ -72,6 +72,7 @@ export const sidebarEn: DefaultTheme.Sidebar = {
         { text: 'NP Damage Ranking', link: 'np_dmg_ranking' },
         { text: 'FAQ', link: 'faq' },
         { text: 'Bugs', link: 'bugs' },
+        { text: 'Dev Notes', link: 'notes' },
       ],
     },
   ],
