@@ -58,6 +58,7 @@ export const sidebarZh: DefaultTheme.Sidebar = {
       text: '其他',
       base: '/zh/guide/',
       items: [
+        { text: '工具', link: 'tools' },
         { text: '参考资料', link: 'references' },
         { text: '隐私策略', link: 'privacy2' },
         { text: 'Privacy Policy', link: 'privacy' },

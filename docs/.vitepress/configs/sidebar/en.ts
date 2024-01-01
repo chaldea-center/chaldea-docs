@@ -55,6 +55,7 @@ export const sidebarEn: DefaultTheme.Sidebar = {
       text: 'Misc',
       base: '/guide/',
       items: [
+        { text: 'Tools', link: 'tools' },
         { text: 'References', link: 'references' },
         { text: 'Privacy', link: 'privacy2' },
         { text: 'Privacy Policy', link: 'privacy' },
