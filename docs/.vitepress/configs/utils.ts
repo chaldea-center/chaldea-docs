@@ -50,7 +50,7 @@ export const md2text = (content: string): string => {
   while (
     (removedContainerText = text.replace(
       /(?:^|\n).*?(:{3,})\s*(?:.+?)(?:\s+(.*))?\n([\s\S]*?)\1\n/gm,
-      '$2\n$3',
+      '$2\n$3'
     )) !== text
   )
     text = removedContainerText
@@ -58,13 +58,13 @@ export const md2text = (content: string): string => {
   // remove contents
   text = removals.reduce(
     (content, matcher) => content.replace(matcher, ''),
-    text,
+    text
   )
 
   // replace contents
   text = replacers.reduce(
     (content, [matcher, replacer]) => content.replace(matcher, replacer),
-    removals.reduce((content, matcher) => content.replace(matcher, ''), text),
+    removals.reduce((content, matcher) => content.replace(matcher, ''), text)
   )
 
   // handle line breaks
@@ -85,7 +85,7 @@ export const getPageText = (content: string): string =>
     matter(content)
       .content.trim()
       // remove first heading1 as title
-      .replace(/^# (.*)$/gm, ''),
+      .replace(/^# (.*)$/gm, '')
   )
     // convert link breaks into spaces
     .replace(/(?:\r?\n)+/g, ' ')

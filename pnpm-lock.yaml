@@ -14,9 +14,6 @@ devDependencies:
   prettier:
     specifier: ^3.1.1
     version: 3.1.1
-  prettier-config-vuepress:
-    specifier: ^4.4.0
-    version: 4.4.0
   striptags:
     specifier: ^3.2.0
     version: 3.2.0
@@ -906,10 +903,6 @@ packages:
 
   /preact@10.19.3:
     resolution: {integrity: sha512-nHHTeFVBTHRGxJXKkKu5hT8C/YWBkPso4/Gad6xuj5dbptt9iF9NZr9pHbPhBrnT2klheu7mHTxTZ/LjwJiEiQ==}
-    dev: true
-
-  /prettier-config-vuepress@4.4.0:
-    resolution: {integrity: sha512-jTbs0zkoEHbLJgktcLA4BPJo7+3ipiY4fZcvdDWHkhAq+JhvGBmuoY3VRJcjlSs/7yp0e81oPTp3tl6I9VkpTg==}
     dev: true
 
   /prettier@3.1.1:

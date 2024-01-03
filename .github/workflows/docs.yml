@@ -29,7 +29,7 @@ jobs:
       - name: Install dependencies
         run: |
           corepack enable
-          corepack prepare pnpm@8.9.2 --activate
+          corepack prepare pnpm@latest --activate
           pnpm --version
           pnpm install
 

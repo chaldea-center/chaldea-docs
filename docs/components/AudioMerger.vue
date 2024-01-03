@@ -37,7 +37,7 @@ onMounted(async () => {
 const padAudio = (
   audioContext: AudioContext,
   buffer: AudioBuffer,
-  delay: number,
+  delay: number
 ) => {
   if (delay === 0) {
     return buffer
@@ -48,7 +48,7 @@ const padAudio = (
   const newBuffer = audioContext.createBuffer(
     buffer.numberOfChannels,
     buffer.length + delaySamples,
-    buffer.sampleRate,
+    buffer.sampleRate
   )
 
   for (
@@ -66,7 +66,7 @@ const padAudio = (
 
 const concatAudios = (context: AudioContext, buffers: AudioBuffer[]) => {
   const maxNumberOfChannels = Math.max(
-    ...buffers.map((buffer) => buffer.numberOfChannels),
+    ...buffers.map((buffer) => buffer.numberOfChannels)
   )
 
   let totalLength = 0
@@ -77,7 +77,7 @@ const concatAudios = (context: AudioContext, buffers: AudioBuffer[]) => {
   const output = context.createBuffer(
     maxNumberOfChannels,
     totalLength,
-    buffers[0].sampleRate,
+    buffers[0].sampleRate
   )
 
   let offset = 0
@@ -181,7 +181,7 @@ const mergeAudios = async () => {
         lastBuffer = padAudio(audioContext, lastBuffer, delay)
       } else {
         audioIds.push(
-          new URL(line).pathname.split('/').slice(-1)[0].split('.')[0],
+          new URL(line).pathname.split('/').slice(-1)[0].split('.')[0]
         )
         if (lastBuffer != null) {
           audioBuffsers.push(lastBuffer)

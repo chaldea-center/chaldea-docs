@@ -135,7 +135,7 @@ export default defineComponent({
       files.sort((a, b) =>
         b.version != a.version
           ? b.version - a.version
-          : b.versionName.localeCompare(b.versionName),
+          : b.versionName.localeCompare(b.versionName)
       )
       files = files.slice(0, 10)
       return files

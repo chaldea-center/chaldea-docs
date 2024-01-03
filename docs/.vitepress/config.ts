@@ -158,7 +158,7 @@ export default defineConfig({
 
     let url = path.join(
       ctx.siteConfig.sitemap?.hostname ?? 'https://docs.chaldea.center/',
-      ctx.pageData.relativePath,
+      ctx.pageData.relativePath
     )
     url = url
       .replace(/\.md$/, '.html')
@@ -209,7 +209,7 @@ export default defineConfig({
           name: 'og:description',
           content: description,
         },
-      ],
+      ]
     )
 
     return heads
