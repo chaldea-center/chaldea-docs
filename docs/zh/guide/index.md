@@ -27,7 +27,6 @@ Chaldea 是一款用于[Fate/Grand Order](https://www.fate-go.jp)/[命运-冠位
 - **数据导入**
   - 借助抓包工具一键导入素材从者所有数据，无需手动输入，支持**国服、台服、日服和美服**
   - 素材数量、主动/附加技能等级的截图识别 (性能大幅度优化 by doorholez)
-  - [FGO Simulator-Material](http://fgosimulator.webcrow.jp/Material)数据
 - **杂七杂八**
   - **狗粮需求计算**
   - **从者统计、已消耗素材统计**

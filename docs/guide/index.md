@@ -27,7 +27,6 @@ Go to [Laplace](/laplace/) for details about battle simulator.
 - **Import Data**
   - Recognition for item/active skill/append skill screenshots(Improved performance by doorholez)
   - Parsing all game data by sniffing the client's login https traffic, don't need manual input. Support **NA/JP/CN/TW**.
-  - From [FGO Simulator-Material](http://fgosimulator.webcrow.jp/Material)
 - **Others**
   - **EXP card cost calculator**
   - **Statistics on item demands, consumed items and servant collection**

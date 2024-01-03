@@ -72,14 +72,6 @@ Currently only support skill levels, ascension level and grails are not included
 
 <figcaption style="text-align:center">Skill Screenshot Example</figcaption>
 
-## FGO Simulator - Material
-
-Import from <http://fgosimulator.webcrow.jp/Material/>
-The new site: <https://fgosim.github.io/Material>
-
-1. On the website, click **My Chaldea-引継ぎコード**, select **サーヴァント/アイテム** and **発行**
-2. Copy the text to the input field, then parse it to import
-
 ## CSV Template
 
 Since input servant data in app is a little annoying, and not convenient on desktop, you can export account data to csv file, and edit it in Excel/Google Sheet.
