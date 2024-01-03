@@ -4,7 +4,7 @@
 
 <hr/>
 
-### 什么是 Atlas DB URL?
+### Atlas DB URL
 
 Chaldea 使用 [Atlas Academy DB](https://apps.atlasacademy.io/db/) 作为数据来源，所以你可以直接使用 Atlas 的链接来读取想要的关卡或是技能。
 

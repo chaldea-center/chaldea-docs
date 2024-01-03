@@ -4,7 +4,7 @@
 
 <hr/>
 
-### What is Atlas DB URL?
+### Atlas DB URL
 
 Chaldea uses [Atlas Academy DB](https://apps.atlasacademy.io/db/) as backend, so you can copy Atlas's link directly for
 loading specific quests or skills.

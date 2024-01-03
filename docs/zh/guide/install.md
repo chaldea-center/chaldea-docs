@@ -95,7 +95,7 @@ sudo apt install libappindicator3-1
 sudo apt-get install libayatana-appindicator3-dev
 ```
 
-## 历史版本
+## 历史版本 {#releases}
 
 > FGO 游戏安装包请查看[FGO APK](./fgo_apk.md)
 

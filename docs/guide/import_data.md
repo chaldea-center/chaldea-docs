@@ -51,7 +51,7 @@ Don't crop, don't use split screen mode, make sure the game fills the entire scr
 
 <figcaption style="text-align:center">Item Screenshot Example</figcaption>
 
-## Active/Append Skill Recognition
+## Skill Recognition
 
 ::: warning
 Don't crop, don't use split screen mode, make sure the game fills the entire screen.

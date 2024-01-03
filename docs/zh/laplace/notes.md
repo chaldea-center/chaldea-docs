@@ -49,3 +49,18 @@
 ## 复数宝具色卡变更buff的叠加
 
 可以自己带俩光兔兔和仇凛 + CD服试试看！答案是后选的卡色会覆盖先选的卡色。
+
+## 复仇/Revenge的目标选择
+
+自身受到伤害类型分为: 指令卡伤害、宝具伤害、HP减少(lossHp)、DoT(毒/诅咒/灼烧)、damageValue(多见于敌方直接造成伤害)。
+
+在计算“最后一个对自身造成伤害的单位”时，均不计入自身造成伤害，其中DoT类伤害来源固定为自身。
+
+1. funcTargetType=enemyOneNoDamageNoAction
+
+   最后一个攻击自身的己方或敌方单位，若无，则不发动该效果。例：五百年的执着。
+
+2. Buffs: selfturnendFunction(每回合结束发动), delayFunction(X回合后发动), gutsFunction(毅力时发动),
+   damageFunction(受击时发动), deadFunction(死亡时发动)
+
+   Trigger技能的默认目标为最后一个攻击自身的敌方单位，如enemyOne。若无攻击自身的记录，则随机选择一个敌方或己方单体。Laplace则回退到界面中选择的单位。
