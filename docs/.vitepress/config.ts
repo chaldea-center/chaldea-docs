@@ -13,6 +13,9 @@ export default defineConfig({
   description: 'Chaldea - Yet Another Planner & Battle Simulator for FGO',
   cleanUrls: true,
   markdown: {
+    image: {
+      lazyLoading: true,
+    },
     container: {
       // tipLabel: '提示',
       // infoLabel: '',

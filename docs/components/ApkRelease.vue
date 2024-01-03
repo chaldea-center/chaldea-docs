@@ -1,7 +1,7 @@
 <template>
   <div class="apk-release">
     <div class="toggle">
-      <template v-for="r in ['jp', 'na', 'tw', 'kr']">
+      <template v-for="r in ['jp', 'na', 'tw', 'kr']" :key="r">
         <input type="radio" :id="r" :value="r" v-model="region" />
         <label :for="r"> {{ r.toUpperCase() }}</label>
       </template>
@@ -29,7 +29,7 @@
         </tr>
       </thead>
       <tbody>
-        <template v-for="file in filter(region)">
+        <template v-for="file in filter(region)" :key="file.name">
           <tr>
             <td>{{ file.versionName }}</td>
             <td>

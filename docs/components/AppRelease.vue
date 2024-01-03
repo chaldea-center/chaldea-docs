@@ -2,7 +2,7 @@
   <div>
     <p v-if="loading">Loading...</p>
     <p style="color: red" v-if="msg">Error: {{ msg }}</p>
-    <template v-for="release in releases">
+    <template v-for="release in releases" :key="release.id">
       <h3 :id="release.name" tabindex="-1">
         <a
           class="header-anchor"
@@ -19,7 +19,7 @@
       </details>
       <table>
         <tbody>
-          <template v-for="asset in release.assets">
+          <template v-for="asset in release.assets" :key="asset.id">
             <tr v-if="!asset.name.endsWith('.sha1')">
               <td>{{ asset.name }}</td>
               <td style="text-wrap: nowrap;">
