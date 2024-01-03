@@ -15,14 +15,20 @@
         <summary>
           Release Note ({{ new Date(release.created_at).toLocaleDateString() }})
         </summary>
-        <p><pre style="font: var(--font-family)">{{ release.body.trim() }}</pre></p>
+        <pre style="font: var(--font-family)">{{ release.body.trim() }}</pre>
       </details>
       <table>
         <tbody>
           <template v-for="asset in release.assets" :key="asset.id">
-            <tr v-if="!asset.name.endsWith('.txt') && !asset.name.endsWith('.aab') && !asset.name.endsWith('.sha1')">
+            <tr
+              v-if="
+                !asset.name.endsWith('.txt') &&
+                !asset.name.endsWith('.aab') &&
+                !asset.name.endsWith('.sha1')
+              "
+            >
               <td>{{ asset.name }}</td>
-              <td style="text-wrap: nowrap;">
+              <td style="text-wrap: nowrap">
                 <a
                   :href="asset.browser_download_url"
                   target="_blank"
@@ -30,7 +36,7 @@
                   >Github</a
                 >
               </td>
-              <td style="text-wrap: nowrap;">
+              <td style="text-wrap: nowrap">
                 <a
                   :href="proxy(asset.browser_download_url)"
                   target="_blank"

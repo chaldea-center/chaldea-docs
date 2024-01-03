@@ -1,4 +1,4 @@
-!.vuepress/
+!.vitepress/
 !.*.js
 .cache/
 .temp/

@@ -5,7 +5,7 @@
 [![MIT license](https://img.shields.io/github/license/chaldea-center/chaldea-docs)](https://github.com/chaldea-center/chaldea-docs/blob/main/LICENSE)
 [![discord](https://img.shields.io/discord/839788731108032532?label=discord)](https://discord.gg/5M6w5faqjP)
 
-Documentation for [Chaldea](https://github.com/chaldea-center/chaldea) app. Powered by [Vuepress](https://v2.vuepress.vuejs.org/).
+Documentation for [Chaldea](https://github.com/chaldea-center/chaldea) app. Powered by [VitePress](https://vitepress.dev/).
 
 ## Documentation
 
@@ -15,7 +15,7 @@ https://docs.chaldea.center/zh/
 
 ## Contributing
 
-[Vuepress Document](https://v2.vuepress.vuejs.org/)
+[VitePress Document](https://vitepress.dev/)
 
 Requirement: `node 14+`
 
