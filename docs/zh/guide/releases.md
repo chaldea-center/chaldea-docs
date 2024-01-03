@@ -1,3 +1,10 @@
+---
+head:
+  - - meta
+    - http-equiv: Refresh
+      content: 0; URL=/zh/guide/install
+---
+
 # 历史版本
 
 > FGO 游戏安装包请查看[FGO APK](./fgo_apk.md)

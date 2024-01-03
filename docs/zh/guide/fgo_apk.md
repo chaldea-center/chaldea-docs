@@ -1,6 +1,6 @@
 # FGO APK
 
-> Chaldea app 的 apk/exe 请查看[历史版本](./releases.md)
+> Chaldea app 的 apk/exe 请查看[下载与安装](./installation.md)
 
 - Google Play 下载的各区服的 FGO 原版 apk
 - 其中日服/美服后分为 64 位和 32 位包

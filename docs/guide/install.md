@@ -1,4 +1,4 @@
-# Installation
+# Install
 
 ### System Requirement
 
@@ -15,8 +15,8 @@
 > <sup>1</sup> **Windows 7 SP1** should be supported, but app may crash at startup with unknown reason.
 >
 > <sup>2</sup> Only **Debian** based Linux distributions are supported and tested. While it may work on other Linux distributions, we cannot guarantee full compatibility nor offer technical support for issues arising from those platforms at this time.
-> 
-> <sup>3</sup> start from 2.5.0, newer browser version is required, see [WeakRef](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakRef/WeakRef#browser_compatibility) and [globalThis](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/globalThis#browser_compatibility)
+>
+> <sup>3</sup> **Mobile browser** is not recommended due to bad performance and compatibility. Starting from 2.5.0, newer browser version is required, see [WeakRef](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakRef/WeakRef#browser_compatibility) and [globalThis](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/globalThis#browser_compatibility)
 
 Check [Flutter docs](https://docs.flutter.dev/reference/supported-platforms) for more about supported platforms.
 
@@ -56,7 +56,7 @@ Including iOS App Store and Mac App Store
 Contains Android, Windows and Linux binary assets.
 
 - [Github Releases](https://github.com/chaldea-center/chaldea/releases)
-- [Releases](./releases.md)
+- [Releases](#releases)
 
 If the latest version doesn't contain the platform you want, please check the previous versions.
 
@@ -102,3 +102,27 @@ sudo apt install libappindicator3-1
 # Ubuntu 22.04 or higher
 sudo apt-get install libayatana-appindicator3-dev
 ```
+
+## Releases
+
+> For FGO game apk, please visit [FGO APK](./fgo_apk.md).
+
+This section lists recent **Chaldea** v2+beta download links for Android, Linux and Windows.
+
+If you have trouble downloading from the **Github** link, please use the **Proxy** link.
+
+More releases can be found at [Github Releases](https://github.com/chaldea-center/chaldea/releases)
+
+Tips: `beta` version is the latest preview version, updated when source code got updated.
+
+To download the latest stable version:
+
+- Android: <https://worker.chaldea.center/releases/latest/android>
+- Windows: <https://worker.chaldea.center/releases/latest/windows>
+- Linux: <https://worker.chaldea.center/releases/latest/linux>
+
+<AppRelease/>
+
+<script setup>
+import AppRelease from '../components/AppRelease.vue'
+</script>

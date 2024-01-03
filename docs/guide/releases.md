@@ -1,3 +1,10 @@
+---
+head:
+  - - meta
+    - http-equiv: Refresh
+      content: 0; URL=/guide/install
+---
+
 # Releases
 
 > For FGO game apk, please visit [FGO APK](./fgo_apk.md).

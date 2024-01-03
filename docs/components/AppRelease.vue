@@ -112,7 +112,7 @@ export default defineComponent({
         (a, b) =>
           new Date(b.created_at).getTime() - new Date(a.created_at).getTime(),
       )
-      this.releases = releases
+      this.releases = releases.slice(0, 10)
     },
     getData() {
       this.loading = true
