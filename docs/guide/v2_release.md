@@ -16,7 +16,7 @@ Because the incompatibility of v1 and v2, please make a manual backup before upg
 
 ## About v2
 
-For native app, see [Installation](./installation.md)
+For native app, see [Installation](./install.md)
 
 This upgrade brings Progressive Web App(PWA) support. Most of features have been migrated.
 

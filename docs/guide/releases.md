@@ -11,7 +11,7 @@ head:
 
 This page lists all **Chaldea** v2+beta download links for Android, Linux and Windows. Visit App Store for iOS and macOS version.
 
-For more about installation, please check [Installation](./installation.md).
+For more about installation, please check [Installation](./install.md).
 
 If you have trouble downloading from the **Github** link, please use the **Proxy** link.
 

@@ -1,6 +1,6 @@
 # FGO APK
 
-> For **Chaldea** apk/exe, please visit [Installation](./installation.md)
+> For **Chaldea** apk/exe, please visit [Installation](./install.md)
 
 - Official FGO apk downloaded from Google Play.
 - JP/NA apk is divided into 64-bit and 32-bit versions.

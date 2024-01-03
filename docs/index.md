@@ -10,7 +10,7 @@ hero:
     alt: Chaldea
   actions:
     - text: Install
-      link: /guide/installation
+      link: /guide/install
       theme: brand
     - text: Laplace
       link: /laplace/

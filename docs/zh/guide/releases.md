@@ -11,7 +11,7 @@ head:
 
 以下列出了 Chaldea app 的 Android、Linux 和 Windows 客户端下载地址，包括 beta 版。iOS 及 macOS 版本请前往 App Store。
 
-关于安装方式及更多信息请前往[下载与安装](./installation.md)
+关于安装方式及更多信息请前往[下载与安装](./install.md)
 
 国内用户若无法直连**Github**下载，请选择 **代理(Proxy)** 链接进行下载。
 

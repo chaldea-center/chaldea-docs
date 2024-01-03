@@ -3,7 +3,11 @@
 <template>
   <div class="audio-merge">
     <span> Audio Files </span>
-    <textarea v-model="audioInputData" rows="10" placeholder="urls or delays"></textarea>
+    <textarea
+      v-model="audioInputData"
+      rows="10"
+      placeholder="urls or delays"
+    ></textarea>
     <span>
       <button @click="mergeAudios">Merge</button>
     </span>

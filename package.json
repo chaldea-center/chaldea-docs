@@ -22,13 +22,13 @@
   "license": "MIT",
   "prettier": "prettier-config-vuepress",
   "devDependencies": {
-    "@types/node": "^20.8.9",
+    "@types/node": "^20.10.6",
     "gray-matter": "^4.0.3",
-    "prettier": "^3.0.1",
+    "prettier": "^3.1.1",
     "prettier-config-vuepress": "^4.4.0",
     "striptags": "^3.2.0",
-    "vitepress": "1.0.0-rc.24",
-    "vue": "^3.3.7"
+    "vitepress": "1.0.0-rc.34",
+    "vue": "^3.4.3"
   },
   "pnpm": {
     "peerDependencyRules": {

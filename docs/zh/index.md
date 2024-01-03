@@ -11,7 +11,7 @@ hero:
     alt: Chaldea
   actions:
     - text: 下载安装
-      link: /zh/guide/installation
+      link: /zh/guide/install
       theme: brand
     - text: Laplace
       link: /zh/laplace/

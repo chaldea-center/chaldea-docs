@@ -8,8 +8,13 @@
     </div>
     <div>
       Google Play:
-      <a target="_blank" :href="'https://play.google.com/store/apps/details?id=' + all_pkgs[region]
-        ">{{ all_pkgs[region] }}</a>
+      <a
+        target="_blank"
+        :href="
+          'https://play.google.com/store/apps/details?id=' + all_pkgs[region]
+        "
+        >{{ all_pkgs[region] }}</a
+      >
     </div>
     <p v-if="loading">Loading...</p>
     <p class="error-hint" v-if="msg">Error: {{ msg }}</p>
@@ -102,21 +107,21 @@ export default defineComponent({
       },
       t: this.language?.startsWith('zh')
         ? {
-          version: '版本',
-          link: '链接',
-          download: '下载',
-          size: '大小',
-          modified: '修改时间',
-          proxy: '代理',
-        }
+            version: '版本',
+            link: '链接',
+            download: '下载',
+            size: '大小',
+            modified: '修改时间',
+            proxy: '代理',
+          }
         : {
-          version: 'Version',
-          link: 'Link',
-          download: 'Download',
-          size: 'Size',
-          modified: 'Modified',
-          proxy: 'Proxy',
-        },
+            version: 'Version',
+            link: 'Link',
+            download: 'Download',
+            size: 'Size',
+            modified: 'Modified',
+            proxy: 'Proxy',
+          },
     }
   },
   mounted() {
@@ -155,8 +160,8 @@ export default defineComponent({
           for (const ele of elements) {
             if (ele.childElementCount < 5) continue
             const href = ele.children[1]
-              .getElementsByTagName('a')[0]
-              .getAttribute('href'),
+                .getElementsByTagName('a')[0]
+                .getAttribute('href'),
               size = ele.children[2].getAttribute('data-size'),
               date = ele.children[3]
                 .getElementsByTagName('time')[0]
@@ -171,7 +176,7 @@ export default defineComponent({
                 match == null
                   ? 0
                   : (parseInt(match[1]) * 100 + parseInt(match[2])) * 100 +
-                  parseInt(match[3]),
+                    parseInt(match[3]),
               versionName:
                 match == null
                   ? ''
@@ -221,12 +226,12 @@ export default defineComponent({
   padding: 5px 20px;
 }
 
-.apk-release input[type='radio']:checked+label {
+.apk-release input[type='radio']:checked + label {
   color: white;
   background: var(--vp-button-brand-bg);
 }
 
-.apk-release label+input[type='radio']+label {
+.apk-release label + input[type='radio'] + label {
   border-left: solid 1.2px var(--vp-c-border);
 }
 

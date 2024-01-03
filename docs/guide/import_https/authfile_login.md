@@ -16,7 +16,7 @@ Auth file is `54cc(Android)` or `authsave2.dat(iOS)` referred in [Transfer Data]
 ::: warning
 Keep your account file in a safe place! if you are not sure the UserAgent and deviceinfo are the same with
 your real device which fgo is running, DO NOT contact FGO official support to restore account or reset Transfer Code.
-They will verify your login device. 
+They will verify your login device.
 
 Auth file is not "Transfer/Bind Code", you can login with the auth multiple times.
 Only when you login at another device by consuming the transfer code,
