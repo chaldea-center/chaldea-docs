@@ -8,16 +8,6 @@ Go to [Laplace](/laplace/) for details about battle simulator.
 
 <figcaption style="text-align:center">Chaldea Preview</figcaption>
 
-::: warning
-I have stopped updating the dataset for V1.x, both app and dataset
-
-V2 is already released. For more information and breaking changes, check [V2 release](./v2_release.md)
-:::
-
-::: tip
-The document may not be up to date, some contents are still for v1.x, please take care when reading docs.
-:::
-
 ## Features
 
 - **Cross platform:** Android, iOS, Windows, macOS, Linux and Web

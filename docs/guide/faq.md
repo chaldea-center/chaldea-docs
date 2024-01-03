@@ -24,8 +24,6 @@ In-app feedback will attach UUID automatically.
 
 Please check your favorite button and filter setting, maybe you just hide them. Reset those filters and check again.
 
-If you are still using v1.x, please upgrade to v2.x. For Android, you must uninstall and re-install v2.x, remember to backup data.
-
 ## Loading Image Failed
 
 Most of all images(card thumbs, skill icons, illustrations, voices) are downloaded on demands.
@@ -35,21 +33,35 @@ Possible reason:
 - check Network Setting, if it shows offline, you can switch on the Force Online Mode
 - chaldea server: one in China and one is Global
 
+## Web Renderers
+
+Web app has bad performance and compatibility. Especially on mobile browser, web app is not recommended.
+
+There are two renderer, HTML renderer and CanvasKit renderer. You can specify the renderer in Settings, the change will take affect at next loading or page refreshing.
+
+::: warning
+In-app screenshot is only supported in CanvasKit mode, such as Laplace team screenshot.
+:::
+
+1. HTML Renderer
+
+   - advantages: This renderer has a smaller download size, can use system fonts.
+   - disadvantages: page layout may be broken, like incorrect font size calculation. Cannot use in-app screenshot.
+
+2. CanvasKit Renderer
+
+   - advantages: fully consistent with Flutter mobile and desktop, ~~has faster performance with higher widget density~~ it's laggy and annoying. Supports in-app screenshots.
+   - disadvantages: larger app size, especially the first loading. Need to download then render Google fonts at runtime. It may take several seconds before you can see the correct characters.
+
+3. auto
+
+   Automatically choose renderer by flutter engine.
+
 ## Web: laggy or font not rendered
 
-In settings, change web renderer from canvas to html. Html renderer is a little faster but maybe worse layout.
+In settings, change web renderer from canvas to html to use system font.
 
-## Web: refresh page accidentally
-
-Usually occur on mobile web page, especially in quest page. Website on mobile is not recommended! Use app please!
-
-## Web: cannot update data (CORS issue)
-
-Usually on FireFox with "Global" data source (https://data.chaldea.center).
-
-Press F12 to open developer tool and switch to **Console** or **Network** tab. Check whether there is any error related to **"CORS"** (Cross-origin resource sharing).
-
-If it does have CORS issue, please turn on **`Fix CORS issue for "Global" source`** in **Network Settings**.
+For users in China, visit <https://cn.chaldea.center>
 
 ## Anti-Virus
 

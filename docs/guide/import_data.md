@@ -22,8 +22,6 @@ Another way is to **backup to server & download from server**.
 Different app version may use the different user data structure, in another words, they may be incompatible.
 :::
 
-You can also import v1 data here, only some of servants and item data will be imported.
-
 ## HTTPS Sniffing
 
 - For JP/NA, official apk is not supported, use [Login via Account File](./import_https/authfile_login.md) instead if needed.

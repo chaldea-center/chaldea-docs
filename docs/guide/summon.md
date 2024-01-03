@@ -23,8 +23,6 @@ Simulate 10/11x roll or single roll. The statistic probability for current simul
 | Servant | 1.0364 | 3.1198 | 39.8026 |
 | CE | 4.1588 | 12.4803 | 39.4023 |
 
-~~v1.5.6 or before, the SSR servant prob is about 1.44%~~
-
 - app bar button - clear result and reset
 - click arrows of summon result to show history rolls
 - some early summons don't have summon prob data, so cannot simulate

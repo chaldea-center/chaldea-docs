@@ -20,7 +20,7 @@
       <table>
         <tbody>
           <template v-for="asset in release.assets" :key="asset.id">
-            <tr v-if="!asset.name.endsWith('.sha1')">
+            <tr v-if="!asset.name.endsWith('.txt') && !asset.name.endsWith('.aab') && !asset.name.endsWith('.sha1')">
               <td>{{ asset.name }}</td>
               <td style="text-wrap: nowrap;">
                 <a

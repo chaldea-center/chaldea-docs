@@ -20,8 +20,6 @@
 
 Check [Flutter docs](https://docs.flutter.dev/reference/supported-platforms) for more about supported platforms.
 
-For more details about Web version, see [V2 Release Note](./v2_release.md)
-
 ::: tip
 Don't run multiple instances or web pages together, otherwise data will be overridden by each other.
 :::
@@ -38,8 +36,6 @@ If you encounter installation/startup problems, please check [Notes](#notes) fir
 [<img alt='Get it on F-droid' src='https://fdroid.gitlab.io/artwork/badge/get-it-on.png' width="137.5"/>](https://f-droid.org/packages/cc.narumi.chaldea.fdroid/)
 
 [Get it on Google Play](https://play.google.com/store/apps/details?id=cc.narumi.chaldea)
-
-For v1.x, check [Notes](#notes)
 
 ### App Store
 
@@ -94,6 +90,8 @@ If app cannot be started, try to run it from terminal `./chaldea` and check the 
 Since v2.3.0, desktop app can be shown in system tray, and `libappindicator` is required in linux system.
 If it doesn't exist in your system, please install it before launching chaldea app, otherwise startup will fail silently.
 
+Due to some errors, the feature is disabled but the lib is still required.
+
 For Debian based Linux, you can install it through the following command:
 
 ```sh
@@ -107,7 +105,7 @@ sudo apt-get install libayatana-appindicator3-dev
 
 > For FGO game apk, please visit [FGO APK](./fgo_apk.md).
 
-This section lists recent **Chaldea** v2+beta download links for Android, Linux and Windows.
+This section lists recent **Chaldea** stable and beta download links for Android, Linux and Windows.
 
 If you have trouble downloading from the **Github** link, please use the **Proxy** link.
 

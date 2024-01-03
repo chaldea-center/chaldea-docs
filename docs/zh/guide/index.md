@@ -8,16 +8,6 @@ Chaldea 是一款用于[Fate/Grand Order](https://www.fate-go.jp)/[命运-冠位
 
 <figcaption style="text-align:center">Chaldea预览</figcaption>
 
-::: warning
-v1.x 已停止更新，包括 app 和数据。
-
-v2 已正式发布，详情请参考[v2 Release](./v2_release.md)
-:::
-
-::: tip
-文档内容可能仍是 v1.x 的内容，信息可能不准确，阅读时请注意。
-:::
-
 ## 主要功能/特性
 
 - **多平台支持：** Android、iOS、Windows、macOS、Linux 和 Web

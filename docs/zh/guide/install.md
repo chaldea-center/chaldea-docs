@@ -20,8 +20,6 @@
 
 更多关于系统版本要求可查看[Flutter 文档](https://docs.flutter.dev/reference/supported-platforms)
 
-关于 v2 和 Web 版详见[V2 Release](./v2_release.md)
-
 ::: tip
 由于数据储存位置共享，请勿同时运行多个实例或网页，否则会导致数据相互覆盖。
 :::
@@ -38,8 +36,6 @@
 [<img alt='Get it on F-droid' src='https://fdroid.gitlab.io/artwork/badge/get-it-on.png' width="137.5"/>](https://f-droid.org/packages/cc.narumi.chaldea.fdroid/)
 
 [Get it on Google Play](https://play.google.com/store/apps/details?id=cc.narumi.chaldea)
-
-v1.x 用户请阅读[注意事项](#安装注意事项)
 
 ### App Store
 
@@ -88,7 +84,7 @@ macOS 现在仅提供应用商店版本
 
 如果应用启动失败，请尝试从 Terminal 中启动`./chaldea`并检查可能输出的报错信息。
 
-自 v2.3.0 起，桌面应用支持在系统托盘显示，在 Linux 系统中需要使用`libappindicator`相关库。如果系统未内置或未安装，则应用启动时可能会失败而无错误提示。
+自 v2.3.0 起，桌面应用支持在系统托盘显示，在 Linux 系统中需要使用`libappindicator`相关库。如果系统未内置或未安装，则应用启动时可能会失败而无错误提示。但目前由于存在问题已禁用该功能（仍需安装相关库）。
 
 以 Deibian 系列为例（如 Ubuntu），可以通过以下命令安装上述库：
 

@@ -96,7 +96,7 @@ The item detail page only shows favorite servants' demands by default.
 - **Switch Slider/Dropdown**: switch display mode as you like
 - **Create Duplicated Servant**: see following section
 
-### Duplicated Servant(Disabled in v2)
+### Duplicated Servant
 
 By default, we use servant collection number as key. So every servant can have only one instance. Here we call it **Primary** one.
 
@@ -139,8 +139,7 @@ Click the right info button :information_source: to check the item cost details 
    - `0` Fou-kun = `-20`(calculated by silver(3) Fou-kun)
    - `1000` Fou-kun = `0`
    - `2000` Fou-kun = `50`(calculated by gold(4) Fou-kun)
-9. Bond Limit - mainly designed for Chaldea Lantern cost
-10. Command Codes - it's easy to find out code pinned on which servants in code detail page
+9. Command Codes - it's easy to find out code pinned on which servants in code detail page
 
 ### Toolbar
 
