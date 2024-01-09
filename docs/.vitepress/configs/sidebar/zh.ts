@@ -69,7 +69,7 @@ export const sidebarZh: DefaultTheme.Sidebar = {
       text: 'Laplace',
       base: '/zh/laplace/',
       items: [
-        { text: 'Laplace - 3T模拟器', link: '/' },
+        { text: '3T模拟器', link: '/' },
         { text: '编队配置', link: 'team' },
         { text: '战斗模拟', link: 'battle' },
         { text: '宝具伤害排行', link: 'np_dmg_ranking' },

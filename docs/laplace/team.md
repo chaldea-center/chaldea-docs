@@ -11,7 +11,7 @@ For now there are four different ways to choose a quest:
    url pattern also works. This is limited to get data from JP and NA servers only
    - https://cn.chaldea.center/quest/93000002
    - https://apps.atlasacademy.io/db/JP/quest/93000002/3
-   - Detailed explanation can be found in [FAQ](faq.md#what-is-atlas-db-url)
+   - Detailed explanation can be found in [FAQ](faq.md#atlas-db-url)
 4. Import quest from JSON data. It needs to be structured in Atlas DB format. You can use 'Export JSON' function on any
    quests to see what it looks like. However, unless you know what that means, using this method is not recommended
 

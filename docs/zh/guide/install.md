@@ -52,7 +52,7 @@
 包含 Android、Windows 和 Linux 安装包。若最新版不包含所需平台，请检查更早的发布版本。
 
 - [Github Releases](https://github.com/chaldea-center/chaldea/releases)
-- [历史版本](#历史版本) 可选代理下载
+- [历史版本](#releases) 可选代理下载
 
 ## 注意事项
 

@@ -66,7 +66,7 @@ export const sidebarEn: DefaultTheme.Sidebar = {
       text: 'Laplace',
       base: '/laplace/',
       items: [
-        { text: 'Laplace - 3T Simulator', link: '/' },
+        { text: '3T Simulator', link: '/' },
         { text: 'Team Setup', link: 'team' },
         { text: 'Battle Simulation', link: 'battle' },
         { text: 'NP Damage Ranking', link: 'np_dmg_ranking' },

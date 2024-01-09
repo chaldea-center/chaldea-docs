@@ -2,11 +2,13 @@
 
 又名《螺旋社之十万个为什么》
 
+::: details 目录
 [[toc]]
+:::
 
 ## 大总统指令卡的目标切换
 
-宝具卡、全体攻击卡(大总统 Buster / Extra)前后均会触发敌方的退场/亡语。
+宝具卡、全体攻击卡(大总统 Buster / Extra)前后均会触发敌方的退场/亡语/目标切换。
 举例说明：大总统BAQ接EX会执行三次退场结算:
 
 1. Buster后执行第一次退场
@@ -52,15 +54,28 @@
 
 ## 复仇/Revenge的目标选择
 
-自身受到伤害类型分为: 指令卡伤害、宝具伤害、HP减少(lossHp)、DoT(毒/诅咒/灼烧)、damageValue(多见于敌方直接造成伤害)。
+复仇相关Buff: selfturnendFunction(每回合结束发动), delayFunction(X回合后发动), gutsFunction(毅力时发动),
+damageFunction(受击时发动), deadFunction(死亡时发动)。每个trigger skill单独计算复仇目标。
 
-在计算“最后一个对自身造成伤害的单位”时，均不计入自身造成伤害，其中DoT类伤害来源固定为自身。
+自身受到伤害类型分为: 指令卡伤害、宝具伤害、HP减少(lossHp)、DoT(毒/诅咒/灼烧, 无攻击来源)、damageValue(多见于敌方直接造成伤害)。
 
-1. funcTargetType=enemyOneNoDamageNoAction
+::: warning
+目前目标选择机制仍存疑
+:::
 
-   最后一个攻击自身的己方或敌方单位，若无，则不发动该效果。例：五百年的执着。
+1. 复仇目标选择
 
-2. Buffs: selfturnendFunction(每回合结束发动), delayFunction(X回合后发动), gutsFunction(毅力时发动),
-   damageFunction(受击时发动), deadFunction(死亡时发动)
+    以上buff触发技能时，将最后一个攻击自身的人设定为复仇目标（无论敌方/己方、前排/后排、是否死亡）:
 
-   Trigger技能的默认目标为最后一个攻击自身的敌方单位，如enemyOne。若无攻击自身的记录，则随机选择一个敌方或己方单体。Laplace则回退到界面中选择的单位。
+    - 排除攻击来源于自身或无来源
+    - 若`Buff.script.OpponentOnly`，则仅遍历敌方（目前仅deadFunction使用）
+
+    若复仇目标不存在，则随机选择一名“敌方单体”。在Laplace中应回退至选中的敌方单位。
+
+2. 根据`func.funcTargetType`选择实际发动目标
+
+   - `enemy`: 敌方单体，若上述存在复仇目标，则使用该目标（无论是敌方还是己方）。若目标已死亡，则由于无目标不发动。
+   - `enemyOneNoDamageNoAction`: 同上，但仅在自身受到伤害时发动。
+   - `enemyOther`/`enemyOtherFull`: 除目标外的敌方全体，首先获取敌方全体，再剔除上述复仇目标，因此:
+     - 若复仇目标为己方，实际为敌方全体
+     - 若复仇目标为敌方，实际为复仇目标外的敌方全体
