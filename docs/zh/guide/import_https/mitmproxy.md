@@ -1,145 +1,153 @@
 # mitmproxy 抓包
 
-原作者: [vx13@github](https://github.com/vx13)
-
-本文详细介绍借助 mitmproxy 实现 https 抓包的步骤，仅在 Windows 上测试 MuMu 模拟器，其他平台理论可行。
-
 ::: tip
-2022.01.04 国服更新 2.36.0 支持 iOS/Android 互登。Android操作麻烦可使用iOS设备+[Stream](./stream.md)方法。
-
-关于服务器地址请先阅读[简介-服务器地址](./index.md#服务器地址)
+2022.01.04 国服更新 2.36.0 支持 iOS/Android 互登。Android操作麻烦，若可使用iOS设备推荐[Stream](./stream.md)方法。
 :::
 
-若服务器地址未知或所有服务器地址无效，请使用[Charles](./charles.md)方法。
+主要步骤有就设置代理和安装证书两步，mitmproxy和Charles均可适用（除软件自身设置外）。以下以Windows平台+Android模拟器(雷电5模拟器)为例。
+
+## 模拟器选择
+
+除蓝叠等少数系统设置严重阉割的模拟器外应均可适用。部分模拟器可能WiFi的代理设置无法生效(若雷电5的Android7版本)，或部分app也会无视代理，故本教程统一使用Drony进行全局代理。
+
+Android版本选择:
+
+1. Android 6: 如Mumu6，支持国服，用户证书即可，无需adb，但日服要求Android 7+故无法安装
+2. Android 7-11: 需借助adb将证书安装至系统证书
+3. Android 12: 似乎存在更麻烦的情况，未测试
 
 ## 所需软件或工具
 
-- 脚本: [蓝奏云网盘](https://wwe.lanzoui.com/b01uoc3qh), 密码 chaldea, 下载并解压`mitmproxy抓包.zip`，压缩包中已包含 Windows 版 mitmproxy/dump.exe 可执行文件
-- mitmproxy: 同样提供 Windows、macOS 以及 Linux 版，开源软件。若需要可从官网更新新版或下载其他系统版本:
-  - 下载地址: <https://www.mitmproxy.org/>
-- Android only:
-  - Android 版本需**小于等于 6**，现在手机基本见不到旧版本的安卓了，模拟器使用 Android 6 较多，可在`设置-关于`中查看 Android 版本
-  - 若Android版本大于6，则需要将抓包软件的证书从用户证书移到系统证书（需root）
-    - adb: <https://stackoverflow.com/a/46569793>
-    - 或各类框架: Magisk等，注意一般情况下模拟器不支持框架
+下载链接: <https://disk.chaldea.center/s/4zfd> 点击打包下载
 
-> 对于 iOS/Android 上的部分设置与 Charles 版教程类似，如有疑惑可前往带截图的 Charles 教程做参考。
+下载后解压至(举例)`D:\fgotools`文件夹，**建议完整路径不要包含非英文字符和空格**。
 
-## 设置服务器地址与本机地址
+包含以下文件:
 
-编辑`fgoproxy.ini`：
+- 抓包脚本
+- mitmproxy (Windows平台的10.2.1版本)
+  - 若需更新或下载macOS/Linux版本，请访问官网<https://www.mitmproxy.org/>
+- adb: 存放于`fgotools\platform-tools`文件夹
+  - 仅在Android版本>=7时需要，若系统已root且已安装Magisk等框架，可搜索JustTrustMe等相应插件用于复制证书即可。
+  - 部分模拟器可能存在adb版本差异较大导致命令运行失败，可尝试下载其他版本或使用模拟器自带adb，请自行搜索如何下载/使用。
+- Drony 1.3.154
+  - 该apk经过测试可用。网上下载的版本五花八门，即使版本号相同也极有可能已遭多次修改无法正常使用。
 
-1. 将`server=***`的地址替换为[简介-服务器地址](./index.md#服务器地址)中对应区服的地址
-2. 设置电脑的本机地址`ip`为：
-   - Android: 同下一步的网关/DNS/电脑 ip
-   - iOS: 局域网下的电脑 ip
+## 设置mitmptoxy
 
-## Android 模拟器流程
+一般无需修改，仅确认端口用于后续步骤使用。
 
-### 设置网络
+`start.cmd`文件内容:
 
-1. 启动 MuMu 模拟器
+```bat
+mitmdump.exe -p 8888 -s fgoaddon.py
+```
 
-2. 在模拟器中，依次点击“系统应用->设置->WLAN”，长按“已连接”，至弹出窗口，选择“修改网络”，
+其中`8888`即为代理端口。除非出现以下错误说明端口已占用，修改上述数字至其他数字保存后再重试。
 
-   进行下列设置并保存：
+```
+[Errno 10048] HTTP(S) proxy failed to listen on *:8888 with
+[Errno 10048] error while attempting to bind on address ('::', 8888, 0, 0):
+通常每个套接字地址(协议/ 网络地址/端口)只允许使用一次。
+only one usage of each socket address (protocol/network address/port) is normally permitted
+```
 
-   - IP 设置=静态
-   - IP 地址=10.0.2.15
-   - 网关=10.0.2.2
-   - 网络前缀长度=24
-   - DNS 1=10.0.2.2
-   - DNS 2=（留空）
+## 设置代理
 
-注意，若使用其他模拟器，可以尝试将上述的 **10.0.2.\*** 替换成以下值
+![Android Configuration](/images/import_https/android-1.webp)
 
-| 模拟器 | IP            | DNS/网关     |
-| ------ | ------------- | ------------ |
-| Google | 10.0.2.15     | 10.0.2.2     |
-| 夜神   | 172.17.100.15 | 172.17.100.2 |
-| 逍遥   | 10.0.3.15     | 10.0.3.2     |
+<figcaption style="text-align:center">Android配置（无视左侧两张wifi设置）</figcaption>
 
-> 百度搜的，除 MuMu 外的模拟器未验证，不确保可用性。模拟器IP一般可在模拟器的信息或安卓设置里查询到，网关与IP一般仅最后一位不同。
+1. 获取电脑的`IP地址(主机名)`，有两种方法:
+   1. 模拟器中打开`系统设置-WiFi-设置/信息-IP地址`或`系统设置-关于平板电脑-状态信息-IP地址`
+      - 模拟器地址为172.16.1.15，则电脑的ip位172.16.1.2。其他模拟器同理仅更改最后一位为2
+   2. 打开cmd或PowerShell，输入`ipconfig`选择合适的IPv4地址(可能存在多个，请依此尝试)
+2. 安装 Drony，只有英文和繁体，根据系统语言显示，参考上图
+3. 打开后显示日志页和设置页，左右滑动切换到设置页
+4. 网络-无线网络-选择连接的 WiFi-网络细节设置
+   - WiFi 名: `代理类型/Proxy type`选`手动/Manual`
+   - WiFi 名-手动代理/Manual Proxy: `主机名`和`端口`同上一步，`代理类型/Proxy type`选`普通/Plain`
+   - WiFi 名-过滤器/Filter: 过滤默认值选择`本地代理链全部/Local Proxy Chain All`
+   - 返回
+5. 过滤器-默认值: 选择`引导全部/Direct All`
+6. 左滑回到日志页，点击底部开关，开启后在通知栏可以看到 ⅤΡΝ 连接提示，第一次使用会申请创建 ⅤΡΝ 的权限。在 Charles 中会弹出提示，并允许接收来自此设备的请求。
 
-### 安装证书
+后续使用/关闭仅需点击开关即可，无需其他操作。若WiFi变化(如在手机上使用)，需重新设置上述步骤。
 
-1. 编辑 fgoproxy.ini 文件，将[mode]/install_cert 后面的数字改为 1；
+## 安装证书
 
-2. 双击“运行.cmd”，出现黑色窗口，若遇到防火墙弹窗，点击“允许通过”；
+1. 确保Drony为开启状态
+2. 浏览器打开`http://mitm.it`，点击`Android - Get-mitmproxy-ca-cert.cer`下载并安装
+   - 若显示 traffic is not passing through mitmproxy 等英文，请检查“设置代理”步骤。
+   - 需设置PIN、密码、手势等至少一项安全措施
+   - 名字填写mitmproxy(随意)
+   - 用途为`VPN和应用`
+3. 可在`系统设置-安全-信任的凭据-用户`处找到刚安装的证书
 
-3. 回到模拟器首页，启动模拟器中“浏览器”，点击浏览器上方地址栏，输入“mitm.it”，回车，打开证书安装页面；
+::: info
+mitmproxy证书默认有效期10年，Charles证书默认有效期1年，过期后需删除重新安装。
+:::
 
-4. 在证书安装页面，点击 Android 下的 Get mitmproxy-ca-cert.cer，下载证书；
+Android 7及以上版本系统将不信任用户证书，需要将用户证书移动至系统证书。
 
-   :warning:若显示 traffic is not passing through mitmproxy 等英文，请检查“设置网络”步骤。
+- Android 6及以下无需操作，直接调到下一节，Mumu6为Android 6，但已停止更新
+- Magisk框架等可安装JustTrustMe等插件实现
+- 日服安装包要求Android 7+，否则日服安装包直接安装失败
 
-5. 点击模拟器左上角下载图标，并选择下载完成的文件，开始安装证书，证书名称可以任意填写，随后点击确定；
+1. 打开PowerShell或CMD（打开adb所在目录platform-tools，窗口菜单里找到`在PowerShell中打开`，若未找到直接搜索并打开）
 
-6. 若模拟器左上角出现警告图标，点击提示“网络可能会受到监控”，则证书安装成功。
+   确保命令行窗口显示platform-tools文件夹:
 
-### 抓取数据
+   ```
+   D:\fgotools\platform-tools\>
+   ```
 
-1. 打开 fgoproxy.ini 文件，确认（或修改）[mode]/install_cert 后面的数字为 0；
-2. 双击“运行.cmd”，出现黑色窗口，若遇到防火墙弹窗，点击“允许通过”；
-3. 启动 MuMu 模拟器，登录 fgo 游戏；
-4. 在文件夹下可找到以“区服*日期*时间.json”命名的登录数据，此时可关闭黑色窗口，并在 Chaldea 中导入该数据。
+   若不是，请执行:
 
-### 删除证书
+   ```ps
+   cd D:\fgotools\platform-tools\
+   ```
 
-1. 启动 MuMu 模拟器；
-2. 点击模拟器右上角叹号图标，点击弹出消息，点击“查看信任的凭据”；
-3. 选择“mitmproxy”，将弹出页面拉到底，点击页面右下“删除”按钮，点击“确定”以删除证书。
+2. 输入`adb devices`
 
-### 还原网络
+   显示
 
-1. 启动 MuMu 模拟器；
+   ```
+   List of devices attached
+   127.0.0.1:5557  device
+   emulator-5556   offline
+   ```
 
-2. 在模拟器中，依次点击“系统应用->设置->WLAN”，长按“已连接”，至弹出窗口，选择“修改网络”，
+   其中`127.0.0.1:5557`或`emulator-5556`为模拟器名称，一般取前者，逐个试即可。若此处只显示一行，则略过且下一步无需指定`-s 127.0.0.1:5557`
 
-   进行下列设置并保存：
+3. 输入`adb -s 127.0.0.1:5557 shell`
 
-   - IP 设置=DHCP
+   若显示`aosp:/ #`表示成功
 
-## iOS 设备流程
+4. 输入
+   ```sh
+   mount -o rw,remount,rw /system
+   cp /data/misc/user/0/cacerts-added/*  /system/etc/security/cacerts/
+   mount -o ro,remount,ro /system
+   ```
+5. 打开`系统设置-安全-信任的凭据-系统`标签页可找到mitmproxy证书
 
-> 测试不充分，仍有待检验！
+## 开始抓包
 
-### 设置网络
+1. 双击`start.cmd`启动抓包
+2. 打开FGO登录直到出现地球仪或公告页面
+3. 检查目录下生成的`toplogin**.json`的文件，导入Chaldea即可
 
-1. 与电脑处于同一局域网/路由器下，如 IP 均为 192.168.1.\*
-2. 打开“设置-WiFi-已连接 WiFi 末尾的详情按钮-配置 DNS-手动”
-3. 删除默认 DNS 服务器，输入电脑 IP，保存
+## 结束及清理
 
-### 安装证书
+1. 关闭Drony及其他窗口
+2. 若以后不再使用，可在`系统设置-安全-信任的凭据`中删除mitmproxy证书
 
-1. 编辑 fgoproxy.ini 文件，将[mode]/install_cert 后面的数字改为 1；
+## 再次抓包
 
-2. 双击“运行.cmd”，出现黑色 cmd 窗口，若遇到防火墙弹窗，点击“允许通过”；
-
-3. 打开 Safari 浏览器，Safari，Safari，不能使用其他浏览器！点击浏览器上方地址栏，输入“mitm.it”，回车，打开证书安装页面；
-
-4. 在证书安装页面，点击 iOS 下的 Get mitmproxy-ca-cert.pem，下载证书；
-
-   :warning:若显示 traffic is not passing through mitmproxy 等英文，请检查“设置网络”步骤。
-
-5. 下载完证书后，前往“设置-已下载的描述文件”或“设置-通用-描述文件”，选择刚下载的证书安装。
-
-6. 前往“设置-通用-关于本机-证书信任设置”，打开证书信任开关。（iOS 10.4 以下无需此步骤）
-
-### 抓取数据
-
-1. 打开 fgoproxy.ini 文件，确认（或修改）[mode]/install_cert 后面的数字为 0；
-2. 双击“运行.cmd”，出现黑色窗口，若遇到防火墙弹窗，点击“允许通过”；
-3. iOS 设备登录 fgo 游戏；
-4. 在文件夹下可找到以“区服*日期*时间.json”命名的登录数据，此时可关闭黑色窗口，并在 Chaldea 中导入该数据。
-
-### 删除证书
-
-1. 打开“设置-通用-关于本机-证书信任设置”关闭信任开关（下次使用直接打开即可），或打开“设置-通用-描述文件”删除证书（下次使用需重新安装）
-
-### 还原网络
-
-1. 打开“设置-WiFi-已连接 WiFi 末尾详情按钮-配置 DNS-自动”，选择自动后保存
+1. 打开Drony，点击开启
+2. 打开`start.cmd`
+3. 开始抓包
 
 ## FAQ
 
