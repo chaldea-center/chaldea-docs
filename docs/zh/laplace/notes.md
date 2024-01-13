@@ -68,7 +68,7 @@ damageFunction(受击时发动), deadFunction(死亡时发动)。每个trigger s
     以上buff触发技能时，将最后一个攻击自身的人设定为复仇目标（无论敌方/己方、前排/后排、是否死亡）:
 
     - 排除攻击来源于自身或无来源
-    - 若`Buff.script.OpponentOnly`，则仅遍历敌方（目前仅deadFunction使用）
+    - 若`DataVals.OpponentOnly`，则仅遍历敌方（目前仅deadFunction使用）
 
     若复仇目标不存在，则随机选择一名“敌方单体”。在Laplace中应回退至选中的敌方单位。
 
