@@ -83,6 +83,10 @@ only one usage of each socket address (protocol/network address/port) is normall
    - 名字填写mitmproxy(随意)
    - 用途为`VPN和应用`
 3. 可在`系统设置-安全-信任的凭据-用户`处找到刚安装的证书
+4. 在模拟器设置中开启:
+   1. **ROOT权限**
+   2. **ADB调试**: 开启本地连接
+   3. **磁盘可写入**: 如雷电9中的 磁盘共享-System.vmdk可写入
 
 ::: info
 mitmproxy证书默认有效期10年，Charles证书默认有效期1年，过期后需删除重新安装。
@@ -122,13 +126,21 @@ Android 7及以上版本系统将不信任用户证书，需要将用户证书�
 
 3. 输入`adb -s 127.0.0.1:5557 shell`
 
-   若显示`aosp:/ #`表示成功
+   若显示`xxxx:/ #`表示成功
 
 4. 输入
    ```sh
+   su
    mount -o rw,remount,rw /system
    cp /data/misc/user/0/cacerts-added/*  /system/etc/security/cacerts/
    mount -o ro,remount,ro /system
+   ```
+   在高版本Android系统中可能提示`mount: '/system' not in /proc/mounts`，则使用
+   ```sh
+   su
+   mount -o rw,remount /
+   cp /data/misc/user/0/cacerts-added/*  /system/etc/security/cacerts/
+   mount -o ro,remount /
    ```
 5. 打开`系统设置-安全-信任的凭据-系统`标签页可找到mitmproxy证书
 6. 重启模拟器或手机！
