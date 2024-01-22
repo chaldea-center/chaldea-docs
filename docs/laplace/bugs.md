@@ -2,11 +2,25 @@
 
 ## Unimplemented Functions
 
-- damageNpCounter - Aŋra Mainiiu NP
+- Class Board:
+  - Command Spell Added Buffs
+  - Henry Jekyll & Hyde won't gain class board buffs after class change (probably will never be implemented)
 
-## Known bugs
+## Fixed in v2.5.6
 
-- 【Challenge Quest】Max HP buffs does not apply during HP bar break
+- 【Chaange Quest Related】Support breakGaugeUp
+- Support Aŋra Mainiiu NP
+
+## Fixed in v2.5.5
+- 【Chaange Quest Related】Support shiftGuts
+- Fix preventDeathByDamage (Van Gogh's passive) related interactions
+
+## Fixed in v2.5.2
+- 【Chaange Quest Related】Max HP Buff not active after gauge break
+- Fix command codes & command card strengthen missing after type change
+
+## Fixed in v2.5.0
+- Support Ptolemaîos
 
 ## Fixed in v2.4.18
 
