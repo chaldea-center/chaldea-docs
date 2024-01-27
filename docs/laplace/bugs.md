@@ -12,6 +12,7 @@
 - 【Chaange Quest Related】Support gutsHp
 - 【Chaange Quest Related】Max HP related buffs will no longer cause targets which hp are below 0 to gain hp (mainly affects gauge break)
 - 【Chaange Quest Related】Enemy Melusine can now use her skill 3 to correctly transform
+- 【Chaange Quest Related】Enemy skills can now be acted multiple times each turn
 - Support Aŋra Mainiiu NP
 - Guts will now clear accumulation damage (overkill bug related)
 - Fix a bug that will always cause servants to gain max HP when affected by percentMaxHp related buffs
