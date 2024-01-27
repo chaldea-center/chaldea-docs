@@ -6,10 +6,19 @@
 [[toc]]
 :::
 
-## 大总统指令卡的目标切换
+## 目标切换
+
+### 下一个目标选择
+
+对于普通关卡，按照在场1-6的位置进行切换。
+
+若`QuestFlag.immediateEnemyDisappear`, 由于敌人立马补充，将按照uniqueId顺序切换，如1-6，打死1号位，1号位补充id=7;
+切到2号位打死，2号位补充id=8；再切换到3号位而非1号位的id=7。也相当于登场顺序，但在不维护登场顺序的时候看单调递增的uniqueId即可。
+
+### 全体攻击指令卡(大总统)的目标切换和结算时机
 
 宝具卡、全体攻击卡(大总统 Buster / Extra)前后均会触发敌方的退场/亡语/目标切换。
-举例说明：大总统BAQ接EX会执行三次退场结算:
+举例说明：大总统BAQ接EX会执行三次退场结算和目标更新:
 
 1. Buster后执行第一次退场
 2. AQ之后执行第二次退场
@@ -65,12 +74,12 @@ damageFunction(受击时发动), deadFunction(死亡时发动)。每个trigger s
 
 1. 复仇目标选择
 
-    以上buff触发技能时，将最后一个攻击自身的人设定为复仇目标（无论敌方/己方、前排/后排、是否死亡）:
+   以上buff触发技能时，将最后一个攻击自身的人设定为复仇目标（无论敌方/己方、前排/后排、是否死亡）:
 
-    - 排除攻击来源于自身或无来源
-    - 若`DataVals.OpponentOnly`，则仅遍历敌方（目前仅deadFunction使用）
+   - 排除攻击来源于自身或无来源
+   - 若`DataVals.OpponentOnly`，则仅遍历敌方（目前仅deadFunction使用）
 
-    若复仇目标不存在，则随机选择一名“敌方单体”。在Laplace中应回退至选中的敌方单位。
+   若复仇目标不存在，则随机选择一名“敌方单体”。在Laplace中应回退至选中的敌方单位。
 
 2. 根据`func.funcTargetType`选择实际发动目标
 
@@ -87,3 +96,33 @@ damageFunction(受击时发动), deadFunction(死亡时发动)。每个trigger s
 举例：我方回合结束时小安血量为 4000，敌方回合结束时小安血量为 5000，则基础伤害为 `4000 - 5000 = -1000`，由于不能造成负数伤害所以调整为0。
 该情景可以用陈宫宝具 + 给小安两次毅力模拟（先金色庆典的毅力，再上小安自己的毅力）。
 若毅力施加顺序相反，则我方回合结束时小安血量为 4490，敌方回合结束时小安血量为 4000，则基础伤害为 `4490 - 4000 = 490`。
+
+## 血条消失术
+
+- `EnemyScript.shiftPosition`: 初始的`shiftDeckIndex`值, **默认值为-1**。此时血条会被隐藏。如`EnemyScript.shift`中共5个npcId，应为6管血，若shiftPosition=1，则隐藏2管血，实际显示3管血。
+- `EnemyScript.dispBreakDisp`: 初始击破血条的数量，默认值为0。即初始显示空槽数量。相当于修改了`shiftDeckIndex`
+- `FuncType.breakGaugeUp/Down`: 例如显示总计5管血剩余3管血(3/5)，若`DataVals.ChangeMaxBreakGauge`, 则相当于修改shiftPosition, 会增加最大血槽数量(4/6)，否则**恢复**血槽(4/5).
+
+举例: [FSR联动主线2-1 丑御前](https://apps.atlasacademy.io/db/JP/quest/94091502/1)
+base enemy npcId=100, EnemyScript:
+
+```json
+{
+  "npcId": 100,
+  "script": {
+    "shift": [101, 102, 103, 104],
+    "shiftPosition": 2,
+    "dispBreakShift": 1
+  }
+}
+```
+
+| idx | **Step**                                | **lowLimitShift** | **shiftDeckIndex** | **curNpcId** | **Bars**    |
+| --- | --------------------------------------- | ----------------- | ------------------ | ------------ | ----------- |
+| 1   | init                                    | 0                 | -1                 | 100          | ◆◆◆◆<br>5/5 |
+| 2   | shiftPosition=2                         | 0+(2+1)=3         | -1+(2+1)=2         | 103          | ◆<br>2/2    |
+| 3   | dispBreakShift=1                        | 3                 | 2+1=3              | 104          | ◇<br>1/2    |
+| 4   | breakGaugeUp(2)<br>+ChangeMaxBreakGauge | 3-2=1             | 3-2=1              | 102          | ◆◆◇<br>3/4  |
+| 5   | breakGaugeUp(1)                         | 1                 | 1-1=0              | 101          | ◆◆◆<br>4/4  |
+
+> 其中第4步为御主由井正雪的技能效果，第5步不存在该关卡中，仅展示breakGaugeUp时有无ChangeMaxBreakGauge的区别
