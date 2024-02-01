@@ -69,3 +69,7 @@ Also, for CEs Laplace will automatically ping event CEs of the selected quest an
 
 Aside from clicking the servants' icon or manually checking debug logs, the recorded data in the record section can also
 be clicked to view specific buffs at that moment.
+
+### How to Simulate Bazett's Counter NP
+
+Turn on "Simulate Enemy Actions" then you can activate Bazett's Counter NP if she has "Fragarach Counter" buff.
