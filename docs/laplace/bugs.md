@@ -15,7 +15,7 @@
 - 【Chaange Quest Related】Enemy skills can now be acted multiple times each turn
 - Support Aŋra Mainiiu NP
 - Guts will now clear accumulation damage (overkill bug related)
-- Fix a bug that will always cause servants to gain max HP when affected by percentMaxHp related buffs
+- Fix a bug that will cause servants to always gain max HP when affected by percentMaxHp related buffs
 
 ## Fixed in v2.5.5
 - 【Chaange Quest Related】Support shiftGuts
