@@ -70,6 +70,16 @@ Also, for CEs Laplace will automatically ping event CEs of the selected quest an
 Aside from clicking the servants' icon or manually checking debug logs, the recorded data in the record section can also
 be clicked to view specific buffs at that moment.
 
+### Draco's NP SE Damage
+
+Draco's NP has SE Damage when targeting servants with trait **2858 Standard Class Servant**. This is not equivalent to
+a regular servant having trait **1000 Servant** and trait **100 Saber**.
+
+Before Draco is added to the game, servants in event quests do not have trait **2858 Standard Class Servant**, so Draco
+cannot apply SE damage. 
+
+For testing purposes, you can edit the quest via **Custom** and add trait **2858 Stand Class Servant** directly.
+
 ### How to Simulate Bazett's Counter NP
 
 Turn on "Simulate Enemy Actions" then you can activate Bazett's Counter NP if she has "Fragarach Counter" buff.

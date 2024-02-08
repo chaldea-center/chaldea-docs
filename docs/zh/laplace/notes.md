@@ -24,17 +24,19 @@
 2. AQ之后执行第二次退场
 3. EX之后执行第三次退场
 
+唯一需要注意的就是如果大总统BAQ然后B卡打死了那可能会影响回收。
+
 ## DOT伤害结算
 
-回合结束时，先记录当前血量(`hp`)为`currentHp`，接着先结算回血，再结算扣血。若扣血会导致从者退场(`hp <= 0`):
+回合结束时，先记录当前血量为`x`，接着先结算回血，再结算扣血。若扣血会导致从者退场(`hp <= 0`):
 
-- 当敌方(包括候补)存在幸存者: 正常结算，即`damage = hp - DotDamage`
-- 当敌方(包括候补)全部死亡时: 让该从者存活，DoT伤害变为`currentHp - 1`
+- 当敌方(包括候补)存在幸存者: 正常结算
+- 当敌方(包括候补)全部死亡时: 让该从者存活，DoT伤害变为`x - 1`
 
 举例说明，巴贝奇装备1HP的毅力礼装后使用3技能(300 DoT)，梵高使用二技能(100 Dot + 300 HoT)，接着陈宫嘲讽自己发射巴贝奇：
 
-- 若当前敌方(包括候补)存在幸存者: 巴贝奇血量为 `1 + 300 - 400 < 0` 结算阵亡退场
-- 若当敌方(包括候补)全部死亡时: 巴贝奇血量为 `1 + 300 - 0 = 301`，此时由于当前血量为1，所以DoT伤害为 `1 - 1 = 0`
+- 若当前敌方(包括候补)存在幸存者: 巴贝奇血量为 `1 + 300 - 400 = -99 HP` 结算阵亡退场
+- 若当敌方(包括候补)全部死亡时: 巴贝奇血量为 `1 + 300 - 0 = 301 HP`，此时由于当前血量为1，所以DoT伤害为 `1 - 1 = 0`
 
 也就是说，击杀当前wave的全部敌人可以帮助有致死DoT的从者多活一回合。
 
@@ -72,7 +74,9 @@ damageFunction(受击时发动), deadFunction(死亡时发动)。每个trigger s
 目前目标选择机制仍存疑
 :::
 
-1. 复仇目标选择
+目前认为基于以下顺序：
+
+1. 先选择复仇目标
 
    以上buff触发技能时，将最后一个攻击自身的人设定为复仇目标（无论敌方/己方、前排/后排、是否死亡）:
 
@@ -103,9 +107,10 @@ damageFunction(受击时发动), deadFunction(死亡时发动)。每个trigger s
 
 ## 血条消失术
 
-- `EnemyScript.shiftPosition`: 初始的`shiftDeckIndex`值, **默认值为-1**。此时血条会被隐藏。如`EnemyScript.shift`中共5个npcId，应为6管血，若shiftPosition=1，则隐藏2管血，实际显示3管血。
+- `EnemyScript.shiftPosition`: 初始的`shiftDeckIndex`值, **默认值为-1**。根据此值敌方对应血条会被隐藏。如`EnemyScript.shift`中共5个npcId，应为6管血，若shiftPosition=1，则隐藏2管血，实际显示3管额外血条。
 - `EnemyScript.dispBreakDisp`: 初始击破血条的数量，默认值为0。即初始显示空槽数量。相当于修改了`shiftDeckIndex`
-- `FuncType.breakGaugeUp/Down`: 例如显示总计5管血剩余3管血(3/5)，若`DataVals.ChangeMaxBreakGauge`, 则相当于修改shiftPosition, 会增加最大血槽数量(4/6)，否则**恢复**血槽(4/5).
+- `FuncType.breakGaugeUp/Down`: 单纯增加或击破血条，不过有`DataVals.ChangeMaxBreakGauge`会有显示上的不同。
+例如显示总计5管血剩余3管血(3/5)，若`DataVals.ChangeMaxBreakGauge`, 则相当于修改shiftPosition, 会增加最大血槽数量(4/6)，否则**恢复**血槽(4/5).
 
 举例: [FSR联动主线2-1 丑御前](https://apps.atlasacademy.io/db/JP/quest/94091502/1)
 base enemy npcId=100, EnemyScript:
