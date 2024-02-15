@@ -3,7 +3,7 @@
 ## 目录
 
 - 本页：抓包介绍
-- [模拟登陆](./authfile_login.md): 日服&美服 ，读取 54cc 账号文件实现账号登录并获取数据，最快捷但风险自理
+- [模拟登陆](./authfile_login.md): ~~日服~~&美服 ，读取 54cc 账号文件实现账号登录并获取数据，最快捷但风险自理
 - [Stream-iOS](./stream.md): 国服/台服 iOS 抓包教程
 - [mitmproxy 版教程-PC](./mitmproxy.md): Android 配合 mitmproxy(PC)教程
 - [Charles 版教程-PC](./charles.md): Android/iOS 配合 Charles(PC)教程
@@ -14,7 +14,7 @@
 ## 如何选择？
 
 - 日服官方客户端(2.80.5及以后版本)
-  - 模拟登陆
+  - ~~模拟登陆~~ 2.87.0(2024.2.14)后更改了验证方式，**为了账号安全，请勿使用！**
   - [mitmproxy](./mitmproxy.md)/[Charles](./charles.md) + Android, iOS不可用
 - 国服/台服(注意国服iOS和Android已经可以互登):
   - iOS: [Stream](./stream.md)! 5分钟搞定！
@@ -22,12 +22,12 @@
 - 美服:
   - 模拟登陆
 
-**以上方法基于目前客户端版本(国服2023.07版本)可用，并不保证适用于未来的客户端更新。**
+**以上方法并不保证适用于未来的客户端更新。**
 
 ## 服务器地址
 
 ::: tip
-目前只有mitmproxy方法需要明确指定服务器地址。
+目前只有**旧mitmproxy教程**需要明确指定服务器地址。当前教程使用drony情况下无需明确服务器。
 
 对于国服，此处iOS/Android/渠道服指的是账号所在区服，而非登陆用的设备系统。
 即Android服账号在iOS设备上登录，仍为iOS服地址。

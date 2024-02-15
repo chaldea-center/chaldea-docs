@@ -3,7 +3,7 @@
 ## Contents
 
 - This page: Https sniffing introdution
-- [Login via Account File](./authfile_login.md): The only method for JP/NA, read 54cc file and login
+- [Login via Account File](./authfile_login.md): The only method for ~~JP~~/NA, read 54cc file and login
 - [Stream-iOS](./stream.md): iOS only
 - [mitmproxy-PC](./mitmproxy.md): Android/iOS with mitmproxy(PC)
 - [Charles-PC](./charles.md): Android/iOS with Charles(PC)
@@ -13,7 +13,7 @@
 ## How to choose
 
 - JP (after 2.80.5)
-  - [transfer file login](./authfile_login.md)
+  - ~~[transfer file login](./authfile_login.md)~~ Invalid after v2.87.0(2024.2.14). **For account security, please do not continue to use it!!!**
   - [mitmproxy](./mitmproxy.md)/[Charles](./charles.md) + Android, not support iOS
 - NA:
   - [transfer file login](./authfile_login.md)
