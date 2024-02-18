@@ -21,12 +21,12 @@
   "author": "narumi",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^20.10.6",
+    "@types/node": "^20.11.19",
     "gray-matter": "^4.0.3",
-    "prettier": "^3.1.1",
+    "prettier": "^3.2.5",
     "striptags": "^3.2.0",
-    "vitepress": "1.0.0-rc.34",
-    "vue": "^3.4.3"
+    "vitepress": "1.0.0-rc.43",
+    "vue": "^3.4.19"
   },
   "pnpm": {
     "peerDependencyRules": {
