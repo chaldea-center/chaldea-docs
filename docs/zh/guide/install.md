@@ -2,21 +2,19 @@
 
 ### 系统要求
 
-| 平台                  | 最低要求                                      |
-| :-------------------- | :-------------------------------------------- |
-| Android               | Android 6.0 (API level 23)                    |
-| iOS                   | iOS 12.0                                      |
-| Windows               | Windows 8 (64-bit), x86-64 based <sup>1</sup> |
-| macOS                 | macOS 10.14                                   |
-| Linux                 | Debian 10, 64-bit <sup>2</sup>                |
-| Web(海外)<sup>3</sup> | <https://chaldea.center>                      |
-| Web(国内)             | <https://cn.chaldea.center>                   |
+| 平台                  | 最低要求                    |
+| :-------------------- | :-------------------------- |
+| Android               | Android 6.0 (API level 23)  |
+| iOS                   | iOS 12.0                    |
+| Windows               | Windows 10, x64             |
+| macOS                 | macOS 10.14                 |
+| Linux                 | Debian 10, x64 <sup>1</sup> |
+| Web(海外)<sup>3</sup> | <https://chaldea.center>    |
+| Web(国内)             | <https://cn.chaldea.center> |
 
-> <sup>1</sup> Windows 7 SP1 理论可运行，但可能存在无法启动的未知错误
+> <sup>1</sup> 仅 Debian 发行版的 Linux 得到测试与支持。虽然可能能运行在其他发行版上，但我们目前无法保证完全兼容，也无法为这些平台出现的问题提供技术支持
 >
-> <sup>2</sup> 仅 Debian 发行版的 Linux 得到测试与支持。虽然可能能运行在其他发行版上，但我们目前无法保证完全兼容，也无法为这些平台出现的问题提供技术支持
->
-> <sup>3</sup> **移动端网页**的性能、兼容性较差，不建议使用。自2.5.0起，web版要求在较新版本的浏览器上运行。 详见[WeakRef](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakRef/WeakRef#browser_compatibility) 和 [globalThis](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/globalThis#browser_compatibility)
+> <sup>2</sup> **移动端网页**的性能、兼容性较差，不建议使用。自2.5.0起，web版要求在较新版本的浏览器上运行。 详见[WeakRef](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakRef/WeakRef#browser_compatibility) 和 [globalThis](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/globalThis#browser_compatibility)
 
 更多关于系统版本要求可查看[Flutter 文档](https://docs.flutter.dev/reference/supported-platforms)
 

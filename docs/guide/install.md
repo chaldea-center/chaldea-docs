@@ -2,21 +2,19 @@
 
 ### System Requirement
 
-| Platform        | Minimum Version                               |
-| :-------------- | :-------------------------------------------- |
-| Android         | Android 6.0 (API level 23)                    |
-| iOS             | iOS 12.0                                      |
-| Windows         | Windows 8 (64-bit), x86-64 based <sup>1</sup> |
-| macOS           | macOS 10.14                                   |
-| Linux           | Debian 10, 64-bit <sup>2</sup>                |
-| Web<sup>3</sup> | <https://chaldea.center>                      |
-| Web(China)      | <https://cn.chaldea.center>                   |
+| Platform        | Minimum Version             |
+| :-------------- | :-------------------------- |
+| Android         | Android 6.0 (API level 23)  |
+| iOS             | iOS 12.0                    |
+| Windows         | Windows 10, x64             |
+| macOS           | macOS 10.14                 |
+| Linux           | Debian 10, x64 <sup>1</sup> |
+| Web<sup>2</sup> | <https://chaldea.center>    |
+| Web(China)      | <https://cn.chaldea.center> |
 
-> <sup>1</sup> **Windows 7 SP1** should be supported, but app may crash at startup with unknown reason.
+> <sup>1</sup> Only **Debian** based Linux distributions are supported and tested. While it may work on other Linux distributions, we cannot guarantee full compatibility nor offer technical support for issues arising from those platforms at this time.
 >
-> <sup>2</sup> Only **Debian** based Linux distributions are supported and tested. While it may work on other Linux distributions, we cannot guarantee full compatibility nor offer technical support for issues arising from those platforms at this time.
->
-> <sup>3</sup> **Mobile browser** is not recommended due to bad performance and compatibility. Starting from 2.5.0, newer browser version is required, see [WeakRef](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakRef/WeakRef#browser_compatibility) and [globalThis](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/globalThis#browser_compatibility)
+> <sup>2</sup> **Mobile browser** is not recommended due to bad performance and compatibility. Starting from 2.5.0, newer browser version is required, see [WeakRef](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakRef/WeakRef#browser_compatibility) and [globalThis](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/globalThis#browser_compatibility)
 
 Check [Flutter docs](https://docs.flutter.dev/reference/supported-platforms) for more about supported platforms.
 
