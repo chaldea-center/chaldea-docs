@@ -1,13 +1,14 @@
 # Login via Transfer File(JP/NA)
 
-Ref: [hexstr/FGODailyBonus](https://github.com/hexstr/FGODailyBonus)。
-
 Read your account auth file to create login request to FGO server. Then import the response data to chaldea app.
 
 ::: danger IMPORTANT
-JP 2.87.0 (updated on 2024.2.14) has changed the verification method, and the original method will not be able to log in.
+JP 2.87.0 (updated on 2024.2.14) has changed the verification method, and the in-app authfile login
+will not return error.
 
-**For account security, please do not continue to use it!!!**
+**For account security, please do not continue using in-app auth file login!!!**
+
+[Transfer Data](./transfer_data.md) and Official fgo client + mitmproxy/Charles sniffing is still valid.
 :::
 
 ::: warning Declaimer
@@ -44,5 +45,7 @@ On **Android/iOS**, `UserAgent` and `deviceInfo` can be detected via "Read this 
 
 Remember to use on the same device with FGO.
 :::
+
+Ref: [hexstr/FGODailyBonus](https://github.com/hexstr/FGODailyBonus)。
 
 [.](./deep.md)

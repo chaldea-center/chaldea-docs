@@ -1,13 +1,13 @@
 # 模拟登录(JP/NA)
 
-参考自[hexstr/FGODailyBonus](https://github.com/hexstr/FGODailyBonus)。
-
 通过读取账号文件（引继文件）解析登陆秘钥，并伪装客户端向 FGO 服务器发送伪造的登录请求，从而获取账户信息。
 
 ::: danger 十分甚至万分重要
-日服2024.2.14更新的2.87.0版本更改了验证方式，原有方式将无法登陆。
+日服2024.2.14更新的2.87.0版本更改了验证方式，原有应用内模拟器登录将返回错误。
 
-**为了账号安全，请勿继续使用！！！**
+**为了账号安全，请勿继续使用模拟登陆！！！**
+
+账号文件(引继文件)仍可在多设备之间[迁移数据](./authfile_login.md)，官方客户端+mitmproxy/Charles抓包的方法仍有效。
 :::
 
 ::: warning 声明
@@ -32,5 +32,7 @@
 
 注意在与FGO相同的登陆设备上使用。
 :::
+
+参考: [hexstr/FGODailyBonus](https://github.com/hexstr/FGODailyBonus)。
 
 [.](./deep.md)

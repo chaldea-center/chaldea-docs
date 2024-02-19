@@ -5,6 +5,10 @@ In FGO request, there are two important parameters related to user's device:
 - `UserAgent`: in http headers. Probably FGO won't check it.
 - `deviceInfo`: in login post body. FGO will record this value in server and verify it when user requests reset Transfer Code (引き継ぎナンバー) via email which will ask user to provide last played device.
 
+::: tip
+The value also depends on Unity version, current FGO JP 2.87.0 uses `2020.3.34f1`
+:::
+
 ## UserAgent
 
 On Android, get UA from system:
