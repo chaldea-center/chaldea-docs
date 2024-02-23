@@ -4,11 +4,12 @@
 
 - This page: Https sniffing introdution
 - [Login via Account File](./authfile_login.md): The only method for ~~JP~~/NA, read 54cc file and login
-- [Stream-iOS](./stream.md): iOS only
+- [Stream-iOS](./stream.md): iOS only, CN/TW
 - [mitmproxy-PC](./mitmproxy.md): Android/iOS with mitmproxy(PC)
 - [Charles-PC](./charles.md): Android/iOS with Charles(PC)
 - [HttpCanary-Android](./httpcanary.md): Android only
-- [Transfer Data](./transfer_data.md): Keep JP/NA account data in multiple clients
+- Other Tips
+  - [Transfer Data](./transfer_data.md): Keep JP/NA account data in multiple clients
 
 ## How to choose
 

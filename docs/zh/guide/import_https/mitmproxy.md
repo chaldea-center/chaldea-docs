@@ -25,11 +25,15 @@ Android版本选择:
 包含以下文件:
 
 - 抓包脚本
-- mitmproxy (Windows平台的10.2.1版本)
+- mitmproxy安装包 (mitmproxy-windows-installer.exe, 10.2.2版本)
   - 若需更新或下载macOS/Linux版本，请访问官网<https://www.mitmproxy.org/>
+  - mitmproxy有安装包版(安装到系统中)和非安装包版(解压zip直接运行)，其中非安装版在部分电脑上可能显示不兼容，请下载安装包(installer)安装到系统中使用
 - adb: 存放于`fgotools\platform-tools`文件夹
   - 仅在Android版本>=7时需要，若系统已root且已安装Magisk等框架，可搜索JustTrustMe等相应插件用于复制证书即可。
-  - 部分模拟器可能存在adb版本差异较大导致命令运行失败，可尝试下载其他版本或使用模拟器自带adb，请自行搜索如何下载/使用。
+    ::: warning
+    由于adb版本和模拟器版本众多，极有可能不兼容。一般模拟器自带adb工具，大概率储存于模拟器的安装目录(如`D:\LDPlayer9\adb.exe`)，可在其adb.exe所在目录菜单打开cmd或powershell，或在该目录地址栏输入cmd或powershell打开<br>
+    **推荐优先使用模拟器自带adb**
+    :::
 - Drony 1.3.154
   - 该apk经过测试可用。网上下载的版本五花八门，即使版本号相同也极有可能已遭多次修改无法正常使用。
 
@@ -100,16 +104,18 @@ Android 7及以上版本系统将不信任用户证书，需要将用户证书�
 
 1. 打开PowerShell或CMD（打开adb所在目录platform-tools，窗口菜单里找到`在PowerShell中打开`，若未找到直接搜索并打开）
 
-   确保命令行窗口显示platform-tools文件夹:
+   确保命令行窗口显示platform-tools文件夹或模拟器自带adb所在目录:
 
    ```
    D:\fgotools\platform-tools\>
+   D:\LDPlayer9\>
    ```
 
    若不是，请执行:
 
    ```ps
    cd D:\fgotools\platform-tools\
+   cd D:\LDPlayer9\
    ```
 
 2. 输入`adb devices`

@@ -9,7 +9,9 @@
 - [Charles 版教程-PC](./charles.md): Android/iOS 配合 Charles(PC)教程
 - [HttpCanary-Android](./httpcanary.md): Android 抓包教程
 - [Quantumult X-iOS](./quantumultx.md): 国服&台服 iOS 抓包（付费 app）
-- [迁移数据](./transfer_data.md): 日服/美服多客户端共存
+- 其他
+  - [迁移数据](./transfer_data.md): 日服/美服多客户端共存
+  - [解码小工具](./decoder.md): 国服/台服解码以得到可读的json
 
 ## 如何选择？
 
