@@ -6,6 +6,26 @@
   - Command Spell Added Buffs
   - Henry Jekyll & Hyde won't gain class board buffs after class change (probably will never be implemented)
 
+## Fixed in v2.5.9
+* Aoko Aozaki
+  * Fix incorrect checks on magic bullet buffs
+  * Support Protagonist Correction
+* Sizuki Soujyuro
+  * Support Avoid Lethal Attack Damage (Skill 1)
+  * Support Np Multiply (Skill 2)
+  * Support Pierce Damage Cut (NP)
+* General
+  * Skills & NPs that transform servants now reapply passives & adjust atk & maxHp (except Jekyll, it's literally hardcoded in the game as a constant)
+  * Fix certain command codes & attack trigger functions not working due to Aoko's AoE card update causing lots of type changes
+  * Add support to linked buffs & behave as family buffs (Summer Chloe Skill 1). These buffs will share use count & will get removed at the same time
+
+## Fixed in v2.5.8
+- Fix incorrect class advantages against special enemy classes
+- Fix Gilgamesh S1 trait check
+
+## Fixed in v2.5.7
+- Fix Bakin's skill3 trigger effect
+
 ## Fixed in v2.5.6
 
 - 【Chaange Quest Related】Support breakGaugeUp
