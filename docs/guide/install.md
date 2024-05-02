@@ -93,10 +93,9 @@ Due to some errors, the feature is disabled but the lib is still required.
 For Debian based Linux, you can install it through the following command:
 
 ```sh
-# Debian based
-sudo apt install libappindicator3-1
-# Ubuntu 22.04 or higher
 sudo apt-get install libayatana-appindicator3-dev
+# or
+sudo apt-get install appindicator3-0.1 libappindicator3-dev
 ```
 
 ## Releases

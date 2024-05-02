@@ -97,20 +97,21 @@ damageFunction(受击时发动), deadFunction(死亡时发动)。每个trigger s
 
 目前测试结果为，小安会在释放宝具之后记录自身受到伤害的数值，同时回血会抵消这部分的数值。
 需要注意的几个点：
+
 - 累计受到的伤害不会是负数，最低为0。
 - 从者的最低生命值为0，也就是说即便小安现在就 500 HP 同时吃了一个亿的伤害，记录的伤害为 500 而非一亿。
 - DOT 伤害（诅咒、毒、灼烧）、强制即死（陈宫宝具）、以及自己打自己造成的伤害（包括自己即死自己）不计入受到的伤害。
 - HOT 回复计入，即抵消累计受到的伤害（不过现在好像没有再自己回合小安放完宝具再吃到敌方伤害的正经方法）。
 - 毅力发动相当于 HP 回复，会抵消累计伤害，但是数值为 `毅力回复的HP - 1`。
 
-小Tips，大部分时候小安反弹的基础伤害（没算小安宝具的倍率之前）相当于 `小安在敌方行动开始前的血量 - 小安在敌方行动结束后的血量 + 毅力次数`。 
+小Tips，大部分时候小安反弹的基础伤害（没算小安宝具的倍率之前）相当于 `小安在敌方行动开始前的血量 - 小安在敌方行动结束后的血量 + 毅力次数`。
 
 ## 血条消失术
 
 - `EnemyScript.shiftPosition`: 初始的`shiftDeckIndex`值, **默认值为-1**。根据此值敌方对应血条会被隐藏。如`EnemyScript.shift`中共5个npcId，应为6管血，若shiftPosition=1，则隐藏2管血，实际显示3管额外血条。
 - `EnemyScript.dispBreakDisp`: 初始击破血条的数量，默认值为0。即初始显示空槽数量。相当于修改了`shiftDeckIndex`
 - `FuncType.breakGaugeUp/Down`: 单纯增加或击破血条，不过有`DataVals.ChangeMaxBreakGauge`会有显示上的不同。
-例如显示总计5管血剩余3管血(3/5)，若`DataVals.ChangeMaxBreakGauge`, 则相当于修改shiftPosition, 会增加最大血槽数量(4/6)，否则**恢复**血槽(4/5).
+  例如显示总计5管血剩余3管血(3/5)，若`DataVals.ChangeMaxBreakGauge`, 则相当于修改shiftPosition, 会增加最大血槽数量(4/6)，否则**恢复**血槽(4/5).
 
 举例: [FSR联动主线2-1 丑御前](https://apps.atlasacademy.io/db/JP/quest/94091502/1)
 base enemy npcId=100, EnemyScript:

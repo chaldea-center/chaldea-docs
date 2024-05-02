@@ -4,7 +4,7 @@
   "description": "Documentation of Chaldea - Yet another planner & battle simulator for Fate/GO.",
   "type": "module",
   "main": "index.js",
-  "packageManager": "pnpm@8.14.0",
+  "packageManager": "pnpm@9.0.6",
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
@@ -21,12 +21,12 @@
   "author": "narumi",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^20.11.19",
+    "@types/node": "^20.11.30",
     "gray-matter": "^4.0.3",
     "prettier": "^3.2.5",
     "striptags": "^3.2.0",
-    "vitepress": "1.0.0-rc.43",
-    "vue": "^3.4.19"
+    "vitepress": "^1.1.4",
+    "vue": "^3.4.21"
   },
   "pnpm": {
     "peerDependencyRules": {

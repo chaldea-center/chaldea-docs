@@ -44,14 +44,17 @@
 - Fix a bug that will cause servants to always gain max HP when affected by percentMaxHp related buffs
 
 ## Fixed in v2.5.5
+
 - 【Chaange Quest Related】Support shiftGuts
 - Fix preventDeathByDamage (Van Gogh's passive) related interactions
 
 ## Fixed in v2.5.2
+
 - 【Chaange Quest Related】Max HP Buff not active after gauge break
 - Fix command codes & command card strengthen missing after type change
 
 ## Fixed in v2.5.0
+
 - Support Ptolemaîos
 
 ## Fixed in v2.4.18

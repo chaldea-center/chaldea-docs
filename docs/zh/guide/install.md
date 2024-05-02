@@ -87,10 +87,9 @@ macOS 现在仅提供应用商店版本
 以 Deibian 系列为例（如 Ubuntu），可以通过以下命令安装上述库：
 
 ```sh
-# Debian based
-sudo apt install libappindicator3-1
-# Ubuntu 22.04 或更高
 sudo apt-get install libayatana-appindicator3-dev
+# or
+sudo apt-get install appindicator3-0.1 libappindicator3-dev
 ```
 
 ## 历史版本 {#releases}

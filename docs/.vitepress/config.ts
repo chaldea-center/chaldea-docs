@@ -1,7 +1,5 @@
-import { defineConfig, HeadConfig } from 'vitepress'
-import { head } from './configs'
-import { navbarEn, navbarZh } from './configs'
-import { sidebarEn, sidebarZh } from './configs'
+import { defineConfig, type HeadConfig } from 'vitepress'
+import { head, navbarEn, navbarZh, sidebarEn, sidebarZh } from './configs'
 import { getPageText } from './configs/utils'
 import { promises } from 'fs'
 import path from 'path'
@@ -50,6 +48,8 @@ export default defineConfig({
         nav: navbarZh,
         sidebar: sidebarZh,
         darkModeSwitchLabel: '深色模式',
+        lightModeSwitchTitle: '切换到浅色模式',
+        darkModeSwitchTitle: '切换到深色模式',
         returnToTopLabel: '返回顶部',
         langMenuLabel: '切换语言',
         sidebarMenuLabel: '目录',
@@ -152,6 +152,15 @@ export default defineConfig({
   },
   sitemap: {
     hostname: 'https://docs.chaldea.center',
+  },
+  vue: {
+    template: {
+      compilerOptions: {
+        isCustomElement: (tag) => {
+          return tag.toLowerCase() === 'amp-ad'
+        },
+      },
+    },
   },
   transformHead: async (ctx) => {
     const isHome = ctx.pageData.frontmatter.layout === 'home'

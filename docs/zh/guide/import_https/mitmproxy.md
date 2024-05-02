@@ -18,7 +18,7 @@ Android版本选择:
 
 ## 所需软件或工具
 
-下载链接: <https://disk.chaldea.center/s/4zfd> 点击打包下载
+下载链接: <https://disk.chaldea.center/s/4zfd> (部分浏览器不支持打包下载，请单独下载每个文件)
 
 下载后解压至(举例)`D:\fgotools`文件夹，**建议完整路径不要包含非英文字符和空格**。
 
@@ -28,14 +28,13 @@ Android版本选择:
 - mitmproxy安装包 (mitmproxy-windows-installer.exe, 10.2.2版本)
   - 若需更新或下载macOS/Linux版本，请访问官网<https://www.mitmproxy.org/>
   - mitmproxy有安装包版(安装到系统中)和非安装包版(解压zip直接运行)，其中非安装版在部分电脑上可能显示不兼容，请下载安装包(installer)安装到系统中使用
-- adb: 存放于`fgotools\platform-tools`文件夹
-  - 仅在Android版本>=7时需要，若系统已root且已安装Magisk等框架，可搜索JustTrustMe等相应插件用于复制证书即可。
-    ::: warning
-    由于adb版本和模拟器版本众多，极有可能不兼容。一般模拟器自带adb工具，大概率储存于模拟器的安装目录(如`D:\LDPlayer9\adb.exe`)，可在其adb.exe所在目录菜单打开cmd或powershell，或在该目录地址栏输入cmd或powershell打开<br>
-    **推荐优先使用模拟器自带adb**
-    :::
 - Drony 1.3.154
   - 该apk经过测试可用。网上下载的版本五花八门，即使版本号相同也极有可能已遭多次修改无法正常使用。
+
+::: warning 关于ADB
+由于安卓模拟器版本和adb版本众多，兼容性较差，请使用模拟器自带的adb，一般位于模拟器的安装文件夹内。
+用于Android≥7时复制证书到系统证书。若系统已root且已安装Magisk等框架，可搜索JustTrustMe等相应插件用于复制证书即可。
+:::
 
 ## 设置mitmptoxy
 
@@ -102,23 +101,21 @@ Android 7及以上版本系统将不信任用户证书，需要将用户证书�
 - Magisk框架等可安装JustTrustMe等插件实现
 - 日服安装包要求Android 7+，否则日服安装包直接安装失败
 
-1. 打开PowerShell或CMD（打开adb所在目录platform-tools，窗口菜单里找到`在PowerShell中打开`，若未找到直接搜索并打开）
+1. 打开PowerShell或CMD（打开adb所在目录，窗口菜单里找到`在PowerShell中打开`，若未找到直接搜索并打开）
 
-   确保命令行窗口显示platform-tools文件夹或模拟器自带adb所在目录:
+   确保命令行窗口显示模拟器自带adb所在目录(以雷电9举例):
 
    ```
-   D:\fgotools\platform-tools\>
    D:\LDPlayer9\>
    ```
 
    若不是，请执行:
 
    ```ps
-   cd D:\fgotools\platform-tools\
    cd D:\LDPlayer9\
    ```
 
-2. 输入`adb devices`
+2. 输入`adb devices`或(`.\adb.exe devices`, 下同)
 
    显示
 

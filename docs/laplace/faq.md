@@ -76,7 +76,7 @@ Draco's NP has SE Damage when targeting servants with trait **2858 Standard Clas
 a regular servant having trait **1000 Servant** and trait **100 Saber**.
 
 Before Draco is added to the game, servants in event quests do not have trait **2858 Standard Class Servant**, so Draco
-cannot apply SE damage. 
+cannot apply SE damage.
 
 For testing purposes, you can edit the quest via **Custom** and add trait **2858 Stand Class Servant** directly.
 

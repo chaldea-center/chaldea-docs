@@ -17,7 +17,7 @@ https://docs.chaldea.center/zh/
 
 [VitePress Document](https://vitepress.dev/)
 
-Requirement: `node 14+`
+Requirement: `node 18+`
 
 ```sh
 # enable pnpm
