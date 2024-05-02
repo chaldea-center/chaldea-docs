@@ -20,6 +20,9 @@
   },
   "author": "narumi",
   "license": "MIT",
+  "dependencies": {
+    "medium-zoom": "^1.1.0"
+  },
   "devDependencies": {
     "@types/node": "^20.11.30",
     "gray-matter": "^4.0.3",
