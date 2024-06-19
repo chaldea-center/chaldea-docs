@@ -44,7 +44,7 @@
             </td>
             <td>{{ (file.size / 1024 / 1024).toFixed(0) }} MB</td>
             <td>
-              {{ file.modified == null ? '?' : file.modified.toLocaleString() }}
+              {{ new Date(file.uploadTimestamp).toLocaleString() }}
             </td>
           </tr>
         </template>
@@ -62,13 +62,18 @@ declare global {
   }
 }
 
-interface ApkFile {
-  href: string
-  name: string
+interface FileManifest {
+  fileName: string
+  size: number
+  uploadTimestamp: number
+  contentType: string
+  contentSHA1: string
+  contentMD5: string
+}
+
+interface ApkFile extends FileManifest {
   version: number
   versionName: string
-  size: number
-  modified: Date | null
   link: string
   link_proxy: string
 }
@@ -131,7 +136,7 @@ export default defineComponent({
     filter(region: string) {
       const pkg_name = this.all_pkgs[region]
       let files: ApkFile[] = [...this.files]
-      files = files.filter((file) => file.name.startsWith(pkg_name + '.v'))
+      files = files.filter((file) => file.fileName.startsWith(pkg_name + '.v'))
       files.sort((a, b) =>
         b.version != a.version
           ? b.version - a.version
@@ -150,28 +155,17 @@ export default defineComponent({
         return
       }
 
-      fetch('https://fgo.bigcereal.com/apk/')
-        .then((response) => response.text())
-        .then((text) => {
+      fetch('https://static.atlasacademy.io/apk/manifest.json')
+        .then((response) => response.json())
+        .then((manifests: FileManifest[]) => {
           let data: ApkFile[] = []
-          const parser = new DOMParser()
-          const doc = parser.parseFromString(text, 'text/html')
-          const elements = doc.getElementsByClassName('file')
-          for (const ele of elements) {
-            if (ele.childElementCount < 5) continue
-            const href = ele.children[1]
-                .getElementsByTagName('a')[0]
-                .getAttribute('href'),
-              size = ele.children[2].getAttribute('data-size'),
-              date = ele.children[3]
-                .getElementsByTagName('time')[0]
-                .getAttribute('datetime')
-            if (!href || !href.endsWith('.apk')) continue
-            const name = href.split('/').at(-1) || href
-            const match = name.match(/v(\d+)\.(\d+)\.(\d+)(\..+)?(?=\.apk)/)
+          for (let file of manifests) {
+            if (!file.fileName.endsWith('.apk')) continue
+            const match = file.fileName.match(
+              /v(\d+)\.(\d+)\.(\d+)(\..+)?(?=\.apk)/
+            )
             data.push({
-              href: href,
-              name: name,
+              ...file,
               version:
                 match == null
                   ? 0
@@ -181,12 +175,12 @@ export default defineComponent({
                 match == null
                   ? ''
                   : match[0].replace('.armeabi_v7a', ' @32').substring(1),
-              size: size == null ? 0 : parseFloat(size),
-              modified: date == null ? null : new Date(date),
-              link: 'https://fgo.bigcereal.com/apk/' + name,
-              link_proxy: 'https://worker-cn.chaldea.center/proxy/apk/' + name,
+              link: 'https://static.atlasacademy.io/apk/' + file.fileName,
+              link_proxy:
+                'https://worker-cn.chaldea.center/proxy/apk/' + file.fileName,
             })
           }
+
           this.files = data
           window.apk_files = new Array(...data)
           this.loading = false
