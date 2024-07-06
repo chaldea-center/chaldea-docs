@@ -36,6 +36,12 @@ export default defineConfig({
             dateStyle: 'long',
           },
         },
+        notFound: {
+          // title: '',
+          // quote: '',
+          // linkLabel: '',
+          // linkText: 'Take me home',
+        },
       },
     },
     zh: {
@@ -66,8 +72,9 @@ export default defineConfig({
         },
         notFound: {
           linkLabel: '返回首页',
-          linkText: '返回首页',
-          title: '灵子转移失败',
+          linkText: '根源へ',
+          title: '英霊召喚·失敗',
+          quote: `汝三大の言霊を纏う七天、抑止の輪より来たれ、天秤の守り手よ―――！`,
         },
         docFooter: {
           prev: '上一页',

@@ -24,12 +24,12 @@
     "medium-zoom": "^1.1.0"
   },
   "devDependencies": {
-    "@types/node": "^20.11.30",
+    "@types/node": "^20.14.5",
     "gray-matter": "^4.0.3",
-    "prettier": "^3.2.5",
+    "prettier": "^3.3.2",
     "striptags": "^3.2.0",
-    "vitepress": "^1.1.4",
-    "vue": "^3.4.21"
+    "vitepress": "^1.2.3",
+    "vue": "^3.4.29"
   },
   "pnpm": {
     "peerDependencyRules": {
