@@ -1,12 +1,75 @@
-# 贡献翻译
+# 翻译和数据更新
 
-一个人真的坚持不下去了啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊 \_(:з」∠)\_
+大多数数据会在日服更新后半小时内更新，其中部分翻译和wiki相关内容仍需手工填写。
 
-## 联系我们
+应用数据均位于<https://github.com/chaldea-center/chaldea-data>:
 
-可以通过[反馈](./feedback.md)中的途径联系我们。最好是 Discord: <https://discord.gg/5M6w5faqjP>
+- `mappings`文件夹下: 各游戏文本的翻译
+- `wiki`文件夹下: Mooncell/Fandom wiki等需要
 
-## 游戏数据
+注意json格式:
+
+- 文本用英文双引号`"`括起来
+- 文本里含英文双引号的在前面添加`\`，即`\"`, `这是带\"引号\"内容`
+- 换行用`\n`
+
+## 人工翻译部分
+
+一般新从者/新活动实装时，以下内容需要手动添加。以龙宫城为例:
+
+### 活动信息
+
+活动`wiki/eventsBase.json`，例：
+
+```jsonc
+{
+  "id": 80480,
+  "name": "踊るドラゴン・キャッスル！ \n～深海の姫君とふたつの宝玉～",
+  "mcLink": "舞动龙宫城！_～深海公主与两颗宝玉～",
+  "fandomLink": "Dancing_Dragon_Castle",
+  "shown": null,
+  "titleBanner": {
+    "JP": "https://media.fgo.wiki/6/69/舞动龙宫城_jp.png"
+  },
+  "officialBanner": {
+    "JP": "https://news.fate-go.jp/wp-content/uploads/2024/dragon_castle_full_sjanv/top_banner.png"
+  },
+  "extraBanners": {},
+  "noticeLink": {
+    "JP": "https://news.fate-go.jp/2024/dragon_castle/"
+  },
+  "extraFixedItems": [],
+  "extraItems": [],
+  "script": {}
+}
+```
+
+- `mcLink`: Mooncell页面链接 <https://fgo.wiki/w/舞动龙宫城！_～深海公主与两颗宝玉～> `/w/`后的部分，注意空格应转化为下划线。
+- `fandomLink`: Fandom wiki的页面 <https://fategrandorder.fandom.com/wiki/Dancing_Dragon_Castle> `/wiki/`后的部分，同样空格应转化为下划线
+
+以下在Mooncell已创建页面的情况下会自动解析，若Mooncell未更新，可手动添加:
+
+- `officialBanner`: 官方公告中标题图的图片链接，尽量800×300尺寸
+- `noticeLink`: 公告链接，日服填写完整地址
+
+### 文本翻译
+
+在 <https://github.com/chaldea-center/commits/main> 中找到日服更新的commit并查看新增内容 <https://github.com/chaldea-center/chaldea-data/commit/74ad34>
+
+- `event_names`: 一般有换行，因此Mooncell的单行活动名往往无法匹配
+- `war_names`
+- `svt_names`/`entity_names`: 从者或敌人的名字
+- `buff_names`/`func_popuptext`: 注意参考已有翻译格式
+- `skill_names`: 一般仅从者被动和活动被动需要手动填写，主动技能可以自动解析Mooncell
+- `cv_names`
+
+::: warning
+对于buff_names/skill_detail等效果注意参考已有翻译格式，请勿使用自己直译的格式
+:::
+
+龙宫城活动的部分修改如<https://github.com/chaldea-center/chaldea-data/commit/e23d46>
+
+## 游戏文本翻译
 
 绝大部分翻译不定期同步至谷歌表格(需要科学上网)，也可直接github修改提交pr。
 
@@ -115,3 +178,7 @@
 - `intl_ko.arb` - Korean, 韩语
 - `intl_zh.arb` - Chinese, 简体中文
 - `intl_zh_Hant.arb` - Traditional Chinese, 繁体中文
+
+## 联系我们
+
+可以通过[反馈](./feedback.md)中的途径联系我们。最好是 Discord: <https://discord.gg/5M6w5faqjP>
