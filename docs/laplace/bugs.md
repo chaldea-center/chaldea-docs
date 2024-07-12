@@ -6,6 +6,17 @@
   - Command Spell Added Buffs
   - Henry Jekyll & Hyde won't gain class board buffs after class change (probably will never be implemented)
 
+## Fixed in v2.5.10
+* Kiyohime
+  * Fix the strengthened skill not working on enemy with burn buffs
+* Sizuki Soujyuro
+  * Fix avoid lethal attack damage overwriting sure hit & pierce invincible
+* Custome skills
+  * Support add damage
+* General
+  * Healing no longer works on entities with 0 or less HP
+  * 【Enemy action related】adjust buff turn count based on parameters
+
 ## Fixed in v2.5.9
 * Aoko Aozaki
   * Fix incorrect checks on magic bullet buffs
