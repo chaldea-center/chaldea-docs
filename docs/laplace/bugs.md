@@ -6,6 +6,9 @@
   - Command Spell Added Buffs
   - Henry Jekyll & Hyde won't gain class board buffs after class change (probably will never be implemented)
 
+## Known Issue：
+- 【Fixed in Beta/Web】Support servants set in NP Damage Ranking page will result in missing buffs
+
 ## Fixed in v2.5.10
 * Kiyohime
   * Fix the strengthened skill not working on enemy with burn buffs
