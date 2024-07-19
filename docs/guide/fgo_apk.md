@@ -2,6 +2,13 @@
 
 > For **Chaldea** apk/exe, please visit [Installation](./install.md)
 
+::: warning IMPORTANT 2024.07.19
+Google Play Store won't provide APK format anymore(JP/NA/KR), please go to Google Play Store to update game. If can't, check following website/app, update inside it or download XAPK and install it via XAPK installer:
+
+- [APK Combo](https://apkcombo.com/fgo-jp/com.aniplex.fategrandorder/download/apk): download XAPK and install using [APKCombo Installer](https://apkcombo.com/how-to-install)
+- [GamesToday](https://hotplaygames/com)/[ApkPure](https://apkpure.com) not validated
+:::
+
 - Official FGO apk downloaded from Google Play.
 - JP/NA apk is divided into 64-bit and 32-bit versions.
   - `arm64-v8a/64-bit`: for most modern devices
