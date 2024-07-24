@@ -6,7 +6,7 @@
 Google应用商店已不再提供APK安装包（日服/美服/韩服），请前往Google Play更新游戏。若无法使用Google Play，可选择以下网站/App更新或下载XAPK格式安装(需安装支持XAPK安装的应用):
 
 - [APK Combo](https://apkcombo.com/fgo-jp/com.aniplex.fategrandorder/download/apk): 下载XAPK，并使用[APKCombo Installer](https://apkcombo.com/zh/how-to-install)安装XAPK
-- [GamesToday](https://hotplaygames/com)/[ApkPure](https://apkpure.com)等未验证
+- [ApkPure](https://apkpure.com)
   :::
 
 - Google Play 下载的各区服的 FGO 原版 apk
