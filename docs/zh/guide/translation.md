@@ -54,7 +54,7 @@
 
 ### 文本翻译
 
-在 <https://github.com/chaldea-center/commits/main> 中找到日服更新的commit并查看新增内容 <https://github.com/chaldea-center/chaldea-data/commit/74ad34>
+在 <https://github.com/chaldea-center/chaldea-data/commits/main> 中找到日服更新的commit并查看新增内容 <https://github.com/chaldea-center/chaldea-data/commit/74ad34>
 
 - `event_names`: 一般有换行，因此Mooncell的单行活动名往往无法匹配
 - `war_names`
