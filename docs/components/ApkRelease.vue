@@ -142,7 +142,7 @@ export default defineComponent({
           ? b.version - a.version
           : b.versionName.localeCompare(b.versionName)
       )
-      files = files.slice(0, 10)
+      files = files.slice(0, 4)
       return files
     },
     getData() {
