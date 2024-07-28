@@ -8,7 +8,7 @@ Google应用商店已不再提供APK安装包（日服/韩服已确认）。目�
 
 - 【官方】 Google Play商店
 - 【等效官方】[APK Combo](https://apkcombo.com/fgo-jp/com.aniplex.fategrandorder/download/apk)/[APK Pure](https://apkpure.com/cn/fate-grand-order/com.aniplex.fategrandorder/download)下载XAPK格式，并使用XAPK安装器安装，如[APKCombo Installer](https://apkcombo.com/zh/how-to-install)。
-- 【第三方】[重签名APK](#重签名apk): **本站**打包，仅更改签名/包名。
+<!-- - 【第三方】[重签名APK](#重签名apk): **本站**打包，仅更改签名/包名。 -->
 - 【第三方】[Rayshift BFGO](#rayshift-第三方客户端): **Rayshift.io**制作的第三方客户端，有较多更改。
   :::
 
@@ -16,7 +16,7 @@ Google应用商店已不再提供APK安装包（日服/韩服已确认）。目�
 使用本站或其他的第三方APK前请确保已经了解并愿意承担其中的风险！后果自负!
 :::
 
-## 重签名APK
+<!-- ## 重签名APK
 
 将apkcombo的XAPK重新打包成一个单独的APK（不再区分32位/64位），并重新签名，应用包名也修改成`cc.chaldea.fgoxx`。除此之外无其他修改。
 
@@ -28,7 +28,7 @@ Google应用商店已不再提供APK安装包（日服/韩服已确认）。目�
 
 - 未研究**设备兼容性**或**bug**或“**风险**”，欢迎反馈。请在知晓的前提下使用。后果自负。
 - 和官方应用共存，建议通过[拷贝账号文件(引继文件)](./import_https/transfer_data.md)的方法迁移数据，不建议使用引继码
-  :::
+  ::: -->
 
 ## Google APK
 
