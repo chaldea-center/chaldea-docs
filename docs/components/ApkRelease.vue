@@ -21,6 +21,7 @@
     <table v-if="files.length">
       <thead>
         <tr style="text-wrap: nowrap">
+          <th>{{ t.format }}</th>
           <th>{{ t.version }}</th>
           <th>{{ t.link }}</th>
           <th>{{ t.link }}</th>
@@ -31,6 +32,7 @@
       <tbody>
         <template v-for="file in filter(region)" :key="file.name">
           <tr>
+            <td>{{ file.fileName.split('.').toReversed()[0] }}</td>
             <td>{{ file.versionName }}</td>
             <td>
               <a :href="file.link" target="_blank" rel="noreferrer">{{
@@ -79,6 +81,7 @@ interface ApkFile extends FileManifest {
 }
 
 interface Il18n {
+  format: string
   version: string
   link: string
   download: string
@@ -112,6 +115,7 @@ export default defineComponent({
       },
       t: this.language?.startsWith('zh')
         ? {
+            format: '格式',
             version: '版本',
             link: '链接',
             download: '下载',
@@ -120,6 +124,7 @@ export default defineComponent({
             proxy: '代理',
           }
         : {
+            format: 'Format',
             version: 'Version',
             link: 'Link',
             download: 'Download',
@@ -140,7 +145,7 @@ export default defineComponent({
       files.sort((a, b) =>
         b.version != a.version
           ? b.version - a.version
-          : b.versionName.localeCompare(b.versionName)
+          : a.versionName.localeCompare(b.versionName)
       )
       files = files.slice(0, 4)
       return files
@@ -160,9 +165,9 @@ export default defineComponent({
         .then((manifests: FileManifest[]) => {
           let data: ApkFile[] = []
           for (let file of manifests) {
-            if (!file.fileName.endsWith('.apk')) continue
+            if (!file.fileName.endsWith('apk')) continue
             const match = file.fileName.match(
-              /v(\d+)\.(\d+)\.(\d+)(\..+)?(?=\.apk)/
+              /v(\d+)\.(\d+)\.(\d+)(\..+)?(?=\.x?apk)/
             )
             data.push({
               ...file,

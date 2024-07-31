@@ -4,16 +4,16 @@
 - 国服(CN)apk 请前往[bilibili 官网](https://game.bilibili.com/fgo/)下载
 
 ::: info 重要 2024.07.18
-Google应用商店已不再提供APK安装包（日服/韩服已确认）。目前可选择的安装途径有:
+Google应用商店已不再提供APK独立安装包。目前可选择的安装途径有:
 
 - 【官方】 Google Play商店
-- 【等效官方】[APK Combo](https://apkcombo.com/fgo-jp/com.aniplex.fategrandorder/download/apk)/[APK Pure](https://apkpure.com/cn/fate-grand-order/com.aniplex.fategrandorder/download)下载XAPK格式，并使用XAPK安装器安装，如[APKCombo Installer](https://apkcombo.com/zh/how-to-install)。
+- 【等效官方】[APK Combo](https://apkcombo.com/fgo-jp/com.aniplex.fategrandorder/download/apk)/[APK Pure](https://apkpure.com/cn/fate-grand-order/com.aniplex.fategrandorder/download)/本页 下载的XAPK，需使用XAPK安装器安装，如[APKCombo Installer](https://apkcombo.com/zh/how-to-install)。
 <!-- - 【第三方】[重签名APK](#重签名apk): **本站**打包，仅更改签名/包名。 -->
 - 【第三方】[Rayshift BFGO](#rayshift-第三方客户端): **Rayshift.io**制作的第三方客户端，有较多更改。
   :::
 
 ::: warning 免责声明
-使用本站或其他的第三方APK前请确保已经了解并愿意承担其中的风险！后果自负!
+使用第三方APK前请确保已经了解并愿意承担其中的风险！后果自负!
 :::
 
 <!-- ## 重签名APK
@@ -30,14 +30,18 @@ Google应用商店已不再提供APK安装包（日服/韩服已确认）。目�
 - 和官方应用共存，建议通过[拷贝账号文件(引继文件)](./import_https/transfer_data.md)的方法迁移数据，不建议使用引继码
   ::: -->
 
-## Google APK
+## Google APK/XAPK
 
 ::: tip
-2024.7.18后，Google 不再提供日服/韩服apk格式，暂时停止更新
+2024.7.18后，Google 不再提供apk格式安装包。此前的apk格式为官方apk，
+之后的xapk格式是将官方安装资源(不能直接安装)基础上封装的，可尝试通过ApkPure App、APKCombo Installer、MT管理器、UU加速器等进行安装。等效于Google Play商店安装的官方版本。
+
+部分机型需关闭一些系统优化，如MIUI需关闭MIUI优化。
+
+APkCombo/ApkPure等网站下载的xapk包含了32位和64位，本页提供的xapk源进行了拆分。
 :::
 
-- Google Play 下载的各区服的 FGO 原版 apk
-- 其中日服/美服后分为 64 位和 32 位包
+- 部分有分为32位和64位版本:
   - `armeabi_v7a/32-bit`, 32 位版多为旧模拟器或旧安卓或特殊设备使用
   - `arm64_v8a/64-bit`, 未标注即为 64 位，适用于绝大多数机型
 - 其中 **Proxy/代理** 为国内代理路线，若直连无法下载，可使用代理路线
