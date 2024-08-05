@@ -8,36 +8,38 @@
 
 ## Known Issue：
 - 【Fixed in Beta/Web】Support servants set in NP Damage Ranking page will result in missing buffs
+- 【Fixed in Beta/Web】Overkill bug not reset after NP
+- 【Added in Beta/Web】Support Summer Eresh
 
 ## Fixed in v2.5.10
-* Kiyohime
-  * Fix the strengthened skill not working on enemy with burn buffs
-* Sizuki Soujyuro
-  * Fix avoid lethal attack damage overwriting sure hit & pierce invincible
-* Custome skills
-  * Support add damage
-* General
-  * Healing no longer works on entities with 0 or less HP
-  * 【Enemy action related】adjust buff turn count based on parameters
+- Kiyohime
+  - Fix the strengthened skill not working on enemy with burn buffs
+- Sizuki Soujyuro
+  - Fix avoid lethal attack damage overwriting sure hit & pierce invincible
+- Custome skills
+  - Support add damage
+- General
+  - Healing no longer works on entities with 0 or less HP
+  - 【Enemy action related】adjust buff turn count based on parameters
 
 ## Fixed in v2.5.9
-* Aoko Aozaki
-  * Fix incorrect checks on magic bullet buffs
-  * Support Protagonist Correction
-* Sizuki Soujyuro
-  * Support Avoid Lethal Attack Damage (Skill 1)
-  * Support Np Multiply (Skill 2)
-  * Support Pierce Damage Cut (NP)
+- Aoko Aozaki
+  - Fix incorrect checks on magic bullet buffs
+  - Support Protagonist Correction
+- Sizuki Soujyuro
+  - Support Avoid Lethal Attack Damage (Skill 1)
+  - Support Np Multiply (Skill 2)
+  - Support Pierce Damage Cut (NP)
 - Alice Kuonji
   - Support overwrite attribute
   - Support guts on instant death
   - Support DoT Value Up/Down
   - Fix her passive can't reach 0
-* General
-  * Skills & NPs that transform servants now reapply passives & adjust atk & maxHp (except Jekyll, it's literally hardcoded in the game as a constant)
-  * Fix certain command codes & attack trigger functions not working due to Aoko's AoE card update causing lots of type changes
-  * Add support to linked buffs & behave as family buffs (Summer Chloe Skill 1). These buffs will share use count & will get removed at the same time
-  * Fix toleranceSubstate sometimes activate when shouldn't
+- General
+  - Skills & NPs that transform servants now reapply passives & adjust atk & maxHp (except Jekyll, it's literally hardcoded in the game as a constant)
+  - Fix certain command codes & attack trigger functions not working due to Aoko's AoE card update causing lots of type changes
+  - Add support to linked buffs & behave as family buffs (Summer Chloe Skill 1). These buffs will share use count & will get removed at the same time
+  - Fix toleranceSubstate sometimes activate when shouldn't
 
 ## Fixed in v2.5.8
 - Fix incorrect class advantages against special enemy classes
