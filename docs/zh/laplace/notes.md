@@ -136,3 +136,7 @@ base enemy npcId=100, EnemyScript:
 | 5   | breakGaugeUp(1)                         | 1                 | 1-1=0              | 101          | ◆◆◆<br>4/4  |
 
 > 其中第4步为御主由井正雪的技能效果，第5步不存在该关卡中，仅展示breakGaugeUp时有无ChangeMaxBreakGauge的区别
+
+## 以御主为目标的御主技能
+
+目前只有一个御主技能以御主为目标：洗牌。这其实会以场上第一个友方从者为目标，所以可以给泳装艾蕾加点数。

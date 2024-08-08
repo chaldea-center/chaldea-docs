@@ -148,3 +148,9 @@ base enemy npcId=100, EnemyScript:
 
 > Step 4 is Yui Shousetsu's Master skill. Step 5 is not actually in this quest, just here to demonstrate the effect when
 > ChangeMaxBreakGauge is not set.
+
+## MysticCode that targets Master
+
+There is currently only one mystic code skill that targets the Master, Shuffle. This actually defaults the target
+to the first alive ally servant on the field, so if you put Summer Eresh at Pos 1 and use Shuffle, this will give her
+points.
