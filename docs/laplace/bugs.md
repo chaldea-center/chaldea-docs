@@ -7,9 +7,17 @@
   - Henry Jekyll & Hyde won't gain class board buffs after class change (probably will never be implemented)
 
 ## Known Issue：
-- 【Fixed in Beta/Web】Support servants set in NP Damage Ranking page will result in missing buffs
-- 【Fixed in Beta/Web】Overkill bug not reset after NP
-- 【Added in Beta/Web】Support Summer Eresh
+- Fix Summer Eresh interaction with mystic code skill `shuffle`
+  - If she is at the first of the party she will gain points when using `shuffle`
+
+## Fixed in v2.5.12
+- Fix Option selection skills like Kukulcan's not working
+- Fix Summer Eresh interactions with party wide mystic code skills
+
+## Fixed in v2.5.11
+- Support servants set in NP Damage Ranking page will result in missing buffs
+- Overkill bug not reset after NP
+- Support Summer Eresh
 
 ## Fixed in v2.5.10
 - Kiyohime
