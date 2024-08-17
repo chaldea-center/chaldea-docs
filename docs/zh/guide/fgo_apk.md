@@ -9,7 +9,8 @@ Google应用商店已不再提供APK独立安装包。目前可选择的安装�
 - 【官方】 Google Play商店
 - 【等效官方】[APK Combo](https://apkcombo.com/fgo-jp/com.aniplex.fategrandorder/download/apk)/[APK Pure](https://apkpure.com/cn/fate-grand-order/com.aniplex.fategrandorder/download)/本页 下载的XAPK，需使用XAPK安装器安装，如[APKCombo Installer](https://apkcombo.com/zh/how-to-install)。
 <!-- - 【第三方】[重签名APK](#重签名apk): **本站**打包，仅更改签名/包名。 -->
-- 【第三方】[Rayshift BFGO](#rayshift-第三方客户端): **Rayshift.io**制作的第三方客户端，有较多更改。
+<!-- - 【第三方】[Rayshift BFGO](#rayshift-第三方客户端): **Rayshift.io**制作的第三方客户端，有较多更改。 -->
+- 【第三方】部分第三方修改的客户端，危险自负。
   :::
 
 ::: warning 免责声明
@@ -49,12 +50,12 @@ APkCombo/ApkPure等网站下载的xapk包含了32位和64位，本页提供的xa
 
 <ApkRelease language="zh" />
 
-## [Rayshift](https://rayshift.io) 第三方客户端
+<!-- ## [Rayshift](https://rayshift.io) 第三方客户端
 
 包含一些优化，同时也会收集一些信息，如掉落统计等。详见其[discord](https://discord.gg/8JeHHvh)。下载后注意版本号是否最新。
 
 - [BFGO 日服](https://rayshift.io/betterfgo/download/jp)
-- [BFGO 美服](https://rayshift.io/betterfgo/download/na)
+- [BFGO 美服](https://rayshift.io/betterfgo/download/na) -->
 
 <script setup>
 import ApkRelease from '../../components/ApkRelease.vue'

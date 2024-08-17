@@ -22,10 +22,10 @@ Google Play Store won't provide APK format anymore(JP/NA/KR), please go to Googl
 
 <ApkRelease/>
 
-### [Rayshift](https://rayshift.io) APK Mod
+<!-- ### [Rayshift](https://rayshift.io) APK Mod
 
 - [BetterFGO JP latest](https://rayshift.io/betterfgo/download/jp)
-- [BetterFGO NA latest](https://rayshift.io/betterfgo/download/na)
+- [BetterFGO NA latest](https://rayshift.io/betterfgo/download/na) -->
 
 <script setup>
 import ApkRelease from '../components/ApkRelease.vue'
