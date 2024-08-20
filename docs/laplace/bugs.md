@@ -9,6 +9,9 @@
 ## Known Issue：
 - Fix Summer Eresh interaction with mystic code skill `shuffle`
   - If she is at the first of the party she will gain points when using `shuffle`
+- 【Challenge Quest】Fix defensive buff interactions for targets with special invincible, invincible, or evade
+  - If the target negates the damage, then positive defensive buff would not activate or reduce count, but negative defensive buffs will continue to activate
+  - If the target takes damage due to pierce invincible or sure hit then nothing changes
 
 ## Fixed in v2.5.12
 - Fix Option selection skills like Kukulcan's not working

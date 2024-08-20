@@ -154,3 +154,16 @@ base enemy npcId=100, EnemyScript:
 There is currently only one mystic code skill that targets the Master, Shuffle. This actually defaults the target
 to the first alive ally servant on the field, so if you put Summer Eresh at Pos 1 and use Shuffle, this will give her
 points.
+
+## Avoiding Damage, Arts Resistance, and NP refund
+
+It is found out that if a servant attacks an enemy that would avoid this damage due to special invincible, invincible,
+or evade, the np refund is affected by only arts resistance down buffs but not art resistance up.
+
+Further testing showed that all negative defensive buffs will continue to function as normal, but all positive defensive
+buffs will not activate or reduce count.
+
+E.g. vs Heaven's Hole who has 50% arts resistance up buff, if you give her 30% arts resistance down buff & 20% defence
+down (3 times) then use Oberon's NP, followed by two arts attack, the result would be the two arts attack will benefit
+from the 30% arts resistance down while ignoring the 50% arts resistance up, and the 20% defence down will be consumed
+3 times and deactivate.
