@@ -6,12 +6,24 @@
   - Command Spell Added Buffs
   - Henry Jekyll & Hyde won't gain class board buffs after class change (probably will never be implemented)
 
-## Known Issue：
+## Will be fixed in v2.5.14：
+- Svt class passives now correctly ignores debuff immune when adding debuffs
+- Fix Summer Eresh NP after Lasengle schema change 
+- Support new Summer BB:
+  - Support her special passive condition
+  - Support new tdTypeChange logic
+
+## Fixed in v2.5.13
 - Fix Summer Eresh interaction with mystic code skill `shuffle`
   - If she is at the first of the party she will gain points when using `shuffle`
+- Support Summer XX NP
 - 【Challenge Quest】Fix defensive buff interactions for targets with special invincible, invincible, or evade
   - If the target negates the damage, then positive defensive buff would not activate or reduce count, but negative defensive buffs will continue to activate
   - If the target takes damage due to pierce invincible or sure hit then nothing changes
+- 【Challenge Quest】Support damageValue and damageValueSafe
+- 【Challenge Quest】Fix enemy units' transform skills
+- 【Challenge Quest】Fix ParamAddFieldIndividuality
+- 【Challenge Quest】Support enemy buffs with intervalTurn
 
 ## Fixed in v2.5.12
 - Fix Option selection skills like Kukulcan's not working
