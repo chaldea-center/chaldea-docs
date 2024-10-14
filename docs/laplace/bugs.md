@@ -6,7 +6,14 @@
   - Command Spell Added Buffs
   - Henry Jekyll & Hyde won't gain class board buffs after class change (probably will never be implemented)
 
-## Will be fixed in v2.5.14：
+## Will be fixed in v2.5.15：
+- Command code proced as passive
+- Move to last backup not clearing deck lock
+- Support pierce special invincibility
+- Fix Tezcatlipoca's passive not working on master equips
+- 【Enemy related】 Resistance delay NP
+
+## Fixed in v2.5.14：
 - Svt class passives now correctly ignores debuff immune when adding debuffs
 - Fix Summer Eresh NP after Lasengle schema change 
 - Support new Summer BB:
