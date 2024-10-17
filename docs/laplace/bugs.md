@@ -10,6 +10,7 @@
 - Command code proced as passive
 - Move to last backup not clearing deck lock
 - Support pierce special invincibility
+- Support KazuraDrop
 - Fix Tezcatlipoca's passive not working on master equips
 - 【Enemy related】 Resistance delay NP
 
