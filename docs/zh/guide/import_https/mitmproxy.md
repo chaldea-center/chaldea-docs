@@ -148,6 +148,38 @@ Android 7及以上版本系统将不信任用户证书，需要将用户证书�
 5. 打开`系统设置-安全-信任的凭据-系统`标签页可找到mitmproxy证书
 6. 重启模拟器或手机！
 
+使用Andorid 12版本系统的模拟器中，可能会出现点击证书文件提示 “在‘设置中’安装CA证书”的情况；
+而部分模拟器的系统中则隐藏了设置中安装证书的入口，无法操作安装，此时则需要通过adb直接将下载好的证书移入系统证书
+
+以下操作承接之前 `若显示`xxxx:/ #`表示成功`
+
+4. 输入
+   ```
+   mount -o rw,remount,rw /system
+   cd ~/sdcard/Download
+   ls
+   ```
+   如果没有特意修改过下载位置，之前从`http://mitm.it`中下载的插件会在这里
+   
+   输入
+   ```
+   ls
+   ```
+   则会显示证书文件的名称
+   ```
+   xxxx://sdcard/Download # ls
+   mitmproxy-ca-cert.crt
+   ```
+   
+   确保证书位置和名称正确后，再输入如下指令，将证书移动至系统证书目录即可
+   ```
+   cp /sdcard/Download/mitmproxy-ca-cert.crt /system/etc/security/cacerts/mitmproxy.0
+   chmod 644 /system/etc/security/cacerts/mitmproxy.0
+   mount -o ro,remount,ro /system
+   ```
+完成后重启模拟器或手机即可开始抓包。
+
+
 ## 开始抓包
 
 1. 双击`start.cmd`启动抓包
