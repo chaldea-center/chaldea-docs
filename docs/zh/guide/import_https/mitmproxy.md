@@ -157,9 +157,8 @@ Android 7及以上版本系统将不信任用户证书，需要将用户证书�
    ```
    mount -o rw,remount,rw /system
    cd ~/sdcard/Download
-   ls
    ```
-   如果没有特意修改过下载位置，之前从`http://mitm.it`中下载的插件会在这里
+   如果没有特意修改过下载位置，之前从`http://mitm.it`中下载的证书会存放在这里
    
    输入
    ```
@@ -177,8 +176,8 @@ Android 7及以上版本系统将不信任用户证书，需要将用户证书�
    chmod 644 /system/etc/security/cacerts/mitmproxy.0
    mount -o ro,remount,ro /system
    ```
-完成后重启模拟器或手机即可开始抓包。
-
+   
+   完成后重启模拟器或手机即可开始抓包。
 
 ## 开始抓包
 
