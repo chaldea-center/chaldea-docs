@@ -7,6 +7,7 @@
 - [Reqable](./reqable.md): all platforms
 - [Stream-iOS](./stream.md): iOS only, CN/TW
 - [mitmproxy-PC](./mitmproxy.md): Android/iOS with mitmproxy(PC)
+- [mitmproxy Tutorial (2026 Edition) - PC](./mitmproxy_2026.md): Automated capture script for MuMu 12 Emulator using mitmproxy (PC)
 - [Charles-PC](./charles.md): Android/iOS with Charles(PC)
 - Other Tips
   - [Transfer Data](./transfer_data.md): Keep JP/NA account data in multiple clients
@@ -20,7 +21,7 @@
   - [transfer file login](./authfile_login.md)
 - CN/TW:
   - iOS: [Stream](./stream.md)
-  - Android: [mitmproxy](./mitmproxy.md)/[Charles](./charles.md)
+  - Android: [mitmproxy](./mitmproxy.md)/[Charles](./charles.md)/[mitmproxy 2026](./mitmproxy_2026.md)
 
 ## Introduction
 
