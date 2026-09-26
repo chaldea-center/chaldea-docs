@@ -28,13 +28,9 @@ There may be strange problems in other emulators. For example, BlueStacks doesn'
 
 ## Configure Charles
 
-![Charles UI](/images/import_https/charles-1.webp)
+![Charles UI](/images/import_https/charles-1.webp 'Charles UI')
 
-<figcaption style="text-align:center">Charles UI</figcaption>
-
-![Charles Configuration](/images/import_https/charles-2.webp)
-
-<figcaption style="text-align:center">Charles Configurations</figcaption>
+![Charles Configuration](/images/import_https/charles-2.webp 'Charles Configurations')
 
 ::: details
 <https://zhile.io/2017/07/07/charles-proxy-usage-and-license.html>
@@ -52,9 +48,7 @@ There may be strange problems in other emulators. For example, BlueStacks doesn'
 
 Only CN/TW supported!!!
 
-![iOS Configuration](/images/import_https/ios-1.webp)
-
-<figcaption style="text-align:center">iOS Configuration</figcaption>
+![iOS Configuration](/images/import_https/ios-1.webp 'iOS Configuration')
 
 > The screenshot is only used to indicate the location of the setting item. If it is inconsistent with the following text steps, the text steps shall prevail.
 
@@ -79,9 +73,7 @@ Take iOS14 as an example. The settings on different iOS version may be displayed
 
 ## Configure Android
 
-![Android Configuration](/images/import_https/android-1.webp)
-
-<figcaption style="text-align:center">Android configuration</figcaption>
+![Android Configuration](/images/import_https/android-1.webp 'Android configuration')
 
 > The screenshot is only used to indicate the location of the setting item. If it is inconsistent with the following text steps, the text steps shall prevail.
 
@@ -115,9 +107,7 @@ Take the MuMu emulator (Android 6.0.1) as an example, there may be differences o
 
 ## Capture and Import
 
-![Save Response](/images/import_https/charles-3.webp)
-
-<figcaption style="text-align:center">Target URL and Saving Response</figcaption>
+![Save Response](/images/import_https/charles-3.webp 'Target URL and Saving Response')
 
 ### Capture FGO Traffic
 

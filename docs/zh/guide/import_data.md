@@ -44,9 +44,7 @@
 3. 在**识别结果**中预览结果，若识别错误，请自行修改
 4. 检查无误，选择更新素材，仅更新识别到的素材，未检测到的素材保持原来数量
 
-![素材截图范例](/images/item_recognition_example.webp)
-
-<figcaption style="text-align:center">素材截图范例</figcaption>
+![素材截图范例](/images/item_recognition_example.webp '素材截图范例')
 
 ## 技能截图解析 {#skill-recognition}
 
@@ -67,9 +65,7 @@
 
 - 目前仅支持技能等级识别，不支持再临等级~~怎么还没全迦满破~~或圣杯等级识别。
 
-![技能截图范例](/images/skill_recognition_example.webp)
-
-<figcaption style="text-align:center">技能截图范例</figcaption>
+![技能截图范例](/images/skill_recognition_example.webp '技能截图范例')
 
 ## CSV 模板 {#csv-template}
 

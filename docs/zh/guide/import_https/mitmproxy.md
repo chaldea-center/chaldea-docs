@@ -57,9 +57,7 @@ only one usage of each socket address (protocol/network address/port) is normall
 
 ## 设置代理
 
-![Android Configuration](/images/import_https/android-1.webp)
-
-<figcaption style="text-align:center">Android配置（无视左侧两张wifi设置）</figcaption>
+![Android Configuration](/images/import_https/android-1.webp 'Android配置（无视左侧两张wifi设置）')
 
 1. 获取电脑的`IP地址(主机名)`，有两种方法:
    1. 模拟器中打开`系统设置-WiFi-设置/信息-IP地址`或`系统设置-关于平板电脑-状态信息-IP地址`

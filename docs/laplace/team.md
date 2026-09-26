@@ -15,9 +15,7 @@ For now there are four different ways to choose a quest:
 4. Import quest from JSON data. It needs to be structured in Atlas DB format. You can use 'Export JSON' function on any
    quests to see what it looks like. However, unless you know what that means, using this method is not recommended
 
-![Select Quests](https://data-cn.chaldea.center/public/select_quest_en.png)
-
-<figcaption style="text-align:center">Select Quests</figcaption>
+![Select Quests](https://data-cn.chaldea.center/public/select_quest_en.png 'Select Quests')
 
 ### Custom Quest
 
@@ -72,9 +70,7 @@ Preview data format is similar to that of the servant lists
   2. Skill levels
   3. Append skill levels (will be omitted if no append skills are active)
 
-![Team Preview](https://data-cn.chaldea.center/public/servant_icon_en.png)
-
-<figcaption style="text-align:center">Team Preview</figcaption>
+![Team Preview](https://data-cn.chaldea.center/public/servant_icon_en.png 'Team Preview')
 
 ### Servant & CE Settings
 
@@ -96,9 +92,7 @@ to resync, can use the "Resync Options" from the top right menu
 - Extra Passive are generally event skills and can be removed
 - You can also select enemies or NPC supports (E.g. U-Olga Marie) from the top right menu
 
-![Servant Options](https://data-cn.chaldea.center/public/servant_edit_en.png)
-
-<figcaption style="text-align:center">Servant Options</figcaption>
+![Servant Options](https://data-cn.chaldea.center/public/servant_edit_en.png 'Servant Options')
 
 **CE Options**:
 

@@ -4,9 +4,9 @@
 The **Servant** and **Plan** page are all for servants. **Plan** page is designed for batch changing the servant skill levels.
 :::
 
-![Servant List Page](/images/en/servant-list.webp)
+![Servant List Page](/images/en/servant-list.webp 'Servant List Page')
 
-<figcaption style="text-align:center">Servant List Page<br><small>1-Favorite/Other/All, 2-Filter, 3-Search, 4-Popup Menu, 5-Class Filter, 6-Hide One, 7-Batch Setting</small></figcaption>
+1-Favorite/Other/All, 2-Filter, 3-Search, 4-Popup Menu, 5-Class Filter, 6-Hide One, 7-Batch Setting
 
 ## Servant List Page
 
@@ -71,9 +71,9 @@ If you select `x+1` for skills, it means change from `Lv.x` to `Lv.x+1`. For me,
 
 ## Detail Page - Plan Tab
 
-![Servant Detail Page](/images/en/servant-detail.webp)
+![Servant Detail Page](/images/en/servant-detail.webp 'Servant Detail Page')
 
-<figcaption style="text-align:center">Servant Detail Page<br><small>1-Favorite, 2-Popup Menu, 3-Growth Curve, 4-Priority, 5-Custom Tab Sorting, 6-Plan Settings, 7-Toolbar(Enhancement and Shortcuts)</small></figcaption>
+1-Favorite, 2-Popup Menu, 3-Growth Curve, 4-Priority, 5-Custom Tab Sorting, 6-Plan Settings, 7-Toolbar(Enhancement and Shortcuts)
 
 ::: tip
 Switch **Slider Mode** and **Dropdown Mode** in the popup menu.

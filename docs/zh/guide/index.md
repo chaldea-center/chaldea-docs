@@ -4,9 +4,7 @@ Chaldea 是一款用于[Fate/Grand Order](https://www.fate-go.jp)/[命运-冠位
 
 关于战斗模拟器Laplace可前往[Laplace](/zh/laplace/)。
 
-![Chaldea Preview](/images/zh/home_svt_preview.webp)
-
-<figcaption style="text-align:center">Chaldea预览</figcaption>
+![Chaldea Preview](/images/zh/home_svt_preview.webp 'Chaldea预览')
 
 ## 主要功能/特性
 

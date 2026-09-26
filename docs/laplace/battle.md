@@ -1,8 +1,6 @@
 # Battle Simulation
 
-![Battle Simulation](https://data-cn.chaldea.center/public/battle_en.png)
-
-<figcaption style="text-align:center">Battle Simulation</figcaption>
+![Battle Simulation](https://data-cn.chaldea.center/public/battle_en.png 'Battle Simulation')
 
 The simulation mostly behaves the same as [FGO Teamup](https://www.fgo-teamup.com), and the backend behaves similarly to
 [FGO Simulator](https://github.com/SharpnelXu/FGOSimulator) but with Atlas DB data structure.

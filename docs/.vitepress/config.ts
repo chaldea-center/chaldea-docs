@@ -1,6 +1,7 @@
 import { defineConfig, type HeadConfig } from 'vitepress'
 import { head, navbarEn, navbarZh, sidebarEn, sidebarZh } from './configs'
 import { getPageText } from './configs/utils'
+import { imgFigure } from './plugins/imgFigure'
 import { promises } from 'fs'
 import path from 'path'
 
@@ -13,6 +14,9 @@ export default defineConfig({
   markdown: {
     image: {
       lazyLoading: true,
+    },
+    config: (md) => {
+      md.use(imgFigure)
     },
     container: {
       // tipLabel: '提示',

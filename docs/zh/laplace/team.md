@@ -12,9 +12,7 @@
    - 详细说明可参见[常见问题](faq.md#atlas-db-url)
 4. 通过JSON格式导入关卡。数据格式参照 AADB 结构，可以使用导出功能获得范本。除非对相关数据有一定研究，否则不建议使用此方式导入关卡
 
-![选择关卡](https://data-cn.chaldea.center/public/select_quest.png)
-
-<figcaption style="text-align:center">选择关卡</figcaption>
+![选择关卡](https://data-cn.chaldea.center/public/select_quest.png '选择关卡')
 
 ### 自定义关卡
 
@@ -65,9 +63,7 @@
   3. 被动技能等级(若全未启用则不显示)
 - (PC端) 可以使用从者左上角的图标快速更换从者，或右上角的图标快速移除从者
 
-![队伍显示](https://data-cn.chaldea.center/public/servant_icon.png)
-
-<figcaption style="text-align:center">队伍显示</figcaption>
+![队伍显示](https://data-cn.chaldea.center/public/servant_icon.png '队伍显示')
 
 ### 从者及礼装配置
 
@@ -88,9 +84,7 @@
 - 额外被动多为活动技能，仅在关卡满足要求时(如绑定活动与活动场地特性)才会生效。可选择移除。保存编队时暂时无法保存该部分信息
 - 如想选择敌方从者或关卡的特殊助战(如大总统)，可通过右上角菜单选择
 
-![从者编辑界面](https://data-cn.chaldea.center/public/servant_edit.png)
-
-<figcaption style="text-align:center">从者编辑界面</figcaption>
+![从者编辑界面](https://data-cn.chaldea.center/public/servant_edit.png '从者编辑界面')
 
 **礼装设置**:
 

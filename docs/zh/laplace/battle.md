@@ -1,8 +1,6 @@
 # 战斗模拟
 
-![战斗模拟示例](https://data-cn.chaldea.center/public/battle.png)
-
-<figcaption style="text-align:center">战斗模拟示例</figcaption>
+![战斗模拟示例](https://data-cn.chaldea.center/public/battle.png '战斗模拟示例')
 
 总体操作方式和 [FGO Teamup](https://www.fgo-teamup.com) 一致，后端和 [FGO Simulator](https://github.com/SharpnelXu/FGOSimulator) 差不多，但使用了 Atlas Academy DB 的数据结构
 

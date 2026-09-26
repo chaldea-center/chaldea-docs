@@ -23,19 +23,13 @@ You can also read the guide created by [Squirrel](https://www.youtube.com/watch?
 
 ### Formation
 
-![Formation](https://data-cn.chaldea.center/public/preview_en.png)
+![Formation](https://data-cn.chaldea.center/public/preview_en.png 'Formation')
 
-<figcaption style="text-align:center">Formation</figcaption>
-
-![Servant Edit](https://data-cn.chaldea.center/public/servant_edit_en.png)
-
-<figcaption style="text-align:center">Servant Edit</figcaption>
+![Servant Edit](https://data-cn.chaldea.center/public/servant_edit_en.png 'Servant Edit')
 
 ### Battle Simulation
 
-![Battle Simulation](https://data-cn.chaldea.center/public/battle_en.png)
-
-<figcaption style="text-align:center">Battle Simulation</figcaption>
+![Battle Simulation](https://data-cn.chaldea.center/public/battle_en.png 'Battle Simulation')
 
 ## Note
 

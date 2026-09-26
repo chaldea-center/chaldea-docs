@@ -51,9 +51,7 @@ Don't upload too many screenshots at once, 100 seconds timeout limit!
 Don't crop, don't use split screen mode, make sure the game fills the entire screen.
 :::
 
-![Item Screenshot Example](/images/item_recognition_example.webp)
-
-<figcaption style="text-align:center">Item Screenshot Example</figcaption>
+![Item Screenshot Example](/images/item_recognition_example.webp 'Item Screenshot Example')
 
 ## Skill Recognition
 
@@ -76,9 +74,7 @@ Don't upload too many screenshots at once, 100 seconds timeout limit!
 
 Currently only support skill levels, ascension level and grails are not included.
 
-![Skill Screenshot Example](/images/skill_recognition_example.webp)
-
-<figcaption style="text-align:center">Skill Screenshot Example</figcaption>
+![Skill Screenshot Example](/images/skill_recognition_example.webp 'Skill Screenshot Example')
 
 ## CSV Template
 

@@ -5,9 +5,9 @@
 两者共用一套筛选系统。
 :::
 
-![从者列表页](/images/zh/servant-list.webp)
+![从者列表页](/images/zh/servant-list.webp '从者列表页')
 
-<figcaption style="text-align:center">从者列表页<br><small>1-关注/非关注/全部、2-筛选、3-搜索、4-弹出菜单、5-职阶筛选、6-单独隐藏、7-统一设置区域</small></figcaption>
+1-关注/非关注/全部、2-筛选、3-搜索、4-弹出菜单、5-职阶筛选、6-单独隐藏、7-统一设置区域
 
 ## 从者列表页
 
@@ -64,9 +64,9 @@
 
 ## 详情页-规划标签页
 
-![从者详情页](/images/zh/servant-detail.webp)
+![从者详情页](/images/zh/servant-detail.webp '从者详情页')
 
-<figcaption style="text-align:center">从者详情页<br><small>1-关注/非关注、2-弹出菜单、3-成长曲线、4-优先级、5-自定义标签页排序、6-规划设置区域、7-强化及快捷按钮</small></figcaption>
+1-关注/非关注、2-弹出菜单、3-成长曲线、4-优先级、5-自定义标签页排序、6-规划设置区域、7-强化及快捷按钮
 
 ::: tip
 点击右上角弹出菜单，根据个人偏好可切换 **滑动条** 模式 和 **下拉框** 模式

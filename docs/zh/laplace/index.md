@@ -18,17 +18,11 @@ Laplace 主要负责战斗模拟的功能。欢迎测试反馈！
 
 ## 预览
 
-![编队界面](https://data-cn.chaldea.center/public/preview.png)
+![编队界面](https://data-cn.chaldea.center/public/preview.png '编队界面')
 
-<figcaption style="text-align:center">编队界面</figcaption>
+![从者编辑界面](https://data-cn.chaldea.center/public/servant_edit.png '从者编辑界面')
 
-![从者编辑界面](https://data-cn.chaldea.center/public/servant_edit.png)
-
-<figcaption style="text-align:center">从者编辑界面</figcaption>
-
-![战斗模拟示例](https://data-cn.chaldea.center/public/battle.png)
-
-<figcaption style="text-align:center">战斗模拟示例</figcaption>
+![战斗模拟示例](https://data-cn.chaldea.center/public/battle.png '战斗模拟示例')
 
 ## 注意事项
 
