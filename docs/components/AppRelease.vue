@@ -122,7 +122,7 @@ export default defineComponent({
     getData() {
       this.loading = true
       const local_cache = window.github_releases || []
-      if (local_cache && local_cache.length > 0) {
+      if (Array.isArray(local_cache) && local_cache.length > 0) {
         this.loading = false
         this.all_releases = new Array(...local_cache)
         this.msg = ''
@@ -137,6 +137,10 @@ export default defineComponent({
       )
         .then((response) => response.json())
         .then((data) => {
+          // GitHub API returns a non-array object on error (e.g. rate limit)
+          if (!Array.isArray(data)) {
+            throw new Error(data?.message || 'invalid response')
+          }
           this.loading = false
           this.all_releases = data
           window.github_releases = new Array(...data)

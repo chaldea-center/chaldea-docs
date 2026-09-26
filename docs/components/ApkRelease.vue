@@ -30,7 +30,7 @@
         </tr>
       </thead>
       <tbody>
-        <template v-for="file in filter(region)" :key="file.name">
+        <template v-for="file in filter(region)" :key="file.fileName">
           <tr>
             <td>{{ file.fileName.split('.').toReversed()[0] }}</td>
             <td>{{ file.versionName }}</td>
@@ -143,7 +143,7 @@ export default defineComponent({
       let files: ApkFile[] = [...this.files]
       files = files.filter((file) => file.fileName.startsWith(pkg_name + '.v'))
       files.sort((a, b) =>
-        b.version != a.version
+        b.version !== a.version
           ? b.version - a.version
           : a.versionName.localeCompare(b.versionName)
       )
@@ -153,7 +153,7 @@ export default defineComponent({
     getData() {
       this.loading = true
       const local_cache = window.apk_files || []
-      if (local_cache && local_cache.length > 0) {
+      if (Array.isArray(local_cache) && local_cache.length > 0) {
         this.loading = false
         this.files = new Array(...local_cache)
         this.msg = ''
@@ -163,6 +163,10 @@ export default defineComponent({
       fetch('https://static.atlasacademy.io/apk/manifest.json')
         .then((response) => response.json())
         .then((manifests: FileManifest[]) => {
+          // manifest may be a non-array object on error
+          if (!Array.isArray(manifests)) {
+            throw new Error('invalid response')
+          }
           let data: ApkFile[] = []
           for (let file of manifests) {
             if (!file.fileName.endsWith('apk')) continue
@@ -176,10 +180,16 @@ export default defineComponent({
                   ? 0
                   : (parseInt(match[1]) * 100 + parseInt(match[2])) * 100 +
                     parseInt(match[3]),
+              // arch marker in version column: no suffix = @64, armeabi_v7a = @32, combined = @32+64
               versionName:
                 match == null
                   ? ''
-                  : match[0].replace('.armeabi_v7a', ' @32').substring(1),
+                  : (
+                      match[0]
+                        .replace('.armeabi_v7a', ' @32')
+                        .replace('.combined', ' @32+64') +
+                      (match[4] ? '' : ' @64')
+                    ).substring(1),
               link: 'https://static.atlasacademy.io/apk/' + file.fileName,
               link_proxy:
                 'https://worker-cn.chaldea.center/proxy/apk/' + file.fileName,
