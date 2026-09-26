@@ -23,12 +23,13 @@
 :::
 
 不同操作系统根目录不同
-| OS | 根目录 |
-| :------- | :-------------------------------------- |
-| iOS | `文件应用/我的iPhone/Chaldea/` |
-| Android | `{emulated or SD card}/Android/data/cc.narumi.chaldea/files/` |
-| Windows | `chaldea.exe所在目录/userdata` |
-| macOS | `/Users/<user>/Library/Containers/cc.narumi.chaldea/Data/Documents/` |
+
+| OS      | 根目录                                                               |
+| :------ | :------------------------------------------------------------------- |
+| iOS     | `文件应用/我的iPhone/Chaldea/`                                       |
+| Android | `{emulated or SD card}/Android/data/cc.narumi.chaldea/files/`        |
+| Windows | `chaldea.exe所在目录/userdata`                                       |
+| macOS   | `/Users/<user>/Library/Containers/cc.narumi.chaldea/Data/Documents/` |
 
 > 实际路径可在`用户数据-数据目录`中查看
 

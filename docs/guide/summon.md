@@ -18,10 +18,11 @@ Click dropdown to choose a specific one, with probability shown.
 ## Summon Simulator
 
 Simulate 10/11x roll or single roll. The statistic probability for current simulation algorithm:
-| | SSR | SR | R |
-|:-------:|:------:|:-------:|:-------:|
-| Servant | 1.0364 | 3.1198 | 39.8026 |
-| CE | 4.1588 | 12.4803 | 39.4023 |
+
+|         |  SSR   |   SR    |    R    |
+| :-----: | :----: | :-----: | :-----: |
+| Servant | 1.0364 | 3.1198  | 39.8026 |
+|   CE    | 4.1588 | 12.4803 | 39.4023 |
 
 - app bar button - clear result and reset
 - click arrows of summon result to show history rolls

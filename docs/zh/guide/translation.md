@@ -21,7 +21,7 @@
 
 活动`wiki/eventsBase.json`，例：
 
-```jsonc
+```json
 {
   "id": 80480,
   "name": "踊るドラゴン・キャッスル！ \n～深海の姫君とふたつの宝玉～",

@@ -7,7 +7,7 @@ Google Play Store won't provide APK format anymore(JP/NA/KR), please go to Googl
 
 - [APK Combo](https://apkcombo.com/fgo-jp/com.aniplex.fategrandorder/download/apk): download XAPK and install using [APKCombo Installer](https://apkcombo.com/how-to-install)
 - [ApkPure](https://apkpure.com) not validated
-:::
+  :::
 
 - Official FGO apk downloaded from Google Play.
 - JP/NA apk is divided into 64-bit and 32-bit versions.

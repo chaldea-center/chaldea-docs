@@ -7,6 +7,7 @@
   - Henry Jekyll & Hyde won't gain class board buffs after class change (probably will never be implemented)
 
 ## Will be fixed in v2.5.15：
+
 - Command code proced as passive
 - Move to last backup not clearing deck lock
 - Support pierce special invincibility
@@ -15,13 +16,15 @@
 - 【Enemy related】 Resistance delay NP
 
 ## Fixed in v2.5.14：
+
 - Svt class passives now correctly ignores debuff immune when adding debuffs
-- Fix Summer Eresh NP after Lasengle schema change 
+- Fix Summer Eresh NP after Lasengle schema change
 - Support new Summer BB:
   - Support her special passive condition
   - Support new tdTypeChange logic
 
 ## Fixed in v2.5.13
+
 - Fix Summer Eresh interaction with mystic code skill `shuffle`
   - If she is at the first of the party she will gain points when using `shuffle`
 - Support Summer XX NP
@@ -34,15 +37,18 @@
 - 【Challenge Quest】Support enemy buffs with intervalTurn
 
 ## Fixed in v2.5.12
+
 - Fix Option selection skills like Kukulcan's not working
 - Fix Summer Eresh interactions with party wide mystic code skills
 
 ## Fixed in v2.5.11
+
 - Support servants set in NP Damage Ranking page will result in missing buffs
 - Overkill bug not reset after NP
 - Support Summer Eresh
 
 ## Fixed in v2.5.10
+
 - Kiyohime
   - Fix the strengthened skill not working on enemy with burn buffs
 - Sizuki Soujyuro
@@ -54,6 +60,7 @@
   - 【Enemy action related】adjust buff turn count based on parameters
 
 ## Fixed in v2.5.9
+
 - Aoko Aozaki
   - Fix incorrect checks on magic bullet buffs
   - Support Protagonist Correction
@@ -73,10 +80,12 @@
   - Fix toleranceSubstate sometimes activate when shouldn't
 
 ## Fixed in v2.5.8
+
 - Fix incorrect class advantages against special enemy classes
 - Fix Gilgamesh S1 trait check
 
 ## Fixed in v2.5.7
+
 - Fix Bakin's skill3 trigger effect
 
 ## Fixed in v2.5.6

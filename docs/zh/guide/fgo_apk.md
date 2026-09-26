@@ -8,8 +8,10 @@ Google应用商店已不再提供APK独立安装包。目前可选择的安装�
 
 - 【官方】 Google Play商店
 - 【等效官方】[APK Combo](https://apkcombo.com/fgo-jp/com.aniplex.fategrandorder/download/apk)/[APK Pure](https://apkpure.com/cn/fate-grand-order/com.aniplex.fategrandorder/download)/本页 下载的XAPK，需使用XAPK安装器安装，如[APKCombo Installer](https://apkcombo.com/zh/how-to-install)。
+
 <!-- - 【第三方】[重签名APK](#重签名apk): **本站**打包，仅更改签名/包名。 -->
 <!-- - 【第三方】[Rayshift BFGO](#rayshift-第三方客户端): **Rayshift.io**制作的第三方客户端，有较多更改。 -->
+
 - 【第三方】部分第三方修改的客户端，危险自负。
   :::
 

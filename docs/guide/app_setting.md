@@ -24,12 +24,13 @@ For Android and iOS, uninstall app will fully delete `root_path` including your 
 :::
 
 The root path differs from platforms
-| OS | Root Path |
-| :------- | :-------------------------------------- |
-| iOS | `"File" App/On My iPhone/Chaldea/` |
-| Android | `Android/data/cc.narumi.chaldea/files/` |
-| Windows | `folder_of_chaldea.exe/userdata` |
-| macOS | `/Users/<user>/Library/Containers/cc.narumi.chaldea/Data/Documents/` |
+
+| OS      | Root Path                                                            |
+| :------ | :------------------------------------------------------------------- |
+| iOS     | `"File" App/On My iPhone/Chaldea/`                                   |
+| Android | `Android/data/cc.narumi.chaldea/files/`                              |
+| Windows | `folder_of_chaldea.exe/userdata`                                     |
+| macOS   | `/Users/<user>/Library/Containers/cc.narumi.chaldea/Data/Documents/` |
 
 > The true path can be found in `User Data-Data Folder`.
 

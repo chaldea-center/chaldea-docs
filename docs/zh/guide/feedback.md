@@ -7,6 +7,7 @@
 - 应用内反馈（bug 反馈优先此项！）
 - Github: <https://github.com/chaldea-center/chaldea/issues>
 - NGA-FGO 版块: <https://bbs.nga.cn/read.php?tid=24926789>
+
 <!-- * QQ频道: [QQ频道/群](https://jq.qq.com/?_wv=1027&k=kvHMMxGn) -->
 
 反馈中请详细描述以下内容，并附上联系方式以方便进一步沟通

@@ -86,8 +86,7 @@ Should be based on the following order:
     - Excludes self
     - If `DataVals.OpponentOnly` is specified, then will only target enemy
 
-
-        If there is no valid revenge target, then select a random enemy. In Laplace, this means the selected enemy.
+      If there is no valid revenge target, then select a random enemy. In Laplace, this means the selected enemy.
 
 2.  Selecting the actual target based on `func.funcTargetType`
 
