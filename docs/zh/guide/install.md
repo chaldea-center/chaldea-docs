@@ -111,9 +111,9 @@ macOS 现在仅提供应用商店版本
 
 如果应用启动失败，请尝试从 Terminal 中启动`./chaldea`并检查可能输出的报错信息。
 
-自 v2.3.0 起，桌面应用支持在系统托盘显示（默认关闭，可在应用内显示设置中开启），在 Linux 系统中需要`libappindicator`相关库。如果系统未内置或未安装，则应用启动时可能会失败而无错误提示。若开启托盘后应用崩溃，可在显示设置中关闭「系统托盘」；若已无法进入应用，则删除`userdata/user/settings.json`中的`"showSystemTray": true`设置项（不了解 json 格式可直接删除整个文件）以重置该设置。
+自 v2.3.0 起，桌面应用支持在系统托盘显示（默认关闭，可在应用内显示设置中开启）。v2.3.0 至 v2.6.1 期间托盘图标依赖系统中的`libappindicator`，若缺失则应用启动时会静默失败；自 v2.6.2 起不再需要额外系统库。若开启托盘后应用崩溃，可在显示设置中关闭「系统托盘」；若已无法进入应用，则删除`userdata/user/settings.json`中的`"showSystemTray": true`设置项（不了解 json 格式可直接删除整个文件）以重置该设置。
 
-以 Debian 系列为例（如 Ubuntu），可以通过以下命令安装上述库：
+以 Debian 系列为例（如 Ubuntu），若使用 v2.3.0 至 v2.6.1，可通过以下命令安装上述库：
 
 ```sh
 sudo apt-get install libayatana-appindicator3-dev

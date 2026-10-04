@@ -11,6 +11,11 @@ export default defineConfig({
   title: 'Chaldea',
   description: 'Chaldea - Yet Another Planner & Battle Simulator for FGO',
   cleanUrls: true,
+  vite: {
+    resolve: {
+      preserveSymlinks: true,
+    },
+  },
   markdown: {
     image: {
       lazyLoading: true,

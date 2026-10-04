@@ -113,11 +113,10 @@ The macOS version is only available on Mac App Store.
 
 If app cannot be started, try to run it from terminal `./chaldea` and check the possible error.
 
-Since v2.3.0, desktop app can be shown in system tray (disabled by default, can be enabled in the in-app display settings), and `libappindicator` is required in linux system.
-If it doesn't exist in your system, please install it before launching chaldea app, otherwise startup will fail silently.
+Since v2.3.0, desktop app can be shown in system tray (disabled by default, can be enabled in the in-app display settings). From v2.3.0 to v2.6.1 the tray icon requires `libappindicator` in the Linux system, and startup fails silently if it is missing; since v2.6.2 no extra system package is required.
 If the app crashes after enabling the tray, turn off "System Tray" in the display settings; if the app can no longer be opened, remove the `"showSystemTray": true` entry from `userdata/user/settings.json` (or simply delete the whole file if you are not familiar with json) to reset the setting.
 
-For Debian based Linux, you can install it through the following command:
+For Debian based Linux, if you are using v2.3.0 to v2.6.1, install it through the following command:
 
 ```sh
 sudo apt-get install libayatana-appindicator3-dev
