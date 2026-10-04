@@ -1,9 +1,10 @@
-# FGO Data Capture: Automation Solution (2026 Edition)
+# mitmproxy Tutorial (MuMu 12 Automation)
 
 ::: info Special Disclaimer
 1. **Scope**: The following statements apply only to the "FGO Login Data Automation Capture Tool (including run.bat and fgo_cap.py)".
 2. **Server Support**: This tool ONLY supports the **Mainland China (CN)** and **Taiwan (TW)** servers operated by bilibili. It **DOES NOT support** Japanese (JP), Korean (KR), or North American (NA) servers.
 3. **Ownership**: This tool and its documentation do not represent the position of this site or the Chaldea Project team.
+4. **Author**: This article was written by [vx13](https://github.com/vx13).
 :::
 
 > **[ Legal Statement and Authorization ]**
@@ -16,17 +17,11 @@
 
 ---
 
-## 0. Tool Download and Preparation
+## 0. Tool Download
 
-Choose one of the following methods to obtain the tool based on your environment:
+This is an all-in-one package with the engine (`mitmdump`) bundled, so no Python or mitmproxy installation is required.
 
-### Method A: Light Package (Engine not included)
-1. **Script**: Download the mirrored [`fgo_cap.zip`](http://url) and extract it.
-2. **Engine**: Download [mitmproxy 12.2.1 Portable Edition](https://downloads.mitmproxy.org/12.2.1/mitmproxy-12.2.1-windows-x86_64.zip). Extract **`mitmdump.exe`** to the same directory as the script, or install it via pip.
-
-### Method B: All-in-One Package (Engine included)
-Includes a pre-configured execution environment.
-* **Download Link**: [Baidu Netdisk](https://pan.baidu.com/s/1EBaW7WSD_TAqpucWSQIBzQ?pwd=kedi) (Password: `kedi`)
+* **Download Link**: [Mirrored download](https://disk.chaldea.center/s/r1FO)
 
 ---
 
@@ -46,7 +41,7 @@ Please complete the following settings and **restart the emulator**, otherwise t
 
 1. **Start Script**: Double-click **`run.bat`**. Wait for the self-check to complete until you see `[🚀] 正在监听...`.
 2. **Login to Game**: Launch FGO in the emulator. Enter the game until you see the "Globe" screen or the "Event Announcement."
-3. **Auto-Finish**: Once capture is successful, the window will display `[🎯] 捕获成功!` and **automatically close after cleanup**. The data is now stored in your clipboard.
+3. **Auto-Finish**: Once capture succeeds, the window shows `[🎯] 捕获成功!`; the script restores the proxy and exits, then `run.bat` **waits for a key press** — press any key to close. The data is now stored in your clipboard.
 
 ::: danger Notice: Manual Exit and Network Recovery
 * **Proper Exit**: If you need to stop manually, press **`Ctrl + C`** in the window. **Do not** directly click the red [X] in the top-right corner.
@@ -58,7 +53,7 @@ Please complete the following settings and **restart the emulator**, otherwise t
 ## 3. Import to Chaldea
 
 1. Open the **Chaldea** client.
-2. Go to the data import page, select **[Import HTTPS Capture Data]** -> **[Import from Clipboard]** to complete the process.
+2. Open the **[Import]** menu at the bottom-right of the home page -> **[HTTPS Sniffing]**, click the import button at the top-right and choose **[from Clipboard]**.
 
 ---
 

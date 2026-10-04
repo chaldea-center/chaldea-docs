@@ -30,6 +30,7 @@ export const sidebarEn: DefaultTheme.Sidebar = {
             { text: 'Reqable', link: 'reqable' },
             { text: 'Stream-iOS', link: 'stream' },
             { text: 'mitmproxy', link: 'mitmproxy' },
+            { text: 'mitmproxy (MuMu 12)', link: 'mitmproxy_mumu12' },
             { text: 'Charles', link: 'charles' },
             { text: 'Transfer Data', link: 'transfer_data' },
             { text: 'Gacha Statistics', link: 'gacha_stat' },
