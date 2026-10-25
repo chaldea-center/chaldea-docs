@@ -1,17 +1,21 @@
-# 隐私策略
+---
+title: 隐私政策地址已更新
+layout: page
+head:
+  - - meta
+    - http-equiv: refresh
+      content: '0; url=./privacy'
+  - - meta
+    - name: robots
+      content: noindex, follow
+  - - link
+    - rel: canonical
+      href: https://docs.chaldea.center/zh/guide/privacy
+---
 
-罗列本应用使用到的权限和可能收集的信息。
+<script setup>
+import { onMounted } from 'vue'
+onMounted(() => window.location.replace(new URL('./privacy', window.location.href).href))
+</script>
 
-## 权限
-
-1. 网络
-2. 储存 - 用于导入数据
-3. 相册 - 用于保存图片，无读取操作
-
-## 信息收集
-
-1. Chaldea 用户注册 - 用于服务器备份和多设备同步，账密储存于服务端
-   > 由于无安全性保障，请勿使用常用密码
-2. 设备唯一标识码 - 用于截图识别等功能作为该设备上的用户标识符
-3. 日志收集 - 捕捉到非崩溃型的 bug 时会向开发者报告 bug 详情、当前应用的截图(不包含此应用外的屏幕内容)和设备参数，仅用于 debug
-4. 目前App 无任何广告，也不提供广告追踪等任何相关服务，将来可能会引入广告以弥补亏损
+[前往隐私政策](./privacy)

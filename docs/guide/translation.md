@@ -4,7 +4,7 @@ REALLLLLLLLY WANTED!!!!!!!!!!
 
 ## Contact us
 
-Please contact me via [feedback page](./feedback.md). Discord is preferred: <https://discord.gg/5M6w5faqjP>
+Please use [Contact Us](./contact) to reach us. Discord is preferred: <https://discord.gg/5M6w5faqjP>
 
 ## Game Data
 

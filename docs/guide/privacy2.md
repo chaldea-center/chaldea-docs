@@ -1,17 +1,21 @@
-# Privacy
+---
+title: Privacy policy moved
+layout: page
+head:
+  - - meta
+    - http-equiv: refresh
+      content: '0; url=./privacy'
+  - - meta
+    - name: robots
+      content: noindex, follow
+  - - link
+    - rel: canonical
+      href: https://docs.chaldea.center/guide/privacy
+---
 
-List the permissions used by this application and the data that may be collected.
+<script setup>
+import { onMounted } from 'vue'
+onMounted(() => window.location.replace(new URL('./privacy', window.location.href).href))
+</script>
 
-## Permission
-
-1. Network
-2. Storage - import data
-3. Photos - save illustrations, no read operation
-
-## Data Collection
-
-1. Chaldea user registration - used for server backup and multi-device synchronization, username and password are stored on the server
-   > As there is no security guarantee, please do not use common used passwords
-2. Device id - used for screenshot recognizer as the user identifier
-3. Log collection - When a non-crash bug is captured, it will report the bug details, screenshot of the current application (not including the screen content outside this application) and device parameters, which are only used for debugging
-4. The App does not have any ads now, nor does it provide any related services such as ad tracking (but may consider adding ADs in the future)
+[Continue to the privacy policy](./privacy)

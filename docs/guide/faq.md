@@ -84,4 +84,4 @@ Account system is used for online userdata backup and Laplace team sharing. If y
 1. Go to Settings - User Page, input user name and password then click DELETE.
 2. Contact developer to remove data: [support@chaldea.center](mailto:support@chaldea.center)
 
-## [Feedback](./feedback.md)
+## [Contact Us](./contact)

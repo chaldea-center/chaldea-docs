@@ -87,6 +87,6 @@ Web版性能目前均表现较差，尤其是移动端，存在无故崩溃刷�
 1. 应用设置-用户页，输入用户名和密码后点击删除
 2. 联系开发者请求清除数据: [support@chaldea.center](mailto:support@chaldea.center)
 
-## [反馈](./feedback.md)
+## [联系我们](./contact)
 
 ...

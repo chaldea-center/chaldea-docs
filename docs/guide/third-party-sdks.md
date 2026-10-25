@@ -1,0 +1,23 @@
+---
+title: Third-party SDK List
+description: Chaldea third-party SDK components, providers, versions, purposes, information processed and platform/channel applicability.
+lastUpdated: false
+editLink: false
+---
+
+# Third-party SDK List
+
+**Privacy Policy version: v1 · Effective date: December 1, 2026**
+
+This list forms part of the [Privacy Policy](./privacy) and shares its version and effective date.
+
+The following components are integrated into the App. Versions, features and information processing vary by App version, platform, channel, configuration and authorization. Integrating an SDK does not enable all its functions.
+
+| Component, provider and version                                                                                                                      | Purpose, information and applicability                                                                                                                                                                                                                                                                                            | Official information                                                                                                                                                                            |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| GroMore mediation SDK; 北京巨量引擎网络技术有限公司 and affiliates. Flutter adapter 3.2.1; Android mediation 5.9.2.8; iOS Ads-Fusion-CN-Beta 5.9.1.5 | Ad mediation and monetization strategy. Documentation lists device/system, timezone/language/display, app version, network/IP, identifiers and usage logs; optional fields depend on configuration and system access. Applies where mobile ads are enabled; Google Play/F-Droid release configurations exclude this ad dependency | [Mediation SDK policy](https://www.csjplatform.com/terms/gromoresdk-privacy)                                                                                                                    |
+| Pangle advertising SDK; 北京巨量引擎网络技术有限公司 and affiliates. Integrated with the mediation component above                                   | Ad delivery, attribution and fraud prevention. Device/app/network information, AndroidID, OAID, available GAID/IDFA, ad impressions/clicks and performance records. Sensor or application-list capabilities depend on version and configuration                                                                                   | [Pangle policy](https://www.csjplatform.com/privacy)                                                                                                                                            |
+| Countly; Countly Ltd; countly_flutter_np 26.1.1                                                                                                      | Optional Android/iOS analytics described in [section 2 of the Privacy Policy](./privacy#information-and-purposes). The current App configuration sends to our self-hosted countly.chaldea.center service; using the SDK alone does not establish transfer to the supplier's cloud                                                 | [SDK documentation](https://support.countly.com/hc/en-us/articles/360037754031-Android), [supplier policy](https://countly.com/legal/privacy-policy); our deployment is governed by this policy |
+| webview_flutter; Flutter/Google open-source component; 4.14.1                                                                                        | Uses system WebViews on Android/iOS/macOS. Pages receive IP/browser request information and may use their own cookies/scripts. The component itself is not a business purpose for camera, microphone or location access                                                                                                           | [Component information](https://pub.dev/packages/webview_flutter)                                                                                                                               |
+
+[Back to the Privacy Policy](./privacy)

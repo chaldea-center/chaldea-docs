@@ -181,4 +181,4 @@
 
 ## 联系我们
 
-可以通过[反馈](./feedback.md)中的途径联系我们。最好是 Discord: <https://discord.gg/5M6w5faqjP>
+可以通过[联系我们](./contact)页面中的途径联系开发者。最好是 Discord: <https://discord.gg/5M6w5faqjP>

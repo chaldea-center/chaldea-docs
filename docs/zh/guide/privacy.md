@@ -1,58 +1,110 @@
-# Privacy Policy
+---
+title: 隐私政策
+description: Chaldea 隐私政策：个人信息、系统权限、第三方服务、保存期限与用户权利。
+lastUpdated: false
+editLink: false
+---
 
-**Privacy Policy**
+# 隐私政策
 
-narumi built the Chaldea app as a Free app. This SERVICE is provided by narumi at no cost and is intended for use as is.
+**版本：v1 · 生效日期：2026 年 12 月 1 日**
 
-This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.
+本政策说明 Chaldea 服务提供者（以下称“我们”）在提供 Chaldea App 及相关服务时如何处理个人信息，以及你可以如何管理这些信息。
 
-If you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy.
+隐私问题与权利请求请通过[联系我们](./contact#privacy-contact)页面提出。我们将在收到隐私投诉或权利请求后 **15 个工作日内答复**。
 
-The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at Chaldea unless otherwise defined in this Privacy Policy.
+## 一、基本功能与可选服务
 
-**Information Collection and Use**
+Chaldea 提供游戏资料查询、素材规划、队伍与战斗模拟等工具。基础本地功能不要求你注册账号或提供姓名、手机号、身份证。联网获取游戏资料、图片和更新时，请求的服务器会接收 IP 地址及必要的网络请求信息。
 
-For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information. The information that I request will be retained on your device and is not collected by me in any way.
+账号、云端恢复、在线队伍发布、GitHub 备份、产品分析、故障诊断及广告属于具体场景下的服务。拒绝非必要个人信息处理不应阻止你使用无关的基础功能。系统权限、个性化广告偏好和隐私同意是不同的选择，不能相互替代。
 
-**Log Data**
+## 二、我们处理哪些信息 {#information-and-purposes}
 
-I want to inform you that whenever you use my Service, in a case of an error in the app I collect data and information (through third party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing my Service, the time and date of your use of the Service, and other statistics.
+| 使用场景                      | 信息范围                                                                               | 用途及触发方式                                                                            |
+| ----------------------------- | -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| 本地规划、模拟及数据管理      | 你录入的游戏进度、规划、队伍、偏好设置                                                 | 在设备中保存与计算；你主动备份、分享或反馈时，相关内容可能离开设备                        |
+| 注册、登录与账号维护          | 用户名、邮箱、密码验证信息、会话及设备标识；请求 IP、App 版本、平台和语言              | 提供账号、邮箱验证、修改信息、密码重置、辅助找回与安全管理。服务端保存密码哈希用于验证    |
+| 云端恢复副本                  | 账号关联信息、你主动上传的用户数据文件、上传时间                                       | 临时恢复或在设备间迁移；它不是永久保管服务，请保留自己的本地备份                          |
+| 在线队伍                      | 你提交的队伍、说明、署名/账号关联、投票与操作记录                                      | 发布、浏览、维护及管理队伍。发布的内容可被其他人查看，请勿包含无关个人信息                |
+| 本地备份、文件导入导出        | 你选择的备份、JSON/CSV 文件及导出内容                                                  | 由你操作系统文件选择器或分享功能；选择文件不表示授权读取设备上所有文件                    |
+| 剪贴板导入                    | 你主动粘贴或导入的文本、数据或队伍链接                                                 | 解析本次导入内容；不以此持续采集剪贴板                                                    |
+| 保存、复制或分享图片          | 你选择的图片、生成的规划/队伍图片                                                      | 写入相册、剪贴板或发送至你选择的应用；接收应用适用其自身政策                              |
+| 更新与 APK/XAPK 下载、安装    | 版本、平台/渠道、下载请求及安装包                                                      | 检查或获取更新、下载游戏安装包；可用方式和安装授权依平台与渠道而异                        |
+| 主动反馈                      | 反馈正文、你提供的联系方式、诊断日志、设备/App 参数及随反馈发送的数据文件或附件        | 你主动提交后用于回复与排障。请检查反馈内容，避免发送密码、Token 或不相关个人信息          |
+| 自动故障诊断（可选）          | 技术日志、错误堆栈、设备及 App 参数                                                    | 经你允许后用于排障；自动报告不包含截图、完整用户文件或设置快照                            |
+| 产品分析（可选，Android/iOS） | SDK 设备标识、设备/系统和 App 参数、IP、会话、页面及操作事件、语言、游戏区服偏好和渠道 | 通过我们的 Countly 服务了解功能使用与稳定性。设备标识可关联记录，不将这些数据称为完全匿名 |
+| 广告（仅启用广告的版本/渠道） | 见[第三方 SDK 清单](./third-party-sdks)中的设备、网络、标识符与广告互动信息            | 广告展示、统计、归因及反作弊；个性化广告另受你的偏好和系统授权控制                        |
 
-**Cookies**
+**自动诊断与主动反馈的范围不同。** 主动提交反馈不会因关闭自动诊断而被阻止。自动诊断仅在你同意并开启该选项时进行。
 
-Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device's internal memory.
+## 三、系统权限与设备能力 {#system-permissions}
 
-This Service does not use these “cookies” explicitly. However, the app may use third party code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.
+我们按功能需要使用设备能力。你可以在系统的 Chaldea 应用设置中查看或调整可管理的授权；不同系统、版本和渠道显示的项目可能不同。拒绝某项权限会影响相应操作，不应影响无关的本地功能。
 
-**Service Providers**
+| 权限/能力                   | 平台与使用说明                                                                                                                                                               |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 网络、网络状态及 Wi-Fi 状态 | 用于请求资料、图片、账号、更新及已启用的服务。Android 的普通网络权限通常不弹出运行时授权框                                                                                   |
+| 照片添加/保存图片           | iOS 保存你选定的图片，需要时申请仅添加照片的授权；保存图片不要求读取整个照片库                                                                                               |
+| 旧系统存储读写              | Android 包含 READ_EXTERNAL_STORAGE（最高 SDK 32）及 WRITE_EXTERNAL_STORAGE（最高 SDK 28）声明；旧系统保存图片/文件兼容路径可能需要授权。系统文件选择器仅授予你选定内容的访问 |
+| 安装未知应用                | Android GitHub/F-Droid 渠道在你主动安装 APK/XAPK 时可能需要前往系统开启。Google Play 渠道包不含 REQUEST_INSTALL_PACKAGES                                                     |
+| 电话状态                    | Android 包仍保留 READ_PHONE_STATE；广告 SDK 可能在系统允许范围内使用电话状态相关信息进行设备识别与反作弊。它不是基础本地功能的必要条件，不授权读取通话内容                   |
+| 广告标识与跟踪              | Android 广告 ID 的可用性取决于系统和设置；iOS 的 IDFA 跟踪授权由系统 ATT 决定。拒绝或撤回跟踪授权后，不应使用其他标识绕过你的选择                                            |
 
-I may employ third-party companies and individuals due to the following reasons:
+安装包声明、实际请求与系统授权并不相同。SDK 的内部签名权限用于组件通信，不是需要你在界面上开启的个人信息权限。我们不将未开放功能的残留声明作为收集信息的理由。
 
-- To facilitate our Service;
-- To provide the Service on our behalf;
-- To perform Service-related services; or
-- To assist us in analyzing how our Service is used.
+## 四、第三方 SDK 与你选择的外部服务 {#third-party-sdks}
 
-I want to inform users of this Service that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.
+我们使用 SDK 提供广告、可选产品分析及网页展示等能力。组件名称、提供方、版本、处理信息及适用范围详见[第三方 SDK 清单](./third-party-sdks)。该清单是本政策的组成部分，适用相同版本和生效日期。
 
-**Security**
+你主动配置 GitHub Token、仓库及路径进行备份/恢复时，相关凭据与备份内容用于请求 GitHub。请使用最小范围 Token，确认仓库可见性；公开仓库可能公开备份内容。GitHub 的独立处理及存储适用 [GitHub 隐私声明](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)。
 
-I value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee its absolute security.
+你打开资料、视频、文档、社群或捐赠等外链时，第三方会接收相应访问请求；其政策适用于其独立服务。系统分享由你选择的接收应用处理。
 
-**Links to Other Sites**
+## 五、广告与可选处理的管理
 
-This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by me. Therefore, I strongly advise you to review the Privacy Policy of these websites. I have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.
+你可在“设置 → 隐私与数据”管理个性化广告、自动崩溃诊断和产品分析偏好，在广告设置管理可用的广告选项。个性化广告偏好初始为开启；该偏好不等于授予系统权限，也不代替依法需要的同意。关闭个性化广告后，已启用广告的服务应提供非个性化方式；并不因此消除广告投放所必需的网络请求。
 
-**Children’s Privacy**
+iOS 跟踪授权还须遵守 ATT 选择。撤回同意不影响撤回前依法进行的处理；删除已留存信息可按第八节联系我们。关闭相应的可选处理后，我们将停止该项处理；撤回同意不影响你主动提交反馈。
 
-These Services do not address anyone under the age of 13. I do not knowingly collect personally identifiable information from children under 13\. In the case I discover that a child under 13 has provided me with personal information, I immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact me so that I will be able to do necessary actions.
+## 六、保存地点与期限
 
-**Changes to This Privacy Policy**
+我们的自有账号与云端恢复服务部署在中国境内。你主动使用的 GitHub、第三方网页或其他独立服务可能涉及其境外基础设施；请结合对应服务政策决定是否使用。上述境内存储说明不适用于你主动使用的独立第三方服务。
 
-I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page.
+自本政策生效之日起，我们按以下规则保存个人信息。期限届满后应删除或进行不能复原、不能再识别个人的匿名化；法律另有保存要求的，仅为履行该要求保留。
 
-This policy is effective as of 2021-01-16
+| 数据                                      | 保存期限或删除条件                                                                                                         |
+| ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| 设备本地数据与本地导出文件                | 由你保存、覆盖或删除；卸载是否清除还取决于系统备份、外部目录及你保存的副本                                                 |
+| 账号与服务记录                            | 提供账号服务所需期间；注销或达到删除条件后依法删除/匿名化。必要的安全及法定留存另行处理                                    |
+| 云端恢复副本                              | 自上传起最长 **7 天**，被替换、主动删除或注销时可能提前删除                                                                |
+| 自动故障诊断报告                          | 自收到报告起 **90 天**                                                                                                     |
+| 主动反馈及所附材料                        | 自收到反馈起 **180 天**                                                                                                    |
+| Countly 中可关联个人或设备的分析记录      | 自记录起 **90 天**                                                                                                         |
+| 你公开发布的队伍                          | 在你保留发布或为处理必要的服务争议期间；你可删除自己的发布，第三方已保存的公开副本不由我们控制                             |
+| 依法要求的相关网络安全日志                | 适用法律要求的期限；适用《网络安全法》相关网络日志要求时不少于 **六个月**。不将此要求扩展为所有诊断/分析数据的统一保存期限 |
+| 灾备副本、反馈接收邮箱/转发副本及网站工具 | 我们管理的灾备、反馈收件箱和转发副本适用对应数据的保存期限；网站统计服务商的保存规则见第九节所链接的隐私政策               |
 
-**Contact Us**
+GitHub 中的副本由你及 GitHub 的设置管理；第三方 SDK 独立保存的数据按其政策及适用法律处理，我们将协助你提出相关请求。
 
-If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at support@chaldea.center.
+## 七、共享、安全与变更用途
+
+我们为提供你选择的服务使用必要的技术、托管和通信服务，不因你使用基础功能便授权任意共享。委托处理、向独立第三方提供、公开发布及你主动分享具有不同含义；我们会按具体关系与适用法律履行告知、约束和必要的同意程序。
+
+反馈内容及附件用于回复和排障，可能通过为我们提供邮件、通信或托管服务的供应商处理。涉及依法需要另行告知的接收方或境外提供情形时，我们会在处理前履行告知及必要的同意或其他法定程序。新增目的、接收方或处理方式需依法重新告知、取得必要同意时，我们会先履行相应程序。
+
+我们采取与服务相适应的访问控制、传输保护和账号安全措施。请妥善保管密码、Token、备份与分享内容；发生个人信息安全事件时，我们将依法采取处置及通知措施。
+
+## 八、你的权利与联系方法 {#operator-and-contact}
+
+Chaldea 及相关服务由**知行远景（台州）科技有限公司**提供。你可以在 App 中修改可用的账号信息、删除自己的在线内容、管理可选处理和系统权限，并通过账号注销入口申请注销。注销云端账号不等于自动删除你已导出的文件、GitHub 副本或接收方保存的分享内容。
+
+如需查阅、复制、更正、补充、删除个人信息、撤回同意、注销账号或对处理提出异议，请通过[联系我们](./contact#privacy-contact)页面提出请求。我们只会为核实请求收集必要信息，不要求你发送完整密码或 Token。我们将在 **15 个工作日内答复**；无法直接办理的，将说明原因与可行途径。你也可依法向有权机关投诉。
+
+## 九、文档网站
+
+文档网站使用 **Google Analytics** 和**百度统计**了解访问情况，可能处理 Cookie、IP 地址、设备/浏览器信息和页面访问记录。相关处理方式见 [Google 隐私政策](https://policies.google.com/privacy)和[百度统计隐私政策](https://tongji.baidu.com/web/help/article?id=330&type=0)。网站统计与 App 内的 Countly 属于不同的处理场景。
+
+## 十、政策更新
+
+本政策的版本与生效日期见页首。如发生重要变更，将以政策页及必要的 App 提示告知；依法需重新取得同意的，不以继续使用自动替代同意。

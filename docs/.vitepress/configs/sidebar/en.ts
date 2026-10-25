@@ -11,7 +11,7 @@ export const sidebarEn: DefaultTheme.Sidebar = {
         { text: 'Donation', link: 'donation' },
         { text: 'Install', link: 'install' },
         { text: 'FGO APK', link: 'fgo_apk' },
-        { text: 'Feedback', link: 'feedback' },
+        { text: 'Contact Us', link: 'contact' },
         { text: 'FAQ', link: 'faq' },
       ],
     },
@@ -57,8 +57,8 @@ export const sidebarEn: DefaultTheme.Sidebar = {
       items: [
         { text: 'Tools', link: 'tools' },
         { text: 'References', link: 'references' },
-        { text: 'Privacy', link: 'privacy2' },
         { text: 'Privacy Policy', link: 'privacy' },
+        { text: 'Third-party SDK List', link: 'third-party-sdks' },
       ],
     },
   ],
