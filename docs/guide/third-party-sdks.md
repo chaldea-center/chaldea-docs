@@ -7,7 +7,7 @@ editLink: false
 
 # Third-party SDK List
 
-**Privacy Policy version: v1 · Effective date: December 1, 2026**
+**Privacy Policy version: v1 · Effective date: October 25, 2026**
 
 This list forms part of the [Privacy Policy](./privacy) and shares its version and effective date.
 

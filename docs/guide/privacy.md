@@ -7,9 +7,9 @@ editLink: false
 
 # Privacy Policy
 
-**Version: v1 · Effective date: December 1, 2026**
+**Version: v1 · Effective date: October 25, 2026**
 
-This policy explains how the Chaldea service provider (“we” or “us”) processes personal information when providing the Chaldea App and related services, and how you can manage your information.
+This policy explains how the Chaldea service provider, **Zhixing Yuanjing (Taizhou) Technology Co., Ltd.** (“we” or “us”), processes personal information when providing the Chaldea App and related services, and how you can manage your information.
 
 For privacy matters, see [Contact Us](./contact#privacy-contact). We will **respond within 15 working days** after receiving a privacy complaint or rights request.
 
